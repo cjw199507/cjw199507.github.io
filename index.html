@@ -157,6 +157,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-MyBatis映射标签resultMap与resultType、parameterMap与-parameterType" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/21/MyBatis%E6%98%A0%E5%B0%84%E6%A0%87%E7%AD%BEresultMap%E4%B8%8EresultType%E3%80%81parameterMap%E4%B8%8E-parameterType/">MyBatis映射标签resultMap与resultType、parameterMap与 parameterType</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/21/MyBatis%E6%98%A0%E5%B0%84%E6%A0%87%E7%AD%BEresultMap%E4%B8%8EresultType%E3%80%81parameterMap%E4%B8%8E-parameterType/" class="archive-article-date">
+  	<time datetime="2020-07-21T10:49:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="MyBatis映射标签"><a href="#MyBatis映射标签" class="headerlink" title="MyBatis映射标签"></a>MyBatis映射标签</h1><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper</span><br><span class="line">        PUBLIC <span class="string">"-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line">        <span class="string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">"com.dvms.dao.UserDao"</span>&gt;</span><br><span class="line">....</span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200718195511189.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper</span><br><span class="line">        PUBLIC <span class="string">"-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line">        <span class="string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">"com.dvms.dao.UserDao"</span>&gt;</span><br><span class="line">&lt;!--注册/新增用户--&gt;</span><br><span class="line">    &lt;insert id=<span class="string">"save"</span> parameterType=<span class="string">"User"</span>&gt;</span><br><span class="line">        <span class="function">insert into <span class="title">user</span> <span class="params">(id,username,password,sex,phone,email,role)</span> <span class="title">values</span> <span class="params">(#&#123;id&#125;,#&#123;username&#125;,#&#123;password&#125;,#&#123;sex&#125;,#&#123;phone&#125;,#&#123;email&#125;,#&#123;role&#125;)</span></span></span><br><span class="line"><span class="function">    &lt;/insert&gt;</span></span><br><span class="line"><span class="function">&lt;!--登录验证--&gt;</span></span><br><span class="line"><span class="function">    &lt;select id</span>=<span class="string">"login"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user</span><br><span class="line">        where username =#&#123;username&#125; and password =#&#123;password&#125;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">&lt;!--查询所有用户--&gt;</span><br><span class="line">    &lt;select id=<span class="string">"findAlluser"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">&lt;!--删除用户--&gt;</span><br><span class="line">    &lt;delete id=<span class="string">"delete"</span> parameterType=<span class="string">"String"</span>&gt;</span><br><span class="line">        delete from user where id=#&#123;id&#125;</span><br><span class="line">    &lt;/delete&gt;</span><br><span class="line">&lt;!--修改用户信息--&gt;</span><br><span class="line">    &lt;!--查到要修改的用户信息--&gt;</span><br><span class="line">    &lt;select id=<span class="string">"update"</span> parameterType=<span class="string">"String"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user where id=#&#123;id&#125;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">    &lt;!--修改用户信息--&gt;</span><br><span class="line">    &lt;update id=<span class="string">"add"</span> parameterType=<span class="string">"User"</span>&gt;</span><br><span class="line">        update user set username=#&#123;username&#125;,password=#&#123;password&#125;,sex=#&#123;sex&#125;,phone=#&#123;phone&#125;,email=#&#123;email&#125;,role=#&#123;role&#125; where id=#&#123;id&#125;</span><br><span class="line">    &lt;/update&gt;</span><br><span class="line"></span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
+<p>在MyBatis中，输入与输出都是相对于<strong>数据库</strong>而言，我们通过<strong>parameterType</strong>完成输入映射(指将值映射到sql语句的占位符中，值的类型与dao层响应方法的参数类型一致)，通过<strong>resultType</strong>完成输出映射(从数据库中输出，通过dao层的方法查询到的数据输出到pojo对象（实体类entity）中)。 </p>
+<h1 id="1-输入映射（往数据库输入）"><a href="#1-输入映射（往数据库输入）" class="headerlink" title="1. 输入映射（往数据库输入）"></a>1. 输入映射（往数据库输入）</h1><h2 id="parameterMap（不常用）与-parameterType（常用）"><a href="#parameterMap（不常用）与-parameterType（常用）" class="headerlink" title="parameterMap（不常用）与 parameterType（常用）"></a>parameterMap（不常用）与 parameterType（常用）</h2><p> ParameterMap和resultMap类似，表示将查询结果集中列值的类型一一映射到java对象属性的类型上，在开发过程中不推荐这种方式。<br> 一般使用<strong>parameterType</strong>直接将查询结果列值类型自动对应到java对象属性类型上，不再配置映射关系一一对应。</p>
+<hr>
+<h1 id="2-输出映射（从数据库输出）"><a href="#2-输出映射（从数据库输出）" class="headerlink" title="2. 输出映射（从数据库输出）"></a>2. 输出映射（从数据库输出）</h1><h2 id="resultMap与resultType（常用）"><a href="#resultMap与resultType（常用）" class="headerlink" title="resultMap与resultType（常用）"></a>resultMap与resultType（常用）</h2><p> 两者都是表示查询结果集与java对象之间的一种关系，处理查询结果集，映射到java对象。<br> resultMap表示将查询结果集中的列一一映射到bean对象的各个属性。映射的查询结果集中的列标签可以根据需要灵活变化，并且，在映射关系中，还可以通过typeHandler设置实现查询结果值的类型转换，比如布尔型与0/1的类型转换。</p>
+<hr>
+<h2 id="和-的使用"><a href="#和-的使用" class="headerlink" title="#{}和${}的使用"></a>#{}和${}的使用</h2><p>resultMap和ParameterMap书写拼写要使用#{}，resultType 和parameterType类型使用${}，（一般是用<strong>#{}</strong>）使用例子如下：</p>
+<p>Select ID，COMMAND from Message where COMMAND=#{command}</p>
+<p>Select ID，COMMAND from Message where COMMAND=‘${command}’</p>
+<p>前者解析为：</p>
+<pre><code>Select ID，COMMAND from Message where COMMAND=？具有预编译效果</code></pre><p>后者解析为：</p>
+<pre><code>Select ID，COMMAND from Message where COMMAND=段子   不具有预编译效果</code></pre><hr>
+<p>在Mybatis中传递多个参数要做参数的绑定（@Param）<br><img src="https://img-blog.csdnimg.cn/20200719121212891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>不写parameterType也可以运行,因为Mybatis能自动识别，但返回值类型不能不写!!<br>Mybatis自动识别入参对象, 传入单个map或单个对象,无需写@Param注解   如@Param(“map”)  Map&lt;String, Object&gt; map<br>那么什么时候必须在mapper接口上写@Param注解呢,   mapper接口中有<strong>多个参数</strong>(每个对象或参数都要加@Param注解), 或<strong>一个 String</strong>, 必须使用@Param注解,<br><strong><em>END</em></strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/21/MyBatis%E6%98%A0%E5%B0%84%E6%A0%87%E7%AD%BEresultMap%E4%B8%8EresultType%E3%80%81parameterMap%E4%B8%8E-parameterType/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Spring框架常用注解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
