@@ -8,6 +8,21 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>MyBatis映射标签resultMap与resultType、parameterMap与 parameterType | CJW の Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+    <style>
+    .pace .pace-progress {
+        background: #6d6d6d; /*进度条颜色*/
+        height: 2px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #6d6d6d; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #6d6d6d;    /*上边框颜色*/
+        border-left-color: #6d6d6d;    /*左边框颜色*/
+    }
+  </style>
   <meta name="description" content="MyBatis映射标签1234567&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot; ?&gt;&lt;!DOCTYPE mapper        PUBLIC &quot;-&#x2F;&#x2F;mybatis.org&#x2F;&#x2F;DTD Mapper 3.0&#x2F;&#x2F;EN&quot;        &quot;http:&#x2F;&#x2F;mybatis.org&#x2F;dtd&#x2F;mybatis-3-mapper.dtd&quot;&gt;&lt;mapper">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MyBatis映射标签resultMap与resultType、parameterMap与 parameterType">
@@ -25,7 +40,7 @@
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/themes/yilia/source/">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -49,7 +64,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assert/touxiang.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Pig Chen</a></h1>
@@ -61,9 +76,13 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><a href="/">首页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/archives">归档</a></li>
+	        
+				<li><a href="/tags">标签</a></li>
+	        
+				<li><a href="/categories">分类</a></li>
 	        
 			</ul>
 		</nav>
@@ -89,9 +108,9 @@
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 		        
 			</div>
 		</nav>
@@ -109,7 +128,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assert/touxiang.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Pig Chen</h1>
@@ -118,6 +137,10 @@
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>只要还有明天，今天就永远是起跑线。<i class="icon icon-quo-right"></i></p>
 			
 			
+			
+				
+			
+				
 			
 				
 			
@@ -132,20 +155,24 @@
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">首页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 25%"><a href="/archives">归档</a></li>
+		        
+					<li style="width: 25%"><a href="/tags">标签</a></li>
+		        
+					<li style="width: 25%"><a href="/categories">分类</a></li>
 		        
 				</ul>
 			</nav>
@@ -318,6 +345,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MyBatis映射标签"><span class="toc-number">1.</span> <span class="toc-text">MyBatis映射标签</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-输入映射（往数据库输入）"><span class="toc-number">2.</span> <span class="toc-text">1. 输入映射（往数据库输入）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#parameterMap（不常用）与-parameterType（常用）"><span class="toc-number">2.1.</span> <span class="toc-text">parameterMap（不常用）与 parameterType（常用）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-输出映射（从数据库输出）"><span class="toc-number">3.</span> <span class="toc-text">2. 输出映射（从数据库输出）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#resultMap与resultType（常用）"><span class="toc-number">3.1.</span> <span class="toc-text">resultMap与resultType（常用）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#和-的使用"><span class="toc-number">3.2.</span> <span class="toc-text">#{}和${}的使用</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
