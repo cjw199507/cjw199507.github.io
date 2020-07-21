@@ -41,7 +41,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#ccc,#000);
     }
   </style>
   
@@ -81,6 +81,9 @@
 	        
 			</ul>
 		</nav>
+		<nav>
+             总文章数 5
+        </nav>
 		<nav class="header-smart-menu">
     		
     			
@@ -97,15 +100,18 @@
             
 		</nav>
 		<nav class="header-nav">
+		
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=445886994&auto=1&height=66"></iframe>
+
 			<div class="social">
 				
 					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
+					<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=928956087&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
 		        
 					<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
+		        
+					<a class="mail" target="_blank" href="mailto:928956087@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -148,11 +154,11 @@
 					
 						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
+						<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=928956087&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
 			        
 						<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
+			        
+						<a class="mail" target="_blank" href="mailto:928956087@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -195,6 +201,9 @@
     </h1>
   
 
+		<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
         
         <a href="/2020/07/21/Spring%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/" class="archive-article-date">
   	<time datetime="2020-07-21T10:17:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
@@ -219,41 +228,13 @@
 <hr>
 <h2 id="RequestMapping-（配置url映射）"><a href="#RequestMapping-（配置url映射）" class="headerlink" title="@RequestMapping （配置url映射）"></a>@RequestMapping （配置url映射）</h2><p>@RequestMapping如果没有指定请求方式，将接收Get,Post,Head,Options等所有的请求方式。<br>@RequestMapping此注解即可以作用在控制器的某个方法上，也可以作用在此控制器类上。当前台界面调用Controller处理数据时候告诉控制器怎么操作有3种情形：<br>1.当控制器在<strong>类级别</strong>上添加@RequestMapping注解时，这个注解会应用到控制器的所有处理器方法上。处理器方法上的@RequestMapping注解会对类级别上的@RequestMapping的声明进行补充。<br>2.@RequestMapping作用在<strong>处理器方法</strong>上。<br>3.@RequestMapping同时作用在<strong>类级别</strong>和<strong>处理器方法</strong>上。<br><img src="https://img-blog.csdnimg.cn/2020071913490357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>所响应的url=<strong>localhost:8080/updata_setting/updata</strong></p>
 <hr>
-<h3 id="RequestMapping注解属性"><a href="#RequestMapping注解属性" class="headerlink" title="@RequestMapping注解属性"></a>@RequestMapping注解属性</h3><p>作用：简化常用的HTTP方法的映射，并更好地表达被注解方法的语义。<br>RequestMapping注解有六个属性：<br>1、 value， method;</p>
-<p>value: 指定请求的实际地址，指定的地址可以是URI Template 模式(后面将会说明);</p>
-<p>method: 指定请求的method类型， GET、POST、PUT、DELETE等;常用： GET、POST<br>组合注解：</p>
-<ul>
-<li>@GetMapping @RequestMapping(method = RequestMethod.GET)的简写<br>作用：对应查询，表明是一个查询URL映射<ul>
-<li>@PostMapping @RequestMapping(method =RequestMethod.POST)的简写<br>作用：对应增加，表明是一个增加URL映射</li>
-<li>@PutMapping@RequestMapping(method = RequestMethod.PUT)的简写<br>作用：对应更新，表明是一个更新URL映射</li>
-<li>@DeleteMapping @RequestMapping(method = RequestMethod.DELETE)的简写<br>作用：对应删除，表明是一个删除URL映射</li>
-</ul>
-</li>
-</ul>
-<p>2、consumes，produces</p>
-<p>consumes: 指定处理请求的提交内容类型(Content-Type)，例如application/json, text/html;</p>
-<p>produces: 指定返回的内容类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回;</p>
-<p>3、params，headers</p>
-<p>params: 指定request中必须包含某些参数值是，才让该方法处理。</p>
-<p>headers: 指定request中必须包含某些指定的header值，才能让该方法处理请求。</p>
-<hr>
-<h4 id="PathVaribale"><a href="#PathVaribale" class="headerlink" title="@PathVaribale"></a>@PathVaribale</h4><p>通过@PathVariable注解来获取URL中的参数时的前提条件是我们知道url的格式时怎么样的。只有知道url的格式，我们才能在指定的方法上通过相同的格式获取相应位置的参数值。<br>1.获取url中的单个参数（如id）</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(value=<span class="string">"/hello/&#123;id&#125;"</span>,method= RequestMethod.GET)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">sayHello</span><span class="params">(@PathVariable(<span class="string">"id"</span>)</span> Integer id)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"id:"</span>+id;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>2.获取url有多个参数</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(value=<span class="string">"/hello/&#123;id&#125;/&#123;name&#125;"</span>,method= RequestMethod.GET)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">sayHello</span><span class="params">(@PathVariable(<span class="string">"id"</span>)</span> Integer id,@<span class="title">PathVariable</span><span class="params">(<span class="string">"name"</span>)</span> String name)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"id:"</span>+id+<span class="string">" name:"</span>+name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="RequestParam"><a href="#RequestParam" class="headerlink" title="@RequestParam"></a>@RequestParam</h4><p>作用：获取请求参数的值<br>@RequestParam注解给允许用户不输入参数时，使用默认值；<br><img src="https://img-blog.csdnimg.cn/20200719155619507.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h4 id="RequestBody"><a href="#RequestBody" class="headerlink" title="@RequestBody"></a>@RequestBody</h4><p>如果传输的是单层json对象，我们后台可以直接用 @RequestParam接收。如果传输的是多层嵌套json对象，这个时候会就会出现数据丢失问题，@ResponseBody很好的解决了这个问题，它会把前台传输过来的json转化为后台对应的对象；<br>@RequestBody接收的是一个Json对象的字符串，而不是一个Json对象。（易出错）然而在ajax请求往往传的都是Json对象，用JSON.stringify(data)的方式就能将对象变成字符串。同时ajax请求的时候也要指定dataType: “json”,contentType:”application/json” 这样就可以轻易的将一个对象或者List传到Java端，使用@RequestBody即可绑定对象或者List。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#updata'</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">        updata_setting: &#123;&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        Save:function(ev)&#123;</span><br><span class="line">            <span class="keyword">var</span> url = <span class="string">"../updata_setting/updata"</span>;</span><br><span class="line">            $.ajax(&#123;</span><br><span class="line">                type: <span class="string">"POST"</span>,</span><br><span class="line">                url: url,</span><br><span class="line">                data: JSON.stringify(vm.updata_setting),</span><br><span class="line">                success: function(r)&#123;</span><br><span class="line">                        alert(<span class="string">'操作成功！'</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="Service"><a href="#Service" class="headerlink" title="@Service"></a>@Service</h2><p>用于标注业务层组件，位于service实现层：<br>形如：@Service(“xxxService”)<br><img src="https://img-blog.csdnimg.cn/20200719161449596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h2 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h2><p>@Override是伪代码,表示重写(当然不写也可以),不过写上有如下好处:<br>1、可以当注释用,方便阅读。<br>2、编译器可以给你验证@Override下面的方法名是否是你父类中所有的,如果没有则报错。比如你如果没写@Override而你下面的方法名又写错了,这时你的编译器是可以编译通过的(它以为这个方法是你的子类中自己增加的方法)。</p>
-<hr>
-<h2 id="Repository"><a href="#Repository" class="headerlink" title="@Repository"></a>@Repository</h2><p>@Repository用于标注数据访问组件，即dao层<br><img src="https://img-blog.csdnimg.cn/2020071916203432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>如果 Web 应用程序采用了经典的三层分层结构的话，最好在持久层、业务层和控制层分别采用上述注解对分层中的类进行注释。@Component泛指组件，当组件不好归类的时候，我们可以使用这个注解进行标注。</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-
+        
       
 
+		
+		
+		  <div hidden="hidden"></div>
+		
       
     </div>
     <div class="article-info article-info-index">
@@ -310,11 +291,12 @@
     		&copy; 2020 Pig Chen
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
     </div>
   </div>
 </footer>
+<!--页面点击小红心-->
+<script type="text/javascript" src="/love.js"></script>
     </div>
     <script>
 	var yiliaConfig = {
@@ -469,7 +451,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap">
+				<div style="display:;">
+					<script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script>
+					<p style="margin:0 20px 0 20px;">
+						<span id="lwlhitokoto">
+							<script>
+								lwlhitokoto();
+							</script>
+						</span>
+					</p>
+					<p id="js-aboutme" style="margin:0 20px 0 20px;">我就是我，看我自己都上火！</P>
+				</div>
+			</div>
   	  	
     	</section>
     
