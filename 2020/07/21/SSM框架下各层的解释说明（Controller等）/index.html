@@ -1,3 +1,8 @@
+
+<script type="text/javascript"
+color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,8 +37,12 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200718155138172.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200718155620771.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="article:published_time" content="2020-07-21T11:04:12.000Z">
-<meta property="article:modified_time" content="2020-07-21T12:15:27.744Z">
+<meta property="article:modified_time" content="2020-07-22T03:32:44.666Z">
 <meta property="article:author" content="Pig Chen">
+<meta property="article:tag" content="小工具">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="yilia">
+<meta property="article:tag" content="tag">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200718155138172.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center">
   
@@ -60,7 +69,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -219,6 +228,12 @@
         <a href="/2020/07/21/SSM%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%90%84%E5%B1%82%E7%9A%84%E8%A7%A3%E9%87%8A%E8%AF%B4%E6%98%8E%EF%BC%88Controller%E7%AD%89%EF%BC%89/" class="archive-article-date">
   	<time datetime="2020-07-21T11:04:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
 </a>
+ 
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
         
       </header>
     
@@ -284,6 +299,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小工具</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">tag</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -406,8 +444,38 @@
   
 
   
+  
+  
+        
+            <section id="comments" class="comments">
+              <style>
+                .comments{margin:30px;padding:10px;background:#fff}
+                @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+              </style>
+              <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: '21WkV2nrkyAgC0CO7sQ5bm0u-gzGzoHsz',
+      app_key: 'VMLz2zraqMLE23BlDjTIGTU8',
+      placeholder: '评论区'
+    });
+</script>
 
-
+          </section>
+        
+   
           </div>
         </div>
       </div>
@@ -421,9 +489,21 @@
       	</div>
     </div>
   </div>
+  
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_site_pv">
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv" style='display:none'>
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
+        </span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
 </footer>
 <!--页面点击小红心-->
 <script type="text/javascript" src="/love.js"></script>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -497,6 +577,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">小工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">tag</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -547,7 +643,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="https://blog.csdn.net/cjw12581" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>CSDN</a>
             </li>
           
             <li class="search-li">
@@ -664,5 +760,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
+  <!-- 《页面点击小红心 -->
+	
+		<script type="text/javascript" src="/js/love.js"></script>
+	
+	<!-- 页面点击小红心》 -->
+	<!-- 雪花特效3 -->
+	
+	<!-- 代码块复制功能开始 -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+	<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/clipboard_use.js"></script>
+	<!-- 代码块复制功能结束 -->
+
 </body>
 </html>
