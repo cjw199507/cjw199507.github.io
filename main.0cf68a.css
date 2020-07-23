@@ -216,4 +216,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
     word-wrap:break-word;
     word-break:break-all;
 }
-
+body{/* background-color:#fff; */
+    min-height:100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    url("https://img-blog.csdnimg.cn/20200723150823964.jpg") no-repeat 0% 0%/ cover;
+    margin:0;
+    font-size:14px;
+    font-family:Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif;
+    line-height:1.5;
+    color:#333;}
