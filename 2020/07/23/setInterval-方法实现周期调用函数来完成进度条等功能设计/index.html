@@ -28,20 +28,19 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="setInterval() 方法setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。 setInterval() 方法会不停地调用函数，直到&#x3D;&#x3D;clearInterval() 被调用或窗口被关闭&#x3D;&#x3D;。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。提示： 1000 毫秒">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="setInterval()方法实现周期调用函数来完成进度条等功能设计">
 <meta property="og:url" content="http://yoursite.com/2020/07/23/setInterval-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%91%A8%E6%9C%9F%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%9B%E5%BA%A6%E6%9D%A1%E7%AD%89%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:description" content="setInterval() 方法setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。 setInterval() 方法会不停地调用函数，直到&#x3D;&#x3D;clearInterval() 被调用或窗口被关闭&#x3D;&#x3D;。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。提示： 1000 毫秒">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200507175942741.png">
 <meta property="article:published_time" content="2020-07-23T04:08:22.000Z">
-<meta property="article:modified_time" content="2020-07-23T04:22:50.806Z">
+<meta property="article:modified_time" content="2020-07-23T06:36:38.320Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="JavaWeb">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200507175942741.png">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -85,7 +84,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			</ul>
 		</nav>
 		<nav>
-             总文章数： 23
+             总文章数： 34
         </nav>
 		<nav class="header-smart-menu">
     		
@@ -246,9 +245,10 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="setInterval-方法"><a href="#setInterval-方法" class="headerlink" title="setInterval() 方法"></a>setInterval() 方法</h1><p>setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。</p>
-<p>setInterval() 方法会不停地调用函数，直到==clearInterval() 被调用或窗口被关闭==。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。<br>提示： 1000 毫秒= 1 秒；如果你只想执行一次可以使用 setTimeout() 方法。</p>
+        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
 <a id="more"></a>
+<h1 id="setInterval-方法"><a href="#setInterval-方法" class="headerlink" title="setInterval() 方法"></a>setInterval() 方法</h1><p>setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。</p>
+<p>setInterval() 方法会不停地调用函数，直到==clearInterval() 被调用或窗口被关闭==。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。<br>提示： 1000 毫秒= 1 秒；如果你只想执行一次可以使用 setTimeout() 方法。</p>
 <hr>
 <p><strong><em>语法描述：</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setInterval(code, milliseconds);</span><br><span class="line">setInterval(function, milliseconds, param1, param2, ...)</span><br></pre></td></tr></table></figure>
@@ -656,6 +656,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JDK安装教程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JavaWeb</a>
               </li>
              
@@ -668,11 +672,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -680,11 +684,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -692,11 +700,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -704,7 +712,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
+                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -712,15 +724,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -729,6 +745,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">application</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">密码修改</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>

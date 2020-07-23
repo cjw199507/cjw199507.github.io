@@ -28,12 +28,11 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="My Environment IDEA2018.3  JDK1.8  SpringBoot2.3.0  360浏览器项目部署一般是两种方式：一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。pom.xml：&lt; packaging&gt;jar&lt; &#x2F;packaging&gt;  （默认）&lt; p">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBoot项目打包为jar包">
 <meta property="og:url" content="http://yoursite.com/2020/07/22/SpringBoot%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%B8%BAjar%E5%8C%85/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:description" content="My Environment IDEA2018.3  JDK1.8  SpringBoot2.3.0  360浏览器项目部署一般是两种方式：一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。pom.xml：&lt; packaging&gt;jar&lt; &#x2F;packaging&gt;  （默认）&lt; p">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720101055777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720103416304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
@@ -41,11 +40,11 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720103554129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720103747636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-07-22T11:18:02.000Z">
-<meta property="article:modified_time" content="2020-07-23T04:26:41.477Z">
+<meta property="article:modified_time" content="2020-07-23T06:37:00.477Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="jar包">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -89,7 +88,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			</ul>
 		</nav>
 		<nav>
-             总文章数： 23
+             总文章数： 34
         </nav>
 		<nav class="header-smart-menu">
     		
@@ -250,11 +249,13 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
+        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
 <li>IDEA2018.3 </li>
 <li>JDK1.8 </li>
 <li>SpringBoot2.3.0 </li>
-<li>360浏览器<br>项目部署一般是两种方式：<br>一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。<br>pom.xml：<br>&lt; packaging&gt;jar&lt; /packaging&gt;  （默认）<br>&lt; packaging&gt;war&lt; /packaging&gt;<a id="more"></a>
+<li>360浏览器<br>项目部署一般是两种方式：<br>一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。<br>pom.xml：<br>&lt; packaging&gt;jar&lt; /packaging&gt;  （默认）<br>&lt; packaging&gt;war&lt; /packaging&gt;<!-- more -->
 <h1 id="打jar包"><a href="#打jar包" class="headerlink" title="打jar包"></a>打jar包</h1>选择 File -&gt; Project Structure-&gt;Artifacts-&gt;Jar-&gt;Form modules with dependencies后点ok:<br>根据 下图内容创建 jar。如图所示，选择项目，入口类等。最后一项 META-INF，默认放到 src\main\java 目录里，如果使用默认值，没有进行其他配置，生成的 jar 有可能不会包含 META-INF 目录，导致运行 jar 出错。最好放在 src\main\resource目录中。点击ok保存。按下图所示配置：<br><img src="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击ok会出现如图所示信息:<br><img src="https://img-blog.csdnimg.cn/20200720101055777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="生成jar包"><a href="#生成jar包" class="headerlink" title="生成jar包"></a>生成jar包</h1>点击idea菜单栏中的build，依次选择：<br><img src="https://img-blog.csdnimg.cn/20200720103416304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点Build:<br><img src="https://img-blog.csdnimg.cn/20200720103454190.png" alt="在这里插入图片描述"><br>在保存路经中查找所打包的jar包如果存在则说明打包成功。<br><img src="https://img-blog.csdnimg.cn/20200720103554129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="运行jar包"><a href="#运行jar包" class="headerlink" title="运行jar包"></a>运行jar包</h1>开始运行jar包，打开cmd进入jar所在的路径，输入java -jar xxx.jar (jar名称) ，点击回车按键。</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">Microsoft Windows [版本 <span class="number">10.0</span><span class="number">.18362</span><span class="number">.959</span>]</span><br><span class="line">(c) <span class="number">2019</span> Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\<span class="number">92895</span>&gt;D:</span><br><span class="line"></span><br><span class="line">D:\&gt;cd D:\data_view\out\artifacts\data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;Java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view.jar</span><br><span class="line">_________       ____.__      __</span><br><span class="line">\_   ___ \     |    /  \    /  \</span><br><span class="line">/    \  \/     |    \   \/\/   /</span><br><span class="line">\     \____/\__|    |\        /</span><br><span class="line"> \______  /\________| \__/\  /</span><br><span class="line">        \/                 \/</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.016</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : Starting DataViewApplication on <span class="number">4</span>C501 with PID <span class="number">12564</span> (D:\data_view\out\artifacts\data_view_jar\data_view.jar started by <span class="number">92895</span> in D:\data_view\out\artifacts\data_view_jar)</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.020</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : No active profile set, falling back to <span class="keyword">default</span> profiles: <span class="keyword">default</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set <span class="string">'spring.devtools.add-properties'</span> to <span class="string">'false'</span> to disable</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the <span class="string">'logging.level.web'</span> property to <span class="string">'DEBUG'</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">28.817</span>  INFO <span class="number">12564</span> --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : <span class="function">Tomcat initialized with <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.831  INFO 12564 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.832  INFO 12564 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1827 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.631  INFO 12564 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56cf4f3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e169c9, org.springframework.security.web.header.HeaderWriterFilter@26d4eefe, org.springframework.security.web.authentication.logout.LogoutFilter@f17fdd6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f33f6b3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70ffa278, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@109a14b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54857a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423bad4c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7e8ca12a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee5e690, org.springframework.security.web.session.SessionManagementFilter@7139411a, org.springframework.security.web.access.ExceptionTranslationFilter@1ec9ee0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf4c490]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.711  INFO 12564 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.929  INFO 12564 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.967  INFO 12564 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span> with context path ''</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.976  INFO 12564 --- [  restartedMain] com.dvms.DataViewApplication             : Started DataViewApplication in 3.27 <span class="title">seconds</span> <span class="params">(JVM running <span class="keyword">for</span> <span class="number">3.828</span>)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.774  INFO 12564 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.775  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.782  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:56.052  INFO 12564 --- [nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : </span>&#123;dataSource-<span class="number">1</span>&#125; init</span><br></pre></td></tr></table></figure>
@@ -620,6 +621,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JDK安装教程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JavaWeb</a>
               </li>
              
@@ -632,11 +637,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -644,11 +649,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -656,11 +665,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -668,7 +677,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
+                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -676,15 +689,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -693,6 +710,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">application</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">密码修改</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>

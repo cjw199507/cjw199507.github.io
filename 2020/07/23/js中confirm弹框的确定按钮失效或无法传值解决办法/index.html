@@ -28,20 +28,19 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="1.在项目中出现confirm弹框按钮失效，无法传布尔值，如果正常的话，使用以下代码即可完成传值： 1234567var result &#x3D; window.confirm(&#39;是否XXXX?&#39;);            if (result &#x3D;&#x3D; true)&amp;#123;                alert(&#39;终止操作！&#39;);                result &#x3D; false;">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="js中confirm弹框的确定按钮失效或无法传值解决办法">
 <meta property="og:url" content="http://yoursite.com/2020/07/23/js%E4%B8%ADconfirm%E5%BC%B9%E6%A1%86%E7%9A%84%E7%A1%AE%E5%AE%9A%E6%8C%89%E9%92%AE%E5%A4%B1%E6%95%88%E6%88%96%E6%97%A0%E6%B3%95%E4%BC%A0%E5%80%BC%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:description" content="1.在项目中出现confirm弹框按钮失效，无法传布尔值，如果正常的话，使用以下代码即可完成传值： 1234567var result &#x3D; window.confirm(&#39;是否XXXX?&#39;);            if (result &#x3D;&#x3D; true)&amp;#123;                alert(&#39;终止操作！&#39;);                result &#x3D; false;">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200402213226518.png">
 <meta property="article:published_time" content="2020-07-23T04:08:20.000Z">
-<meta property="article:modified_time" content="2020-07-23T04:21:59.406Z">
+<meta property="article:modified_time" content="2020-07-23T06:36:15.303Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="JavaWeb">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200402213226518.png">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -85,7 +84,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			</ul>
 		</nav>
 		<nav>
-             总文章数： 23
+             总文章数： 34
         </nav>
 		<nav class="header-smart-menu">
     		
@@ -246,9 +245,11 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.在项目中出现confirm弹框按钮失效，无法传布尔值，如果正常的话，使用以下代码即可完成传值：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = <span class="built_in">window</span>.confirm(<span class="string">'是否XXXX?'</span>);</span><br><span class="line">            <span class="keyword">if</span> (result == <span class="literal">true</span>)&#123;</span><br><span class="line">                alert(<span class="string">'终止操作！'</span>);</span><br><span class="line">                result = <span class="literal">false</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                alert(<span class="string">'终止操作取消！'</span>);</span><br><span class="line">                result = <span class="literal">false</span>;&#125;</span><br></pre></td></tr></table></figure>
+        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
 <a id="more"></a>
+<p>1.在项目中出现confirm弹框按钮失效，无法传布尔值，如果正常的话，使用以下代码即可完成传值：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = <span class="built_in">window</span>.confirm(<span class="string">'是否XXXX?'</span>);</span><br><span class="line">            <span class="keyword">if</span> (result == <span class="literal">true</span>)&#123;</span><br><span class="line">                alert(<span class="string">'终止操作！'</span>);</span><br><span class="line">                result = <span class="literal">false</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                alert(<span class="string">'终止操作取消！'</span>);</span><br><span class="line">                result = <span class="literal">false</span>;&#125;</span><br></pre></td></tr></table></figure>
+
 <p>2.但是这个弹框中的按钮失效了，只能基于bootstrap重新创建一下，可以参考以下这种，直接在js中插入这段代码(亲测有效）：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">window</span>.Ewin = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> html = <span class="string">'&lt;div id="[Id]" class="modal fade" role="dialog" aria-labelledby="modalLabel"&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;div class="modal-dialog modal-sm"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-content"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-header"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;button type="button" class="close" data-dismiss="modal"&gt;&lt;span aria-hidden="true"&gt;×&lt;/span&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;h4 class="modal-title" id="modalLabel"&gt;[Title]&lt;/h4&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-body"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;p&gt;[Message]&lt;/p&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-footer"&gt;'</span> +</span><br><span class="line"> <span class="string">'&lt;button type="button" class="btn btn-default cancel" data-dismiss="modal"&gt;[BtnCancel]&lt;/button&gt;'</span> +</span><br><span class="line"> <span class="string">'&lt;button type="button" class="btn btn-primary ok" data-dismiss="modal"&gt;[BtnOk]&lt;/button&gt;'</span> +</span><br><span class="line"> <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;/div&gt;'</span>;</span><br><span class="line"> <span class="keyword">var</span> dialogdHtml = <span class="string">'&lt;div id="[Id]" class="modal fade" role="dialog" aria-labelledby="modalLabel"&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;div class="modal-dialog"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-content"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-header"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;button type="button" class="close" data-dismiss="modal"&gt;&lt;span aria-hidden="true"&gt;×&lt;/span&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;h4 class="modal-title" id="modalLabel"&gt;[Title]&lt;/h4&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-body"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;/div&gt;'</span>;</span><br><span class="line"> <span class="keyword">var</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"\\[([^\\[\\]]*?)\\]"</span>, <span class="string">'igm'</span>);</span><br><span class="line"> <span class="keyword">var</span> generateId = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"> <span class="keyword">return</span> <span class="string">'mdl'</span> + date.valueOf();</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">var</span> init = <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line"> options = $.extend(&#123;&#125;, &#123;</span><br><span class="line"> title: <span class="string">"操作提示"</span>,</span><br><span class="line"> message: <span class="string">"提示内容"</span>,</span><br><span class="line"> btnok: <span class="string">"确定"</span>,</span><br><span class="line"> btncl: <span class="string">"取消"</span>,</span><br><span class="line"> width: <span class="number">200</span>,</span><br><span class="line"> auto: <span class="literal">false</span></span><br><span class="line"> &#125;, options || &#123;&#125;);</span><br><span class="line"> <span class="keyword">var</span> modalId = generateId();</span><br><span class="line"> <span class="keyword">var</span> content = html.replace(reg, <span class="function"><span class="keyword">function</span> (<span class="params">node, key</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">return</span> &#123;</span><br><span class="line">  Id: modalId,</span><br><span class="line">  Title: options.title,</span><br><span class="line">  Message: options.message,</span><br><span class="line">  BtnOk: options.btnok,</span><br><span class="line">  BtnCancel: options.btncl</span><br><span class="line"> &#125;[key];</span><br><span class="line"> &#125;);</span><br><span class="line"> $(<span class="string">'body'</span>).append(content);</span><br><span class="line"> $(<span class="string">'#'</span> + modalId).modal(&#123;</span><br><span class="line"> width: options.width,</span><br><span class="line"> backdrop: <span class="string">'static'</span></span><br><span class="line"> &#125;);</span><br><span class="line"> $(<span class="string">'#'</span> + modalId).on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line"> $(<span class="string">'body'</span>).find(<span class="string">'#'</span> + modalId).remove();</span><br><span class="line"> &#125;);</span><br><span class="line"> <span class="keyword">return</span> modalId;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> <span class="keyword">return</span> &#123;</span><br><span class="line"> alert: <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">if</span> (<span class="keyword">typeof</span> options == <span class="string">'string'</span>) &#123;</span><br><span class="line">  options = &#123;</span><br><span class="line">  message: options</span><br><span class="line">  &#125;;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">var</span> id = init(options);</span><br><span class="line"> <span class="keyword">var</span> modal = $(<span class="string">'#'</span> + id);</span><br><span class="line"> modal.find(<span class="string">'.ok'</span>).removeClass(<span class="string">'btn-success'</span>).addClass(<span class="string">'btn-primary'</span>);</span><br><span class="line"> modal.find(<span class="string">'.cancel'</span>).hide();</span><br><span class="line"> </span><br><span class="line"> <span class="keyword">return</span> &#123;</span><br><span class="line">  id: id,</span><br><span class="line">  on: <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (callback &amp;&amp; callback <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">  modal.find(<span class="string">'.ok'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; callback(<span class="literal">true</span>); &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  hide: <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (callback &amp;&amp; callback <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">  modal.on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  callback(e);</span><br><span class="line">  &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;;</span><br><span class="line"> &#125;,</span><br><span class="line"> confirm: <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> id = init(options);</span><br><span class="line"> <span class="keyword">var</span> modal = $(<span class="string">'#'</span> + id);</span><br><span class="line"> modal.find(<span class="string">'.ok'</span>).removeClass(<span class="string">'btn-primary'</span>).addClass(<span class="string">'btn-success'</span>);</span><br><span class="line"> modal.find(<span class="string">'.cancel'</span>).show();</span><br><span class="line"> <span class="keyword">return</span> &#123;</span><br><span class="line">  id: id,</span><br><span class="line">  on: <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (callback &amp;&amp; callback <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">  modal.find(<span class="string">'.ok'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; callback(<span class="literal">true</span>); &#125;);</span><br><span class="line">  modal.find(<span class="string">'.cancel'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; callback(<span class="literal">false</span>); &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  hide: <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (callback &amp;&amp; callback <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">  modal.on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  callback(e);</span><br><span class="line">  &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;;</span><br><span class="line"> &#125;,</span><br><span class="line"> dialog: <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line"> options = $.extend(&#123;&#125;, &#123;</span><br><span class="line">  title: <span class="string">'title'</span>,</span><br><span class="line">  url: <span class="string">''</span>,</span><br><span class="line">  width: <span class="number">800</span>,</span><br><span class="line">  height: <span class="number">550</span>,</span><br><span class="line">  onReady: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; &#125;,</span><br><span class="line">  onShown: <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123; &#125;</span><br><span class="line"> &#125;, options || &#123;&#125;);</span><br><span class="line"> <span class="keyword">var</span> modalId = generateId();</span><br><span class="line"> </span><br><span class="line"> <span class="keyword">var</span> content = dialogdHtml.replace(reg, <span class="function"><span class="keyword">function</span> (<span class="params">node, key</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">  Id: modalId,</span><br><span class="line">  Title: options.title</span><br><span class="line">  &#125;[key];</span><br><span class="line"> &#125;);</span><br><span class="line"> $(<span class="string">'body'</span>).append(content);</span><br><span class="line"> <span class="keyword">var</span> target = $(<span class="string">'#'</span> + modalId);</span><br><span class="line"> target.find(<span class="string">'.modal-body'</span>).load(options.url);</span><br><span class="line"> <span class="keyword">if</span> (options.onReady())</span><br><span class="line">  options.onReady.call(target);</span><br><span class="line"> target.modal();</span><br><span class="line"> target.on(<span class="string">'shown.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (options.onReady(e))</span><br><span class="line">  options.onReady.call(target, e);</span><br><span class="line"> &#125;);</span><br><span class="line"> target.on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  $(<span class="string">'body'</span>).find(target).remove();</span><br><span class="line"> &#125;);</span><br><span class="line"> &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> &#125;();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>调用的话，在当前js中需要应用的按钮绑定的功能函数中进行调用：</p>
@@ -623,6 +624,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JDK安装教程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JavaWeb</a>
               </li>
              
@@ -635,11 +640,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -647,11 +652,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -659,11 +668,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -671,7 +680,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
+                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -679,15 +692,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -696,6 +713,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">application</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">密码修改</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>

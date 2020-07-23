@@ -28,19 +28,19 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="application.properties： 12345678910111213141516171819#server.port&#x3D;8080#server.servlet.context-path&#x3D;&#x2F;index #访问路径设置spring.datasource.url &#x3D; jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ems?characterEncoding&#x3D;UTF-8&amp;use">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="springboot application.properties 配置及参数配置详情介绍">
 <meta property="og:url" content="http://yoursite.com/2020/07/22/springboot-application-properties-%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%83%85%E4%BB%8B%E7%BB%8D/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:description" content="application.properties： 12345678910111213141516171819#server.port&#x3D;8080#server.servlet.context-path&#x3D;&#x2F;index #访问路径设置spring.datasource.url &#x3D; jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ems?characterEncoding&#x3D;UTF-8&amp;use">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-07-22T11:18:28.000Z">
-<meta property="article:modified_time" content="2020-07-23T04:29:22.574Z">
+<meta property="article:modified_time" content="2020-07-23T06:37:59.264Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="JavaWeb">
 <meta property="article:tag" content="Springboot">
 <meta property="article:tag" content="application">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -84,7 +84,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			</ul>
 		</nav>
 		<nav>
-             总文章数： 23
+             总文章数： 34
         </nav>
 		<nav class="header-smart-menu">
     		
@@ -245,7 +245,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p>application.properties：</p>
+        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<p>application.properties：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#server.port=8080</span></span><br><span class="line"><span class="comment">#server.servlet.context-path=/index #访问路径设置</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.datasource.url</span> <span class="string">=</span> <span class="string">jdbc:mysql://localhost:3306/ems?characterEncoding=UTF-8&amp;useSSL=true&amp;serverTimezone=UTC</span></span><br><span class="line"><span class="string">spring.datasource.username</span> <span class="string">=</span> <span class="string">root</span></span><br><span class="line"><span class="string">spring.datasource.password</span> <span class="string">=</span> <span class="number">123456</span></span><br><span class="line"><span class="string">spring.datasource.driverClassName</span> <span class="string">=</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="string">spring.datasource.type</span> <span class="string">=</span> <span class="string">com.alibaba.druid.pool.DruidDataSource</span></span><br><span class="line"></span><br><span class="line"><span class="string">mybatis.mapper-locations</span> <span class="string">=</span> <span class="string">classpath:mapper/*.xml</span></span><br><span class="line"><span class="string">mybatis.type-aliases-package</span> <span class="string">=</span> <span class="string">com.dvms.entity</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.resources.static-locations</span> <span class="string">=</span> <span class="string">classpath:/templates/,classpath:/static/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#pagehelper分页插件配置</span></span><br><span class="line"><span class="string">pagehelper.helperDialect=mysql</span></span><br><span class="line"><span class="string">pagehelper.reasonable=true</span></span><br><span class="line"><span class="string">pagehelper.supportMethodsArguments=true</span></span><br><span class="line"><span class="string">pagehelper.params=count=countSql</span></span><br></pre></td></tr></table></figure>
 
 <hr>
@@ -1009,6 +1011,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JDK安装教程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JavaWeb</a>
               </li>
              
@@ -1021,11 +1027,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1033,11 +1039,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1045,11 +1055,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1057,7 +1067,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
+                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1065,15 +1079,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1082,6 +1100,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">application</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">密码修改</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>

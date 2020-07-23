@@ -28,21 +28,20 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="SSM框架SSM框架是spring MVC ，Spring和Mybatis框架的整合，是标准的MVC模式，将整个系统划分为表现层（web），controller层，service层，dao层四层,使用spring MVC负责请求的转发和视图管理。Spring实现业务对象管理，Mybatis作为数据对象的持久化引擎。表现层（web）：通俗讲就是展现给用户的界面，即用户在使用一个系统的时候他的所见所得">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="SSM框架下各层的解释说明（Controller等）">
 <meta property="og:url" content="http://yoursite.com/2020/07/21/SSM%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%90%84%E5%B1%82%E7%9A%84%E8%A7%A3%E9%87%8A%E8%AF%B4%E6%98%8E%EF%BC%88Controller%E7%AD%89%EF%BC%89/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:description" content="SSM框架SSM框架是spring MVC ，Spring和Mybatis框架的整合，是标准的MVC模式，将整个系统划分为表现层（web），controller层，service层，dao层四层,使用spring MVC负责请求的转发和视图管理。Spring实现业务对象管理，Mybatis作为数据对象的持久化引擎。表现层（web）：通俗讲就是展现给用户的界面，即用户在使用一个系统的时候他的所见所得">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200718155138172.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200718155620771.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="article:published_time" content="2020-07-21T11:04:12.000Z">
-<meta property="article:modified_time" content="2020-07-23T04:29:09.685Z">
+<meta property="article:modified_time" content="2020-07-23T06:37:51.885Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="JavaWeb">
 <meta property="article:tag" content="SSM框架">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200718155138172.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -86,7 +85,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			</ul>
 		</nav>
 		<nav>
-             总文章数： 23
+             总文章数： 34
         </nav>
 		<nav class="header-smart-menu">
     		
@@ -247,8 +246,10 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="SSM框架"><a href="#SSM框架" class="headerlink" title="SSM框架"></a>SSM框架</h1><p>SSM框架是spring MVC ，Spring和Mybatis框架的整合，是标准的MVC模式，将整个系统划分为表现层（web），controller层，service层，dao层四层,使用spring MVC负责请求的转发和视图管理。Spring实现业务对象管理，Mybatis作为数据对象的持久化引擎。<br><img src="https://img-blog.csdnimg.cn/20200718155138172.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>表现层（web）：通俗讲就是展现给用户的界面，即用户在使用一个系统的时候他的所见所得。<br>业务逻辑层（service）：针对具体问题的操作，也可以说是对数据层的操作，对数据业务逻辑处理。<br>数据访问层（dao）：该层所做事务直接操作数据库，针对数据的增添、删除、修改、更新、查找等。<br>DataBase ===&gt; Entity ===&gt; Mapper.xml ===&gt; Dao.Java ===&gt; Service.java ===&gt; Controller.java ===&gt; html css js（thymeleaf） </p>
+        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
 <a id="more"></a>
+<h1 id="SSM框架"><a href="#SSM框架" class="headerlink" title="SSM框架"></a>SSM框架</h1><p>SSM框架是spring MVC ，Spring和Mybatis框架的整合，是标准的MVC模式，将整个系统划分为表现层（web），controller层，service层，dao层四层,使用spring MVC负责请求的转发和视图管理。Spring实现业务对象管理，Mybatis作为数据对象的持久化引擎。<br><img src="https://img-blog.csdnimg.cn/20200718155138172.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>表现层（web）：通俗讲就是展现给用户的界面，即用户在使用一个系统的时候他的所见所得。<br>业务逻辑层（service）：针对具体问题的操作，也可以说是对数据层的操作，对数据业务逻辑处理。<br>数据访问层（dao）：该层所做事务直接操作数据库，针对数据的增添、删除、修改、更新、查找等。<br>DataBase ===&gt; Entity ===&gt; Mapper.xml ===&gt; Dao.Java ===&gt; Service.java ===&gt; Controller.java ===&gt; html css js（thymeleaf） </p>
+<!-- more -->
 <hr>
 <h1 id="各层解释说明"><a href="#各层解释说明" class="headerlink" title="各层解释说明"></a>各层解释说明</h1><p>用IDEA创建一个maven项目结构如左图所示,在该项目中,有五个包,分别是controller、dao、entity、service和serviceimpl：<br><img src="https://img-blog.csdnimg.cn/20200718155620771.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>|层| 描述 |<br>|–|–|<br>| 实体层 | 数据库在项目中的类，主要用于定义与数据库对象应的属性，提供get/set方法,tostring方法,有参无参构造函数。 |<br>|持久层  | 与数据库交互，dao层首先会创建dao接口，接着就可以在配置文件中定义该接口的实现类；接着就可以在模块中调用dao的接口进行数据业务的处理，而不用关注此接口的具体实现类是哪一个类，dao层的数据源和数据库连接的参数都是在配置文件中进行配置的。 |<br>|业务层  |控制业务,业务模块的逻辑应用设计，和dao层一样都是先设计接口，再创建要实现的类，然后在配置文件中进行配置其实现的关联。接下来就可以在service层调用接口进行业务逻辑应用的处理。  |<br>| 实现层 |实现service接口的所有方法，整合service和dao |<br>|控制层  | controller层主要调用Service层里面的接口控制具体的业务流程，控制的配置也要在配置文件中进行。Controller和Service的区别是：Controller负责具体的业务模块流程的控制；Service层负责业务模块的逻辑应用设计 |</p>
 <hr>
@@ -638,6 +639,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JDK安装教程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JavaWeb</a>
               </li>
              
@@ -650,11 +655,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -662,11 +667,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -674,11 +683,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -686,7 +695,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
+                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -694,15 +707,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -711,6 +728,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">application</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">密码修改</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>
