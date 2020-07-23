@@ -46,6 +46,24 @@
       </tags>
   </entry>
   <entry>
+    <title>JavaWeb开发免费后台Html样式模板</title>
+    <url>/2020/07/23/JavaWeb%E5%BC%80%E5%8F%91%E5%85%8D%E8%B4%B9%E5%90%8E%E5%8F%B0Html%E6%A0%B7%E5%BC%8F%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="后台Html样式模板"><a href="#后台Html样式模板" class="headerlink" title="后台Html样式模板"></a>后台Html样式模板</h1><p>免费模板网（<a href="http://www.freemoban.com）提供大量的免费网站HTML网页模板,企业/响应式/自适应等免费网站模板源码，可以任意下载安装测试使用。" target="_blank" rel="noopener">www.freemoban.com）提供大量的免费网站HTML网页模板,企业/响应式/自适应等免费网站模板源码，可以任意下载安装测试使用。</a><br><img src="https://img-blog.csdnimg.cn/20200606170000413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>链接: <a href="https://www.freemoban.com/tag/%E5%90%8E%E5%8F%B0" target="_blank" rel="noopener">免费模板</a></p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript匿名函数理解及应用</title>
     <url>/2020/07/23/JavaScript%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%E7%90%86%E8%A7%A3%E5%8F%8A%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -101,24 +119,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaWeb开发免费后台Html样式模板</title>
-    <url>/2020/07/23/JavaWeb%E5%BC%80%E5%8F%91%E5%85%8D%E8%B4%B9%E5%90%8E%E5%8F%B0Html%E6%A0%B7%E5%BC%8F%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="后台Html样式模板"><a href="#后台Html样式模板" class="headerlink" title="后台Html样式模板"></a>后台Html样式模板</h1><p>免费模板网（<a href="http://www.freemoban.com）提供大量的免费网站HTML网页模板,企业/响应式/自适应等免费网站模板源码，可以任意下载安装测试使用。" target="_blank" rel="noopener">www.freemoban.com）提供大量的免费网站HTML网页模板,企业/响应式/自适应等免费网站模板源码，可以任意下载安装测试使用。</a><br><img src="https://img-blog.csdnimg.cn/20200606170000413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>链接: <a href="https://www.freemoban.com/tag/%E5%90%8E%E5%8F%B0" target="_blank" rel="noopener">免费模板</a></p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>JavaWeb</tag>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Maven仓库安装配置教程(windows)</title>
     <url>/2020/07/21/Maven%E4%BB%93%E5%BA%93%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B-windows/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -159,30 +159,6 @@
       </categories>
       <tags>
         <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Maven仓库导包慢的解决办法</title>
-    <url>/2020/07/22/Maven%E4%BB%93%E5%BA%93%E5%AF%BC%E5%8C%85%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="故障原因"><a href="#故障原因" class="headerlink" title="故障原因"></a>故障原因</h1><p>原因：默认安装的maven使用官网地址下载依赖包，在国内访问比较慢。<br>方法：将maven配置文件中下载依赖包地址修改成国内地址，一般都使用阿里的地址。</p>
-<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>1，右键项目名，选择maven<br><img src="https://img-blog.csdnimg.cn/20200717092137188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>替换setting.xml文件中的这部分为如下样式：<br><img src="https://img-blog.csdnimg.cn/20200717092316725.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<!-- more -->
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;mirrors&gt;</span><br><span class="line">    &lt;!-- mirror</span><br><span class="line">     | Specifies a repository mirror site to use instead of a given repository. The repository that</span><br><span class="line">     | <span class="keyword">this</span> mirror serves has an ID that matches the mirrorOf element of <span class="keyword">this</span> mirror. IDs are used</span><br><span class="line">     | <span class="keyword">for</span> inheritance and direct lookup purposes, and must be unique across the set of mirrors.</span><br><span class="line">     |</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;id&gt;mirrorId&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;repositoryId&lt;/mirrorOf&gt;</span><br><span class="line">      &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;</span><br><span class="line">      &lt;url&gt;http:<span class="comment">//my.repository.com/repo/path&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">     --&gt;</span><br><span class="line">     &lt;!-- &lt;mirror&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;id&gt;repo2&lt;/id&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;url&gt;http:<span class="comment">//repo2.maven.org/maven2/&lt;/url&gt;       --&gt;</span></span><br><span class="line">    &lt;!-- &lt;/mirror&gt;    --&gt;</span><br><span class="line"></span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;!--This sends everything <span class="keyword">else</span> to /<span class="keyword">public</span> --&gt;</span><br><span class="line">      &lt;id&gt;nexus&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;*&lt;/mirrorOf&gt; </span><br><span class="line">      &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;!--This is used to direct the <span class="keyword">public</span> snapshots repo in the </span><br><span class="line">          profile below over to a different nexus group --&gt;</span><br><span class="line">      &lt;id&gt;nexus-public-snapshots&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;public-snapshots&lt;/mirrorOf&gt; </span><br><span class="line">      &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/repositories/snapshots/&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/mirrors&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>2.打开本地maven位置，选择setting.xml文件，修改同上位置<br><img src="https://img-blog.csdnimg.cn/20200717092604424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>打开.xml文件后替换红框部分：<br><img src="https://img-blog.csdnimg.cn/20200717092759968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>重启idea后更新maven仓库，下载飞快。</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>Maven</tag>
-        <tag>SpringBoot</tag>
       </tags>
   </entry>
   <entry>
@@ -250,6 +226,62 @@
       </tags>
   </entry>
   <entry>
+    <title>Maven仓库导包慢的解决办法</title>
+    <url>/2020/07/22/Maven%E4%BB%93%E5%BA%93%E5%AF%BC%E5%8C%85%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="故障原因"><a href="#故障原因" class="headerlink" title="故障原因"></a>故障原因</h1><p>原因：默认安装的maven使用官网地址下载依赖包，在国内访问比较慢。<br>方法：将maven配置文件中下载依赖包地址修改成国内地址，一般都使用阿里的地址。</p>
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>1，右键项目名，选择maven<br><img src="https://img-blog.csdnimg.cn/20200717092137188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>替换setting.xml文件中的这部分为如下样式：<br><img src="https://img-blog.csdnimg.cn/20200717092316725.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<!-- more -->
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;mirrors&gt;</span><br><span class="line">    &lt;!-- mirror</span><br><span class="line">     | Specifies a repository mirror site to use instead of a given repository. The repository that</span><br><span class="line">     | <span class="keyword">this</span> mirror serves has an ID that matches the mirrorOf element of <span class="keyword">this</span> mirror. IDs are used</span><br><span class="line">     | <span class="keyword">for</span> inheritance and direct lookup purposes, and must be unique across the set of mirrors.</span><br><span class="line">     |</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;id&gt;mirrorId&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;repositoryId&lt;/mirrorOf&gt;</span><br><span class="line">      &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;</span><br><span class="line">      &lt;url&gt;http:<span class="comment">//my.repository.com/repo/path&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">     --&gt;</span><br><span class="line">     &lt;!-- &lt;mirror&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;id&gt;repo2&lt;/id&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;url&gt;http:<span class="comment">//repo2.maven.org/maven2/&lt;/url&gt;       --&gt;</span></span><br><span class="line">    &lt;!-- &lt;/mirror&gt;    --&gt;</span><br><span class="line"></span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;!--This sends everything <span class="keyword">else</span> to /<span class="keyword">public</span> --&gt;</span><br><span class="line">      &lt;id&gt;nexus&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;*&lt;/mirrorOf&gt; </span><br><span class="line">      &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;!--This is used to direct the <span class="keyword">public</span> snapshots repo in the </span><br><span class="line">          profile below over to a different nexus group --&gt;</span><br><span class="line">      &lt;id&gt;nexus-public-snapshots&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;public-snapshots&lt;/mirrorOf&gt; </span><br><span class="line">      &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/repositories/snapshots/&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/mirrors&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>2.打开本地maven位置，选择setting.xml文件，修改同上位置<br><img src="https://img-blog.csdnimg.cn/20200717092604424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>打开.xml文件后替换红框部分：<br><img src="https://img-blog.csdnimg.cn/20200717092759968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>重启idea后更新maven仓库，下载飞快。</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MyBatis映射标签resultMap与resultType、parameterMap与 parameterType</title>
+    <url>/2020/07/21/MyBatis%E6%98%A0%E5%B0%84%E6%A0%87%E7%AD%BEresultMap%E4%B8%8EresultType%E3%80%81parameterMap%E4%B8%8E-parameterType/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="MyBatis映射标签"><a href="#MyBatis映射标签" class="headerlink" title="MyBatis映射标签"></a>MyBatis映射标签</h1><figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper</span><br><span class="line">        PUBLIC <span class="string">"-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line">        <span class="string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">"com.dvms.dao.UserDao"</span>&gt;</span><br><span class="line">....</span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200718195511189.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<!-- more -->
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper</span><br><span class="line">        PUBLIC <span class="string">"-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line">        <span class="string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">"com.dvms.dao.UserDao"</span>&gt;</span><br><span class="line">&lt;!--注册/新增用户--&gt;</span><br><span class="line">    &lt;insert id=<span class="string">"save"</span> parameterType=<span class="string">"User"</span>&gt;</span><br><span class="line">        <span class="function">insert into <span class="title">user</span> <span class="params">(id,username,password,sex,phone,email,role)</span> <span class="title">values</span> <span class="params">(#&#123;id&#125;,#&#123;username&#125;,#&#123;password&#125;,#&#123;sex&#125;,#&#123;phone&#125;,#&#123;email&#125;,#&#123;role&#125;)</span></span></span><br><span class="line"><span class="function">    &lt;/insert&gt;</span></span><br><span class="line"><span class="function">&lt;!--登录验证--&gt;</span></span><br><span class="line"><span class="function">    &lt;select id</span>=<span class="string">"login"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user</span><br><span class="line">        where username =#&#123;username&#125; and password =#&#123;password&#125;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">&lt;!--查询所有用户--&gt;</span><br><span class="line">    &lt;select id=<span class="string">"findAlluser"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">&lt;!--删除用户--&gt;</span><br><span class="line">    &lt;delete id=<span class="string">"delete"</span> parameterType=<span class="string">"String"</span>&gt;</span><br><span class="line">        delete from user where id=#&#123;id&#125;</span><br><span class="line">    &lt;/delete&gt;</span><br><span class="line">&lt;!--修改用户信息--&gt;</span><br><span class="line">    &lt;!--查到要修改的用户信息--&gt;</span><br><span class="line">    &lt;select id=<span class="string">"update"</span> parameterType=<span class="string">"String"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user where id=#&#123;id&#125;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">    &lt;!--修改用户信息--&gt;</span><br><span class="line">    &lt;update id=<span class="string">"add"</span> parameterType=<span class="string">"User"</span>&gt;</span><br><span class="line">        update user set username=#&#123;username&#125;,password=#&#123;password&#125;,sex=#&#123;sex&#125;,phone=#&#123;phone&#125;,email=#&#123;email&#125;,role=#&#123;role&#125; where id=#&#123;id&#125;</span><br><span class="line">    &lt;/update&gt;</span><br><span class="line"></span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
+<p>在MyBatis中，输入与输出都是相对于<strong>数据库</strong>而言，我们通过<strong>parameterType</strong>完成输入映射(指将值映射到sql语句的占位符中，值的类型与dao层响应方法的参数类型一致)，通过<strong>resultType</strong>完成输出映射(从数据库中输出，通过dao层的方法查询到的数据输出到pojo对象（实体类entity）中)。 </p>
+<h1 id="1-输入映射（往数据库输入）"><a href="#1-输入映射（往数据库输入）" class="headerlink" title="1. 输入映射（往数据库输入）"></a>1. 输入映射（往数据库输入）</h1><h2 id="parameterMap（不常用）与-parameterType（常用）"><a href="#parameterMap（不常用）与-parameterType（常用）" class="headerlink" title="parameterMap（不常用）与 parameterType（常用）"></a>parameterMap（不常用）与 parameterType（常用）</h2><p> ParameterMap和resultMap类似，表示将查询结果集中列值的类型一一映射到java对象属性的类型上，在开发过程中不推荐这种方式。<br> 一般使用<strong>parameterType</strong>直接将查询结果列值类型自动对应到java对象属性类型上，不再配置映射关系一一对应。</p>
+<hr>
+<h1 id="2-输出映射（从数据库输出）"><a href="#2-输出映射（从数据库输出）" class="headerlink" title="2. 输出映射（从数据库输出）"></a>2. 输出映射（从数据库输出）</h1><h2 id="resultMap与resultType（常用）"><a href="#resultMap与resultType（常用）" class="headerlink" title="resultMap与resultType（常用）"></a>resultMap与resultType（常用）</h2><p> 两者都是表示查询结果集与java对象之间的一种关系，处理查询结果集，映射到java对象。<br> resultMap表示将查询结果集中的列一一映射到bean对象的各个属性。映射的查询结果集中的列标签可以根据需要灵活变化，并且，在映射关系中，还可以通过typeHandler设置实现查询结果值的类型转换，比如布尔型与0/1的类型转换。</p>
+<hr>
+<h2 id="和-的使用"><a href="#和-的使用" class="headerlink" title="#{}和${}的使用"></a>#{}和${}的使用</h2><p>resultMap和ParameterMap书写拼写要使用#{}，resultType 和parameterType类型使用${}，（一般是用<strong>#{}</strong>）使用例子如下：</p>
+<p>Select ID，COMMAND from Message where COMMAND=#{command}</p>
+<p>Select ID，COMMAND from Message where COMMAND=‘${command}’</p>
+<p>前者解析为：</p>
+<pre><code>Select ID，COMMAND from Message where COMMAND=？具有预编译效果</code></pre><p>后者解析为：</p>
+<pre><code>Select ID，COMMAND from Message where COMMAND=段子   不具有预编译效果</code></pre><hr>
+<!-- more -->
+<p>在Mybatis中传递多个参数要做参数的绑定（@Param）<br><img src="https://img-blog.csdnimg.cn/20200719121212891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>不写parameterType也可以运行,因为Mybatis能自动识别，但返回值类型不能不写!!<br>Mybatis自动识别入参对象, 传入单个map或单个对象,无需写@Param注解   如@Param(“map”)  Map&lt;String, Object&gt; map<br>那么什么时候必须在mapper接口上写@Param注解呢,   mapper接口中有<strong>多个参数</strong>(每个对象或参数都要加@Param注解), 或<strong>一个 String</strong>, 必须使用@Param注解,<br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>MyBatis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL数据库范围、模糊、时间范围（时间段）查询语句</title>
     <url>/2020/07/23/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%9B%B4%E3%80%81%E6%A8%A1%E7%B3%8A%E3%80%81%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4%EF%BC%88%E6%97%B6%E9%97%B4%E6%AE%B5%EF%BC%89%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -285,6 +317,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Nginx安装教程（windows）</title>
+    <url>/2020/07/23/Nginx%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%EF%BC%88windows%EF%BC%89/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<h2 id="1-官网下载"><a href="#1-官网下载" class="headerlink" title="1.官网下载"></a>1.官网下载</h2><p> <a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">Nginx官网</a><br><img src="https://img-blog.csdnimg.cn/20200717111521554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>下载后解压到本地<br><img src="https://img-blog.csdnimg.cn/20200717111714376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="2-安装部署"><a href="#2-安装部署" class="headerlink" title="2.安装部署"></a>2.安装部署</h2><p>1、下载完成后，解压缩，运行cmd，使用命令进行操作，<strong>不要直接双击nginx.exe</strong>，一定要在dos窗口启动，不要直接双击nginx.exe，这样会导致修改配置后重启、停止nginx无效，需要手动关闭任务管理器内的所有nginx进程，再启动才可以。<br>2、使用命令行到达nginx的加压缩后的目录</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">cd D:\nginx-<span class="number">1.19</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
+<p>3、启动nginx服务，启动时会一闪而过是正常的</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">start nginx</span><br></pre></td></tr></table></figure>
+<p>4、查看任务进程是否存在，dos或打开任务管理器都行</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">tasklist /fi <span class="string">"imagename eq nginx.exe"</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200717112404316.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>通过任务管理器确认：<br><img src="https://img-blog.csdnimg.cn/20200717112422100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后就打开浏览器访问刚才的域名及端口<a href="http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！">http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！</a><br><img src="https://img-blog.csdnimg.cn/20200717112701940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>启动脚本startup.bat（新建txt后另存，放到nginx.exe同一级）或者直接点击nginx.exe<br>脚本内容：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@echo</span> off</span><br><span class="line">rem 如果启动前已经启动nginx并记录下pid文件，会kill指定进程</span><br><span class="line">nginx.exe -s stop</span><br><span class="line"></span><br><span class="line">rem 测试配置文件语法正确性</span><br><span class="line">nginx.exe -t -c conf/nginx.conf</span><br><span class="line"></span><br><span class="line">rem 显示版本信息</span><br><span class="line">nginx.exe -v</span><br><span class="line"></span><br><span class="line">rem 按照指定配置去启动nginx</span><br><span class="line">nginx.exe -c conf/nginx.conf</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="3-常见问题"><a href="#3-常见问题" class="headerlink" title="3.常见问题"></a>3.常见问题</h2><p>错误查看：<br><img src="https://img-blog.csdnimg.cn/20200717113419110.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="3-常见错误："><a href="#3-常见错误：" class="headerlink" title="3.常见错误："></a>3.常见错误：</h2><p>(1)端口号被占用<br>在conf目录下找到nginx.conf使用txt文本打开即可，找到server这个节点，修改端口号，如果有需求可以修改主页目录没有就不用修改<br><img src="https://img-blog.csdnimg.cn/20200717113636799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改完成后保存，使用以下命令检查一下配置文件是否正确，后面是nginx.conf文件的路径，successful就说明正确了</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -t -c /nginx-<span class="number">1.15</span><span class="number">.2</span>/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+<p>如果程序没启动就直接start nginx启动，如果已经启动了就使用以下命令重新加载配置文件并重启</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure>
+<p>在项目中用到nginx，启动时闪退，查看错误日志，给出的错误如下：<br>nginx: [emerg] bind() to 0.0.0.0:80 failed (10013: An attempt was made to access<br> a socket in a way forbidden by its access permissions)<br>分析：<br>nginx的默认端口是80，通过错误日志可以看出是80端口被占用导致了nginx无法启动。<br>解决办法：<br>1、按键win+R打开运行界面，输入cmd进入控制台界面<br>2、输入netstat -ano | findstr “:80 “<br>通过上述命令查看80端口占用情况，查看后，pid的值为4。<br>参考：链接: <a href="https://blog.csdn.net/ytm15732625529/article/details/79058372" target="_blank" rel="noopener">link</a>.<br>(2)nginx文件夹路径含中文</p>
+<hr>
+<h2 id="4-常用命令"><a href="#4-常用命令" class="headerlink" title="4.常用命令"></a>4.常用命令</h2><p>关闭nginx服务使用以下命令，同样也是一闪而过是正常的，看一下是否进程已消失即可</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -s stop       快速关闭Nginx，可能不保存相关信息，并迅速终止web服务。</span><br><span class="line">nginx -s quit       平稳关闭Nginx，保存相关信息，有安排的结束web服务。</span><br><span class="line">nginx -s reload     因改变了Nginx相关配置，需要重新加载配置而重载。</span><br><span class="line">nginx -s reopen     重新打开日志文件。</span><br><span class="line">nginx -c filename   为 Nginx 指定一个配置文件，来代替缺省的。</span><br><span class="line">nginx -t            不运行，而仅仅测试配置文件。nginx 将检查配置文件的语法的正确性，并尝试打开配置文件中所引用到的文件。</span><br><span class="line">nginx -v            显示 nginx 的版本。</span><br><span class="line">nginx -V            显示 nginx 的版本，编译器版本和配置参数。</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Nginx</category>
+      </categories>
+      <tags>
+        <tag>Nginx安装教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL数据库安装教程(windows)</title>
     <url>/2020/07/23/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-windows/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -307,38 +374,6 @@
       </categories>
       <tags>
         <tag>数据库安装教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MyBatis映射标签resultMap与resultType、parameterMap与 parameterType</title>
-    <url>/2020/07/21/MyBatis%E6%98%A0%E5%B0%84%E6%A0%87%E7%AD%BEresultMap%E4%B8%8EresultType%E3%80%81parameterMap%E4%B8%8E-parameterType/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="MyBatis映射标签"><a href="#MyBatis映射标签" class="headerlink" title="MyBatis映射标签"></a>MyBatis映射标签</h1><figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper</span><br><span class="line">        PUBLIC <span class="string">"-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line">        <span class="string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">"com.dvms.dao.UserDao"</span>&gt;</span><br><span class="line">....</span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200718195511189.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<!-- more -->
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper</span><br><span class="line">        PUBLIC <span class="string">"-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line">        <span class="string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">"com.dvms.dao.UserDao"</span>&gt;</span><br><span class="line">&lt;!--注册/新增用户--&gt;</span><br><span class="line">    &lt;insert id=<span class="string">"save"</span> parameterType=<span class="string">"User"</span>&gt;</span><br><span class="line">        <span class="function">insert into <span class="title">user</span> <span class="params">(id,username,password,sex,phone,email,role)</span> <span class="title">values</span> <span class="params">(#&#123;id&#125;,#&#123;username&#125;,#&#123;password&#125;,#&#123;sex&#125;,#&#123;phone&#125;,#&#123;email&#125;,#&#123;role&#125;)</span></span></span><br><span class="line"><span class="function">    &lt;/insert&gt;</span></span><br><span class="line"><span class="function">&lt;!--登录验证--&gt;</span></span><br><span class="line"><span class="function">    &lt;select id</span>=<span class="string">"login"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user</span><br><span class="line">        where username =#&#123;username&#125; and password =#&#123;password&#125;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">&lt;!--查询所有用户--&gt;</span><br><span class="line">    &lt;select id=<span class="string">"findAlluser"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">&lt;!--删除用户--&gt;</span><br><span class="line">    &lt;delete id=<span class="string">"delete"</span> parameterType=<span class="string">"String"</span>&gt;</span><br><span class="line">        delete from user where id=#&#123;id&#125;</span><br><span class="line">    &lt;/delete&gt;</span><br><span class="line">&lt;!--修改用户信息--&gt;</span><br><span class="line">    &lt;!--查到要修改的用户信息--&gt;</span><br><span class="line">    &lt;select id=<span class="string">"update"</span> parameterType=<span class="string">"String"</span> resultType=<span class="string">"User"</span>&gt;</span><br><span class="line">        select id,username,password,sex,phone,email,role from user where id=#&#123;id&#125;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">    &lt;!--修改用户信息--&gt;</span><br><span class="line">    &lt;update id=<span class="string">"add"</span> parameterType=<span class="string">"User"</span>&gt;</span><br><span class="line">        update user set username=#&#123;username&#125;,password=#&#123;password&#125;,sex=#&#123;sex&#125;,phone=#&#123;phone&#125;,email=#&#123;email&#125;,role=#&#123;role&#125; where id=#&#123;id&#125;</span><br><span class="line">    &lt;/update&gt;</span><br><span class="line"></span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
-<p>在MyBatis中，输入与输出都是相对于<strong>数据库</strong>而言，我们通过<strong>parameterType</strong>完成输入映射(指将值映射到sql语句的占位符中，值的类型与dao层响应方法的参数类型一致)，通过<strong>resultType</strong>完成输出映射(从数据库中输出，通过dao层的方法查询到的数据输出到pojo对象（实体类entity）中)。 </p>
-<h1 id="1-输入映射（往数据库输入）"><a href="#1-输入映射（往数据库输入）" class="headerlink" title="1. 输入映射（往数据库输入）"></a>1. 输入映射（往数据库输入）</h1><h2 id="parameterMap（不常用）与-parameterType（常用）"><a href="#parameterMap（不常用）与-parameterType（常用）" class="headerlink" title="parameterMap（不常用）与 parameterType（常用）"></a>parameterMap（不常用）与 parameterType（常用）</h2><p> ParameterMap和resultMap类似，表示将查询结果集中列值的类型一一映射到java对象属性的类型上，在开发过程中不推荐这种方式。<br> 一般使用<strong>parameterType</strong>直接将查询结果列值类型自动对应到java对象属性类型上，不再配置映射关系一一对应。</p>
-<hr>
-<h1 id="2-输出映射（从数据库输出）"><a href="#2-输出映射（从数据库输出）" class="headerlink" title="2. 输出映射（从数据库输出）"></a>2. 输出映射（从数据库输出）</h1><h2 id="resultMap与resultType（常用）"><a href="#resultMap与resultType（常用）" class="headerlink" title="resultMap与resultType（常用）"></a>resultMap与resultType（常用）</h2><p> 两者都是表示查询结果集与java对象之间的一种关系，处理查询结果集，映射到java对象。<br> resultMap表示将查询结果集中的列一一映射到bean对象的各个属性。映射的查询结果集中的列标签可以根据需要灵活变化，并且，在映射关系中，还可以通过typeHandler设置实现查询结果值的类型转换，比如布尔型与0/1的类型转换。</p>
-<hr>
-<h2 id="和-的使用"><a href="#和-的使用" class="headerlink" title="#{}和${}的使用"></a>#{}和${}的使用</h2><p>resultMap和ParameterMap书写拼写要使用#{}，resultType 和parameterType类型使用${}，（一般是用<strong>#{}</strong>）使用例子如下：</p>
-<p>Select ID，COMMAND from Message where COMMAND=#{command}</p>
-<p>Select ID，COMMAND from Message where COMMAND=‘${command}’</p>
-<p>前者解析为：</p>
-<pre><code>Select ID，COMMAND from Message where COMMAND=？具有预编译效果</code></pre><p>后者解析为：</p>
-<pre><code>Select ID，COMMAND from Message where COMMAND=段子   不具有预编译效果</code></pre><hr>
-<!-- more -->
-<p>在Mybatis中传递多个参数要做参数的绑定（@Param）<br><img src="https://img-blog.csdnimg.cn/20200719121212891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>不写parameterType也可以运行,因为Mybatis能自动识别，但返回值类型不能不写!!<br>Mybatis自动识别入参对象, 传入单个map或单个对象,无需写@Param注解   如@Param(“map”)  Map&lt;String, Object&gt; map<br>那么什么时候必须在mapper接口上写@Param注解呢,   mapper接口中有<strong>多个参数</strong>(每个对象或参数都要加@Param注解), 或<strong>一个 String</strong>, 必须使用@Param注解,<br><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>MyBatis</tag>
       </tags>
   </entry>
   <entry>
@@ -419,38 +454,35 @@
       </tags>
   </entry>
   <entry>
-    <title>Nginx安装教程（windows）</title>
-    <url>/2020/07/23/Nginx%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%EF%BC%88windows%EF%BC%89/</url>
+    <title>PyQt5下拉框及其点击事件绑定</title>
+    <url>/2020/07/23/PyQt5%E4%B8%8B%E6%8B%89%E6%A1%86%E5%8F%8A%E5%85%B6%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
 <a id="more"></a>
-<h2 id="1-官网下载"><a href="#1-官网下载" class="headerlink" title="1.官网下载"></a>1.官网下载</h2><p> <a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">Nginx官网</a><br><img src="https://img-blog.csdnimg.cn/20200717111521554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>下载后解压到本地<br><img src="https://img-blog.csdnimg.cn/20200717111714376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="PyQt5下拉框及其点击事件绑定"><a href="#PyQt5下拉框及其点击事件绑定" class="headerlink" title="PyQt5下拉框及其点击事件绑定"></a>PyQt5下拉框及其点击事件绑定</h1><h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
+<li>Python 3.x </li>
+<li>Pyqt5 </li>
+<li>Qt designer </li>
+<li>PyUIC</li>
+</ul>
 <hr>
-<h2 id="2-安装部署"><a href="#2-安装部署" class="headerlink" title="2.安装部署"></a>2.安装部署</h2><p>1、下载完成后，解压缩，运行cmd，使用命令进行操作，<strong>不要直接双击nginx.exe</strong>，一定要在dos窗口启动，不要直接双击nginx.exe，这样会导致修改配置后重启、停止nginx无效，需要手动关闭任务管理器内的所有nginx进程，再启动才可以。<br>2、使用命令行到达nginx的加压缩后的目录</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">cd D:\nginx-<span class="number">1.19</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
-<p>3、启动nginx服务，启动时会一闪而过是正常的</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">start nginx</span><br></pre></td></tr></table></figure>
-<p>4、查看任务进程是否存在，dos或打开任务管理器都行</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">tasklist /fi <span class="string">"imagename eq nginx.exe"</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200717112404316.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>通过任务管理器确认：<br><img src="https://img-blog.csdnimg.cn/20200717112422100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后就打开浏览器访问刚才的域名及端口<a href="http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！">http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！</a><br><img src="https://img-blog.csdnimg.cn/20200717112701940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>启动脚本startup.bat（新建txt后另存，放到nginx.exe同一级）或者直接点击nginx.exe<br>脚本内容：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@echo</span> off</span><br><span class="line">rem 如果启动前已经启动nginx并记录下pid文件，会kill指定进程</span><br><span class="line">nginx.exe -s stop</span><br><span class="line"></span><br><span class="line">rem 测试配置文件语法正确性</span><br><span class="line">nginx.exe -t -c conf/nginx.conf</span><br><span class="line"></span><br><span class="line">rem 显示版本信息</span><br><span class="line">nginx.exe -v</span><br><span class="line"></span><br><span class="line">rem 按照指定配置去启动nginx</span><br><span class="line">nginx.exe -c conf/nginx.conf</span><br></pre></td></tr></table></figure>
+<h2 id="最终效果描述"><a href="#最终效果描述" class="headerlink" title="最终效果描述"></a>最终效果描述</h2><p>通过点击下拉框选中信息显示在界面指定区域上，可以应用于在界面指定区域显示图像、文字、表格、数据库查询等方面。</p>
+<hr>
+<h2 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h2><p>1.需要自己设计好QComboBox下拉框（通过Qt designer ，也可以直接手写）及其他组件<br>2.了解QComboBox类常用的信号及方法<br>|信号|描述  |<br>|–|–|<br>|Activated  |  选中下拉选项时发射信号|<br>|currentIdexChanged  | 当下拉选项索引发生变化时发射信号 |<br>|highlighted  | 当选中已选中的下拉框时发射信号 |<br>3.新建下拉框相关函数test：<br>（展示图片、文字、数据库查询（需要自己连接数据库，未提供数据库连接代码，可参考链接: <a href="https://blog.csdn.net/cjw12581/article/details/105937418" target="_blank" rel="noopener">利用pymysql操纵MySQl数据库</a>.））</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#[str] 表示comboBox中的选择框内容</span></span><br><span class="line">self.comboBox_test.activated[str].connect(self.test)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">findstate</span><span class="params">(self, itemtext)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> state_flag1</span><br><span class="line">    statename = itemtext</span><br><span class="line">    <span class="comment"># 添加数据库连接代码位置</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># cur = database.cursor()</span></span><br><span class="line">        <span class="keyword">if</span> itemtext == <span class="string">"小猫"</span>:</span><br><span class="line">            self.graphicsView_5.setStyleSheet(<span class="string">"border-image: url(:/images/cat.png);"</span>)</span><br><span class="line">        self.lineEdit_58.setText(<span class="string">"小猫"</span>)</span><br><span class="line">        cur.execute(<span class="string">'select * from world where animals="小猫"'</span>)</span><br><span class="line">        <span class="keyword">elif</span> itemtext == <span class="string">"小狗"</span>:</span><br><span class="line">            self.graphicsView_5.setStyleSheet(<span class="string">"border-image: url(:/images/dog.png);"</span>)</span><br><span class="line">        self.lineEdit_58.setText(<span class="string">"小狗"</span>)</span><br><span class="line">        cur.execute(<span class="string">'select * from world where animals="小狗"'</span>)</span><br><span class="line">        <span class="keyword">elif</span> itemtext == <span class="string">"小猪"</span>:</span><br><span class="line">            self.graphicsView_5.setStyleSheet(<span class="string">"border-image: url(:/images/pig.png);"</span>)</span><br><span class="line">        self.lineEdit_58.setText(<span class="string">"小猪"</span>)</span><br><span class="line">        cur.execute(<span class="string">'select * from world where animals="小猪"'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 提示信息</span></span><br><span class="line">            self.box = QMessageBox(QMessageBox.Warning, <span class="string">"提示信息"</span>, <span class="string">"未查询到相关信息！"</span>)</span><br><span class="line">            qyes = self.box.addButton(self.tr(<span class="string">"确定"</span>), QMessageBox.YesRole)</span><br><span class="line">            <span class="comment"># qno = self.box.addButton(self.tr("否"), QMessageBox.NoRole)</span></span><br><span class="line">            self.box.exec_()</span><br><span class="line">        <span class="comment"># print(state_flag1)</span></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        print(<span class="string">"未知异常！"</span>)</span><br><span class="line">        <span class="comment"># 提示信息</span></span><br><span class="line">        self.box = QMessageBox(QMessageBox.Warning, <span class="string">"提示信息"</span>, <span class="string">"未知异常！"</span>)</span><br><span class="line">        qyes = self.box.addButton(self.tr(<span class="string">"确定"</span>), QMessageBox.YesRole)</span><br><span class="line">        <span class="comment"># qno = self.box.addButton(self.tr("否"), QMessageBox.NoRole)</span></span><br><span class="line">        self.box.exec_()</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="3-常见问题"><a href="#3-常见问题" class="headerlink" title="3.常见问题"></a>3.常见问题</h2><p>错误查看：<br><img src="https://img-blog.csdnimg.cn/20200717113419110.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="3-常见错误："><a href="#3-常见错误：" class="headerlink" title="3.常见错误："></a>3.常见错误：</h2><p>(1)端口号被占用<br>在conf目录下找到nginx.conf使用txt文本打开即可，找到server这个节点，修改端口号，如果有需求可以修改主页目录没有就不用修改<br><img src="https://img-blog.csdnimg.cn/20200717113636799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改完成后保存，使用以下命令检查一下配置文件是否正确，后面是nginx.conf文件的路径，successful就说明正确了</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -t -c /nginx-<span class="number">1.15</span><span class="number">.2</span>/conf/nginx.conf</span><br></pre></td></tr></table></figure>
-<p>如果程序没启动就直接start nginx启动，如果已经启动了就使用以下命令重新加载配置文件并重启</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure>
-<p>在项目中用到nginx，启动时闪退，查看错误日志，给出的错误如下：<br>nginx: [emerg] bind() to 0.0.0.0:80 failed (10013: An attempt was made to access<br> a socket in a way forbidden by its access permissions)<br>分析：<br>nginx的默认端口是80，通过错误日志可以看出是80端口被占用导致了nginx无法启动。<br>解决办法：<br>1、按键win+R打开运行界面，输入cmd进入控制台界面<br>2、输入netstat -ano | findstr “:80 “<br>通过上述命令查看80端口占用情况，查看后，pid的值为4。<br>参考：链接: <a href="https://blog.csdn.net/ytm15732625529/article/details/79058372" target="_blank" rel="noopener">link</a>.<br>(2)nginx文件夹路径含中文</p>
+<h2 id="通过按钮点击激活下拉框操作"><a href="#通过按钮点击激活下拉框操作" class="headerlink" title="通过按钮点击激活下拉框操作"></a>通过按钮点击激活下拉框操作</h2><p>方法：通过变量传值的方式，将item选中的内容先传递给一个临时变量或数组，当点击按钮时通过临时变量或数组执行相关操作。</p>
 <hr>
-<h2 id="4-常用命令"><a href="#4-常用命令" class="headerlink" title="4.常用命令"></a>4.常用命令</h2><p>关闭nginx服务使用以下命令，同样也是一闪而过是正常的，看一下是否进程已消失即可</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -s stop       快速关闭Nginx，可能不保存相关信息，并迅速终止web服务。</span><br><span class="line">nginx -s quit       平稳关闭Nginx，保存相关信息，有安排的结束web服务。</span><br><span class="line">nginx -s reload     因改变了Nginx相关配置，需要重新加载配置而重载。</span><br><span class="line">nginx -s reopen     重新打开日志文件。</span><br><span class="line">nginx -c filename   为 Nginx 指定一个配置文件，来代替缺省的。</span><br><span class="line">nginx -t            不运行，而仅仅测试配置文件。nginx 将检查配置文件的语法的正确性，并尝试打开配置文件中所引用到的文件。</span><br><span class="line">nginx -v            显示 nginx 的版本。</span><br><span class="line">nginx -V            显示 nginx 的版本，编译器版本和配置参数。</span><br></pre></td></tr></table></figure>
-
+<p><strong><em>END</em></strong></p>
 ]]></content>
       <categories>
-        <category>Nginx</category>
+        <category>PyQt5</category>
       </categories>
       <tags>
-        <tag>Nginx安装教程</tag>
+        <tag>工具</tag>
+        <tag>GUI</tag>
       </tags>
   </entry>
   <entry>
@@ -492,38 +524,6 @@
 
 <hr>
 <p>其他python数据库语句请参考链接: <a href="https://blog.csdn.net/cjw12581/article/details/106735644" target="_blank" rel="noopener">MySQL数据库范围、模糊、时间范围（时间段）查询语句</a>.</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>PyQt5</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>GUI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyQt5下拉框及其点击事件绑定</title>
-    <url>/2020/07/23/PyQt5%E4%B8%8B%E6%8B%89%E6%A1%86%E5%8F%8A%E5%85%B6%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-<h1 id="PyQt5下拉框及其点击事件绑定"><a href="#PyQt5下拉框及其点击事件绑定" class="headerlink" title="PyQt5下拉框及其点击事件绑定"></a>PyQt5下拉框及其点击事件绑定</h1><h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
-<li>Python 3.x </li>
-<li>Pyqt5 </li>
-<li>Qt designer </li>
-<li>PyUIC</li>
-</ul>
-<hr>
-<h2 id="最终效果描述"><a href="#最终效果描述" class="headerlink" title="最终效果描述"></a>最终效果描述</h2><p>通过点击下拉框选中信息显示在界面指定区域上，可以应用于在界面指定区域显示图像、文字、表格、数据库查询等方面。</p>
-<hr>
-<h2 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h2><p>1.需要自己设计好QComboBox下拉框（通过Qt designer ，也可以直接手写）及其他组件<br>2.了解QComboBox类常用的信号及方法<br>|信号|描述  |<br>|–|–|<br>|Activated  |  选中下拉选项时发射信号|<br>|currentIdexChanged  | 当下拉选项索引发生变化时发射信号 |<br>|highlighted  | 当选中已选中的下拉框时发射信号 |<br>3.新建下拉框相关函数test：<br>（展示图片、文字、数据库查询（需要自己连接数据库，未提供数据库连接代码，可参考链接: <a href="https://blog.csdn.net/cjw12581/article/details/105937418" target="_blank" rel="noopener">利用pymysql操纵MySQl数据库</a>.））</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#[str] 表示comboBox中的选择框内容</span></span><br><span class="line">self.comboBox_test.activated[str].connect(self.test)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">findstate</span><span class="params">(self, itemtext)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> state_flag1</span><br><span class="line">    statename = itemtext</span><br><span class="line">    <span class="comment"># 添加数据库连接代码位置</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># cur = database.cursor()</span></span><br><span class="line">        <span class="keyword">if</span> itemtext == <span class="string">"小猫"</span>:</span><br><span class="line">            self.graphicsView_5.setStyleSheet(<span class="string">"border-image: url(:/images/cat.png);"</span>)</span><br><span class="line">        self.lineEdit_58.setText(<span class="string">"小猫"</span>)</span><br><span class="line">        cur.execute(<span class="string">'select * from world where animals="小猫"'</span>)</span><br><span class="line">        <span class="keyword">elif</span> itemtext == <span class="string">"小狗"</span>:</span><br><span class="line">            self.graphicsView_5.setStyleSheet(<span class="string">"border-image: url(:/images/dog.png);"</span>)</span><br><span class="line">        self.lineEdit_58.setText(<span class="string">"小狗"</span>)</span><br><span class="line">        cur.execute(<span class="string">'select * from world where animals="小狗"'</span>)</span><br><span class="line">        <span class="keyword">elif</span> itemtext == <span class="string">"小猪"</span>:</span><br><span class="line">            self.graphicsView_5.setStyleSheet(<span class="string">"border-image: url(:/images/pig.png);"</span>)</span><br><span class="line">        self.lineEdit_58.setText(<span class="string">"小猪"</span>)</span><br><span class="line">        cur.execute(<span class="string">'select * from world where animals="小猪"'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 提示信息</span></span><br><span class="line">            self.box = QMessageBox(QMessageBox.Warning, <span class="string">"提示信息"</span>, <span class="string">"未查询到相关信息！"</span>)</span><br><span class="line">            qyes = self.box.addButton(self.tr(<span class="string">"确定"</span>), QMessageBox.YesRole)</span><br><span class="line">            <span class="comment"># qno = self.box.addButton(self.tr("否"), QMessageBox.NoRole)</span></span><br><span class="line">            self.box.exec_()</span><br><span class="line">        <span class="comment"># print(state_flag1)</span></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        print(<span class="string">"未知异常！"</span>)</span><br><span class="line">        <span class="comment"># 提示信息</span></span><br><span class="line">        self.box = QMessageBox(QMessageBox.Warning, <span class="string">"提示信息"</span>, <span class="string">"未知异常！"</span>)</span><br><span class="line">        qyes = self.box.addButton(self.tr(<span class="string">"确定"</span>), QMessageBox.YesRole)</span><br><span class="line">        <span class="comment"># qno = self.box.addButton(self.tr("否"), QMessageBox.NoRole)</span></span><br><span class="line">        self.box.exec_()</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="通过按钮点击激活下拉框操作"><a href="#通过按钮点击激活下拉框操作" class="headerlink" title="通过按钮点击激活下拉框操作"></a>通过按钮点击激活下拉框操作</h2><p>方法：通过变量传值的方式，将item选中的内容先传递给一个临时变量或数组，当点击按钮时通过临时变量或数组执行相关操作。</p>
 <hr>
 <p><strong><em>END</em></strong></p>
 ]]></content>
@@ -732,6 +732,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Python类库和模块的安装</title>
+    <url>/2020/07/23/Python%E7%B1%BB%E5%BA%93%E5%92%8C%E6%A8%A1%E5%9D%97%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<p>在Python中除了Python自带的的类库以外，其他类库均需我们自己下载安装。<br>在利用PyCharm进行编程时，系统会提示对没有下载的包的安装。此外，我们还可以利用pip命令完成所需包的安装。</p>
+<hr>
+<h3 id="pip命令"><a href="#pip命令" class="headerlink" title="pip命令"></a><strong><em>pip命令</em></strong></h3><p>pip是Python自带的包管理工具，全称是python install pakeage，在使用Python开发的过程中,除了它自带的类库。几乎所有的第三方类库，均可以通过pip来安装，而且它可以随时地更新Python的类库。<br>| 命令 | 说明 |<br>|–|–|<br>|<code>pip install xxx</code>  |windows下安装某某第三方类库  |<br>|<code>pip3 install xxx</code>  |windows下安装某某第三方类库  |<br>|<code>brew install xxx</code>  |Mac下安装某个程序或者文件  |<br>==备注==：<br>pip3是python3.0之后出来的pip进阶版本，如果电脑安装python3.x的时候,就可以使用pip3命令,同时也可以使用pip命令。此外pip3命令安装的库默认出现在python3.x版本的文件夹中。<br>Homebrew是Mac系统上的包管理工具，只要是能在Mac上安装的东西，都可以通过Homebrew来安装和管理，并且可以及时的对其进行更新。（不常用）<br>在windows的命令行窗口输入对应的命令安装相应的第三方类库：<br>如安装sklearn库（用来进行ML的库）<br>首先打开命令行窗口：<br><img src="https://img-blog.csdnimg.cn/20200224220716797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="cmd"><br>在命令行输入pip install sklearn后回车即可，如下图所示：<br><img src="https://img-blog.csdnimg.cn/2020022422084716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="安装过程"><br>sklearn类库安装成功！！！</p>
+<hr>
+<h3 id="模块和第三方类库"><a href="#模块和第三方类库" class="headerlink" title="模块和第三方类库"></a>模块和第三方类库</h3><p><strong>模块</strong>是一个包含所有你定义的函数和变量的文件，其后缀名是.py<br>#导入模块import support<br>#现在可以调用模块里包含的函数了support.print_func(“Runoob”)<br>标准模块如：math，random</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python多.py文件打包为可运行.exe文件</title>
     <url>/2020/07/23/Python%E5%A4%9A-py%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85%E4%B8%BA%E5%8F%AF%E8%BF%90%E8%A1%8C-exe%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
@@ -754,60 +774,6 @@
       </categories>
       <tags>
         <tag>pyinstaller</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python类库和模块的安装</title>
-    <url>/2020/07/23/Python%E7%B1%BB%E5%BA%93%E5%92%8C%E6%A8%A1%E5%9D%97%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-<p>在Python中除了Python自带的的类库以外，其他类库均需我们自己下载安装。<br>在利用PyCharm进行编程时，系统会提示对没有下载的包的安装。此外，我们还可以利用pip命令完成所需包的安装。</p>
-<hr>
-<h3 id="pip命令"><a href="#pip命令" class="headerlink" title="pip命令"></a><strong><em>pip命令</em></strong></h3><p>pip是Python自带的包管理工具，全称是python install pakeage，在使用Python开发的过程中,除了它自带的类库。几乎所有的第三方类库，均可以通过pip来安装，而且它可以随时地更新Python的类库。<br>| 命令 | 说明 |<br>|–|–|<br>|<code>pip install xxx</code>  |windows下安装某某第三方类库  |<br>|<code>pip3 install xxx</code>  |windows下安装某某第三方类库  |<br>|<code>brew install xxx</code>  |Mac下安装某个程序或者文件  |<br>==备注==：<br>pip3是python3.0之后出来的pip进阶版本，如果电脑安装python3.x的时候,就可以使用pip3命令,同时也可以使用pip命令。此外pip3命令安装的库默认出现在python3.x版本的文件夹中。<br>Homebrew是Mac系统上的包管理工具，只要是能在Mac上安装的东西，都可以通过Homebrew来安装和管理，并且可以及时的对其进行更新。（不常用）<br>在windows的命令行窗口输入对应的命令安装相应的第三方类库：<br>如安装sklearn库（用来进行ML的库）<br>首先打开命令行窗口：<br><img src="https://img-blog.csdnimg.cn/20200224220716797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="cmd"><br>在命令行输入pip install sklearn后回车即可，如下图所示：<br><img src="https://img-blog.csdnimg.cn/2020022422084716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="安装过程"><br>sklearn类库安装成功！！！</p>
-<hr>
-<h3 id="模块和第三方类库"><a href="#模块和第三方类库" class="headerlink" title="模块和第三方类库"></a>模块和第三方类库</h3><p><strong>模块</strong>是一个包含所有你定义的函数和变量的文件，其后缀名是.py<br>#导入模块import support<br>#现在可以调用模块里包含的函数了support.print_func(“Runoob”)<br>标准模块如：math，random</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>QTableWidget读取数据库数据实现界面可视化</title>
-    <url>/2020/07/23/QTableWidget%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%B0%E6%8D%AE%E5%AE%9E%E7%8E%B0%E7%95%8C%E9%9D%A2%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
-<li>Python 3.x </li>
-<li>Pyqt5</li>
-<li>MySQL数据库 </li>
-<li>Qt designer </li>
-<li>PyUIC </li>
-<li>各种轮子</li>
-</ul>
-<hr>
-<h1 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h1><p>利用pymysql查到数据后，将数据在界面的tableWidget中展示出来<br>最终效果：<br><img src="https://img-blog.csdnimg.cn/20200605185232658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h1 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h1><p>1.首先需要先在界面中设计好表格及样式（包含隔行变色等）</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 表格样式</span></span><br><span class="line">self.tableWidget.setStyleSheet(<span class="string">"QTableWidget::item:hover&#123;background-color:rgb(92,188,227,200)&#125;"</span></span><br><span class="line">                                           <span class="string">"QTableWidget::item:selected&#123;background-color:#1B89A1&#125;"</span></span><br><span class="line">                                           <span class="string">"QHeaderView::section,QTableCornerButton:section&#123; \</span></span><br><span class="line"><span class="string">                                            padding:3px; margin:0px; color:#DCDCDC;  border:1px solid #242424; \</span></span><br><span class="line"><span class="string">                                            border-left-width:0px; border-right-width:1px; border-top-width:0px; border-bottom-width:1px; \</span></span><br><span class="line"><span class="string">                                            background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #646464,stop:1 #525252); &#125;"</span></span><br><span class="line">                                           <span class="string">"QTableWidget&#123;alternate-background-color:#A9F5E1; background: white; color: #6b6d7b;</span></span><br></pre></td></tr></table></figure>
-<p>样式效果：<br><img src="https://img-blog.csdnimg.cn/20200604220006209.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改配色可参考： <a href="https://blog.csdn.net/cjw12581/article/details/106558377" target="_blank" rel="noopener">色彩表格工具</a>.<br>其他表格样式配置：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"> <span class="comment"># 设置行表头</span></span><br><span class="line">self.tableWidget.setHorizontalHeaderLabels([<span class="string">"XXXX"</span>, <span class="string">"XXXX"</span>, <span class="string">"XXXX"</span>])</span><br><span class="line"><span class="comment"># 表格禁止编辑</span></span><br><span class="line">self.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)</span><br><span class="line"><span class="comment"># 行间隔变色（boolen）</span></span><br><span class="line">self.tableWidget.setAlternatingRowColors(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<p>2.配置好数据库，确保能建立连接后开始查询操作(通过按钮绑定时间发起)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 打开数据库连接（IP地址/数据库用户名/登录密码/数据库模式名/编码方式/端口号）</span></span><br><span class="line">database = pymysql.connect(host=<span class="string">'localhost'</span>, user=<span class="string">'tree'</span>,</span><br><span class="line">                                   password=<span class="string">'5201314'</span>, db=<span class="string">"databasename"</span>, charset=<span class="string">'utf8'</span>, port=<span class="number">3306</span>)</span><br><span class="line">        cur = database.cursor()</span><br><span class="line">        <span class="comment"># 数据库查询操作</span></span><br><span class="line">        cur.execute(<span class="string">'select * from tablename'</span>)</span><br><span class="line">        rows = cur.fetchall()</span><br><span class="line">        <span class="comment"># 取得记录个数，用于设置表格的行数</span></span><br><span class="line">        row = cur.rowcount</span><br><span class="line">        <span class="comment"># 取得字段数，用于设置表格的列数</span></span><br><span class="line">        vol = len(rows[<span class="number">0</span>])</span><br><span class="line">        cur.close()</span><br><span class="line">        database.close()</span><br><span class="line"></span><br><span class="line">        self.tableWidget.setRowCount(row)</span><br><span class="line">        self.tableWidget.setColumnCount(vol)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(row):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(vol):</span><br><span class="line">                <span class="comment"># 临时记录，不能直接插入表格</span></span><br><span class="line">                temp_data = rows[i][j]</span><br><span class="line">                <span class="comment"># 转换后可插入表格</span></span><br><span class="line">                data = QTableWidgetItem(str(temp_data))</span><br><span class="line">                self.tableWidget.setItem(i, j, data)</span><br><span class="line"></span><br><span class="line">        self.button_sql.setText(<span class="string">'刷新记录'</span>)</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>PyQt5</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>GUI</tag>
       </tags>
   </entry>
   <entry>
@@ -864,21 +830,6 @@
       </tags>
   </entry>
   <entry>
-    <title>SpringBoot的启动图案修改</title>
-    <url>/2020/07/22/SpringBoot%E7%9A%84%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A1%88%E4%BF%AE%E6%94%B9/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>Springboot项目启动时，会出现大大的SpringBoot的图案：<br><img src="https://img-blog.csdnimg.cn/20200718141606137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改：<br>首先创建springboot项目，首先在resources/目录下创建名为banner.txt的文件：<br>点击链接：<a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=CJW" target="_blank" rel="noopener">SpringBoot的启动图案修改</a><br><img src="https://img-blog.csdnimg.cn/20200718141955428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>启动项目：<br><img src="https://img-blog.csdnimg.cn/20200718142131464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>无聊…..<br><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>启动图案修改</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SSM框架下各层的解释说明（Controller等）</title>
     <url>/2020/07/21/SSM%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%90%84%E5%B1%82%E7%9A%84%E8%A7%A3%E9%87%8A%E8%AF%B4%E6%98%8E%EF%BC%88Controller%E7%AD%89%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -918,6 +869,79 @@
       <tags>
         <tag>JavaWeb</tag>
         <tag>SSM框架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>QTableWidget读取数据库数据实现界面可视化</title>
+    <url>/2020/07/23/QTableWidget%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%B0%E6%8D%AE%E5%AE%9E%E7%8E%B0%E7%95%8C%E9%9D%A2%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
+<li>Python 3.x </li>
+<li>Pyqt5</li>
+<li>MySQL数据库 </li>
+<li>Qt designer </li>
+<li>PyUIC </li>
+<li>各种轮子</li>
+</ul>
+<hr>
+<h1 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h1><p>利用pymysql查到数据后，将数据在界面的tableWidget中展示出来<br>最终效果：<br><img src="https://img-blog.csdnimg.cn/20200605185232658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h1 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h1><p>1.首先需要先在界面中设计好表格及样式（包含隔行变色等）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 表格样式</span></span><br><span class="line">self.tableWidget.setStyleSheet(<span class="string">"QTableWidget::item:hover&#123;background-color:rgb(92,188,227,200)&#125;"</span></span><br><span class="line">                                           <span class="string">"QTableWidget::item:selected&#123;background-color:#1B89A1&#125;"</span></span><br><span class="line">                                           <span class="string">"QHeaderView::section,QTableCornerButton:section&#123; \</span></span><br><span class="line"><span class="string">                                            padding:3px; margin:0px; color:#DCDCDC;  border:1px solid #242424; \</span></span><br><span class="line"><span class="string">                                            border-left-width:0px; border-right-width:1px; border-top-width:0px; border-bottom-width:1px; \</span></span><br><span class="line"><span class="string">                                            background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #646464,stop:1 #525252); &#125;"</span></span><br><span class="line">                                           <span class="string">"QTableWidget&#123;alternate-background-color:#A9F5E1; background: white; color: #6b6d7b;</span></span><br></pre></td></tr></table></figure>
+<p>样式效果：<br><img src="https://img-blog.csdnimg.cn/20200604220006209.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改配色可参考： <a href="https://blog.csdn.net/cjw12581/article/details/106558377" target="_blank" rel="noopener">色彩表格工具</a>.<br>其他表格样式配置：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"> <span class="comment"># 设置行表头</span></span><br><span class="line">self.tableWidget.setHorizontalHeaderLabels([<span class="string">"XXXX"</span>, <span class="string">"XXXX"</span>, <span class="string">"XXXX"</span>])</span><br><span class="line"><span class="comment"># 表格禁止编辑</span></span><br><span class="line">self.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)</span><br><span class="line"><span class="comment"># 行间隔变色（boolen）</span></span><br><span class="line">self.tableWidget.setAlternatingRowColors(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p>2.配置好数据库，确保能建立连接后开始查询操作(通过按钮绑定时间发起)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 打开数据库连接（IP地址/数据库用户名/登录密码/数据库模式名/编码方式/端口号）</span></span><br><span class="line">database = pymysql.connect(host=<span class="string">'localhost'</span>, user=<span class="string">'tree'</span>,</span><br><span class="line">                                   password=<span class="string">'5201314'</span>, db=<span class="string">"databasename"</span>, charset=<span class="string">'utf8'</span>, port=<span class="number">3306</span>)</span><br><span class="line">        cur = database.cursor()</span><br><span class="line">        <span class="comment"># 数据库查询操作</span></span><br><span class="line">        cur.execute(<span class="string">'select * from tablename'</span>)</span><br><span class="line">        rows = cur.fetchall()</span><br><span class="line">        <span class="comment"># 取得记录个数，用于设置表格的行数</span></span><br><span class="line">        row = cur.rowcount</span><br><span class="line">        <span class="comment"># 取得字段数，用于设置表格的列数</span></span><br><span class="line">        vol = len(rows[<span class="number">0</span>])</span><br><span class="line">        cur.close()</span><br><span class="line">        database.close()</span><br><span class="line"></span><br><span class="line">        self.tableWidget.setRowCount(row)</span><br><span class="line">        self.tableWidget.setColumnCount(vol)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(row):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(vol):</span><br><span class="line">                <span class="comment"># 临时记录，不能直接插入表格</span></span><br><span class="line">                temp_data = rows[i][j]</span><br><span class="line">                <span class="comment"># 转换后可插入表格</span></span><br><span class="line">                data = QTableWidgetItem(str(temp_data))</span><br><span class="line">                self.tableWidget.setItem(i, j, data)</span><br><span class="line"></span><br><span class="line">        self.button_sql.setText(<span class="string">'刷新记录'</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>PyQt5</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>GUI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SpringBoot的启动图案修改</title>
+    <url>/2020/07/22/SpringBoot%E7%9A%84%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A1%88%E4%BF%AE%E6%94%B9/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>Springboot项目启动时，会出现大大的SpringBoot的图案：<br><img src="https://img-blog.csdnimg.cn/20200718141606137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改：<br>首先创建springboot项目，首先在resources/目录下创建名为banner.txt的文件：<br>点击链接：<a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=CJW" target="_blank" rel="noopener">SpringBoot的启动图案修改</a><br><img src="https://img-blog.csdnimg.cn/20200718141955428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>启动项目：<br><img src="https://img-blog.csdnimg.cn/20200718142131464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>无聊…..<br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>启动图案修改</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SpringBoot项目打包为jar包</title>
+    <url>/2020/07/22/SpringBoot%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%B8%BAjar%E5%8C%85/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
+<li>IDEA2018.3 </li>
+<li>JDK1.8 </li>
+<li>SpringBoot2.3.0 </li>
+<li>360浏览器<br>项目部署一般是两种方式：<br>一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。<br>pom.xml：<br>&lt; packaging&gt;jar&lt; /packaging&gt;  （默认）<br>&lt; packaging&gt;war&lt; /packaging&gt;<!-- more -->
+<h1 id="打jar包"><a href="#打jar包" class="headerlink" title="打jar包"></a>打jar包</h1>选择 File -&gt; Project Structure-&gt;Artifacts-&gt;Jar-&gt;Form modules with dependencies后点ok:<br>根据 下图内容创建 jar。如图所示，选择项目，入口类等。最后一项 META-INF，默认放到 src\main\java 目录里，如果使用默认值，没有进行其他配置，生成的 jar 有可能不会包含 META-INF 目录，导致运行 jar 出错。最好放在 src\main\resource目录中。点击ok保存。按下图所示配置：<br><img src="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击ok会出现如图所示信息:<br><img src="https://img-blog.csdnimg.cn/20200720101055777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="生成jar包"><a href="#生成jar包" class="headerlink" title="生成jar包"></a>生成jar包</h1>点击idea菜单栏中的build，依次选择：<br><img src="https://img-blog.csdnimg.cn/20200720103416304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点Build:<br><img src="https://img-blog.csdnimg.cn/20200720103454190.png" alt="在这里插入图片描述"><br>在保存路经中查找所打包的jar包如果存在则说明打包成功。<br><img src="https://img-blog.csdnimg.cn/20200720103554129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="运行jar包"><a href="#运行jar包" class="headerlink" title="运行jar包"></a>运行jar包</h1>开始运行jar包，打开cmd进入jar所在的路径，输入java -jar xxx.jar (jar名称) ，点击回车按键。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Microsoft Windows [版本 <span class="number">10.0</span><span class="number">.18362</span><span class="number">.959</span>]</span><br><span class="line">(c) <span class="number">2019</span> Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\<span class="number">92895</span>&gt;D:</span><br><span class="line"></span><br><span class="line">D:\&gt;cd D:\data_view\out\artifacts\data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;Java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view.jar</span><br><span class="line">_________       ____.__      __</span><br><span class="line">\_   ___ \     |    /  \    /  \</span><br><span class="line">/    \  \/     |    \   \/\/   /</span><br><span class="line">\     \____/\__|    |\        /</span><br><span class="line"> \______  /\________| \__/\  /</span><br><span class="line">        \/                 \/</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.016</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : Starting DataViewApplication on <span class="number">4</span>C501 with PID <span class="number">12564</span> (D:\data_view\out\artifacts\data_view_jar\data_view.jar started by <span class="number">92895</span> in D:\data_view\out\artifacts\data_view_jar)</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.020</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : No active profile set, falling back to <span class="keyword">default</span> profiles: <span class="keyword">default</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set <span class="string">'spring.devtools.add-properties'</span> to <span class="string">'false'</span> to disable</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the <span class="string">'logging.level.web'</span> property to <span class="string">'DEBUG'</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">28.817</span>  INFO <span class="number">12564</span> --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : <span class="function">Tomcat initialized with <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.831  INFO 12564 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.832  INFO 12564 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1827 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.631  INFO 12564 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56cf4f3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e169c9, org.springframework.security.web.header.HeaderWriterFilter@26d4eefe, org.springframework.security.web.authentication.logout.LogoutFilter@f17fdd6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f33f6b3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70ffa278, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@109a14b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54857a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423bad4c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7e8ca12a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee5e690, org.springframework.security.web.session.SessionManagementFilter@7139411a, org.springframework.security.web.access.ExceptionTranslationFilter@1ec9ee0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf4c490]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.711  INFO 12564 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.929  INFO 12564 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.967  INFO 12564 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span> with context path ''</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.976  INFO 12564 --- [  restartedMain] com.dvms.DataViewApplication             : Started DataViewApplication in 3.27 <span class="title">seconds</span> <span class="params">(JVM running <span class="keyword">for</span> <span class="number">3.828</span>)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.774  INFO 12564 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.775  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.782  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:56.052  INFO 12564 --- [nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : </span>&#123;dataSource-<span class="number">1</span>&#125; init</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20200720103747636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>浏览器输入：localhost8080:/index（根据实际项目）显示网页说明打包成功！！！</p>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>jar包</tag>
       </tags>
   </entry>
   <entry>
@@ -967,30 +991,6 @@
       </categories>
       <tags>
         <tag>热部署</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringBoot项目打包为jar包</title>
-    <url>/2020/07/22/SpringBoot%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%B8%BAjar%E5%8C%85/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
-<li>IDEA2018.3 </li>
-<li>JDK1.8 </li>
-<li>SpringBoot2.3.0 </li>
-<li>360浏览器<br>项目部署一般是两种方式：<br>一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。<br>pom.xml：<br>&lt; packaging&gt;jar&lt; /packaging&gt;  （默认）<br>&lt; packaging&gt;war&lt; /packaging&gt;<!-- more -->
-<h1 id="打jar包"><a href="#打jar包" class="headerlink" title="打jar包"></a>打jar包</h1>选择 File -&gt; Project Structure-&gt;Artifacts-&gt;Jar-&gt;Form modules with dependencies后点ok:<br>根据 下图内容创建 jar。如图所示，选择项目，入口类等。最后一项 META-INF，默认放到 src\main\java 目录里，如果使用默认值，没有进行其他配置，生成的 jar 有可能不会包含 META-INF 目录，导致运行 jar 出错。最好放在 src\main\resource目录中。点击ok保存。按下图所示配置：<br><img src="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击ok会出现如图所示信息:<br><img src="https://img-blog.csdnimg.cn/20200720101055777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="生成jar包"><a href="#生成jar包" class="headerlink" title="生成jar包"></a>生成jar包</h1>点击idea菜单栏中的build，依次选择：<br><img src="https://img-blog.csdnimg.cn/20200720103416304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点Build:<br><img src="https://img-blog.csdnimg.cn/20200720103454190.png" alt="在这里插入图片描述"><br>在保存路经中查找所打包的jar包如果存在则说明打包成功。<br><img src="https://img-blog.csdnimg.cn/20200720103554129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="运行jar包"><a href="#运行jar包" class="headerlink" title="运行jar包"></a>运行jar包</h1>开始运行jar包，打开cmd进入jar所在的路径，输入java -jar xxx.jar (jar名称) ，点击回车按键。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Microsoft Windows [版本 <span class="number">10.0</span><span class="number">.18362</span><span class="number">.959</span>]</span><br><span class="line">(c) <span class="number">2019</span> Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\<span class="number">92895</span>&gt;D:</span><br><span class="line"></span><br><span class="line">D:\&gt;cd D:\data_view\out\artifacts\data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;Java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view.jar</span><br><span class="line">_________       ____.__      __</span><br><span class="line">\_   ___ \     |    /  \    /  \</span><br><span class="line">/    \  \/     |    \   \/\/   /</span><br><span class="line">\     \____/\__|    |\        /</span><br><span class="line"> \______  /\________| \__/\  /</span><br><span class="line">        \/                 \/</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.016</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : Starting DataViewApplication on <span class="number">4</span>C501 with PID <span class="number">12564</span> (D:\data_view\out\artifacts\data_view_jar\data_view.jar started by <span class="number">92895</span> in D:\data_view\out\artifacts\data_view_jar)</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.020</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : No active profile set, falling back to <span class="keyword">default</span> profiles: <span class="keyword">default</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set <span class="string">'spring.devtools.add-properties'</span> to <span class="string">'false'</span> to disable</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the <span class="string">'logging.level.web'</span> property to <span class="string">'DEBUG'</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">28.817</span>  INFO <span class="number">12564</span> --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : <span class="function">Tomcat initialized with <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.831  INFO 12564 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.832  INFO 12564 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1827 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.631  INFO 12564 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56cf4f3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e169c9, org.springframework.security.web.header.HeaderWriterFilter@26d4eefe, org.springframework.security.web.authentication.logout.LogoutFilter@f17fdd6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f33f6b3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70ffa278, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@109a14b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54857a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423bad4c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7e8ca12a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee5e690, org.springframework.security.web.session.SessionManagementFilter@7139411a, org.springframework.security.web.access.ExceptionTranslationFilter@1ec9ee0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf4c490]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.711  INFO 12564 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.929  INFO 12564 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.967  INFO 12564 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span> with context path ''</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.976  INFO 12564 --- [  restartedMain] com.dvms.DataViewApplication             : Started DataViewApplication in 3.27 <span class="title">seconds</span> <span class="params">(JVM running <span class="keyword">for</span> <span class="number">3.828</span>)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.774  INFO 12564 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.775  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.782  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:56.052  INFO 12564 --- [nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : </span>&#123;dataSource-<span class="number">1</span>&#125; init</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200720103747636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>浏览器输入：localhost8080:/index（根据实际项目）显示网页说明打包成功！！！</p>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>jar包</tag>
       </tags>
   </entry>
   <entry>
@@ -1090,6 +1090,27 @@
       </tags>
   </entry>
   <entry>
+    <title>Tomcat安装教程</title>
+    <url>/2020/07/23/Tomcat%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h2 id="1-下载Tomcat"><a href="#1-下载Tomcat" class="headerlink" title="1. 下载Tomcat"></a>1. 下载Tomcat</h2><p>首先确定你Windows系统是64位，还是32位(现在大部分是64位)及JDK版本（Tomcat在 JDK1.8 环境下能够正常运行）<br>下载地址：<a href="http://tomcat.apache.org/" target="_blank" rel="noopener">Tomcat官网</a>.<br><img src="https://img-blog.csdnimg.cn/20200717160125510.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h1 id="2-安装Tomcat"><a href="#2-安装Tomcat" class="headerlink" title="2. 安装Tomcat"></a>2. 安装Tomcat</h1><p>解压压缩包，放在想要放在的盘符(最好不要是C盘，可能会出现拒绝访问)<br>如安装在D盘，那就解压出来放在D盘下就行，里面的文件名不要改动，或者放在D盘某一文件夹下，路径不要包含中文和特殊字符！<br><img src="https://img-blog.csdnimg.cn/20200717160411236.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3.配置环境变量"></a>3.配置环境变量</h2><p>在变量名中填写：CATALINA_HOME(不要留空格)<br>变量值就是你解压后的路径，你可以直接进入解压后的文件夹，复制这个路径到变量值<br><img src="https://img-blog.csdnimg.cn/20200717160624884.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后再找到系统变量中的Path，在最后面追加    <strong>%CATALINA_HOME%\bin;</strong><br><img src="https://img-blog.csdnimg.cn/20200717160940172.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="4-Tomcat启动和验证配置环境变量"><a href="#4-Tomcat启动和验证配置环境变量" class="headerlink" title="4.Tomcat启动和验证配置环境变量"></a>4.Tomcat启动和验证配置环境变量</h2><p>到你解压的tomcat文件夹下的bin目录中点击startup.bat<br><img src="https://img-blog.csdnimg.cn/2020071716100076.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后出现了Tomcat的启动窗口<br><img src="https://img-blog.csdnimg.cn/20200717161012545.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后验证环境变量是否配置成功，浏览器输入一下 <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> 弹出页面：<br>链接: <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080 </a><br><img src="https://img-blog.csdnimg.cn/2020071716141342.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>配置成功！！！<br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>Tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>jar包和war包区别及理解</title>
     <url>/2020/07/22/jar%E5%8C%85%E5%92%8Cwar%E5%8C%85%E5%8C%BA%E5%88%AB%E5%8F%8A%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -1118,27 +1139,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Tomcat安装教程</title>
-    <url>/2020/07/23/Tomcat%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h2 id="1-下载Tomcat"><a href="#1-下载Tomcat" class="headerlink" title="1. 下载Tomcat"></a>1. 下载Tomcat</h2><p>首先确定你Windows系统是64位，还是32位(现在大部分是64位)及JDK版本（Tomcat在 JDK1.8 环境下能够正常运行）<br>下载地址：<a href="http://tomcat.apache.org/" target="_blank" rel="noopener">Tomcat官网</a>.<br><img src="https://img-blog.csdnimg.cn/20200717160125510.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h1 id="2-安装Tomcat"><a href="#2-安装Tomcat" class="headerlink" title="2. 安装Tomcat"></a>2. 安装Tomcat</h1><p>解压压缩包，放在想要放在的盘符(最好不要是C盘，可能会出现拒绝访问)<br>如安装在D盘，那就解压出来放在D盘下就行，里面的文件名不要改动，或者放在D盘某一文件夹下，路径不要包含中文和特殊字符！<br><img src="https://img-blog.csdnimg.cn/20200717160411236.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h2 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3.配置环境变量"></a>3.配置环境变量</h2><p>在变量名中填写：CATALINA_HOME(不要留空格)<br>变量值就是你解压后的路径，你可以直接进入解压后的文件夹，复制这个路径到变量值<br><img src="https://img-blog.csdnimg.cn/20200717160624884.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后再找到系统变量中的Path，在最后面追加    <strong>%CATALINA_HOME%\bin;</strong><br><img src="https://img-blog.csdnimg.cn/20200717160940172.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h2 id="4-Tomcat启动和验证配置环境变量"><a href="#4-Tomcat启动和验证配置环境变量" class="headerlink" title="4.Tomcat启动和验证配置环境变量"></a>4.Tomcat启动和验证配置环境变量</h2><p>到你解压的tomcat文件夹下的bin目录中点击startup.bat<br><img src="https://img-blog.csdnimg.cn/2020071716100076.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后出现了Tomcat的启动窗口<br><img src="https://img-blog.csdnimg.cn/20200717161012545.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后验证环境变量是否配置成功，浏览器输入一下 <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> 弹出页面：<br>链接: <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080 </a><br><img src="https://img-blog.csdnimg.cn/2020071716141342.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>配置成功！！！<br><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>Tomcat</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>js中confirm弹框的确定按钮失效或无法传值解决办法</title>
     <url>/2020/07/23/js%E4%B8%ADconfirm%E5%BC%B9%E6%A1%86%E7%9A%84%E7%A1%AE%E5%AE%9A%E6%8C%89%E9%92%AE%E5%A4%B1%E6%95%88%E6%88%96%E6%97%A0%E6%B3%95%E4%BC%A0%E5%80%BC%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -1154,66 +1154,6 @@
 <p>效果图（且对页面内容有遮罩层）：<br><img src="https://img-blog.csdnimg.cn/20200402213226518.png" alt="在这里插入图片描述"></p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">Ewin.alert(<span class="string">"操作成功！"</span>);</span><br></pre></td></tr></table></figure>
 <p>balabala…</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>JavaWeb</tag>
-        <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>setInterval()方法实现周期调用函数来完成进度条等功能设计</title>
-    <url>/2020/07/23/setInterval-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%91%A8%E6%9C%9F%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%9B%E5%BA%A6%E6%9D%A1%E7%AD%89%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="setInterval-方法"><a href="#setInterval-方法" class="headerlink" title="setInterval() 方法"></a>setInterval() 方法</h1><p>setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。</p>
-<p>setInterval() 方法会不停地调用函数，直到==clearInterval() 被调用或窗口被关闭==。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。<br>提示： 1000 毫秒= 1 秒；如果你只想执行一次可以使用 setTimeout() 方法。</p>
-<hr>
-<p><strong><em>语法描述：</em></strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">setInterval(code, milliseconds);</span><br><span class="line">setInterval(function, milliseconds, param1, param2, ...)</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>setInterval() 方法参数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>code/function</td>
-<td>必要部分，要调用一个代码串，也可以是一个函数</td>
-</tr>
-<tr>
-<td>milliseconds</td>
-<td>必要部分，周期性执行或调用 code/function 之间的时间间隔，以毫秒计</td>
-</tr>
-<tr>
-<td>param1, param2, …</td>
-<td>非必要部分，传给执行函数的其他参数（IE9 及其更早版本不支持该参数）</td>
-</tr>
-</tbody></table>
-<p><strong><em>return</em></strong>:返回一个 ID（数字），可以将这个ID传递给clearInterval()，clearTimeout() 来取消执行setInterval() 。</p>
-<hr>
-<h1 id="clearInterval-方法"><a href="#clearInterval-方法" class="headerlink" title="clearInterval() 方法"></a>clearInterval() 方法</h1><p>clearInterval() 方法可取消由 setInterval() 函数设定的定时执行操作。</p>
-<p>clearInterval() 方法的参数必须是由 setInterval() 返回的 ID 值。<br>注意: 要使用 clearInterval() 方法, 在创建执行定时操作时要使用==全局变量==</p>
-<p><strong><em>语法描述：</em></strong><br>|clearInterval() 方法| 描述 |<br>|–|–|<br>|id_of_setinterval  |必要部分，调用 setInterval() 函数时所获得的返回值，使用该返回标识符作为参数，可以取消该 setInterval() 所设定的定时执行操作  |<br><strong><em>return</em></strong>: return 0</p>
-<hr>
-<p><strong><em>方法应用实例</em></strong><br>1.显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能)</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># 显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能):</span><br><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>2.使用 clearInterval() 来停止 setInterval 的执行</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>3.使用 setInterval() 和 clearInterval()来创建动态进度条<br>在javaweb中通过AJAX的get()方法和windows对象的setInterval()方法不断读取当前进度值来实现页面进度值的实时显示。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">move</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(<span class="string">"myBar"</span>);   </span><br><span class="line">  <span class="keyword">var</span> width = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">var</span> myvar = setInterval(frame, <span class="number">10</span>);</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">frame</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (width == <span class="number">100</span>) &#123;</span><br><span class="line">      clearInterval(myvar);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      width++; </span><br><span class="line">      elem.style.width = width + <span class="string">'%'</span>; </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>4.每 5000 毫秒切换背景颜色</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; setColor() &#125;, <span class="number">5000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="built_in">document</span>.body;</span><br><span class="line">  x.style.backgroundColor = x.style.backgroundColor == <span class="string">"red"</span> ? <span class="string">"green"</span> : <span class="string">"red"</span>; <span class="comment">//x.style.backgroundColor = white</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>? : 是一个条件运算符,是一个整体,作用类似于if else 语句<br>5.传递参数给 Animal 函数 </p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStartFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// IE9 及其更早版本不支持</span></span><br><span class="line">    myVar = setInterval(Animal, <span class="number">2000</span>, <span class="string">"Cat"</span>, <span class="string">"Dog"</span>);</span><br><span class="line">    <span class="comment">//使用匿名函数，则所有浏览器都支持</span></span><br><span class="line">    myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; Animal(<span class="string">"Cat"</span>, <span class="string">"Dog"</span>); &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">param1, param2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML += <span class="string">"Animal "</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo2"</span>).innerHTML = <span class="string">"传递给 Animal() 的参数: &lt;br&gt;"</span> </span><br><span class="line">    + param1 + <span class="string">"&lt;br&gt;"</span> + param2 + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200507175942741.png" alt="jieguo"></p>
 <hr>
 <p><strong><em>END</em></strong></p>
 ]]></content>
@@ -1380,6 +1320,66 @@
       <tags>
         <tag>MySQL</tag>
         <tag>pymysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>setInterval()方法实现周期调用函数来完成进度条等功能设计</title>
+    <url>/2020/07/23/setInterval-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%91%A8%E6%9C%9F%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%9B%E5%BA%A6%E6%9D%A1%E7%AD%89%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="setInterval-方法"><a href="#setInterval-方法" class="headerlink" title="setInterval() 方法"></a>setInterval() 方法</h1><p>setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。</p>
+<p>setInterval() 方法会不停地调用函数，直到==clearInterval() 被调用或窗口被关闭==。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。<br>提示： 1000 毫秒= 1 秒；如果你只想执行一次可以使用 setTimeout() 方法。</p>
+<hr>
+<p><strong><em>语法描述：</em></strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">setInterval(code, milliseconds);</span><br><span class="line">setInterval(function, milliseconds, param1, param2, ...)</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>setInterval() 方法参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>code/function</td>
+<td>必要部分，要调用一个代码串，也可以是一个函数</td>
+</tr>
+<tr>
+<td>milliseconds</td>
+<td>必要部分，周期性执行或调用 code/function 之间的时间间隔，以毫秒计</td>
+</tr>
+<tr>
+<td>param1, param2, …</td>
+<td>非必要部分，传给执行函数的其他参数（IE9 及其更早版本不支持该参数）</td>
+</tr>
+</tbody></table>
+<p><strong><em>return</em></strong>:返回一个 ID（数字），可以将这个ID传递给clearInterval()，clearTimeout() 来取消执行setInterval() 。</p>
+<hr>
+<h1 id="clearInterval-方法"><a href="#clearInterval-方法" class="headerlink" title="clearInterval() 方法"></a>clearInterval() 方法</h1><p>clearInterval() 方法可取消由 setInterval() 函数设定的定时执行操作。</p>
+<p>clearInterval() 方法的参数必须是由 setInterval() 返回的 ID 值。<br>注意: 要使用 clearInterval() 方法, 在创建执行定时操作时要使用==全局变量==</p>
+<p><strong><em>语法描述：</em></strong><br>|clearInterval() 方法| 描述 |<br>|–|–|<br>|id_of_setinterval  |必要部分，调用 setInterval() 函数时所获得的返回值，使用该返回标识符作为参数，可以取消该 setInterval() 所设定的定时执行操作  |<br><strong><em>return</em></strong>: return 0</p>
+<hr>
+<p><strong><em>方法应用实例</em></strong><br>1.显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># 显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能):</span><br><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.使用 clearInterval() 来停止 setInterval 的执行</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3.使用 setInterval() 和 clearInterval()来创建动态进度条<br>在javaweb中通过AJAX的get()方法和windows对象的setInterval()方法不断读取当前进度值来实现页面进度值的实时显示。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">move</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(<span class="string">"myBar"</span>);   </span><br><span class="line">  <span class="keyword">var</span> width = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">var</span> myvar = setInterval(frame, <span class="number">10</span>);</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">frame</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (width == <span class="number">100</span>) &#123;</span><br><span class="line">      clearInterval(myvar);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      width++; </span><br><span class="line">      elem.style.width = width + <span class="string">'%'</span>; </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>4.每 5000 毫秒切换背景颜色</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; setColor() &#125;, <span class="number">5000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="built_in">document</span>.body;</span><br><span class="line">  x.style.backgroundColor = x.style.backgroundColor == <span class="string">"red"</span> ? <span class="string">"green"</span> : <span class="string">"red"</span>; <span class="comment">//x.style.backgroundColor = white</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>? : 是一个条件运算符,是一个整体,作用类似于if else 语句<br>5.传递参数给 Animal 函数 </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStartFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// IE9 及其更早版本不支持</span></span><br><span class="line">    myVar = setInterval(Animal, <span class="number">2000</span>, <span class="string">"Cat"</span>, <span class="string">"Dog"</span>);</span><br><span class="line">    <span class="comment">//使用匿名函数，则所有浏览器都支持</span></span><br><span class="line">    myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; Animal(<span class="string">"Cat"</span>, <span class="string">"Dog"</span>); &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">param1, param2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML += <span class="string">"Animal "</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo2"</span>).innerHTML = <span class="string">"传递给 Animal() 的参数: &lt;br&gt;"</span> </span><br><span class="line">    + param1 + <span class="string">"&lt;br&gt;"</span> + param2 + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200507175942741.png" alt="jieguo"></p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -1860,6 +1860,55 @@
       </tags>
   </entry>
   <entry>
+    <title>数据库学习与应用之什么是数据库</title>
+    <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%BA%94%E7%94%A8%E4%B9%8B%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>数据库，是一个长期存储在计算机内的、有组织的、有共享的、统一管理的数据集合。</p>
+<p>常用的数据库有Access、Oracle、Mysql、SQL Server、SQLite等；</p>
+<p>数据库中的数据都有一定规律结构，相同类型的数据放在一起，不同类型的数据之间相互隔离；<br>数据库由统一的规则来读写，有SQL语言专门用来读写数据库，一般都是用程序来读写数据库的内容。</p>
+<p>数据库支持的软件模式：<br>B/S：Browser/Server （浏览器/服务器）（淘宝）<br>C/S：Client/Server （客户端/服务器）（QQ、微信）</p>
+<hr>
+<h1 id="常用的数据库"><a href="#常用的数据库" class="headerlink" title="常用的数据库"></a>常用的数据库</h1><table>
+<thead>
+<tr>
+<th>数据库应用</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MySQL数据库</td>
+<td>小型数据库管理系统的数据库，由瑞典MySQLAB公司开发。MySQL被广泛地应用在Internet上的中小型网站当中</td>
+</tr>
+<tr>
+<td>SqlServer数据库</td>
+<td>中型数据库软件，真正的客户/服务器体系结构，图形化的用户界面，数据库管理方式更加直观和简单</td>
+</tr>
+<tr>
+<td>Oracle数据库</td>
+<td>大型企业级数据库，这是一款比较典型的客户/服务器(CLIENT/SERVER)或B/S体系结构的数据库之一，目前世界上使用最为广泛的数据库管理系统</td>
+</tr>
+<tr>
+<td>Access数据库</td>
+<td>小型的数据库，关联式数据序管理型系统的数据库，通常是被用来开发Web应用程序</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="数据库可视化管理工具"><a href="#数据库可视化管理工具" class="headerlink" title="数据库可视化管理工具"></a>数据库可视化管理工具</h1><p><strong><em>1. MySQL Workbench</em></strong><br>MySQL Workbench为数据库管理员、程序开发者和系统规划师提供可视化设计、模型建立、以及数据库管理功能。它包含了用于创建复杂的数据建模ER模型，正向和逆向数据库工程，也可以用于执行通常需要花费大量时间和需要的难以变更和管理的文档任务。MySQL工作台可在Windows，Linux和Mac上使用；<br><img src="https://img-blog.csdnimg.cn/20200512171804371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong><em>2. Navicat</em></strong><br>Navicat是一个桌面版MySQL数据库管理和开发工具。Navicat使用图形化的用户界面，可以让用户使用和管理更为轻松。支持中文，有免费版本提供；<br><img src="https://img-blog.csdnimg.cn/20200512171817481.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>3. MySQLDumper</strong><br>MySQLDumper使用PHP开发的MySQL数据库备份恢复程序，解决了使用PHP进行大数据库备份和恢复的问题，数百兆的数据库都可以方便的备份恢复，不用担心网速太慢导致中间中断的问题，非常方便易用；</p>
+<hr>
+<h1 id="数据库访问方式"><a href="#数据库访问方式" class="headerlink" title="数据库访问方式"></a>数据库访问方式</h1><p>利用数据库管理工具或者编写程序来访问数据库。当然，数据库和访问数据库可以跨空间进行（本地和远程）<br>连接：数据库管理工具、编程语言（Java、PyThon等）</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据库学习与应用之利用cmd命令操纵数据库(上）</title>
     <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%BA%94%E7%94%A8%E4%B9%8B%E5%88%A9%E7%94%A8cmd%E5%91%BD%E4%BB%A4%E6%93%8D%E7%BA%B5%E6%95%B0%E6%8D%AE%E5%BA%93-%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -1924,55 +1973,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数据库学习与应用之什么是数据库</title>
-    <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%BA%94%E7%94%A8%E4%B9%8B%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>数据库，是一个长期存储在计算机内的、有组织的、有共享的、统一管理的数据集合。</p>
-<p>常用的数据库有Access、Oracle、Mysql、SQL Server、SQLite等；</p>
-<p>数据库中的数据都有一定规律结构，相同类型的数据放在一起，不同类型的数据之间相互隔离；<br>数据库由统一的规则来读写，有SQL语言专门用来读写数据库，一般都是用程序来读写数据库的内容。</p>
-<p>数据库支持的软件模式：<br>B/S：Browser/Server （浏览器/服务器）（淘宝）<br>C/S：Client/Server （客户端/服务器）（QQ、微信）</p>
-<hr>
-<h1 id="常用的数据库"><a href="#常用的数据库" class="headerlink" title="常用的数据库"></a>常用的数据库</h1><table>
-<thead>
-<tr>
-<th>数据库应用</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>MySQL数据库</td>
-<td>小型数据库管理系统的数据库，由瑞典MySQLAB公司开发。MySQL被广泛地应用在Internet上的中小型网站当中</td>
-</tr>
-<tr>
-<td>SqlServer数据库</td>
-<td>中型数据库软件，真正的客户/服务器体系结构，图形化的用户界面，数据库管理方式更加直观和简单</td>
-</tr>
-<tr>
-<td>Oracle数据库</td>
-<td>大型企业级数据库，这是一款比较典型的客户/服务器(CLIENT/SERVER)或B/S体系结构的数据库之一，目前世界上使用最为广泛的数据库管理系统</td>
-</tr>
-<tr>
-<td>Access数据库</td>
-<td>小型的数据库，关联式数据序管理型系统的数据库，通常是被用来开发Web应用程序</td>
-</tr>
-</tbody></table>
-<hr>
-<h1 id="数据库可视化管理工具"><a href="#数据库可视化管理工具" class="headerlink" title="数据库可视化管理工具"></a>数据库可视化管理工具</h1><p><strong><em>1. MySQL Workbench</em></strong><br>MySQL Workbench为数据库管理员、程序开发者和系统规划师提供可视化设计、模型建立、以及数据库管理功能。它包含了用于创建复杂的数据建模ER模型，正向和逆向数据库工程，也可以用于执行通常需要花费大量时间和需要的难以变更和管理的文档任务。MySQL工作台可在Windows，Linux和Mac上使用；<br><img src="https://img-blog.csdnimg.cn/20200512171804371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong><em>2. Navicat</em></strong><br>Navicat是一个桌面版MySQL数据库管理和开发工具。Navicat使用图形化的用户界面，可以让用户使用和管理更为轻松。支持中文，有免费版本提供；<br><img src="https://img-blog.csdnimg.cn/20200512171817481.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>3. MySQLDumper</strong><br>MySQLDumper使用PHP开发的MySQL数据库备份恢复程序，解决了使用PHP进行大数据库备份和恢复的问题，数百兆的数据库都可以方便的备份恢复，不用担心网速太慢导致中间中断的问题，非常方便易用；</p>
-<hr>
-<h1 id="数据库访问方式"><a href="#数据库访问方式" class="headerlink" title="数据库访问方式"></a>数据库访问方式</h1><p>利用数据库管理工具或者编写程序来访问数据库。当然，数据库和访问数据库可以跨空间进行（本地和远程）<br>连接：数据库管理工具、编程语言（Java、PyThon等）</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据库学习与应用之利用cmd命令操纵数据库(下）</title>
     <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%BA%94%E7%94%A8%E4%B9%8B%E5%88%A9%E7%94%A8cmd%E5%91%BD%E4%BB%A4%E6%93%8D%E7%BA%B5%E6%95%B0%E6%8D%AE%E5%BA%93-%E4%B8%8B%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -2011,6 +2011,36 @@
       <tags>
         <tag>工具</tag>
         <tag>cmd</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据库日常之修改MySQL数据库密码的方法</title>
+    <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%A5%E5%B8%B8%E4%B9%8B%E4%BF%AE%E6%94%B9MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="1-windows下利用CMD命令修改"><a href="#1-windows下利用CMD命令修改" class="headerlink" title="1.windows下利用CMD命令修改"></a>1.windows下利用CMD命令修改</h1><p>开始时如果用户user没有密码，则 -p 旧密码 一项就可以省略；<br>修改格式：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql -hlocalhost -u root -p 旧密码 password 新密码</span><br></pre></td></tr></table></figure>
+<p>修改步骤：(按回车键Enter执行命令行）<br>1.首先在DOS下进入目录mysql\bin<br>C: \Users\Adninistrator&gt;D:<br>D:&gt;cd D:\mysql-5.7.22-win32\bin<br>2.然后输入以下命令：<br>D:\mysql-5.7.22-win32\bin&gt;mysql -hlocalhost -u root -p 111111 password 123456</p>
+<hr>
+<h1 id="2-在MySQL环境中修改"><a href="#2-在MySQL环境中修改" class="headerlink" title="2.在MySQL环境中修改"></a>2.在MySQL环境中修改</h1><p>MySQL命令结束后都带一个分号作为命令结束符<br>修改格式：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> mysql.user <span class="keyword">SET</span> <span class="keyword">password</span>=<span class="keyword">PASSWORD</span>(<span class="string">'123456'</span>) <span class="keyword">WHERE</span> <span class="keyword">User</span>=<span class="string">'root'</span>;</span><br></pre></td></tr></table></figure>
+<p>(按回车键Ctrl+Shift+Enter执行命令行）<br>mysql&gt; UPDATE mysql.user SET password=PASSWORD(‘123456’) WHERE User=’root’;<br>运行完这行之后会提示下面的信息：<br>Query OK, 0 rows affected (0.00 sec)<br>Rows matched: 2  Changed: 0  Warnings: 0<br>这时候还需要运行下面一句，否则密码不会被修改：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
+<p>下面运行结果代表修改成功：<br>Query OK, 0 rows affected (0.16 sec)<br>然后显示当前的user：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">USER</span>();</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="3-在MySQL和Navicat中直接修改"><a href="#3-在MySQL和Navicat中直接修改" class="headerlink" title="3.在MySQL和Navicat中直接修改"></a>3.在MySQL和Navicat中直接修改</h1><p>3.1 MySQL Workbench<br><img src="https://img-blog.csdnimg.cn/20200511115031892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>3.2 Navicat<br>1.连接初始进入<br>2.点击用户<br>3.右键编辑root用户<br>4.修改密码，授权数据库操作权限<br>5.将链接密码修改为以上设置的密码即可（右键连接属性）<br><img src="https://img-blog.csdnimg.cn/20200511115707279.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>密码修改</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -2423,24 +2453,6 @@
   </entry>
   <entry>
     <title>界面开发工具之HTML色彩表格工具</title>
-    <url>/2020/07/23/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B9%8BHTML%E8%89%B2%E5%BD%A9%E8%A1%A8%E6%A0%BC%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br><img src="https://img-blog.csdnimg.cn/20200604211717578.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>网址链接： <a href="https://html-color-codes.info/chinese/" target="_blank" rel="noopener">HTML色彩表格工具</a></p>
-<hr>
-<h1 id="HTML色彩代码理论"><a href="#HTML色彩代码理论" class="headerlink" title="HTML色彩代码理论"></a>HTML色彩代码理论</h1><p>HTML代码格式：<br>每一个HTML代码包含有“#”符号以及6个字幕和数字。这些数字都是十六进制的。比如“FF”在十六进制中代表十进制的数字255。</p>
-<p>符号意义：<br>HTML色彩代码中前两个符号表示红色的浓度。00指的是颜色最淡而FF则指的是颜色最浓。第三个和第四个符号表示绿色的浓度，第五个和第六个符号表示蓝色的浓度。由此，将各种浓度的红、绿、蓝三种颜色进行组合，我们可以调配出任何所需色彩</p>
-<p>示例：<br>#FF0000 - 利用这个HTML代码，我们让浏览器显示不掺杂任何绿色和蓝色成分的最鲜艳的红色。其结果当然就是纯红:     </p>
-<p>#00FF00 - 这个HTML代码表示只有绿色且不掺杂任何红色和蓝色。其结果是:     </p>
-<p>#0000FF - 这个HTML代码表示只有蓝色且不掺杂任何红色和绿色。其结果是:     </p>
-<p>#FFFF00 - 红绿组合生成黄色:     </p>
-<p>#CCEEFF - 一些红色、一点绿色以及最高浓度的蓝色，组合成天蓝色:     </p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>界面开发工具之HTML色彩表格工具</title>
     <url>/2020/07/23/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B9%8BHTML%E8%89%B2%E5%BD%A9%E8%A1%A8%E6%A0%BC%E5%B7%A5%E5%85%B7-1/</url>
     <content><![CDATA[<p>Hello World!</p>
 <a id="more"></a>
@@ -2464,22 +2476,22 @@
       </tags>
   </entry>
   <entry>
-    <title>聚光灯效果（css+html）</title>
-    <url>/2020/07/23/%E8%81%9A%E5%85%89%E7%81%AF%E6%95%88%E6%9E%9C%EF%BC%88css-html%EF%BC%89/</url>
+    <title>界面开发工具之HTML色彩表格工具</title>
+    <url>/2020/07/23/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B9%8BHTML%E8%89%B2%E5%BD%A9%E8%A1%A8%E6%A0%BC%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>Hello World!</p>
 <a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>最终效果：<br><img src="https://img-blog.csdnimg.cn/20200516111122629.gif" alt="在这里插入图片描述"></p>
-<!-- more -->
-<p>实现code:</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">		&lt;title&gt;聚光灯效果&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">			*&#123;</span><br><span class="line">				margin:<span class="number">0</span>;</span><br><span class="line">				padding:<span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			body&#123;</span><br><span class="line">				background: #222;</span><br><span class="line">				display: flex;</span><br><span class="line">				justify-content: center;</span><br><span class="line">				align-items: center;</span><br><span class="line">				min-height: <span class="number">100</span>vh;</span><br><span class="line">			&#125;</span><br><span class="line">			h1&#123;</span><br><span class="line">				color: #333;</span><br><span class="line">				font-size: <span class="number">8</span>rem;</span><br><span class="line">				position: relative;</span><br><span class="line">			&#125;</span><br><span class="line">			h1:after&#123;</span><br><span class="line">				content: <span class="string">"Hello JavaScript"</span>;</span><br><span class="line">				color: transparent;</span><br><span class="line">				position: absolute;</span><br><span class="line">				left: <span class="number">0</span>;</span><br><span class="line">				top: <span class="number">0</span>;</span><br><span class="line">				background: -webkit-linear-gradient(left,#c23616,#192a56,#00d2d3,yellow,#6D214F,#2e86de,#4cd137,#e84118);</span><br><span class="line">				background-clip: text;</span><br><span class="line">				-webkit-background-clip:text;</span><br><span class="line">				clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				animation: light <span class="number">5</span>s infinite;</span><br><span class="line">			&#125;</span><br><span class="line">				</span><br><span class="line">			<span class="meta">@keyframes</span> light&#123;</span><br><span class="line">				<span class="number">0</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">50</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">100</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;h1&gt;Hello JavaScript&lt;/h1&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br><img src="https://img-blog.csdnimg.cn/20200604211717578.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>网址链接： <a href="https://html-color-codes.info/chinese/" target="_blank" rel="noopener">HTML色彩表格工具</a></p>
+<hr>
+<h1 id="HTML色彩代码理论"><a href="#HTML色彩代码理论" class="headerlink" title="HTML色彩代码理论"></a>HTML色彩代码理论</h1><p>HTML代码格式：<br>每一个HTML代码包含有“#”符号以及6个字幕和数字。这些数字都是十六进制的。比如“FF”在十六进制中代表十进制的数字255。</p>
+<p>符号意义：<br>HTML色彩代码中前两个符号表示红色的浓度。00指的是颜色最淡而FF则指的是颜色最浓。第三个和第四个符号表示绿色的浓度，第五个和第六个符号表示蓝色的浓度。由此，将各种浓度的红、绿、蓝三种颜色进行组合，我们可以调配出任何所需色彩</p>
+<p>示例：<br>#FF0000 - 利用这个HTML代码，我们让浏览器显示不掺杂任何绿色和蓝色成分的最鲜艳的红色。其结果当然就是纯红:     </p>
+<p>#00FF00 - 这个HTML代码表示只有绿色且不掺杂任何红色和蓝色。其结果是:     </p>
+<p>#0000FF - 这个HTML代码表示只有蓝色且不掺杂任何红色和绿色。其结果是:     </p>
+<p>#FFFF00 - 红绿组合生成黄色:     </p>
+<p>#CCEEFF - 一些红色、一点绿色以及最高浓度的蓝色，组合成天蓝色:     </p>
 <hr>
 <p><strong><em>END</em></strong></p>
 ]]></content>
-      <tags>
-        <tag>JavaWeb</tag>
-        <tag>HTML</tag>
-      </tags>
   </entry>
   <entry>
     <title>自动生成注释作者名字和日期等信息（IDEA Java类）</title>
@@ -2509,33 +2521,21 @@
       </tags>
   </entry>
   <entry>
-    <title>数据库日常之修改MySQL数据库密码的方法</title>
-    <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%A5%E5%B8%B8%E4%B9%8B%E4%BF%AE%E6%94%B9MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <title>聚光灯效果（css+html）</title>
+    <url>/2020/07/23/%E8%81%9A%E5%85%89%E7%81%AF%E6%95%88%E6%9E%9C%EF%BC%88css-html%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
 <a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="1-windows下利用CMD命令修改"><a href="#1-windows下利用CMD命令修改" class="headerlink" title="1.windows下利用CMD命令修改"></a>1.windows下利用CMD命令修改</h1><p>开始时如果用户user没有密码，则 -p 旧密码 一项就可以省略；<br>修改格式：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql -hlocalhost -u root -p 旧密码 password 新密码</span><br></pre></td></tr></table></figure>
-<p>修改步骤：(按回车键Enter执行命令行）<br>1.首先在DOS下进入目录mysql\bin<br>C: \Users\Adninistrator&gt;D:<br>D:&gt;cd D:\mysql-5.7.22-win32\bin<br>2.然后输入以下命令：<br>D:\mysql-5.7.22-win32\bin&gt;mysql -hlocalhost -u root -p 111111 password 123456</p>
-<hr>
-<h1 id="2-在MySQL环境中修改"><a href="#2-在MySQL环境中修改" class="headerlink" title="2.在MySQL环境中修改"></a>2.在MySQL环境中修改</h1><p>MySQL命令结束后都带一个分号作为命令结束符<br>修改格式：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> mysql.user <span class="keyword">SET</span> <span class="keyword">password</span>=<span class="keyword">PASSWORD</span>(<span class="string">'123456'</span>) <span class="keyword">WHERE</span> <span class="keyword">User</span>=<span class="string">'root'</span>;</span><br></pre></td></tr></table></figure>
-<p>(按回车键Ctrl+Shift+Enter执行命令行）<br>mysql&gt; UPDATE mysql.user SET password=PASSWORD(‘123456’) WHERE User=’root’;<br>运行完这行之后会提示下面的信息：<br>Query OK, 0 rows affected (0.00 sec)<br>Rows matched: 2  Changed: 0  Warnings: 0<br>这时候还需要运行下面一句，否则密码不会被修改：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
-<p>下面运行结果代表修改成功：<br>Query OK, 0 rows affected (0.16 sec)<br>然后显示当前的user：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">USER</span>();</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>最终效果：<br><img src="https://img-blog.csdnimg.cn/20200516111122629.gif" alt="在这里插入图片描述"></p>
+<!-- more -->
+<p>实现code:</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">		&lt;title&gt;聚光灯效果&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">			*&#123;</span><br><span class="line">				margin:<span class="number">0</span>;</span><br><span class="line">				padding:<span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			body&#123;</span><br><span class="line">				background: #222;</span><br><span class="line">				display: flex;</span><br><span class="line">				justify-content: center;</span><br><span class="line">				align-items: center;</span><br><span class="line">				min-height: <span class="number">100</span>vh;</span><br><span class="line">			&#125;</span><br><span class="line">			h1&#123;</span><br><span class="line">				color: #333;</span><br><span class="line">				font-size: <span class="number">8</span>rem;</span><br><span class="line">				position: relative;</span><br><span class="line">			&#125;</span><br><span class="line">			h1:after&#123;</span><br><span class="line">				content: <span class="string">"Hello JavaScript"</span>;</span><br><span class="line">				color: transparent;</span><br><span class="line">				position: absolute;</span><br><span class="line">				left: <span class="number">0</span>;</span><br><span class="line">				top: <span class="number">0</span>;</span><br><span class="line">				background: -webkit-linear-gradient(left,#c23616,#192a56,#00d2d3,yellow,#6D214F,#2e86de,#4cd137,#e84118);</span><br><span class="line">				background-clip: text;</span><br><span class="line">				-webkit-background-clip:text;</span><br><span class="line">				clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				animation: light <span class="number">5</span>s infinite;</span><br><span class="line">			&#125;</span><br><span class="line">				</span><br><span class="line">			<span class="meta">@keyframes</span> light&#123;</span><br><span class="line">				<span class="number">0</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">50</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">100</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;h1&gt;Hello JavaScript&lt;/h1&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<hr>
-<h1 id="3-在MySQL和Navicat中直接修改"><a href="#3-在MySQL和Navicat中直接修改" class="headerlink" title="3.在MySQL和Navicat中直接修改"></a>3.在MySQL和Navicat中直接修改</h1><p>3.1 MySQL Workbench<br><img src="https://img-blog.csdnimg.cn/20200511115031892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>3.2 Navicat<br>1.连接初始进入<br>2.点击用户<br>3.右键编辑root用户<br>4.修改密码，授权数据库操作权限<br>5.将链接密码修改为以上设置的密码即可（右键连接属性）<br><img src="https://img-blog.csdnimg.cn/20200511115707279.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <hr>
 <p><strong><em>END</em></strong></p>
 ]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
       <tags>
-        <tag>密码修改</tag>
-        <tag>数据库</tag>
+        <tag>JavaWeb</tag>
+        <tag>HTML</tag>
       </tags>
   </entry>
 </search>
