@@ -28,20 +28,22 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta property="og:type" content="article">
+  <meta name="description" content="Hello World!">
+<meta property="og:type" content="article">
 <meta property="og:title" content="jar包和war包区别及理解">
 <meta property="og:url" content="http://yoursite.com/2020/07/22/jar%E5%8C%85%E5%92%8Cwar%E5%8C%85%E5%8C%BA%E5%88%AB%E5%8F%8A%E7%90%86%E8%A7%A3/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta property="og:description" content="Hello World!">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720151546286.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720160609375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-07-22T11:17:33.000Z">
-<meta property="article:modified_time" content="2020-07-23T06:37:33.781Z">
+<meta property="article:modified_time" content="2020-07-23T07:18:55.904Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="SpringBoot">
 <meta property="article:tag" content="jar包">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -246,9 +248,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+        <p>Hello World!</p>
 <a id="more"></a>
-<p>在开发阶段不适合使用war包，因为在开发阶段，经常需要添加或删除Web应用程序的内容，更新 Servlet类文件，而每一次改动后，重新建立war包将是一件浪费时间的事情。在产品发布阶段，使用war文件比较合适的，因为在这个时候，几乎不需要再做什么改动了。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>在开发阶段不适合使用war包，因为在开发阶段，经常需要添加或删除Web应用程序的内容，更新 Servlet类文件，而每一次改动后，重新建立war包将是一件浪费时间的事情。在产品发布阶段，使用war文件比较合适的，因为在这个时候，几乎不需要再做什么改动了。</p>
 <h2 id="jar包"><a href="#jar包" class="headerlink" title="jar包"></a>jar包</h2><p><strong><em>jar是类的归档文件</em></strong><br>JAR（Java Archive，Java 归档文件）是与平台无关的文件格式，它允许将许多文件组合成一个压缩文件，为 J2EE 应用程序创建的jar文件是 EAR 文件（企业 jar文件），jar文件格式以流行的 ZIP 文件格式为基础。与 ZIP 文件不同的是，jar文件不仅用于压缩和发布，而且还用于部署和封装库、组件和插件程序，并可被像编译器和 JVM 这样的工具直接使用。在 jar中包含特殊的文件，如 manifests 和部署描述符，用来指示工具如何处理特定的 jar。<br>通常是开发时要引用通用类，打成jar包便于存放管理，当你使用某些功能时就需要这些jar包的支持，需要导入jar包。<br>jar包就是java的类进行编译生成的class文件打包的压缩包，包里面就是一些class文件。当我们自己使用Maven写一些java程序，进行打包生成jar包。同时在可以在其他的工程下使用，但是我们在这个工程依赖的jar包，在其他工程使用该JAR包也要导入。<br><img src="https://img-blog.csdnimg.cn/20200720151546286.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <!-- more -->
 <hr>
@@ -634,15 +636,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">MANIFEST.MF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -654,15 +656,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -674,7 +672,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -682,7 +680,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -694,19 +700,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -718,7 +716,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -727,6 +725,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">

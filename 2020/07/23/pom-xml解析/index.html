@@ -28,17 +28,19 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta property="og:type" content="article">
+  <meta name="description" content="Hello World!">
+<meta property="og:type" content="article">
 <meta property="og:title" content="pom.xml解析">
 <meta property="og:url" content="http://yoursite.com/2020/07/23/pom-xml%E8%A7%A3%E6%9E%90/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta property="og:description" content="Hello World!">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-07-23T06:13:29.000Z">
-<meta property="article:modified_time" content="2020-07-23T06:32:20.471Z">
+<meta property="article:modified_time" content="2020-07-23T07:20:42.201Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="pom.xml">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -243,8 +245,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+        <p>Hello World!</p>
 <a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
 <h1 id="pom-xml"><a href="#pom-xml" class="headerlink" title="pom.xml"></a>pom.xml</h1><p>pom.xml文件是Maven进行工作的主要配置文件。在这个文件中我们可以配置Maven项目的groupId、artifactId和version等Maven项目必须的元素；可以配置Maven项目需要使用的远程仓库；可以定义Maven项目打包的形式；可以定义Maven项目的资源依赖关系等等。</p>
 <h2 id="pom-xml标签"><a href="#pom-xml标签" class="headerlink" title="pom.xml标签"></a>pom.xml标签</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!--project是pom.xml的根元素，包含了一些约束的信息，比如xlms,xsi--&gt;</span><br><span class="line">&lt;project&gt;</span><br><span class="line">        &lt;!--指定了当前pom的版本--&gt;</span><br><span class="line">         &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line">        &lt;!--maven2<span class="number">.0</span>必须是这样写，现在是maven2唯一支持的版本--&gt;</span><br><span class="line">        &lt;!-- 基础设置 --&gt;</span><br><span class="line">        &lt;groupId&gt;反写公司的网址+项目名称&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;项目名称+模块名&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;当前项目版本号&lt;/version&gt;</span><br><span class="line">         &lt;!-- 默认是jar，还可以打包成war/zip/pom--&gt;</span><br><span class="line">        &lt;packaging&gt;...&lt;/packaging&gt;</span><br><span class="line">        &lt;!-- 项目描述名，一般是写项目文档的时候才使用 --&gt;</span><br><span class="line">        &lt;name&gt;...&lt;/name&gt;</span><br><span class="line">        &lt;!-- 项目的地址--&gt;</span><br><span class="line">        &lt;url&gt;...&lt;/url&gt;</span><br><span class="line">        &lt;!-- 项目的描述 --&gt;</span><br><span class="line">        &lt;description&gt;...&lt;/description&gt;</span><br><span class="line">        &lt;!-- 开发人员的列表 --&gt;</span><br><span class="line">        &lt;developers&gt;...&lt;/developers&gt;</span><br><span class="line">        &lt;!-- 许可证的信息 --&gt;</span><br><span class="line">        &lt;licenses&gt;...&lt;/licenses&gt;</span><br><span class="line">        &lt;!-- 组织信息 --&gt;</span><br><span class="line">        &lt;organization&gt;...&lt;/organization&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 依赖列表，下面可以包含多个依赖项dependency--&gt;</span><br><span class="line">        &lt;dependencies&gt;</span><br><span class="line">           &lt;dependency&gt;</span><br><span class="line">               &lt;!-- 指定坐标确定依赖项的位置 --&gt;</span><br><span class="line">               &lt;groupId&gt;&lt;/groupId&gt;</span><br><span class="line">               &lt;artifactId&gt;&lt;/artifactId&gt;</span><br><span class="line">               &lt;version&gt;&lt;/version&gt;</span><br><span class="line">               &lt;type&gt;&lt;/type&gt;</span><br><span class="line">               &lt;!-- 依赖包的依赖范围--&gt;</span><br><span class="line">               &lt;scope&gt;&lt;/scope&gt;</span><br><span class="line">               &lt;!-- 这个标签只有<span class="keyword">true</span>和<span class="keyword">false</span>两个值，是用来设置依赖是否可选 --&gt;</span><br><span class="line">               &lt;optional&gt;&lt;/optional&gt;</span><br><span class="line">               &lt;!-- 排除依赖传递列表 --&gt;</span><br><span class="line">               &lt;exclusions&gt; </span><br><span class="line">                 &lt;exclusion&gt;</span><br><span class="line">                 &lt;/exclusion&gt;  </span><br><span class="line">               &lt;/exclusions&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">         &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line">         &lt;!-- 依赖管理，里面包含多个依赖，但是它并不会被运行，即不会被引用到实际的依赖中--&gt;</span><br><span class="line">         &lt;!--这个标签主要是用来定义在父模块中，供子模块继承用 --&gt;</span><br><span class="line">         &lt;dependencyManagement&gt;                              </span><br><span class="line">             &lt;dependencies&gt;</span><br><span class="line">                &lt;dependency&gt;</span><br><span class="line">                &lt;/dependency&gt;</span><br><span class="line">             &lt;/dependencies&gt;</span><br><span class="line">        &lt;/dependencyManagement&gt;</span><br><span class="line"></span><br><span class="line">         &lt;!-- 常用于给构件的行为提供相应的支持 --&gt;</span><br><span class="line">          &lt;build&gt;</span><br><span class="line">            &lt;!-- 插件列表 --&gt;</span><br><span class="line">            &lt;plugins&gt;</span><br><span class="line">                &lt;plugin&gt;</span><br><span class="line">                   &lt;groupId&gt;&lt;/groupId&gt;</span><br><span class="line">                   &lt;artifactId&gt;&lt;/artifactId&gt;</span><br><span class="line">                   &lt;version&gt;&lt;/version&gt;</span><br><span class="line">                 &lt;/plugin&gt;</span><br><span class="line">             &lt;/plugins&gt;</span><br><span class="line">          &lt;/build&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 用于在子模块中对父模块的pom的继承 --&gt;</span><br><span class="line">        &lt;parent&gt;...&lt;/parent&gt;</span><br><span class="line">         &lt;!-- 用来聚合多个模块，让多个模块进行编译，不用一个一个来 --&gt;</span><br><span class="line">        &lt;modules&gt;</span><br><span class="line">          &lt;<span class="keyword">module</span>&gt;</span><br><span class="line">          &lt;/module&gt;</span><br><span class="line">        &lt;/modules&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
 <p>如：</p>
@@ -618,15 +621,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">MANIFEST.MF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -638,15 +641,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -658,7 +657,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -666,7 +665,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -678,19 +685,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -702,7 +701,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -711,6 +710,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">

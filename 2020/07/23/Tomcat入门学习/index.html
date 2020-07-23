@@ -28,17 +28,19 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta property="og:type" content="article">
+  <meta name="description" content="Hello World!">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Tomcat入门学习">
 <meta property="og:url" content="http://yoursite.com/2020/07/23/Tomcat%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta property="og:description" content="Hello World!">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-07-23T06:13:26.000Z">
-<meta property="article:modified_time" content="2020-07-23T06:32:20.489Z">
+<meta property="article:modified_time" content="2020-07-23T07:20:26.394Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="Tomcat">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -215,7 +217,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">543字</span>
+        <span class="post-count">545字</span>
       </span>
     </span>
 
@@ -243,8 +245,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+        <p>Hello World!</p>
 <a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
 <h1 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h1><p>Tomcat 是由 Apache 开发的一个 Servlet 容器，实现了对 Servlet 和 JSP 的支持，并提供了作为Web服务器的一些特有功能，如Tomcat管理和控制平台、安全域管理和Tomcat阀等。<br>由于 Tomcat 本身也内含了一个 HTTP 服务器，它也可以被视作一个单独的 Web 服务器。但是，不能将 Tomcat 和 Apache HTTP 服务器混淆，Apache HTTP 服务器是一个用 C 语言实现的 HTTP Web 服务器；这两个 HTTP web server 不是捆绑在一起的。Tomcat 包含了一个配置管理工具，也可以通过编辑XML格式的配置文件来进行配置。</p>
 <h2 id="Tomcat-重要目录"><a href="#Tomcat-重要目录" class="headerlink" title="Tomcat 重要目录"></a>Tomcat 重要目录</h2><p>/bin - Tomcat 脚本存放目录（如启动、关闭脚本）。 *.sh 文件用于 Unix 系统； *.bat 文件用于 Windows 系统;<br>/conf - Tomcat 配置文件目录;<br>/logs - Tomcat 默认日志目录;<br>/webapps - webapp 运行的目录;<br>web 工程发布目录结构</p>
 <h3 id="一般-web-项目路径结构"><a href="#一般-web-项目路径结构" class="headerlink" title="一般 web 项目路径结构"></a>一般 web 项目路径结构</h3><p>|– webapp                         # 站点根目录<br>    |– META-INF                   # META-INF 目录<br>    |   `– MANIFEST.MF            # 配置清单文件</p>
@@ -633,15 +636,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">MANIFEST.MF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -653,15 +656,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -673,7 +672,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -681,7 +680,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -693,19 +700,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -717,7 +716,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -726,6 +725,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">

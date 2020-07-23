@@ -28,19 +28,21 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta property="og:type" content="article">
+  <meta name="description" content="Hello World!">
+<meta property="og:type" content="article">
 <meta property="og:title" content="js中confirm弹框的确定按钮失效或无法传值解决办法">
 <meta property="og:url" content="http://yoursite.com/2020/07/23/js%E4%B8%ADconfirm%E5%BC%B9%E6%A1%86%E7%9A%84%E7%A1%AE%E5%AE%9A%E6%8C%89%E9%92%AE%E5%A4%B1%E6%95%88%E6%88%96%E6%97%A0%E6%B3%95%E4%BC%A0%E5%80%BC%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta property="og:description" content="Hello World!">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200402213226518.png">
 <meta property="article:published_time" content="2020-07-23T04:08:20.000Z">
-<meta property="article:modified_time" content="2020-07-23T06:36:15.303Z">
+<meta property="article:modified_time" content="2020-07-23T07:21:50.032Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="JavaWeb">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -217,7 +219,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">861字</span>
+        <span class="post-count">863字</span>
       </span>
     </span>
 
@@ -245,9 +247,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+        <p>Hello World!</p>
 <a id="more"></a>
-<p>1.在项目中出现confirm弹框按钮失效，无法传布尔值，如果正常的话，使用以下代码即可完成传值：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>1.在项目中出现confirm弹框按钮失效，无法传布尔值，如果正常的话，使用以下代码即可完成传值：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = <span class="built_in">window</span>.confirm(<span class="string">'是否XXXX?'</span>);</span><br><span class="line">            <span class="keyword">if</span> (result == <span class="literal">true</span>)&#123;</span><br><span class="line">                alert(<span class="string">'终止操作！'</span>);</span><br><span class="line">                result = <span class="literal">false</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                alert(<span class="string">'终止操作取消！'</span>);</span><br><span class="line">                result = <span class="literal">false</span>;&#125;</span><br></pre></td></tr></table></figure>
 
 <p>2.但是这个弹框中的按钮失效了，只能基于bootstrap重新创建一下，可以参考以下这种，直接在js中插入这段代码(亲测有效）：</p>
@@ -632,15 +634,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">MANIFEST.MF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -652,15 +654,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -672,7 +670,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -680,7 +678,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -692,19 +698,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -716,7 +714,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -725,6 +723,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">

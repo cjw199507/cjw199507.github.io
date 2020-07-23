@@ -28,20 +28,22 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta property="og:type" content="article">
+  <meta name="description" content="Hello World!">
+<meta property="og:type" content="article">
 <meta property="og:title" content="数据库日常之修改MySQL数据库密码的方法">
 <meta property="og:url" content="http://yoursite.com/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%A5%E5%B8%B8%E4%B9%8B%E4%BF%AE%E6%94%B9MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E7%9A%84%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta property="og:description" content="Hello World!">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200511115031892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200511115707279.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-07-23T06:14:46.000Z">
-<meta property="article:modified_time" content="2020-07-23T06:38:44.102Z">
+<meta property="article:modified_time" content="2020-07-23T07:16:15.593Z">
 <meta property="article:author" content="C J W">
 <meta property="article:tag" content="密码修改">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
   
@@ -218,7 +220,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">329字</span>
+        <span class="post-count">331字</span>
       </span>
     </span>
 
@@ -246,8 +248,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://img-blog.csdnimg.cn/20200723142851582.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+        <p>Hello World!</p>
 <a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
 <h1 id="1-windows下利用CMD命令修改"><a href="#1-windows下利用CMD命令修改" class="headerlink" title="1.windows下利用CMD命令修改"></a>1.windows下利用CMD命令修改</h1><p>开始时如果用户user没有密码，则 -p 旧密码 一项就可以省略；<br>修改格式：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -hlocalhost -u root -p 旧密码 password 新密码</span><br></pre></td></tr></table></figure>
 <p>修改步骤：(按回车键Enter执行命令行）<br>1.首先在DOS下进入目录mysql\bin<br>C: \Users\Adninistrator&gt;D:<br>D:&gt;cd D:\mysql-5.7.22-win32\bin<br>2.然后输入以下命令：<br>D:\mysql-5.7.22-win32\bin&gt;mysql -hlocalhost -u root -p 111111 password 123456</p>
@@ -626,15 +629,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">MANIFEST.MF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -646,15 +649,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
+                <a href="javascript:void(0)" class="js-tag color1">sql语法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -666,7 +665,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+                <a href="javascript:void(0)" class="js-tag color3">数据库安装教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -674,7 +673,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -686,19 +693,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">pom.xml</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -710,7 +709,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color4">cmd</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -719,6 +718,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
