@@ -16,37 +16,56 @@
       </tags>
   </entry>
   <entry>
-    <title>Maven仓库安装配置教程(windows)</title>
-    <url>/2020/07/21/Maven%E4%BB%93%E5%BA%93%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B-windows/</url>
-    <content><![CDATA[<h2 id="1-安装本地Maven"><a href="#1-安装本地Maven" class="headerlink" title="1. 安装本地Maven"></a>1. 安装本地Maven</h2><p>点此进入<a href="http://maven.apache.org/guides/getting-started/index.html" target="_blank" rel="noopener">maven官网</a>下载<br><img src="https://img-blog.csdnimg.cn/20200717171858155.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+    <title>JavaScript匿名函数理解及应用</title>
+    <url>/2020/07/23/JavaScript%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%E7%90%86%E8%A7%A3%E5%8F%8A%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h1><p>匿名函数顾名思义就是没有名字的函数，在实际开发中经常会用到，也是JavaScript的重点。匿名函数又叫立即执行函数。</p>
 <hr>
-<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><p>系统变量:MAVEN_HOME = D:\apache-maven-3.6.1<br><img src="https://img-blog.csdnimg.cn/20200717172006252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>系统变量:path = %MAVEN_HOME%\bin<br><img src="https://img-blog.csdnimg.cn/20200717172116727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>由于这种函数是匿名的，所以它不能被调用。<br>由于它不能被调用，所以如果它不立即执行的话就没有了意义。<br>由于它需要立即执行，所以在执行完之后匿名函数就会被销毁。<br>匿名自执行函数的作用就是用于闭包和创建独立的命名空间两个方面。</p>
 <a id="more"></a>
 <hr>
-<h2 id="3-验证安装"><a href="#3-验证安装" class="headerlink" title="3. 验证安装"></a>3. 验证安装</h2><p>然后win+R 运行cmd 输入 mvn -version，如图所示则配置成功！！！<br><img src="https://img-blog.csdnimg.cn/20200717172219961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>匿名函数的基本形式为(function(){…})();</p>
+<p>前面的括号包含函数体，后面的括号就是给匿名函数传递参数然后立即执行。</p>
+<p>匿名函数的作用是避免全局变量的污染以及函数名的冲突。</p>
 <hr>
-<h2 id="4-配置settings文件"><a href="#4-配置settings文件" class="headerlink" title="4. 配置settings文件"></a>4. 配置settings文件</h2><p>在D:\apache-maven-3.6.1\conf下可以找到settings文件<br>找到第52行，这里是maven默认的仓库，复制第53行<br><localRepository>/path/to/local/repo</localRepository><br>将它拿到注释外并将中间的内容改成你需要的路径:(不改也行)</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;localRepository&gt;D:/repository&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
-<p>这里的路径随便设置，注意这里是正斜杠<br>因为国外的服务器下载jar包很慢所以我们改为阿里云服务器（大约在150行左右），这两个仓库只用选一个(根据大家反馈建议使用第一个，第二个在有的版本可能会出现warning)<br> <!-- 阿里云仓库 --><br>        <mirror><br>            <id>alimaven</id><br>            <mirrorOf>central</mirrorOf><br>            <name>aliyun maven</name><br>            <url><a href="http://maven.aliyun.com/nexus/content/repositories/central/" target="_blank" rel="noopener">http://maven.aliyun.com/nexus/content/repositories/central/</a></url><br>        </mirror><br>     或者<br>      <mirror><br>        <id>nexus-aliyun</id><br>        <mirrorOf>*</mirrorOf><br>        <name>Nexus aliyun</name><br>        <url><a href="http://maven.aliyun.com/nexus/content/groups/public" target="_blank" rel="noopener">http://maven.aliyun.com/nexus/content/groups/public</a></url><br>     </mirror><br>在最后配置jdk，也要夹在两个profiles标签之间（不改也没事）</p>
-<!-- more -->
-
-<!-- java版本 --> 
-<profile>
-      <id>jdk-1.8</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-        <jdk>1.8</jdk>
-      </activation>
-
-<pre><code>&lt;properties&gt;
-  &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
-  &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
-  &lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;
-&lt;/properties&gt;</code></pre></profile>
-
-<p>配置完成，在命令行输入mvn help:system测试，看到下载链接里面是ailiyun的链接表示配置成功：<br><img src="https://img-blog.csdnimg.cn/20200717172718483.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>匿名自执行函数的作用</p>
+<p>1.匿名自执行函数最常见的作用是用于实现闭包的情况中。<br>闭包:闭包是JavaScript的一种特性，我们可以通过闭包实现函数内外部的连接，并且可以使得函数的局部变量始终存在于内存中。</p>
+<p>2.匿名自执行函数还可以用于在JavaScript中模拟创建块级作用域.<br>使用匿名自执行函数将某些代码包裹起来可以实现块级作用域的效果，减少全局变量的数量，在匿名自执行函数执行结束后变量就会被内存释放掉，从而也会节省了内存。</p>
+<hr>
+<p><strong><em>小括号</em></strong><br>包着函数的小括号的作用：<br>小括号能把我们的表达式组合分块，并且每一块，也就是每一对小括号，都有一个返回值。这个返回值实际上也就是小括号中表达式的返回值。所以，当我们用一对小括号把匿名函数包起来的时，实际上小括号对返回的，就是一个匿名函数的Function 对象。因此，小括号对加上匿名函数就如同有名字的函数般被我们取得它的引用位置了。所以如果在这个引用变量后面再加上参数列表，就会实现普通函数的调用形式。</p>
+<p>小括号有返回值，就是小括号内的函数或者表达式的返回值，所以小括号内的function返回值等于小括号的返回值。</p>
+<hr>
+<p><strong><em>写法</em></strong><br>匿名函数的写法<br>1.先定义一个普通函数Cat()</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    alert(<span class="string">"喵喵喵~~"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.去掉函数的名字构建匿名函数<br>不包裹一个括号不符合语法要求，会报错！需要给匿名函数外边包裹一个括号才能运行。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    alert(<span class="string">"喵喵喵~~"</span>);</span><br><span class="line">&#125;)()                        <span class="comment">//()可省略</span></span><br></pre></td></tr></table></figure>
+<p>3.当匿名函数需要传值，将参数写到括号内</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">!(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    alert(<span class="string">"喵喵喵~~"</span>+data);</span><br><span class="line">&#125;)(<span class="string">"汪汪汪~~"</span>)</span><br></pre></td></tr></table></figure>
+<hr>
+<p>4种实现方式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//常见匿名函数：</span></span><br><span class="line">            <span class="comment">//1，匿名函数的第一种实现方式</span></span><br><span class="line">    		(<span class="function"><span class="keyword">function</span>(<span class="params">cat</span>)</span>&#123;</span><br><span class="line">    			alert(cat);</span><br><span class="line">    		&#125;)(<span class="string">"喵喵喵~~"</span>);</span><br><span class="line">    		<span class="comment">//2.匿名自执行函数的第二种实现方式（常用）jQuery </span></span><br><span class="line">    		(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    			alert(<span class="string">"cat"</span>);</span><br><span class="line">    		&#125;());</span><br><span class="line">    		<span class="comment">//3.匿名自执行函数的第三种实现方式</span></span><br><span class="line">    		!<span class="function"><span class="keyword">function</span>(<span class="params">cat</span>)</span>&#123;</span><br><span class="line">    			alert(cat);</span><br><span class="line">    		&#125;(<span class="string">"喵喵喵~~"</span>);</span><br><span class="line">    		<span class="comment">//4.匿名自执行函数的第四种实现方式</span></span><br><span class="line">    		<span class="keyword">var</span> fun=<span class="function"><span class="keyword">function</span>(<span class="params">cat</span>)</span>&#123;</span><br><span class="line">    			alert(cat);</span><br><span class="line">    		&#125;(<span class="string">"喵喵喵~~"</span>);</span><br><span class="line"><span class="comment">//不常见匿名函数：</span></span><br><span class="line">            </span><br><span class="line">			~(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">			</span><br><span class="line">			alert(<span class="string">'cat'</span>); </span><br><span class="line">			&#125;)();</span><br><span class="line">			<span class="comment">//效率最高</span></span><br><span class="line">			<span class="keyword">void</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">			</span><br><span class="line">			alert(<span class="string">'cat'</span>); </span><br><span class="line">			&#125;();</span><br><span class="line">					</span><br><span class="line">			+<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">			</span><br><span class="line">			alert(<span class="string">'cat'</span>); </span><br><span class="line">			&#125;();</span><br><span class="line">			</span><br><span class="line">			-<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">			</span><br><span class="line">			alert(<span class="string">'cat'</span>); </span><br><span class="line">			&#125;();</span><br><span class="line">			</span><br><span class="line">			~<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">			</span><br><span class="line">			alert(<span class="string">'cat'</span>); </span><br><span class="line">			&#125;();</span><br><span class="line">			</span><br><span class="line">			!<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">			</span><br><span class="line">			alert(<span class="string">'cat'</span>); </span><br><span class="line">			&#125;();</span><br><span class="line">			<span class="comment">//强制执行</span></span><br><span class="line">			(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">			</span><br><span class="line">			alert(<span class="string">'cat'</span>); </span><br><span class="line">			&#125;());</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong><em>匿名函数的应用</em></strong><br>1.绑定事件</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;input type="button" value="点击" id="btn"&gt;</span><br><span class="line"></span><br><span class="line">```<span class="selector-tag">javascript</span></span><br><span class="line">var btn=document.querySelector("#btn");    //querySelector是H5中新增的查找dom元素的方法</span><br><span class="line">    		btn.οnclick=function()&#123;</span><br><span class="line">    			<span class="selector-tag">alert</span>("");</span><br><span class="line">    		&#125;</span><br></pre></td></tr></table></figure>
+<p>2.应用对象</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> obj=&#123;</span><br><span class="line"></span><br><span class="line">    animal:<span class="string">"汤姆猫"</span>,</span><br><span class="line"></span><br><span class="line">    voice:<span class="string">"喵喵喵~~"</span>,</span><br><span class="line"></span><br><span class="line">    CAT:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"我是"</span>+<span class="keyword">this</span>.animal+<span class="string">"，我会"</span>+<span class="keyword">this</span>.voice+<span class="string">"叫！"</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">alert(obj.CAT());</span><br></pre></td></tr></table></figure>
+<p>3.应用函数表达式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//将匿名函数赋值给变量cat</span></span><br><span class="line"><span class="keyword">var</span> cat=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"喵喵喵~~"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//调用方式与调用普通函数一样</span></span><br><span class="line">alert(cat());</span><br></pre></td></tr></table></figure>
+<p>4、回调函数的应用</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"我是每5秒执行一次的回调函数"</span>);</span><br><span class="line">&#125;,<span class="number">5000</span>);</span><br></pre></td></tr></table></figure>
+<p>5、返回值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">cat</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//返回匿名函数</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"喵喵喵~~"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//调用匿名函数</span></span><br><span class="line">alert(cat()());</span><br><span class="line"><span class="comment">//或</span></span><br><span class="line"><span class="keyword">var</span> mao=cat();</span><br><span class="line">alert(mao());</span><br></pre></td></tr></table></figure>
+<p>6.链式调用</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">animal</span>) </span>&#123; </span><br><span class="line"></span><br><span class="line">alert(animal); </span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="built_in">arguments</span>.callee; </span><br><span class="line"></span><br><span class="line">&#125;)(<span class="string">'cat'</span>)(<span class="string">'dog'</span>)(<span class="string">'pig'</span>);</span><br></pre></td></tr></table></figure>
+<hr>
 <p><strong><em>END</em></strong></p>
 ]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>js</tag>
+      </tags>
   </entry>
   <entry>
     <title>MANIFEST.MF文件属性总结理解</title>
@@ -106,7 +125,82 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
+        <tag>MANIFEST.MF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven仓库安装配置教程(windows)</title>
+    <url>/2020/07/21/Maven%E4%BB%93%E5%BA%93%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B-windows/</url>
+    <content><![CDATA[<h2 id="1-安装本地Maven"><a href="#1-安装本地Maven" class="headerlink" title="1. 安装本地Maven"></a>1. 安装本地Maven</h2><p>点此进入<a href="http://maven.apache.org/guides/getting-started/index.html" target="_blank" rel="noopener">maven官网</a>下载<br><img src="https://img-blog.csdnimg.cn/20200717171858155.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><p>系统变量:MAVEN_HOME = D:\apache-maven-3.6.1<br><img src="https://img-blog.csdnimg.cn/20200717172006252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>系统变量:path = %MAVEN_HOME%\bin<br><img src="https://img-blog.csdnimg.cn/20200717172116727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<a id="more"></a>
+<hr>
+<h2 id="3-验证安装"><a href="#3-验证安装" class="headerlink" title="3. 验证安装"></a>3. 验证安装</h2><p>然后win+R 运行cmd 输入 mvn -version，如图所示则配置成功！！！<br><img src="https://img-blog.csdnimg.cn/20200717172219961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="4-配置settings文件"><a href="#4-配置settings文件" class="headerlink" title="4. 配置settings文件"></a>4. 配置settings文件</h2><p>在D:\apache-maven-3.6.1\conf下可以找到settings文件<br>找到第52行，这里是maven默认的仓库，复制第53行<br><localRepository>/path/to/local/repo</localRepository><br>将它拿到注释外并将中间的内容改成你需要的路径:(不改也行)</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;localRepository&gt;D:/repository&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
+<p>这里的路径随便设置，注意这里是正斜杠<br>因为国外的服务器下载jar包很慢所以我们改为阿里云服务器（大约在150行左右），这两个仓库只用选一个(根据大家反馈建议使用第一个，第二个在有的版本可能会出现warning)<br> <!-- 阿里云仓库 --><br>        <mirror><br>            <id>alimaven</id><br>            <mirrorOf>central</mirrorOf><br>            <name>aliyun maven</name><br>            <url><a href="http://maven.aliyun.com/nexus/content/repositories/central/" target="_blank" rel="noopener">http://maven.aliyun.com/nexus/content/repositories/central/</a></url><br>        </mirror><br>     或者<br>      <mirror><br>        <id>nexus-aliyun</id><br>        <mirrorOf>*</mirrorOf><br>        <name>Nexus aliyun</name><br>        <url><a href="http://maven.aliyun.com/nexus/content/groups/public" target="_blank" rel="noopener">http://maven.aliyun.com/nexus/content/groups/public</a></url><br>     </mirror><br>在最后配置jdk，也要夹在两个profiles标签之间（不改也没事）</p>
+<!-- more -->
+
+<!-- java版本 --> 
+<profile>
+      <id>jdk-1.8</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+        <jdk>1.8</jdk>
+      </activation>
+
+<pre><code>&lt;properties&gt;
+  &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
+  &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
+  &lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;
+&lt;/properties&gt;</code></pre></profile>
+
+<p>配置完成，在命令行输入mvn help:system测试，看到下载链接里面是ailiyun的链接表示配置成功：<br><img src="https://img-blog.csdnimg.cn/20200717172718483.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaWeb开发免费后台Html样式模板</title>
+    <url>/2020/07/23/JavaWeb%E5%BC%80%E5%8F%91%E5%85%8D%E8%B4%B9%E5%90%8E%E5%8F%B0Html%E6%A0%B7%E5%BC%8F%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h1 id="后台Html样式模板"><a href="#后台Html样式模板" class="headerlink" title="后台Html样式模板"></a>后台Html样式模板</h1><p>免费模板网（<a href="http://www.freemoban.com）提供大量的免费网站HTML网页模板,企业/响应式/自适应等免费网站模板源码，可以任意下载安装测试使用。" target="_blank" rel="noopener">www.freemoban.com）提供大量的免费网站HTML网页模板,企业/响应式/自适应等免费网站模板源码，可以任意下载安装测试使用。</a><br><img src="https://img-blog.csdnimg.cn/20200606170000413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>链接: <a href="https://www.freemoban.com/tag/%E5%90%8E%E5%8F%B0" target="_blank" rel="noopener">免费模板</a></p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
         <tag>JavaWeb</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven仓库导包慢的解决办法</title>
+    <url>/2020/07/22/Maven%E4%BB%93%E5%BA%93%E5%AF%BC%E5%8C%85%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="故障原因"><a href="#故障原因" class="headerlink" title="故障原因"></a>故障原因</h1><p>原因：默认安装的maven使用官网地址下载依赖包，在国内访问比较慢。<br>方法：将maven配置文件中下载依赖包地址修改成国内地址，一般都使用阿里的地址。</p>
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>1，右键项目名，选择maven<br><img src="https://img-blog.csdnimg.cn/20200717092137188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>替换setting.xml文件中的这部分为如下样式：<br><img src="https://img-blog.csdnimg.cn/20200717092316725.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<a id="more"></a>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;mirrors&gt;</span><br><span class="line">    &lt;!-- mirror</span><br><span class="line">     | Specifies a repository mirror site to use instead of a given repository. The repository that</span><br><span class="line">     | <span class="keyword">this</span> mirror serves has an ID that matches the mirrorOf element of <span class="keyword">this</span> mirror. IDs are used</span><br><span class="line">     | <span class="keyword">for</span> inheritance and direct lookup purposes, and must be unique across the set of mirrors.</span><br><span class="line">     |</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;id&gt;mirrorId&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;repositoryId&lt;/mirrorOf&gt;</span><br><span class="line">      &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;</span><br><span class="line">      &lt;url&gt;http:<span class="comment">//my.repository.com/repo/path&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">     --&gt;</span><br><span class="line">     &lt;!-- &lt;mirror&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;id&gt;repo2&lt;/id&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;url&gt;http:<span class="comment">//repo2.maven.org/maven2/&lt;/url&gt;       --&gt;</span></span><br><span class="line">    &lt;!-- &lt;/mirror&gt;    --&gt;</span><br><span class="line"></span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;!--This sends everything <span class="keyword">else</span> to /<span class="keyword">public</span> --&gt;</span><br><span class="line">      &lt;id&gt;nexus&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;*&lt;/mirrorOf&gt; </span><br><span class="line">      &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;!--This is used to direct the <span class="keyword">public</span> snapshots repo in the </span><br><span class="line">          profile below over to a different nexus group --&gt;</span><br><span class="line">      &lt;id&gt;nexus-public-snapshots&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;public-snapshots&lt;/mirrorOf&gt; </span><br><span class="line">      &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/repositories/snapshots/&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/mirrors&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>2.打开本地maven位置，选择setting.xml文件，修改同上位置<br><img src="https://img-blog.csdnimg.cn/20200717092604424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>打开.xml文件后替换红框部分：<br><img src="https://img-blog.csdnimg.cn/20200717092759968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>重启idea后更新maven仓库，下载飞快。</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
         <tag>SpringBoot</tag>
       </tags>
   </entry>
@@ -131,6 +225,44 @@
 <!-- more -->
 <p>在Mybatis中传递多个参数要做参数的绑定（@Param）<br><img src="https://img-blog.csdnimg.cn/20200719121212891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>不写parameterType也可以运行,因为Mybatis能自动识别，但返回值类型不能不写!!<br>Mybatis自动识别入参对象, 传入单个map或单个对象,无需写@Param注解   如@Param(“map”)  Map&lt;String, Object&gt; map<br>那么什么时候必须在mapper接口上写@Param注解呢,   mapper接口中有<strong>多个参数</strong>(每个对象或参数都要加@Param注解), 或<strong>一个 String</strong>, 必须使用@Param注解,<br><strong><em>END</em></strong></p>
 ]]></content>
+      <categories>
+        <category>SpringBoot</category>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>MyBatis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SpringBoot整合Mybatis</title>
+    <url>/2020/07/21/SpringBoot%E6%95%B4%E5%90%88Mybatis/</url>
+    <content><![CDATA[<h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
+<li>IDEA2018.3 </li>
+<li>JDK1.8 </li>
+<li>SpringBoot2.3.0</li>
+<li>360浏览器<h2 id="整合过程"><a href="#整合过程" class="headerlink" title="整合过程"></a>整合过程</h2><ol>
+<li>新建一个Spring Initializr项目<br><img src="https://img-blog.csdnimg.cn/20200718104936498.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>创建项目的文件结构以及jdk的版本<br><img src="https://img-blog.csdnimg.cn/202007181050333.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>选择项目所需要的依赖<br><img src="https://img-blog.csdnimg.cn/20200718105109480.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>修改项目名，点击完成<br><img src="https://img-blog.csdnimg.cn/20200718105204109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>选择自动导入依赖<br><img src="https://img-blog.csdnimg.cn/20200718105410937.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>pom,xml文件</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;</span><br><span class="line">&lt;project xmlns=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> xmlns:xsi=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span><br><span class="line">         xsi:schemaLocation=<span class="string">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line">    &lt;parent&gt;</span><br><span class="line">        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;2.3.1.RELEASE&lt;/version&gt;</span><br><span class="line">        &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;</span><br><span class="line">    &lt;/parent&gt;</span><br><span class="line">    &lt;groupId&gt;com.cjw&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;demo&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;</span><br><span class="line">    &lt;name&gt;demo&lt;/name&gt;</span><br><span class="line">    &lt;description&gt;Demo project for Spring Boot&lt;/description&gt;</span><br><span class="line"></span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;java.version&gt;1.8&lt;/java.version&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.1.3&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">            &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;lombok&lt;/artifactId&gt;</span><br><span class="line">            &lt;optional&gt;true&lt;/optional&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;</span><br><span class="line">            &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">            &lt;exclusions&gt;</span><br><span class="line">                &lt;exclusion&gt;</span><br><span class="line">                    &lt;groupId&gt;org.junit.vintage&lt;/groupId&gt;</span><br><span class="line">                    &lt;artifactId&gt;junit-vintage-engine&lt;/artifactId&gt;</span><br><span class="line">                &lt;/exclusion&gt;</span><br><span class="line">            &lt;/exclusions&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.security&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-security-test&lt;/artifactId&gt;</span><br><span class="line">            &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line">    &lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">            &lt;/plugin&gt;</span><br><span class="line">        &lt;/plugins&gt;</span><br><span class="line">    &lt;/build&gt;</span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+<p>6.修改配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#server.port=8080</span></span><br><span class="line"><span class="comment">#server.servlet.context-path=/index #访问路径设置</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.datasource.url</span> <span class="string">=</span> <span class="string">jdbc:mysql://localhost:3306/ems?characterEncoding=UTF-8&amp;useSSL=true&amp;serverTimezone=UTC</span></span><br><span class="line"><span class="string">spring.datasource.username</span> <span class="string">=</span> <span class="string">root</span></span><br><span class="line"><span class="string">spring.datasource.password</span> <span class="string">=</span> <span class="number">123456</span></span><br><span class="line"><span class="string">spring.datasource.driverClassName</span> <span class="string">=</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="string">spring.datasource.type</span> <span class="string">=</span> <span class="string">com.alibaba.druid.pool.DruidDataSource</span></span><br><span class="line"></span><br><span class="line"><span class="string">mybatis.mapper-locations</span> <span class="string">=</span> <span class="string">classpath:mapper/*.xml</span></span><br><span class="line"><span class="string">mybatis.type-aliases-package</span> <span class="string">=</span> <span class="string">com.dvms.entity</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.resources.static-locations</span> <span class="string">=</span> <span class="string">classpath:/templates/,classpath:/static/</span></span><br></pre></td></tr></table></figure>
+<p>这里使用application.properties文件，也可以使用更加简洁的application.yml文件，须要将resource文件夹下原有的application.properties文件删除，染回创建application.yml配置文件（备注：其实SpringBoot底层会把application.yml文件解析为application.properties）<br>7.实现业务流程<br>创建包controller、entity、mapper、service。resources下创建mapper文件夹，用于写sql语句，也可以用注解的方式直接写在mapper文件里。<br>最终框架结构:<br><img src="https://img-blog.csdnimg.cn/20200718110739805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>完成以上，下面在启动类里加上注解用于给出需要扫描的dao文件路径<br>@MapperScan(“com.dvms.dao”) //扫描dao接口,mybatis扫描路径，针对的是接口Mapper类<br>最后启动，浏览器输入地址：<a href="http://localhost:8080/index(根据实际项目)显示出对应界面即可。" target="_blank" rel="noopener">http://localhost:8080/index(根据实际项目)显示出对应界面即可。</a><br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>Mybatis</tag>
+      </tags>
   </entry>
   <entry>
     <title>PageHelper分页插件的整合与项目应用</title>
@@ -183,61 +315,24 @@
       </tags>
   </entry>
   <entry>
-    <title>Maven仓库导包慢的解决办法</title>
-    <url>/2020/07/22/Maven%E4%BB%93%E5%BA%93%E5%AF%BC%E5%8C%85%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="故障原因"><a href="#故障原因" class="headerlink" title="故障原因"></a>故障原因</h1><p>原因：默认安装的maven使用官网地址下载依赖包，在国内访问比较慢。<br>方法：将maven配置文件中下载依赖包地址修改成国内地址，一般都使用阿里的地址。</p>
-<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>1，右键项目名，选择maven<br><img src="https://img-blog.csdnimg.cn/20200717092137188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>替换setting.xml文件中的这部分为如下样式：<br><img src="https://img-blog.csdnimg.cn/20200717092316725.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<a id="more"></a>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;mirrors&gt;</span><br><span class="line">    &lt;!-- mirror</span><br><span class="line">     | Specifies a repository mirror site to use instead of a given repository. The repository that</span><br><span class="line">     | <span class="keyword">this</span> mirror serves has an ID that matches the mirrorOf element of <span class="keyword">this</span> mirror. IDs are used</span><br><span class="line">     | <span class="keyword">for</span> inheritance and direct lookup purposes, and must be unique across the set of mirrors.</span><br><span class="line">     |</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;id&gt;mirrorId&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;repositoryId&lt;/mirrorOf&gt;</span><br><span class="line">      &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;</span><br><span class="line">      &lt;url&gt;http:<span class="comment">//my.repository.com/repo/path&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">     --&gt;</span><br><span class="line">     &lt;!-- &lt;mirror&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;id&gt;repo2&lt;/id&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;       --&gt;</span><br><span class="line">      &lt;!-- &lt;url&gt;http:<span class="comment">//repo2.maven.org/maven2/&lt;/url&gt;       --&gt;</span></span><br><span class="line">    &lt;!-- &lt;/mirror&gt;    --&gt;</span><br><span class="line"></span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;!--This sends everything <span class="keyword">else</span> to /<span class="keyword">public</span> --&gt;</span><br><span class="line">      &lt;id&gt;nexus&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;*&lt;/mirrorOf&gt; </span><br><span class="line">      &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;!--This is used to direct the <span class="keyword">public</span> snapshots repo in the </span><br><span class="line">          profile below over to a different nexus group --&gt;</span><br><span class="line">      &lt;id&gt;nexus-public-snapshots&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;public-snapshots&lt;/mirrorOf&gt; </span><br><span class="line">      &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/repositories/snapshots/&lt;/url&gt;</span></span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/mirrors&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>2.打开本地maven位置，选择setting.xml文件，修改同上位置<br><img src="https://img-blog.csdnimg.cn/20200717092604424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>打开.xml文件后替换红框部分：<br><img src="https://img-blog.csdnimg.cn/20200717092759968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>重启idea后更新maven仓库，下载飞快。</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringBoot整合Mybatis</title>
-    <url>/2020/07/21/SpringBoot%E6%95%B4%E5%90%88Mybatis/</url>
-    <content><![CDATA[<h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
+    <title>SpringBoot项目打包为jar包</title>
+    <url>/2020/07/22/SpringBoot%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%B8%BAjar%E5%8C%85/</url>
+    <content><![CDATA[<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
 <li>IDEA2018.3 </li>
 <li>JDK1.8 </li>
-<li>SpringBoot2.3.0</li>
-<li>360浏览器<h2 id="整合过程"><a href="#整合过程" class="headerlink" title="整合过程"></a>整合过程</h2><ol>
-<li>新建一个Spring Initializr项目<br><img src="https://img-blog.csdnimg.cn/20200718104936498.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>创建项目的文件结构以及jdk的版本<br><img src="https://img-blog.csdnimg.cn/202007181050333.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>选择项目所需要的依赖<br><img src="https://img-blog.csdnimg.cn/20200718105109480.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>修改项目名，点击完成<br><img src="https://img-blog.csdnimg.cn/20200718105204109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>选择自动导入依赖<br><img src="https://img-blog.csdnimg.cn/20200718105410937.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>pom,xml文件</li>
-</ol>
-</li>
+<li>SpringBoot2.3.0 </li>
+<li>360浏览器<br>项目部署一般是两种方式：<br>一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。<br>pom.xml：<br>&lt; packaging&gt;jar&lt; /packaging&gt;  （默认）<br>&lt; packaging&gt;war&lt; /packaging&gt;<a id="more"></a>
+<h1 id="打jar包"><a href="#打jar包" class="headerlink" title="打jar包"></a>打jar包</h1>选择 File -&gt; Project Structure-&gt;Artifacts-&gt;Jar-&gt;Form modules with dependencies后点ok:<br>根据 下图内容创建 jar。如图所示，选择项目，入口类等。最后一项 META-INF，默认放到 src\main\java 目录里，如果使用默认值，没有进行其他配置，生成的 jar 有可能不会包含 META-INF 目录，导致运行 jar 出错。最好放在 src\main\resource目录中。点击ok保存。按下图所示配置：<br><img src="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击ok会出现如图所示信息:<br><img src="https://img-blog.csdnimg.cn/20200720101055777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="生成jar包"><a href="#生成jar包" class="headerlink" title="生成jar包"></a>生成jar包</h1>点击idea菜单栏中的build，依次选择：<br><img src="https://img-blog.csdnimg.cn/20200720103416304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点Build:<br><img src="https://img-blog.csdnimg.cn/20200720103454190.png" alt="在这里插入图片描述"><br>在保存路经中查找所打包的jar包如果存在则说明打包成功。<br><img src="https://img-blog.csdnimg.cn/20200720103554129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="运行jar包"><a href="#运行jar包" class="headerlink" title="运行jar包"></a>运行jar包</h1>开始运行jar包，打开cmd进入jar所在的路径，输入java -jar xxx.jar (jar名称) ，点击回车按键。</li>
 </ul>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;</span><br><span class="line">&lt;project xmlns=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> xmlns:xsi=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span><br><span class="line">         xsi:schemaLocation=<span class="string">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line">    &lt;parent&gt;</span><br><span class="line">        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;2.3.1.RELEASE&lt;/version&gt;</span><br><span class="line">        &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;</span><br><span class="line">    &lt;/parent&gt;</span><br><span class="line">    &lt;groupId&gt;com.cjw&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;demo&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;</span><br><span class="line">    &lt;name&gt;demo&lt;/name&gt;</span><br><span class="line">    &lt;description&gt;Demo project for Spring Boot&lt;/description&gt;</span><br><span class="line"></span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;java.version&gt;1.8&lt;/java.version&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.1.3&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">            &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;lombok&lt;/artifactId&gt;</span><br><span class="line">            &lt;optional&gt;true&lt;/optional&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;</span><br><span class="line">            &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">            &lt;exclusions&gt;</span><br><span class="line">                &lt;exclusion&gt;</span><br><span class="line">                    &lt;groupId&gt;org.junit.vintage&lt;/groupId&gt;</span><br><span class="line">                    &lt;artifactId&gt;junit-vintage-engine&lt;/artifactId&gt;</span><br><span class="line">                &lt;/exclusion&gt;</span><br><span class="line">            &lt;/exclusions&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.security&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-security-test&lt;/artifactId&gt;</span><br><span class="line">            &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line">    &lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">            &lt;/plugin&gt;</span><br><span class="line">        &lt;/plugins&gt;</span><br><span class="line">    &lt;/build&gt;</span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Microsoft Windows [版本 <span class="number">10.0</span><span class="number">.18362</span><span class="number">.959</span>]</span><br><span class="line">(c) <span class="number">2019</span> Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\<span class="number">92895</span>&gt;D:</span><br><span class="line"></span><br><span class="line">D:\&gt;cd D:\data_view\out\artifacts\data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;Java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view.jar</span><br><span class="line">_________       ____.__      __</span><br><span class="line">\_   ___ \     |    /  \    /  \</span><br><span class="line">/    \  \/     |    \   \/\/   /</span><br><span class="line">\     \____/\__|    |\        /</span><br><span class="line"> \______  /\________| \__/\  /</span><br><span class="line">        \/                 \/</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.016</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : Starting DataViewApplication on <span class="number">4</span>C501 with PID <span class="number">12564</span> (D:\data_view\out\artifacts\data_view_jar\data_view.jar started by <span class="number">92895</span> in D:\data_view\out\artifacts\data_view_jar)</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.020</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : No active profile set, falling back to <span class="keyword">default</span> profiles: <span class="keyword">default</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set <span class="string">'spring.devtools.add-properties'</span> to <span class="string">'false'</span> to disable</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the <span class="string">'logging.level.web'</span> property to <span class="string">'DEBUG'</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">28.817</span>  INFO <span class="number">12564</span> --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : <span class="function">Tomcat initialized with <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.831  INFO 12564 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.832  INFO 12564 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1827 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.631  INFO 12564 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56cf4f3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e169c9, org.springframework.security.web.header.HeaderWriterFilter@26d4eefe, org.springframework.security.web.authentication.logout.LogoutFilter@f17fdd6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f33f6b3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70ffa278, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@109a14b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54857a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423bad4c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7e8ca12a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee5e690, org.springframework.security.web.session.SessionManagementFilter@7139411a, org.springframework.security.web.access.ExceptionTranslationFilter@1ec9ee0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf4c490]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.711  INFO 12564 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.929  INFO 12564 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.967  INFO 12564 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span> with context path ''</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.976  INFO 12564 --- [  restartedMain] com.dvms.DataViewApplication             : Started DataViewApplication in 3.27 <span class="title">seconds</span> <span class="params">(JVM running <span class="keyword">for</span> <span class="number">3.828</span>)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.774  INFO 12564 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.775  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.782  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:56.052  INFO 12564 --- [nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : </span>&#123;dataSource-<span class="number">1</span>&#125; init</span><br></pre></td></tr></table></figure>
 
-<a id="more"></a>
-<p>6.修改配置文件</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#server.port=8080</span></span><br><span class="line"><span class="comment">#server.servlet.context-path=/index #访问路径设置</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.datasource.url</span> <span class="string">=</span> <span class="string">jdbc:mysql://localhost:3306/ems?characterEncoding=UTF-8&amp;useSSL=true&amp;serverTimezone=UTC</span></span><br><span class="line"><span class="string">spring.datasource.username</span> <span class="string">=</span> <span class="string">root</span></span><br><span class="line"><span class="string">spring.datasource.password</span> <span class="string">=</span> <span class="number">123456</span></span><br><span class="line"><span class="string">spring.datasource.driverClassName</span> <span class="string">=</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="string">spring.datasource.type</span> <span class="string">=</span> <span class="string">com.alibaba.druid.pool.DruidDataSource</span></span><br><span class="line"></span><br><span class="line"><span class="string">mybatis.mapper-locations</span> <span class="string">=</span> <span class="string">classpath:mapper/*.xml</span></span><br><span class="line"><span class="string">mybatis.type-aliases-package</span> <span class="string">=</span> <span class="string">com.dvms.entity</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.resources.static-locations</span> <span class="string">=</span> <span class="string">classpath:/templates/,classpath:/static/</span></span><br></pre></td></tr></table></figure>
-<p>这里使用application.properties文件，也可以使用更加简洁的application.yml文件，须要将resource文件夹下原有的application.properties文件删除，染回创建application.yml配置文件（备注：其实SpringBoot底层会把application.yml文件解析为application.properties）<br>7.实现业务流程<br>创建包controller、entity、mapper、service。resources下创建mapper文件夹，用于写sql语句，也可以用注解的方式直接写在mapper文件里。<br>最终框架结构:<br><img src="https://img-blog.csdnimg.cn/20200718110739805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>完成以上，下面在启动类里加上注解用于给出需要扫描的dao文件路径<br>@MapperScan(“com.dvms.dao”) //扫描dao接口,mybatis扫描路径，针对的是接口Mapper类<br>最后启动，浏览器输入地址：<a href="http://localhost:8080/index(根据实际项目)显示出对应界面即可。" target="_blank" rel="noopener">http://localhost:8080/index(根据实际项目)显示出对应界面即可。</a><br><strong><em>END</em></strong></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>SpringBoot的启动图案修改</title>
-    <url>/2020/07/22/SpringBoot%E7%9A%84%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A1%88%E4%BF%AE%E6%94%B9/</url>
-    <content><![CDATA[<p>Springboot项目启动时，会出现大大的SpringBoot的图案：<br><img src="https://img-blog.csdnimg.cn/20200718141606137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改：<br>首先创建springboot项目，首先在resources/目录下创建名为banner.txt的文件：<br>点击链接：<a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=CJW" target="_blank" rel="noopener">SpringBoot的启动图案修改</a><br><img src="https://img-blog.csdnimg.cn/20200718141955428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>启动项目：<br><img src="https://img-blog.csdnimg.cn/20200718142131464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>无聊…..<br><strong><em>END</em></strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20200720103747636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>浏览器输入：localhost8080:/index（根据实际项目）显示网页说明打包成功！！！</p>
 ]]></content>
       <categories>
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
+        <tag>jar包</tag>
       </tags>
   </entry>
   <entry>
@@ -283,25 +378,42 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
+        <tag>热部署</tag>
       </tags>
   </entry>
   <entry>
-    <title>SpringBoot项目打包为jar包</title>
-    <url>/2020/07/22/SpringBoot%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%B8%BAjar%E5%8C%85/</url>
-    <content><![CDATA[<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
-<li>IDEA2018.3 </li>
-<li>JDK1.8 </li>
-<li>SpringBoot2.3.0 </li>
-<li>360浏览器<br>项目部署一般是两种方式：<br>一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。<br>pom.xml：<br>&lt; packaging&gt;jar&lt; /packaging&gt;  （默认）<br>&lt; packaging&gt;war&lt; /packaging&gt;<a id="more"></a>
-<h1 id="打jar包"><a href="#打jar包" class="headerlink" title="打jar包"></a>打jar包</h1>选择 File -&gt; Project Structure-&gt;Artifacts-&gt;Jar-&gt;Form modules with dependencies后点ok:<br>根据 下图内容创建 jar。如图所示，选择项目，入口类等。最后一项 META-INF，默认放到 src\main\java 目录里，如果使用默认值，没有进行其他配置，生成的 jar 有可能不会包含 META-INF 目录，导致运行 jar 出错。最好放在 src\main\resource目录中。点击ok保存。按下图所示配置：<br><img src="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击ok会出现如图所示信息:<br><img src="https://img-blog.csdnimg.cn/20200720101055777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="生成jar包"><a href="#生成jar包" class="headerlink" title="生成jar包"></a>生成jar包</h1>点击idea菜单栏中的build，依次选择：<br><img src="https://img-blog.csdnimg.cn/20200720103416304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点Build:<br><img src="https://img-blog.csdnimg.cn/20200720103454190.png" alt="在这里插入图片描述"><br>在保存路经中查找所打包的jar包如果存在则说明打包成功。<br><img src="https://img-blog.csdnimg.cn/20200720103554129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="运行jar包"><a href="#运行jar包" class="headerlink" title="运行jar包"></a>运行jar包</h1>开始运行jar包，打开cmd进入jar所在的路径，输入java -jar xxx.jar (jar名称) ，点击回车按键。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Microsoft Windows [版本 <span class="number">10.0</span><span class="number">.18362</span><span class="number">.959</span>]</span><br><span class="line">(c) <span class="number">2019</span> Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\<span class="number">92895</span>&gt;D:</span><br><span class="line"></span><br><span class="line">D:\&gt;cd D:\data_view\out\artifacts\data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;Java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view.jar</span><br><span class="line">_________       ____.__      __</span><br><span class="line">\_   ___ \     |    /  \    /  \</span><br><span class="line">/    \  \/     |    \   \/\/   /</span><br><span class="line">\     \____/\__|    |\        /</span><br><span class="line"> \______  /\________| \__/\  /</span><br><span class="line">        \/                 \/</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.016</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : Starting DataViewApplication on <span class="number">4</span>C501 with PID <span class="number">12564</span> (D:\data_view\out\artifacts\data_view_jar\data_view.jar started by <span class="number">92895</span> in D:\data_view\out\artifacts\data_view_jar)</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.020</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : No active profile set, falling back to <span class="keyword">default</span> profiles: <span class="keyword">default</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set <span class="string">'spring.devtools.add-properties'</span> to <span class="string">'false'</span> to disable</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the <span class="string">'logging.level.web'</span> property to <span class="string">'DEBUG'</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">28.817</span>  INFO <span class="number">12564</span> --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : <span class="function">Tomcat initialized with <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.831  INFO 12564 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.832  INFO 12564 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1827 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.631  INFO 12564 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56cf4f3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e169c9, org.springframework.security.web.header.HeaderWriterFilter@26d4eefe, org.springframework.security.web.authentication.logout.LogoutFilter@f17fdd6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f33f6b3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70ffa278, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@109a14b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54857a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423bad4c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7e8ca12a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee5e690, org.springframework.security.web.session.SessionManagementFilter@7139411a, org.springframework.security.web.access.ExceptionTranslationFilter@1ec9ee0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf4c490]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.711  INFO 12564 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.929  INFO 12564 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.967  INFO 12564 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span> with context path ''</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.976  INFO 12564 --- [  restartedMain] com.dvms.DataViewApplication             : Started DataViewApplication in 3.27 <span class="title">seconds</span> <span class="params">(JVM running <span class="keyword">for</span> <span class="number">3.828</span>)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.774  INFO 12564 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.775  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.782  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:56.052  INFO 12564 --- [nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : </span>&#123;dataSource-<span class="number">1</span>&#125; init</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200720103747636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>浏览器输入：localhost8080:/index（根据实际项目）显示网页说明打包成功！！！</p>
+    <title>SpringBoot的启动图案修改</title>
+    <url>/2020/07/22/SpringBoot%E7%9A%84%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A1%88%E4%BF%AE%E6%94%B9/</url>
+    <content><![CDATA[<p>Springboot项目启动时，会出现大大的SpringBoot的图案：<br><img src="https://img-blog.csdnimg.cn/20200718141606137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改：<br>首先创建springboot项目，首先在resources/目录下创建名为banner.txt的文件：<br>点击链接：<a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=CJW" target="_blank" rel="noopener">SpringBoot的启动图案修改</a><br><img src="https://img-blog.csdnimg.cn/20200718141955428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>启动项目：<br><img src="https://img-blog.csdnimg.cn/20200718142131464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>无聊…..<br><strong><em>END</em></strong></p>
 ]]></content>
       <categories>
         <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>启动图案修改</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jar包和war包区别及理解</title>
+    <url>/2020/07/22/jar%E5%8C%85%E5%92%8Cwar%E5%8C%85%E5%8C%BA%E5%88%AB%E5%8F%8A%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<p>在开发阶段不适合使用war包，因为在开发阶段，经常需要添加或删除Web应用程序的内容，更新 Servlet类文件，而每一次改动后，重新建立war包将是一件浪费时间的事情。在产品发布阶段，使用war文件比较合适的，因为在这个时候，几乎不需要再做什么改动了。</p>
+<h2 id="jar包"><a href="#jar包" class="headerlink" title="jar包"></a>jar包</h2><p><strong><em>jar是类的归档文件</em></strong><br>JAR（Java Archive，Java 归档文件）是与平台无关的文件格式，它允许将许多文件组合成一个压缩文件，为 J2EE 应用程序创建的jar文件是 EAR 文件（企业 jar文件），jar文件格式以流行的 ZIP 文件格式为基础。与 ZIP 文件不同的是，jar文件不仅用于压缩和发布，而且还用于部署和封装库、组件和插件程序，并可被像编译器和 JVM 这样的工具直接使用。在 jar中包含特殊的文件，如 manifests 和部署描述符，用来指示工具如何处理特定的 jar。<br>通常是开发时要引用通用类，打成jar包便于存放管理，当你使用某些功能时就需要这些jar包的支持，需要导入jar包。<br>jar包就是java的类进行编译生成的class文件打包的压缩包，包里面就是一些class文件。当我们自己使用Maven写一些java程序，进行打包生成jar包。同时在可以在其他的工程下使用，但是我们在这个工程依赖的jar包，在其他工程使用该JAR包也要导入。<br><img src="https://img-blog.csdnimg.cn/20200720151546286.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<a id="more"></a>
+<hr>
+<h2 id="war包"><a href="#war包" class="headerlink" title="war包"></a>war包</h2><p><strong><em>war包是一个Web应用程序</em></strong><br>一个web程序进行打包便于部署的压缩包，里面包含我们web程序需要的一些东西，其中包括web.xml的配置文件，前端的页面文件，以及依赖的jar。便于我们部署工程，直接放到tomcat的webapps目录下，直接启动tomcat即可。同时，可以使用WinRAR查看war包，直接将后缀.war改成.rar。<br><img src="https://img-blog.csdnimg.cn/20200720160609375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>Web存档(war)文件包含Web应用程序的所有内容。它减少了传输文件所需要的时间。</p>
+<hr>
+<h2 id="jar包和war包区别"><a href="#jar包和war包区别" class="headerlink" title="jar包和war包区别"></a>jar包和war包区别</h2><p><strong>jar</strong>是java普通项目打包，通常是开发时要引用通用类，打成jar包便于存放管理。当你使用某些功能时就需要这些jar包的支持，需要导入jar包。<strong>war</strong>是java web项目打包，web网站完成后，打成war包部署到服务器，目的是为了节省资源，提供效率。</p>
+<p>jar文件（扩展名为. Jar，Java Application Archive）包含Java类的普通库、资源（resources）、辅助文件（auxiliary files）等。通常是开发时要引用的通用类，打成包便于存放管理。简单来说，jar包就是别人已经写好的一些类，然后对这些类进行打包。可以将这些jar包引入到你的项目中，可以直接使用这些jar包中的类和属性，这些jar包一般放在lib目录下。</p>
+<p>war文件（扩展名为.War,Web Application Archive）包含全部Web应用程序。在这种情形下，一个Web应用程序被定义为单独的一组文件、类和资源，用户可以对jar文件进行封装，并把它作为小型服务程序（servlet）来访问。 war包是一个可以直接运行的web模块，通常用于网站，打成包部署到容器中。以Tomcat来说，将war包放置在其\webapps\目录下,然后启动Tomcat，这个包就会自动解压，就相当于发布了。war包是Sun提出的一种web应用程序格式，与jar类似，是很多文件的压缩包。war包中的文件按照一定目录结构来组织。根据其根目录下包含有html和jsp文件，或者包含有这两种文件的目录，另外还有WEB-INF目录。通常在WEB-INF目录下含有一个web.xml文件和一个classes目录，web.xml是这个应用的配置文件，而classes目录下则包含编译好的servlet类和jsp，或者servlet所依赖的其他类（如JavaBean）。通常这些所依赖的类也可以打包成jar包放在WEB-INF下的lib目录下。</p>
+<p>Ear文件（扩展名为.Ear,Enterprise Application Archive）包含全部企业应用程序。在这种情形下，一个企业应用程序被定义为多个jar文件、资源、类和Web应用程序的集合。</p>
+<p>SpringBoot项目既可以打成war包发布，也可以找成jar包发布。<br>jar包：直接通过内置Tomcat运行，不需要额外安装Tomcat。如需修改内置Tomcat的配置，只需要在SpringBoot的配置文件中配置。内置Tomcat没有自己的日志输出，全靠jar包应用输出日志。但是比较方便，快速，比较简单。<br>war包：传统的应用交付方式，需要安装Tomcat，然后放到wabapps目录下运行war包，可以==灵活选择Tomcat版本==，可以直接修改Tomcat的配置，有自己的Tomcat日志输出，可以灵活配置安全策略,相对打成jar包来说没那么快速方便。</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
       </categories>
       <tags>
         <tag>SpringBoot</tag>
@@ -351,9 +463,9 @@
     <title>Spring框架常用注解</title>
     <url>/2020/07/21/Spring%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/</url>
     <content><![CDATA[<h1 id="Spring常用注解"><a href="#Spring常用注解" class="headerlink" title="Spring常用注解"></a>Spring常用注解</h1><p><img src="https://img-blog.csdnimg.cn/20200719133116417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<a id="more"></a>
 <hr>
 <h2 id="Controller"><a href="#Controller" class="headerlink" title="@Controller"></a>@Controller</h2><p>@Controller 用来响应页面，表示当前的类为控制器。<br>在SpringMVC 中，控制器Controller 负责处理由DispatcherServlet 分发的请求，它把用户请求的数据经过业务处理层处理之后封装成一个Model ，然后再把该Model 返回给对应的View 进行展示。在SpringMVC 中提供了一个非常简便的定义Controller 的方法，你无需继承特定的类或实现特定的接口，只需使用@Controller 标记一个类是Controller ，然后使用@RequestMapping 和@RequestParam 等一些注解用以定义URL 请求和Controller 方法之间的映射，这样的Controller 就能被外界访问到。此外Controller 不会直接依赖于HttpServletRequest 和HttpServletResponse 等HttpServlet 对象，它们可以通过Controller 的方法参数灵活的获取到。<br>@Controller 用于标记在一个类上，使用它标记的类就是一个SpringMVC Controller 对象。分发处理器将会扫描使用了该注解的类的方法，并检测该方法是否使用了@RequestMapping 注解。@Controller 只是定义了一个控制器类，而使用@RequestMapping 注解的方法才是真正处理请求的处理器。单单使用@Controller 标记在一个类上还不能真正意义上的说它就是SpringMVC 的一个控制器类，因为这个时候Spring 还不认识它。那么要如何做Spring 才能认识它呢?这个时候就需要我们把这个控制器类交给Spring 来管理。</p>
+<a id="more"></a>
 <hr>
 <h2 id="RestController"><a href="#RestController" class="headerlink" title="@RestController"></a>@RestController</h2><p>Spring4之后新加入的注解，原来返回json需要@ResponseBody和@Controller配合，表明当前类是控制器且返回的是一组数据，不是页面。@RestController是@ResponseBody和@Controller的组合注解，推荐直接使用@RestController注解来处理http请求。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(value=<span class="string">"/hello"</span>,method= RequestMethod.GET)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">sayHello</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"hello"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -399,22 +511,84 @@
 <hr>
 <p><strong><em>END</em></strong></p>
 ]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>Spring框架</tag>
+      </tags>
   </entry>
   <entry>
-    <title>jar包和war包区别及理解</title>
-    <url>/2020/07/22/jar%E5%8C%85%E5%92%8Cwar%E5%8C%85%E5%8C%BA%E5%88%AB%E5%8F%8A%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<p>在开发阶段不适合使用war包，因为在开发阶段，经常需要添加或删除Web应用程序的内容，更新 Servlet类文件，而每一次改动后，重新建立war包将是一件浪费时间的事情。在产品发布阶段，使用war文件比较合适的，因为在这个时候，几乎不需要再做什么改动了。</p>
-<h2 id="jar包"><a href="#jar包" class="headerlink" title="jar包"></a>jar包</h2><p><strong><em>jar是类的归档文件</em></strong><br>JAR（Java Archive，Java 归档文件）是与平台无关的文件格式，它允许将许多文件组合成一个压缩文件，为 J2EE 应用程序创建的jar文件是 EAR 文件（企业 jar文件），jar文件格式以流行的 ZIP 文件格式为基础。与 ZIP 文件不同的是，jar文件不仅用于压缩和发布，而且还用于部署和封装库、组件和插件程序，并可被像编译器和 JVM 这样的工具直接使用。在 jar中包含特殊的文件，如 manifests 和部署描述符，用来指示工具如何处理特定的 jar。<br>通常是开发时要引用通用类，打成jar包便于存放管理，当你使用某些功能时就需要这些jar包的支持，需要导入jar包。<br>jar包就是java的类进行编译生成的class文件打包的压缩包，包里面就是一些class文件。当我们自己使用Maven写一些java程序，进行打包生成jar包。同时在可以在其他的工程下使用，但是我们在这个工程依赖的jar包，在其他工程使用该JAR包也要导入。<br><img src="https://img-blog.csdnimg.cn/20200720151546286.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+    <title>setTimeout()方法实现延时执行其他功能</title>
+    <url>/2020/07/23/setTimeout-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h1 id="setTimeout-方法"><a href="#setTimeout-方法" class="headerlink" title="setTimeout() 方法"></a>setTimeout() 方法</h1><p>setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。</p>
+<p>提示： 1000 毫秒= 1 秒。<br>提示： 如果想重复执行可以使用 setInterval() 方法。<br>提示： 使用 clearTimeout() 方法来阻止函数的执行。</p>
 <a id="more"></a>
 <hr>
-<h2 id="war包"><a href="#war包" class="headerlink" title="war包"></a>war包</h2><p><strong><em>war包是一个Web应用程序</em></strong><br>一个web程序进行打包便于部署的压缩包，里面包含我们web程序需要的一些东西，其中包括web.xml的配置文件，前端的页面文件，以及依赖的jar。便于我们部署工程，直接放到tomcat的webapps目录下，直接启动tomcat即可。同时，可以使用WinRAR查看war包，直接将后缀.war改成.rar。<br><img src="https://img-blog.csdnimg.cn/20200720160609375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>Web存档(war)文件包含Web应用程序的所有内容。它减少了传输文件所需要的时间。</p>
+<p><strong><em>语法</em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">setTimeout(code, milliseconds, param1, param2, ...)</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>, <span class="title">milliseconds</span>, <span class="title">param1</span>, <span class="title">param2</span>, ...)</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>setTimeout()方法参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>code/function</td>
+<td>必要部分，要调用一个代码串，也可以是一个函数</td>
+</tr>
+<tr>
+<td>milliseconds</td>
+<td>必要部分，执行或调用 code/function 需要等待的时间，以毫秒计，默认为 0</td>
+</tr>
+<tr>
+<td>param1, param2, …</td>
+<td>非必要部分，传给执行函数的其他参数（IE9 及其更早版本不支持该参数）</td>
+</tr>
+<tr>
+<td><strong><em>return：</em></strong> 返回一个 ID（数字），可以将这个ID传递给 clearTimeout() 来取消执行。</td>
+<td></td>
+</tr>
+</tbody></table>
 <hr>
-<h2 id="jar包和war包区别"><a href="#jar包和war包区别" class="headerlink" title="jar包和war包区别"></a>jar包和war包区别</h2><p><strong>jar</strong>是java普通项目打包，通常是开发时要引用通用类，打成jar包便于存放管理。当你使用某些功能时就需要这些jar包的支持，需要导入jar包。<strong>war</strong>是java web项目打包，web网站完成后，打成war包部署到服务器，目的是为了节省资源，提供效率。</p>
-<p>jar文件（扩展名为. Jar，Java Application Archive）包含Java类的普通库、资源（resources）、辅助文件（auxiliary files）等。通常是开发时要引用的通用类，打成包便于存放管理。简单来说，jar包就是别人已经写好的一些类，然后对这些类进行打包。可以将这些jar包引入到你的项目中，可以直接使用这些jar包中的类和属性，这些jar包一般放在lib目录下。</p>
-<p>war文件（扩展名为.War,Web Application Archive）包含全部Web应用程序。在这种情形下，一个Web应用程序被定义为单独的一组文件、类和资源，用户可以对jar文件进行封装，并把它作为小型服务程序（servlet）来访问。 war包是一个可以直接运行的web模块，通常用于网站，打成包部署到容器中。以Tomcat来说，将war包放置在其\webapps\目录下,然后启动Tomcat，这个包就会自动解压，就相当于发布了。war包是Sun提出的一种web应用程序格式，与jar类似，是很多文件的压缩包。war包中的文件按照一定目录结构来组织。根据其根目录下包含有html和jsp文件，或者包含有这两种文件的目录，另外还有WEB-INF目录。通常在WEB-INF目录下含有一个web.xml文件和一个classes目录，web.xml是这个应用的配置文件，而classes目录下则包含编译好的servlet类和jsp，或者servlet所依赖的其他类（如JavaBean）。通常这些所依赖的类也可以打包成jar包放在WEB-INF下的lib目录下。</p>
-<p>Ear文件（扩展名为.Ear,Enterprise Application Archive）包含全部企业应用程序。在这种情形下，一个企业应用程序被定义为多个jar文件、资源、类和Web应用程序的集合。</p>
-<p>SpringBoot项目既可以打成war包发布，也可以找成jar包发布。<br>jar包：直接通过内置Tomcat运行，不需要额外安装Tomcat。如需修改内置Tomcat的配置，只需要在SpringBoot的配置文件中配置。内置Tomcat没有自己的日志输出，全靠jar包应用输出日志。但是比较方便，快速，比较简单。<br>war包：传统的应用交付方式，需要安装Tomcat，然后放到wabapps目录下运行war包，可以==灵活选择Tomcat版本==，可以直接修改Tomcat的配置，有自己的Tomcat日志输出，可以灵活配置安全策略,相对打成jar包来说没那么快速方便。</p>
+<h1 id="clearTimeout-方法"><a href="#clearTimeout-方法" class="headerlink" title="clearTimeout() 方法"></a>clearTimeout() 方法</h1><p>clearTimeout() 方法可取消由 setTimeout() 方法设置的定时操作。</p>
+<p>clearTimeout() 方法的参数必须是由 setTimeout() 返回的 ID 值。<br>注意: 要使用 clearTimeout() 方法, 在创建执行定时操作时要使用全局变量</p>
+<hr>
+<p><strong><em>语法</em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">clearTimeout(id_of_settimeout);</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>clearTimeout() 方法参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>d_of_setinterval</td>
+<td>调用 setTimeout() 函数时所获得的返回值，使用该返回标识符作为参数，可以取消该 setTimeout() 所设定的定时执行操作</td>
+</tr>
+<tr>
+<td><strong><em>return：</em></strong> return 0</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong><em>应用实例</em></strong><br>1.5秒（3000 毫秒）后弹出 “Hello JavaScript !” </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    myVar = setTimeout(alertFunc, <span class="number">5000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">alertFunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  alert(<span class="string">"Hello JavaScript!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.打开一个新窗口，5秒后将该窗口关闭</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openWin</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> myWindow = <span class="built_in">window</span>.open(<span class="string">"color=red"</span>, <span class="string">""</span>, <span class="string">"width=1920, height=1080"</span>);</span><br><span class="line">    myWindow.document.write(<span class="string">"&lt;p&gt;打开一个新窗口&lt;/p&gt;"</span>);</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myWindow.close() &#125;, <span class="number">5000</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3.计数器功能</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;button onclick="startCount()"&gt;开始计数&lt;/button&gt;</span><br><span class="line">&lt;input type="text" id="test"&gt;</span><br><span class="line">&lt;button onclick="stopCount()"&gt;停止计数&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<p>点击 “开始计数” 按钮开始执行计数程序。输入框从 0 开始计算。 点击 “停止计数” 按钮停止后，可以再次点击 “开始计数” 按钮会重新开始计数。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> c = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> t;</span><br><span class="line"><span class="keyword">var</span> timer_is_on = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">timedCount</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"test"</span>).value = c;</span><br><span class="line">    c = c + <span class="number">1</span>;</span><br><span class="line">    t = setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; timedCount() &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">startCount</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!timer_is_on) &#123;</span><br><span class="line">        timer_is_on = <span class="number">1</span>;</span><br><span class="line">        timedCount();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopCount</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearTimeout(t);</span><br><span class="line">    timer_is_on = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/2020050718532364.png" alt="在这里插入图片描述"></p>
+<p>4.显示当前时间</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;!<span class="selector-tag">--</span>在页面加载时执行<span class="selector-tag">startTime</span>()<span class="selector-tag">--</span>&gt;</span><br><span class="line">&lt;body onload="startTime()"&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">startTime</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> h = today.getHours();</span><br><span class="line">    <span class="keyword">var</span> m = today.getMinutes();</span><br><span class="line">    <span class="keyword">var</span> s = today.getSeconds();</span><br><span class="line">    <span class="comment">// 在 numbers&lt;10 的数字前加上 0</span></span><br><span class="line">    m = checkTime(m);</span><br><span class="line">    s = checkTime(s);</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"txt"</span>).innerHTML = h + <span class="string">":"</span> + m + <span class="string">":"</span> + s;</span><br><span class="line">    <span class="keyword">var</span> t = setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; startTime() &#125;, <span class="number">500</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkTime</span>(<span class="params">i</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (i &lt; <span class="number">10</span>) &#123;</span><br><span class="line">        i = <span class="string">"0"</span> + i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5.传递参数给 Animal函数</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStartFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// IE9 及其更早版本不支持</span></span><br><span class="line">    myVar = setTimeout(Animal, <span class="number">5000</span>, <span class="string">"Cat"</span>, <span class="string">"Dog"</span>);</span><br><span class="line">    <span class="comment">//使用匿名函数，则所有浏览器都支持</span></span><br><span class="line">    myVar = setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; Animal(<span class="string">"Cat"</span>, <span class="string">"Dog"</span>); &#125;, <span class="number">5000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">param1, param2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo1"</span>).innerHTML += <span class="string">"Hello "</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo2"</span>).innerHTML = <span class="string">"传递给 Animal() 的参数: &lt;br&gt;"</span> </span><br><span class="line">    + param1 + <span class="string">"&lt;br&gt;"</span> + param2 + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <p><strong><em>END</em></strong></p>
 ]]></content>
@@ -422,13 +596,565 @@
         <category>JavaWeb</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
-        <tag>jar包</tag>
+        <tag>JavaWeb</tag>
+        <tag>setTimeout()</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>setInterval()方法实现周期调用函数来完成进度条等功能设计</title>
+    <url>/2020/07/23/setInterval-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%91%A8%E6%9C%9F%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%9B%E5%BA%A6%E6%9D%A1%E7%AD%89%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<h1 id="setInterval-方法"><a href="#setInterval-方法" class="headerlink" title="setInterval() 方法"></a>setInterval() 方法</h1><p>setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。</p>
+<p>setInterval() 方法会不停地调用函数，直到==clearInterval() 被调用或窗口被关闭==。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。<br>提示： 1000 毫秒= 1 秒；如果你只想执行一次可以使用 setTimeout() 方法。</p>
+<a id="more"></a>
+<hr>
+<p><strong><em>语法描述：</em></strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">setInterval(code, milliseconds);</span><br><span class="line">setInterval(function, milliseconds, param1, param2, ...)</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>setInterval() 方法参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>code/function</td>
+<td>必要部分，要调用一个代码串，也可以是一个函数</td>
+</tr>
+<tr>
+<td>milliseconds</td>
+<td>必要部分，周期性执行或调用 code/function 之间的时间间隔，以毫秒计</td>
+</tr>
+<tr>
+<td>param1, param2, …</td>
+<td>非必要部分，传给执行函数的其他参数（IE9 及其更早版本不支持该参数）</td>
+</tr>
+</tbody></table>
+<p><strong><em>return</em></strong>:返回一个 ID（数字），可以将这个ID传递给clearInterval()，clearTimeout() 来取消执行setInterval() 。</p>
+<hr>
+<h1 id="clearInterval-方法"><a href="#clearInterval-方法" class="headerlink" title="clearInterval() 方法"></a>clearInterval() 方法</h1><p>clearInterval() 方法可取消由 setInterval() 函数设定的定时执行操作。</p>
+<p>clearInterval() 方法的参数必须是由 setInterval() 返回的 ID 值。<br>注意: 要使用 clearInterval() 方法, 在创建执行定时操作时要使用==全局变量==</p>
+<p><strong><em>语法描述：</em></strong><br>|clearInterval() 方法| 描述 |<br>|–|–|<br>|id_of_setinterval  |必要部分，调用 setInterval() 函数时所获得的返回值，使用该返回标识符作为参数，可以取消该 setInterval() 所设定的定时执行操作  |<br><strong><em>return</em></strong>: return 0</p>
+<hr>
+<p><strong><em>方法应用实例</em></strong><br>1.显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># 显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能):</span><br><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.使用 clearInterval() 来停止 setInterval 的执行</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3.使用 setInterval() 和 clearInterval()来创建动态进度条<br>在javaweb中通过AJAX的get()方法和windows对象的setInterval()方法不断读取当前进度值来实现页面进度值的实时显示。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">move</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(<span class="string">"myBar"</span>);   </span><br><span class="line">  <span class="keyword">var</span> width = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">var</span> myvar = setInterval(frame, <span class="number">10</span>);</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">frame</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (width == <span class="number">100</span>) &#123;</span><br><span class="line">      clearInterval(myvar);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      width++; </span><br><span class="line">      elem.style.width = width + <span class="string">'%'</span>; </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>4.每 5000 毫秒切换背景颜色</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; setColor() &#125;, <span class="number">5000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="built_in">document</span>.body;</span><br><span class="line">  x.style.backgroundColor = x.style.backgroundColor == <span class="string">"red"</span> ? <span class="string">"green"</span> : <span class="string">"red"</span>; <span class="comment">//x.style.backgroundColor = white</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>? : 是一个条件运算符,是一个整体,作用类似于if else 语句<br>5.传递参数给 Animal 函数 </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStartFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// IE9 及其更早版本不支持</span></span><br><span class="line">    myVar = setInterval(Animal, <span class="number">2000</span>, <span class="string">"Cat"</span>, <span class="string">"Dog"</span>);</span><br><span class="line">    <span class="comment">//使用匿名函数，则所有浏览器都支持</span></span><br><span class="line">    myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; Animal(<span class="string">"Cat"</span>, <span class="string">"Dog"</span>); &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">param1, param2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML += <span class="string">"Animal "</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo2"</span>).innerHTML = <span class="string">"传递给 Animal() 的参数: &lt;br&gt;"</span> </span><br><span class="line">    + param1 + <span class="string">"&lt;br&gt;"</span> + param2 + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200507175942741.png" alt="jieguo"></p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>js中confirm弹框的确定按钮失效或无法传值解决办法</title>
+    <url>/2020/07/23/js%E4%B8%ADconfirm%E5%BC%B9%E6%A1%86%E7%9A%84%E7%A1%AE%E5%AE%9A%E6%8C%89%E9%92%AE%E5%A4%B1%E6%95%88%E6%88%96%E6%97%A0%E6%B3%95%E4%BC%A0%E5%80%BC%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<p>1.在项目中出现confirm弹框按钮失效，无法传布尔值，如果正常的话，使用以下代码即可完成传值：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> result = <span class="built_in">window</span>.confirm(<span class="string">'是否XXXX?'</span>);</span><br><span class="line">            <span class="keyword">if</span> (result == <span class="literal">true</span>)&#123;</span><br><span class="line">                alert(<span class="string">'终止操作！'</span>);</span><br><span class="line">                result = <span class="literal">false</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                alert(<span class="string">'终止操作取消！'</span>);</span><br><span class="line">                result = <span class="literal">false</span>;&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>2.但是这个弹框中的按钮失效了，只能基于bootstrap重新创建一下，可以参考以下这种，直接在js中插入这段代码(亲测有效）：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">window</span>.Ewin = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> html = <span class="string">'&lt;div id="[Id]" class="modal fade" role="dialog" aria-labelledby="modalLabel"&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;div class="modal-dialog modal-sm"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-content"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-header"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;button type="button" class="close" data-dismiss="modal"&gt;&lt;span aria-hidden="true"&gt;×&lt;/span&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;h4 class="modal-title" id="modalLabel"&gt;[Title]&lt;/h4&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-body"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;p&gt;[Message]&lt;/p&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-footer"&gt;'</span> +</span><br><span class="line"> <span class="string">'&lt;button type="button" class="btn btn-default cancel" data-dismiss="modal"&gt;[BtnCancel]&lt;/button&gt;'</span> +</span><br><span class="line"> <span class="string">'&lt;button type="button" class="btn btn-primary ok" data-dismiss="modal"&gt;[BtnOk]&lt;/button&gt;'</span> +</span><br><span class="line"> <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;/div&gt;'</span>;</span><br><span class="line"> <span class="keyword">var</span> dialogdHtml = <span class="string">'&lt;div id="[Id]" class="modal fade" role="dialog" aria-labelledby="modalLabel"&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;div class="modal-dialog"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-content"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-header"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;button type="button" class="close" data-dismiss="modal"&gt;&lt;span aria-hidden="true"&gt;×&lt;/span&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;h4 class="modal-title" id="modalLabel"&gt;[Title]&lt;/h4&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;div class="modal-body"&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">   <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;/div&gt;'</span> +</span><br><span class="line">  <span class="string">'&lt;/div&gt;'</span>;</span><br><span class="line"> <span class="keyword">var</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"\\[([^\\[\\]]*?)\\]"</span>, <span class="string">'igm'</span>);</span><br><span class="line"> <span class="keyword">var</span> generateId = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"> <span class="keyword">return</span> <span class="string">'mdl'</span> + date.valueOf();</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">var</span> init = <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line"> options = $.extend(&#123;&#125;, &#123;</span><br><span class="line"> title: <span class="string">"操作提示"</span>,</span><br><span class="line"> message: <span class="string">"提示内容"</span>,</span><br><span class="line"> btnok: <span class="string">"确定"</span>,</span><br><span class="line"> btncl: <span class="string">"取消"</span>,</span><br><span class="line"> width: <span class="number">200</span>,</span><br><span class="line"> auto: <span class="literal">false</span></span><br><span class="line"> &#125;, options || &#123;&#125;);</span><br><span class="line"> <span class="keyword">var</span> modalId = generateId();</span><br><span class="line"> <span class="keyword">var</span> content = html.replace(reg, <span class="function"><span class="keyword">function</span> (<span class="params">node, key</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">return</span> &#123;</span><br><span class="line">  Id: modalId,</span><br><span class="line">  Title: options.title,</span><br><span class="line">  Message: options.message,</span><br><span class="line">  BtnOk: options.btnok,</span><br><span class="line">  BtnCancel: options.btncl</span><br><span class="line"> &#125;[key];</span><br><span class="line"> &#125;);</span><br><span class="line"> $(<span class="string">'body'</span>).append(content);</span><br><span class="line"> $(<span class="string">'#'</span> + modalId).modal(&#123;</span><br><span class="line"> width: options.width,</span><br><span class="line"> backdrop: <span class="string">'static'</span></span><br><span class="line"> &#125;);</span><br><span class="line"> $(<span class="string">'#'</span> + modalId).on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line"> $(<span class="string">'body'</span>).find(<span class="string">'#'</span> + modalId).remove();</span><br><span class="line"> &#125;);</span><br><span class="line"> <span class="keyword">return</span> modalId;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> <span class="keyword">return</span> &#123;</span><br><span class="line"> alert: <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">if</span> (<span class="keyword">typeof</span> options == <span class="string">'string'</span>) &#123;</span><br><span class="line">  options = &#123;</span><br><span class="line">  message: options</span><br><span class="line">  &#125;;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">var</span> id = init(options);</span><br><span class="line"> <span class="keyword">var</span> modal = $(<span class="string">'#'</span> + id);</span><br><span class="line"> modal.find(<span class="string">'.ok'</span>).removeClass(<span class="string">'btn-success'</span>).addClass(<span class="string">'btn-primary'</span>);</span><br><span class="line"> modal.find(<span class="string">'.cancel'</span>).hide();</span><br><span class="line"> </span><br><span class="line"> <span class="keyword">return</span> &#123;</span><br><span class="line">  id: id,</span><br><span class="line">  on: <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (callback &amp;&amp; callback <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">  modal.find(<span class="string">'.ok'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; callback(<span class="literal">true</span>); &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  hide: <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (callback &amp;&amp; callback <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">  modal.on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  callback(e);</span><br><span class="line">  &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;;</span><br><span class="line"> &#125;,</span><br><span class="line"> confirm: <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> id = init(options);</span><br><span class="line"> <span class="keyword">var</span> modal = $(<span class="string">'#'</span> + id);</span><br><span class="line"> modal.find(<span class="string">'.ok'</span>).removeClass(<span class="string">'btn-primary'</span>).addClass(<span class="string">'btn-success'</span>);</span><br><span class="line"> modal.find(<span class="string">'.cancel'</span>).show();</span><br><span class="line"> <span class="keyword">return</span> &#123;</span><br><span class="line">  id: id,</span><br><span class="line">  on: <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (callback &amp;&amp; callback <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">  modal.find(<span class="string">'.ok'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; callback(<span class="literal">true</span>); &#125;);</span><br><span class="line">  modal.find(<span class="string">'.cancel'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; callback(<span class="literal">false</span>); &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  hide: <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (callback &amp;&amp; callback <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">  modal.on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  callback(e);</span><br><span class="line">  &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;;</span><br><span class="line"> &#125;,</span><br><span class="line"> dialog: <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line"> options = $.extend(&#123;&#125;, &#123;</span><br><span class="line">  title: <span class="string">'title'</span>,</span><br><span class="line">  url: <span class="string">''</span>,</span><br><span class="line">  width: <span class="number">800</span>,</span><br><span class="line">  height: <span class="number">550</span>,</span><br><span class="line">  onReady: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; &#125;,</span><br><span class="line">  onShown: <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123; &#125;</span><br><span class="line"> &#125;, options || &#123;&#125;);</span><br><span class="line"> <span class="keyword">var</span> modalId = generateId();</span><br><span class="line"> </span><br><span class="line"> <span class="keyword">var</span> content = dialogdHtml.replace(reg, <span class="function"><span class="keyword">function</span> (<span class="params">node, key</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">  Id: modalId,</span><br><span class="line">  Title: options.title</span><br><span class="line">  &#125;[key];</span><br><span class="line"> &#125;);</span><br><span class="line"> $(<span class="string">'body'</span>).append(content);</span><br><span class="line"> <span class="keyword">var</span> target = $(<span class="string">'#'</span> + modalId);</span><br><span class="line"> target.find(<span class="string">'.modal-body'</span>).load(options.url);</span><br><span class="line"> <span class="keyword">if</span> (options.onReady())</span><br><span class="line">  options.onReady.call(target);</span><br><span class="line"> target.modal();</span><br><span class="line"> target.on(<span class="string">'shown.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (options.onReady(e))</span><br><span class="line">  options.onReady.call(target, e);</span><br><span class="line"> &#125;);</span><br><span class="line"> target.on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  $(<span class="string">'body'</span>).find(target).remove();</span><br><span class="line"> &#125;);</span><br><span class="line"> &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> &#125;();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>调用的话，在当前js中需要应用的按钮绑定的功能函数中进行调用：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//e为布尔值</span></span><br><span class="line">Ewin.confirm(&#123; <span class="attr">message</span>: <span class="string">"是否确认XXX？"</span> &#125;).on(<span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line"><span class="keyword">if</span> (e) &#123;</span><br><span class="line">alert(<span class="string">'终止操作！'</span>);  <span class="comment">//e=true</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">alert(<span class="string">'终止操作取消！'</span>);&#125; <span class="comment">//e!=true</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<hr>
+<p>效果图（且对页面内容有遮罩层）：<br><img src="https://img-blog.csdnimg.cn/20200402213226518.png" alt="在这里插入图片描述"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">Ewin.alert(<span class="string">"操作成功！"</span>);</span><br></pre></td></tr></table></figure>
+<p>balabala…</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>界面开发工具之HTML色彩表格工具</title>
+    <url>/2020/07/23/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B9%8BHTML%E8%89%B2%E5%BD%A9%E8%A1%A8%E6%A0%BC%E5%B7%A5%E5%85%B7-1/</url>
+    <content><![CDATA[<p><img src="https://img-blog.csdnimg.cn/20200604211717578.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>网址链接： <a href="https://html-color-codes.info/chinese/" target="_blank" rel="noopener">HTML色彩表格工具</a></p>
+<hr>
+<h1 id="HTML色彩代码理论"><a href="#HTML色彩代码理论" class="headerlink" title="HTML色彩代码理论"></a>HTML色彩代码理论</h1><p>HTML代码格式：<br>每一个HTML代码包含有“#”符号以及6个字幕和数字。这些数字都是十六进制的。比如“FF”在十六进制中代表十进制的数字255。</p>
+<a id="more"></a>
+<p>符号意义：<br>HTML色彩代码中前两个符号表示红色的浓度。00指的是颜色最淡而FF则指的是颜色最浓。第三个和第四个符号表示绿色的浓度，第五个和第六个符号表示蓝色的浓度。由此，将各种浓度的红、绿、蓝三种颜色进行组合，我们可以调配出任何所需色彩</p>
+<p>示例：<br>#FF0000 - 利用这个HTML代码，我们让浏览器显示不掺杂任何绿色和蓝色成分的最鲜艳的红色。其结果当然就是纯红:     </p>
+<p>#00FF00 - 这个HTML代码表示只有绿色且不掺杂任何红色和蓝色。其结果是:     </p>
+<p>#0000FF - 这个HTML代码表示只有蓝色且不掺杂任何红色和绿色。其结果是:     </p>
+<p>#FFFF00 - 红绿组合生成黄色:     </p>
+<p>#CCEEFF - 一些红色、一点绿色以及最高浓度的蓝色，组合成天蓝色:     </p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>工具</tag>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>界面开发工具之HTML色彩表格工具</title>
+    <url>/2020/07/23/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B9%8BHTML%E8%89%B2%E5%BD%A9%E8%A1%A8%E6%A0%BC%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>自动生成注释作者名字和日期等信息（IDEA Java类）</title>
+    <url>/2020/07/23/%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B3%A8%E9%87%8A%E4%BD%9C%E8%80%85%E5%90%8D%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F%E7%AD%89%E4%BF%A1%E6%81%AF%EF%BC%88IDEA-Java%E7%B1%BB%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
+<li>IDEA2018.3 </li>
+<li>JDK1.8</li>
+</ul>
+<hr>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>在创建java类后，自动生成定制的注释：<br><img src="https://img-blog.csdnimg.cn/20200606163520907.png" alt="在这里插入图片描述"></p>
+<a id="more"></a>
+<hr>
+<h1 id="设置过程"><a href="#设置过程" class="headerlink" title="设置过程"></a>设置过程</h1><p>点击File-&gt;Settings-&gt;Editor-&gt;File and Code Templates<br><img src="https://img-blog.csdnimg.cn/20200606162305878.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在File Header中输入想要设置的信息<br>如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*文件名: $&#123;NAME&#125;</span></span><br><span class="line"><span class="comment">*创建者: your name</span></span><br><span class="line"><span class="comment">*创建时间:$&#123;DATE&#125; $&#123;TIME&#125;</span></span><br><span class="line"><span class="comment">*描述: 这是一个示例</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<p>当然也可以参考下方的Description选择自己想要设置的完成创建时自动注释。<br>|注释设置| 描述 |<br>|–|–|<br>| ${PACKAGE_NAME} | name of the package in which the new file is created |<br>| ${USER} | 创建者名称 |<br>| ${DATE} |当前日期  |<br>|${TIME}  | 当前时间 |<br>| ${YEAR} | 年 |<br>|${MONTH}  月|  |<br>| ${MONTH_NAME_SHORT} | 月缩写 |<br>| ${MONTH_NAME_FULL} |月全称  |<br>| ${DAY} | 天 |<br>| ${HOUR}  | 时 |<br>| ${MINUTE} |分  |<br>| ${PROJECT_NAME} | 工程名 |</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>聚光灯效果（css+html）</title>
+    <url>/2020/07/23/%E8%81%9A%E5%85%89%E7%81%AF%E6%95%88%E6%9E%9C%EF%BC%88css-html%EF%BC%89/</url>
+    <content><![CDATA[<p>最终效果：<br><img src="https://img-blog.csdnimg.cn/20200516111122629.gif" alt="在这里插入图片描述"></p>
+<a id="more"></a>
+<p>实现code:</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">		&lt;title&gt;聚光灯效果&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">			*&#123;</span><br><span class="line">				margin:<span class="number">0</span>;</span><br><span class="line">				padding:<span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			body&#123;</span><br><span class="line">				background: #222;</span><br><span class="line">				display: flex;</span><br><span class="line">				justify-content: center;</span><br><span class="line">				align-items: center;</span><br><span class="line">				min-height: <span class="number">100</span>vh;</span><br><span class="line">			&#125;</span><br><span class="line">			h1&#123;</span><br><span class="line">				color: #333;</span><br><span class="line">				font-size: <span class="number">8</span>rem;</span><br><span class="line">				position: relative;</span><br><span class="line">			&#125;</span><br><span class="line">			h1:after&#123;</span><br><span class="line">				content: <span class="string">"Hello JavaScript"</span>;</span><br><span class="line">				color: transparent;</span><br><span class="line">				position: absolute;</span><br><span class="line">				left: <span class="number">0</span>;</span><br><span class="line">				top: <span class="number">0</span>;</span><br><span class="line">				background: -webkit-linear-gradient(left,#c23616,#192a56,#00d2d3,yellow,#6D214F,#2e86de,#4cd137,#e84118);</span><br><span class="line">				background-clip: text;</span><br><span class="line">				-webkit-background-clip:text;</span><br><span class="line">				clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				animation: light <span class="number">5</span>s infinite;</span><br><span class="line">			&#125;</span><br><span class="line">				</span><br><span class="line">			<span class="meta">@keyframes</span> light&#123;</span><br><span class="line">				<span class="number">0</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">50</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">100</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;h1&gt;Hello JavaScript&lt;/h1&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
     <title>springboot application.properties 配置及参数配置详情介绍</title>
     <url>/2020/07/22/springboot-application-properties-%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%83%85%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>application.properties：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#server.port=8080</span></span><br><span class="line"><span class="comment">#server.servlet.context-path=/index #访问路径设置</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.datasource.url</span> <span class="string">=</span> <span class="string">jdbc:mysql://localhost:3306/ems?characterEncoding=UTF-8&amp;useSSL=true&amp;serverTimezone=UTC</span></span><br><span class="line"><span class="string">spring.datasource.username</span> <span class="string">=</span> <span class="string">root</span></span><br><span class="line"><span class="string">spring.datasource.password</span> <span class="string">=</span> <span class="number">123456</span></span><br><span class="line"><span class="string">spring.datasource.driverClassName</span> <span class="string">=</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="string">spring.datasource.type</span> <span class="string">=</span> <span class="string">com.alibaba.druid.pool.DruidDataSource</span></span><br><span class="line"></span><br><span class="line"><span class="string">mybatis.mapper-locations</span> <span class="string">=</span> <span class="string">classpath:mapper/*.xml</span></span><br><span class="line"><span class="string">mybatis.type-aliases-package</span> <span class="string">=</span> <span class="string">com.dvms.entity</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.resources.static-locations</span> <span class="string">=</span> <span class="string">classpath:/templates/,classpath:/static/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#pagehelper分页插件配置</span></span><br><span class="line"><span class="string">pagehelper.helperDialect=mysql</span></span><br><span class="line"><span class="string">pagehelper.reasonable=true</span></span><br><span class="line"><span class="string">pagehelper.supportMethodsArguments=true</span></span><br><span class="line"><span class="string">pagehelper.params=count=countSql</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>查看参数配置：<br><a href="https://blog.csdn.net/true_hsf/article/details/77893481" target="_blank" rel="noopener">spring boot application.properties 配置参数详情</a>：</p>
+<h3 id="multipart"><a href="#multipart" class="headerlink" title="multipart"></a>multipart</h3><p>multipart.enabled 开启上传支持（默认：true）</p>
+<p>multipart.file-size-threshold: 大于该值的文件会被写到磁盘上</p>
+<p>multipart.location 上传文件存放位置</p>
+<p>multipart.max-file-size最大文件大小</p>
+<p>multipart.max-request-size 最大请求大小</p>
+<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><p>server.address 服务器地址</p>
+<p>server.port 服务器端口</p>
+<p>server.context-parameters.[param name] 设置 servlet 上下文参数</p>
+<p>server.context-path 应用上下文路径</p>
+<h3 id="Jsp-servelt"><a href="#Jsp-servelt" class="headerlink" title="Jsp-servelt"></a>Jsp-servelt</h3><p>server.jsp-servelt.class-name 针对jsp 使用的 Servlet 类名（默认：org.apache.jasper.servlet.JspServlet）</p>
+<p>server.jsp-servlet.registered JspServelt 是否要注册到内嵌的 Servlet 容器里（默认 true）</p>
+<p>server.jsp-servlet.init-parameters[param name] 设置 Jsp Servlet 初始化参数</p>
+<p>server.servlet-path主分发器 Servlet 的路径（默认：/）</p>
+<h3 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h3><p>server.session.cookie.domain 回话 Cookie 的域</p>
+<p>server.session.cookie.comment Cookie 注释</p>
+<p>server.session.cookie.max-age Cookie 最大保存时间（单位 s）</p>
+<p>server.session.cookie.name Cookie 名称</p>
+<p>server.session.cookie.timeout 超时时间</p>
+<h3 id="tomcat"><a href="#tomcat" class="headerlink" title="tomcat"></a>tomcat</h3><p>server.tomcat.accesslog.directory 创建日志文件的目录</p>
+<p>server.tomcat.accesslog.enabled 是否开启访问日志（默认：false）</p>
+<p>server.tomcat.accesslog.pattern 访问日志的格式（默认：common）</p>
+<p>server.tomcat.accesslog.prefix日志名前缀（默认：access_log）</p>
+<p>server.tomcat.accesslog.suffix 日志名后缀（默认：.log）</p>
+<p>server.tomcat.max-http-header-sizeHttp 消息头最大字节数（默认：0）</p>
+<p>server.tomcat.uri-encoding 用来解码 URI 的字符编码</p>
+<h3 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h3><p>spring.cache.cache-names 如果底层缓存管理器支持缓存名的话，可以在这里指定要创建的缓存名列表，用逗号分 隔。通常这会禁用运行时创建其他额外缓存的能力。</p>
+<p>spring.cache.config 用来初始化 EhCache 的配置文件位置</p>
+<p>spring.cache.guava.spec 用来创建缓存 Spec</p>
+<p>spring.cache.hazelcast.config 用来初始化 Hazeleast 的配置文件位置</p>
+<p>spring.cache.infinispan.config 用来初始化 Infinispan 配置文件位置</p>
+<p>spring.cache.jcache.config用来初始化缓存管理器的配置文件的位置，配置文件依赖于底层的缓存实现</p>
+<p>spring.cache.jcache.provider CachingProvider 实现的全限定类名，用来获取 JSR-107 兼容的缓存管理器，仅在 Classpath 里有不只一个 JSR-107 实现时才需要这个属性。</p>
+<p>spring.cache.type 缓存类型，默认根据环境自动检测</p>
+<h3 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h3><p>spring.data.jpa.repositories.enabled 开启 JPA 仓库（默认：true）</p>
+<p>spring.data.mongodb.authentication-database 身份认证数据库名</p>
+<p>spring.data.mongodb.database 数据库名</p>
+<p>spring.data.mongodb.field-naming-strategy 要使用的 FieldNamingStrategy 的全限定名。</p>
+<p>spring.data.mongodb.grid.fs.database GridFS 数据库名称</p>
+<p>spring.data.mongodb.host MongoDB 服务器地址</p>
+<p>spring.data.mongodb.username MongoDB 账号</p>
+<p>spring.data.mongodb.passwordMongoDB 密码</p>
+<p>spring.data.mongodb.port 端口号</p>
+<p>spring.data.mongodb.repositories.enabled 开启 Mongo 仓库（默认值：true）</p>
+<p>spring.data.mongodb.uri Mongo 数据库 URI。设置了该属性后就主机和端口号会被忽略。（默认值： mongodb:// localhost/test）</p>
+<p>spring.data.rest.base-path 用于发布仓库资源的基本路径</p>
+<p>spring.data.rest.default-page-size 分页数据的默认页大小（默认：20）</p>
+<p>spring.data.rest.limit-param-name用于标识一次返回多少记录的 URL 查询字符串参数名。（默认值： size ）</p>
+<p>spring.data.rest.max-page-sieze: 最大分页大小（默认：1000）</p>
+<p>spring.data.rest.page-param-name URL 查询字符串参数的名称，用来标识返回哪一页。（默认值： page ）</p>
+<p>spring.data.rest.return-body-on-create 在创建实体后是否返回一个响应体（默认：false）</p>
+<p>spring.data.rest.return-body-on-update 在更新实体后是否返回一个响应体（默认：false）</p>
+<p>spring.data.rest.sort-param-name URL 查询字符串参数的名称，用来表示结果排序的方向（默认：name）</p>
+<p>spring.data.solr.host Solr 的主机地址。如果设置了 zk-host 则忽略该属性。（默认值： <a href="http://127.0.0.1" target="_blank" rel="noopener">http://127.0.0.1</a>: 8983/solr ）</p>
+<p>spring.data.solr.repositories.enabled 开启 solr 仓库（默认：true）</p>
+<p>spring.data.solr.zk-host zk 主机地址，格式为 “主机 - 端口”</p>
+<p>spring.datasource.allow-pool-suspension 是否允许池暂停（pool suspension）。在开启池暂停后会有性能会受到一定影响，除非你 真的需要这个功能（例如在冗余的系统下），否则不要开启它。该属性只在使用 Hikari 数 据库连接池时有用。（默认值： false 。）</p>
+<h3 id="DataSource"><a href="#DataSource" class="headerlink" title="DataSource"></a>DataSource</h3><p>spring.datasource.name 数据源的名称。</p>
+<p>spring.datasource.username 数据库的登录用户名。</p>
+<p>spring.datasource.password 数据库的登录密码。</p>
+<p>spring.datasource.url 数据库的 JDBC URL。</p>
+<p>spring.datasource.jdbc-url 用来创建连接的 JDBC URL。</p>
+<p>spring.datasource.driver-class-name JDBC 驱动的全限定类名。默认根据 URL 自动检测。</p>
+<p>spring.datasource.pool-name 连接池名称。</p>
+<p>spring.datasource.max-active 连接池中的最大活跃连接数。</p>
+<p>spring.datasource.connection-timeout连接超时（单位毫秒）</p>
+<p>spring.datasource.max-age 连接池中连接的最长寿命。</p>
+<p>spring.datasource.max-idle 连接池中的最大空闲连接数。</p>
+<p>spring.datasource.max-lifetime 连接池中连接的最长寿命（单位为毫秒）。</p>
+<p>spring.datasource.max-open-prepared-statements 开启状态的 PreparedStatement 的数量上限。</p>
+<p>spring.datasource.max-wait 连接池在等待返回连接时，最长等待多少毫秒再抛出异常。</p>
+<p>spring.datasource.maximum-pool-size 连接池能达到的最大规模，包含空闲连接的数量和使用中的连接数量。</p>
+<p>spring.datasource.min-evictable-idle-time-millis 一个空闲连接被空闲连接释放器（如果存在的话）优雅地释放前，最短会在连接池里停 留多少时间。</p>
+<p>spring.datasource.min-idle 连接池里始终应该保持的最小连接数。（用于 DBCP 和 Tomcat 连接池。）</p>
+<p>spring.datasource.minimum-idle: HikariCP 试图在连接池里维持的最小空闲连接数。</p>
+<p>spring.datasource.alternate-username-allowed 是否允许其它用户名</p>
+<p>spring.datasource.auto-commit 更新操作是否自动提交</p>
+<p>spring.datasource.abandon-when-percentage-full 一个百分比形势的阈值，超过该阈值则关闭并报告被弃用的连接</p>
+<p>spring.datasource.catalog 默认的 Catalog 名称</p>
+<p>spring.datasource.commit-on-return 在连接归还时，连接池是否要提交挂起的事务</p>
+<p>spring.datasource.connection-init-sql 在所有新连接创建时都会执行的 SQL 语句，该语句会在连接加入连接池前执行。</p>
+<p>spring.datasource.connection-init-sqls 在物理连接第一次创建时执行的 SQL 语句列表。（用于 DBCP 连接池。）</p>
+<p>spring.datasource.connection-properties.[key] 设置创建连接时使用的属性。（用于 DBCP 连接池。）</p>
+<p>spring.datasource.continue-on-error 初始化数据库时发生错误不要终止。（默认值： false）</p>
+<p>spring.datasource.data 指向数据（数据库操纵语言，Data Manipulation Language，DML）脚本资源的引用。</p>
+<p>spring.datasource.data-source-class-name 用于获取连接的数据源的全限定类名。</p>
+<p>spring.datasource.data-source-jndi 用于获取连接的数据源的 JNDI 位置。</p>
+<p>spring.datasource.data-source-properties.[key] 设置创建数据源时使用的属性。（用于 Hikari 连接池。）</p>
+<p>spring.datasource.db-properties 设置创建数据源时使用的属性。（用于 Tomcat 连接池。）</p>
+<p>spring.datasource.default-auto-commit 连接上的操作是否自动提交。</p>
+<p>spring.datasource.default-catalog 连接的默认 Catalog。</p>
+<p>spring.datasource.default-read-only 连接的默认只读状态。</p>
+<p>spring.datasource.default-transaction-isolation 连接的默认事务隔离级别。</p>
+<p>spring.datasource.fair-queue 是否以 FIFO 方式返回连接。</p>
+<p>spring.datasource.health-check-properties.[key] 设置要纳入健康检查的属性。（用于 Hikari 连接池。）</p>
+<p>spring.datasource.idle-timeout 连接池中的连接能保持闲置状态的最长时间，单位为毫秒。（默认值： 10 。）</p>
+<p>spring.datasource.ignore-exception-on-pre-load 初始化数据库连接池时是否要忽略连接。</p>
+<p>spring.datasource.init-sql在连接第一次创建时运行的自定义查询。</p>
+<p>spring.datasource.initial-size 在连接池启动时要建立的连接数。</p>
+<p>spring.datasource.initialization-fail-fast 在连接池创建时，如果达不到最小连接数是否要抛出异常。（默认值： true 。）</p>
+<p>spring.datasource.initialize 使用 data.sql 初始化数据库。（默认值： true 。）</p>
+<p>spring.datasource.isolate-internal-queries 是否要隔离内部请求。（默认值： false 。）</p>
+<p>spring.datasource.jdbc-interceptors 一个分号分隔的类名列表，这些类都扩展了 JdbcInterceptor 类。这些拦截器会插入 java.sql.Connection 对象的操作链里。（用于 Tomcat 连接池。）</p>
+<p>spring.datasource.jmx-enabled 开启 JMX 支持（如果底层连接池提供该功能的话）。（默认值： false 。）</p>
+<p>spring.datasource.jndi-name 数据源的 JNDI 位置。设置了该属性则忽略类、URL、用户名和密码属性。</p>
+<p>spring.datasource.leak-detection-threshold 用来检测 Hikari 连接池连接泄露的阈值，单位为毫秒。</p>
+<p>spring.datasource.log-abandoned 是否针对弃用语句或连接的应用程序代码记录下跟踪栈。用于 DBCP 连接池。（默认值： false 。）</p>
+<p>spring.datasource.log-validation-errors 在使用 Tomcat 连接池时是否要记录验证错误。</p>
+<p>spring.datasource.login-timeout 连接数据库的超时时间（单位为秒）。</p>
+<p>spring.datasource.num-tests-per-eviction-run 空闲对象释放器线程（如果存在的话）每次运行时要检查的对象数。</p>
+<p>spring.datasource.platform 在 Schema 资源（schema-${platform}.sql）里要使用的平台。（默认值： all 。）</p>
+<p>spring.datasource.pool-prepared-statements 是否要将 Statement 放在池里。</p>
+<p>spring.datasource.propagate-interrupt-state 对于等待连接的中断线程，是否要传播中断状态。</p>
+<p>spring.datasource.read-only 在使用 Hikari 连接池时将数据源设置为只读。</p>
+<p>spring.datasource.register-mbeans Hikari 连接池是否要注册 JMX MBean。</p>
+<p>spring.datasource.remove-abandoned 被弃用的连接在到达弃用超时后是否应该被移除。</p>
+<p>spring.datasource.remove-abandoned-timeout 连接在多少秒后应该考虑弃用。</p>
+<p>spring.datasource.rollback-on-return 在连接归还连接池时，是否要回滚挂起的事务。</p>
+<p>spring.datasource.schema Schema（数据定义语言，Data Definition Language，DDL）脚本资源的引用。</p>
+<p>spring.datasource.separator SQL 初始化脚本里的语句分割符。（默认值： ; 。）</p>
+<p>spring.datasource.sql-script-encoding SQL 脚本的编码。</p>
+<p>spring.datasource.suspect-timeout 在记录一个疑似弃用连接前要等待多少秒。</p>
+<p>spring.datasource.test-on-borrow 从连接池中借用连接时是否要进行测试。</p>
+<p>spring.datasource.test-on-connect 在建立连接时是否要进行测试。</p>
+<p>spring.datasource.test-on-return 在将连接归还到连接池时是否要进行测试。</p>
+<p>spring.datasource.test-while-idle 在连接空闲时是否要进行测试。</p>
+<p>spring.datasource.time-between-eviction-runs-millis 在两次空闲连接验证、弃用连接清理和空闲池大小调整之间睡眠的毫秒数。</p>
+<p>spring.datasource.transaction-isolation 在使用 Hikari 连接池时设置默认事务隔离级别。</p>
+<p>spring.datasource.use-disposable-connection-facade 连接是否要用一个门面（facade）封装起来，在调用了 Connection.close() 后就不能 再使用这个连接了。</p>
+<p>spring.datasource.use-equals 在比较方法名时是否使用 String.equals() 来代替 == 。</p>
+<p>spring.datasource.use-lock 在操作连接对象时是否要加锁。</p>
+<p>spring.datasource.validation-interval 执行连接验证的间隔时间，单位为毫秒。</p>
+<p>spring.datasource.validation-query 在连接池里的连接返回给调用者或连接池时，要执行的验证 SQL 查询。</p>
+<p>spring.datasource.validation-query-timeout 在连接验证查询执行失败前等待的超时时间，单位为秒。</p>
+<p>spring.datasource.validation-timeout 在连接验证失败前等待的超时时间，单位为秒。（用于 Hikari 连接池。）</p>
+<p>spring.datasource.validator-class-name 可选验证器类的全限定类名，用于执行测试查询。</p>
+<p>spring.datasource.xa.data-source-class-name XA 数据源的全限定类名。</p>
+<p>spring.datasource.xa.properties 要传递给 XA 数据源的属性。</p>
+<h3 id="FreeMarker"><a href="#FreeMarker" class="headerlink" title="FreeMarker"></a>FreeMarker</h3><p>spring.freemarker.allow-request-override HttpServletRequest 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.freemarker.allow-session-override HttpSession 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.freemarker.cache 开启模板缓存。</p>
+<p>spring.freemarker.charset 模板编码。</p>
+<p>spring.freemarker.check-template-location 检查模板位置是否存在。</p>
+<p>spring.freemarker.content-type Content-Type 的值。</p>
+<p>spring.freemarker.enabled 开启 FreeMarker 的 MVC 视图解析。</p>
+<p>spring.freemarker.expose-request-attributes 在模型合并到模板前，是否要把所有的请求属性添加到模型里。</p>
+<p>spring.freemarker.expose-session-attributes 在模型合并到模板前，是否要把所有的 HttpSession 属性添加到模型里。</p>
+<p>spring.freemarker.expose-spring-macro-helpers 是否发布供 Spring 宏程序库使用的 RequestContext ，并将命其名为 springMacro- RequestContext</p>
+<p>spring.freemarker.prefer-file-system-access 加载模板时优先通过文件系统访问。文件系统访问能够实时检测到模板变更。（默认值： true 。）</p>
+<p>spring.freemarker.prefix 在构建 URL 时添加到视图名称前的前缀。</p>
+<p>spring.freemarker.request-context-attribute 在所有视图里使用的 RequestContext 属性的名称。</p>
+<p>spring.freemarker.settings 要传递给 FreeMarker 配置的各种键。</p>
+<p>spring.freemarker.suffix 在构建 URL 时添加到视图名称后的后缀。</p>
+<p>spring.freemarker.template-loader-path 模板路径列表，用逗号分隔。（默认值： [“classpath:/templates/”] 。）</p>
+<p>spring.freemarker.view-names 可解析的视图名称的白名单。</p>
+<h3 id="Groovy"><a href="#Groovy" class="headerlink" title="Groovy"></a>Groovy</h3><p>spring.groovy.template.allow-request-override HttpServletRequest 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.groovy.template.allow-session-override HttpSession 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.groovy.template.cache 开启模板缓存。</p>
+<p>spring.groovy.template.charset 模板编码。</p>
+<p>spring.groovy.template.check-template-location 检查模板位置是否存在。</p>
+<p>spring.groovy.template.configuration.auto-escape 模型变量在模板里呈现时是否要做转义。（默认值： false 。）</p>
+<p>spring.groovy.template.configuration.auto-indent 模板是否要自动呈现缩进。（默认值： false 。）</p>
+<p>spring.groovy.template.configuration.auto-indent-string 开启自动缩进时用于缩进的字符串，可以是 SPACES ，也可以是 TAB 。（默认值： SPACES 。）</p>
+<p>spring.groovy.template.configuration.auto-new-line 模板里是否要呈现新的空行。（默认值： false 。）</p>
+<p>spring.groovy.template.configuration.base-template-class 模板基类。</p>
+<p>spring.groovy.template.configuration.cache-templates 模板是否应该缓存。（默认值： true 。）</p>
+<p>spring.groovy.template.configuration.declaration-encoding 用来写声明头的编码。</p>
+<p>spring.groovy.template.configuration.expand-empty-elements 没有正文的元素该用短形式（例如， ）还是扩展形式（例如， ）来书 写。（默认值： false）</p>
+<p>spring.groovy.template.configuration.locale 设置模板地域。</p>
+<p>spring.groovy.template.configuration.new-line-string 在自动空行开启后用来呈现空行的字符串。（默认为系统的 line.separator 属性值。）</p>
+<p>spring.groovy.template.configuration.resource-loader-path Groovy 模板的路径。（默认值： classpath:/templates/ 。）</p>
+<p>spring.groovy.template.configuration.use-double-quotes 属性是该用双引号还是单引号。（默认值： false 。）</p>
+<p>spring.groovy.template.content-type Content-Type 的值。</p>
+<p>spring.groovy.template.enabled 开启 Groovy 模板的 MVC 视图解析。</p>
+<p>spring.groovy.template.expose-request-attributes 在模型合并到模板前，是否要把所有的请求属性添加到模型里。</p>
+<p>spring.groovy.template.expose-session-attributes 在模型合并到模板前，是否要把所有的 HttpSession 属性添加到模型里。</p>
+<p>spring.groovy.template.expose-spring-macro-helpers 是否发布供 Spring 宏程序库使用的 RequestContext ，并将其命名为 springMacro- RequestContext</p>
+<p>spring.groovy.template.prefix 在构建 URL 时，添加到视图名称前的前缀。</p>
+<p>spring.groovy.template.request-context-attribute 所有视图里使用的 RequestContext 属性的名称。</p>
+<p>spring.groovy.template.resource-loader-path 模板路径（默认值： classpath:/ templates/ 。）</p>
+<p>spring.groovy.template.suffix 在构建 URL 时，添加到视图名称后的后缀。</p>
+<p>spring.groovy.template.view-names 可解析的视图名称白名单。</p>
+<h3 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h3><p>spring.h2.console.enabled 开启控制台。（默认值： false 。）</p>
+<p>spring.h2.console.path 可以找到控制台的路径。（默认值： /h2-console 。）</p>
+<p>Hornetq</p>
+<p>spring.hornetq.embedded.cluster-password 集群密码。默认在启动时随机生成。</p>
+<p>spring.hornetq.embedded.data-directory 日志文件目录。如果关闭了持久化功能则不需要该属性。</p>
+<p>spring.hornetq.embedded.enabled 如果有 HornetQ 服务器 API，则开启嵌入模式。（默认值： true 。）</p>
+<p>spring.hornetq.embedded.persistent 开启持久化存储。（默认值： false 。）</p>
+<p>spring.hornetq.embedded.queues 启动时要创建的队列列表，用逗号分隔。（默认值： [] 。）</p>
+<p>spring.hornetq.embedded.server-id 服务器 ID。默认使用自增长计数器。（默认值： 0 。）</p>
+<p>spring.hornetq.embedded.topics 启动时要创建的主题列表，用逗号分隔。（默认值： [] 。）</p>
+<p>spring.hornetq.host HornetQ 的主机。（默认值： localhost 。）</p>
+<p>spring.hornetq.mode HornetQ 的部署模式，默认为自动检测。可以显式地设置为 native 或 embedded 。</p>
+<p>spring.hornetq.port HornetQ 的端口。（默认值： 5445 。）</p>
+<h3 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h3><p>spring.http.converters.preferred-json-mapper HTTP 消息转换时优先使用 JSON 映射器。</p>
+<p>spring.http.encoding.charset HTTP 请求和响应的字符集。如果没有显式地指定 Content-Type 头，则将该属性值作为 这个头的值。（默认值： UTF-8 。）</p>
+<p>spring.http.encoding.enabled 开启 HTTP 编码支持。（默认值： true 。）</p>
+<p>spring.http.encoding.force 强制将 HTTP 请求和响应编码为所配置的字符集。（默认值： true 。）</p>
+<h3 id="Jackson"><a href="#Jackson" class="headerlink" title="Jackson"></a>Jackson</h3><p>spring.jackson.date-format 日期格式字符串（yyyy-MM-dd HH:mm:ss）或日期格式类的全限定类名。</p>
+<p>spring.jackson.deserialization 影响 Java 对象反序列化的 Jackson on/off 特性。</p>
+<p>spring.jackson.generator 用于生成器的 Jackson on/off 特性。</p>
+<p>spring.jackson.joda-date-time-format Joda 日期时间格式字符串（yyyy-MM-dd HH:mm:ss）。如果没有配置，而 date-format 又配置了一个格式字符串的话，会将它作为降级配置。</p>
+<p>spring.jackson.locale 用于格式化的地域值。</p>
+<p>spring.jackson.mapper Jackson 的通用 on/off 特性。</p>
+<p>spring.jackson.parser 用于解析器的 Jackson on/off 特性。</p>
+<p>spring.jackson.property-naming-strategy Jackson 的 PropertyNamingStrategy 中的一个常量（ CAMEL_CASE_TO_LOWERCASE WITH_UNDERSCORES ）。也可以设置 PropertyNamingStrategy 的子类的全限定类名。</p>
+<p>spring.jackson.serialization 影响 Java 对象序列化的 Jackson on/off 特性。</p>
+<p>spring.jackson.serialization-inclusion 控制序列化时要包含哪些属性。可选择 Jackson 的 JsonInclude.Include 枚举里的某个值。</p>
+<p>spring.jackson.time-zone 格式化日期时使用的时区。可以配置各种可识别的时区标识符，比如 America/Los_ Angeles 或者 GMT+10 。</p>
+<h3 id="Jersey"><a href="#Jersey" class="headerlink" title="Jersey"></a>Jersey</h3><p>spring.jersey.filter.order Jersey 过滤器链的顺序。（默认值： 0 。）</p>
+<p>spring.jersey.init 通过 Servlet 或过滤器传递给 Jersey 的初始化参数。</p>
+<p>spring.jersey.type Jersey 集成类型。可以是 servlet 或者 filter 。</p>
+<h3 id="Jms"><a href="#Jms" class="headerlink" title="Jms"></a>Jms</h3><p>spring.jms.jndi-name 连接工厂的 JNDI 名字。设置了该属性，则优先于其他自动配置的连接工厂。</p>
+<p>spring.jms.listener.acknowledge-mode 容器的应答模式（acknowledgment mode）。默认情况下，监听器使用自动应答。</p>
+<p>spring.jms.listener.auto-startup 启动时自动启动容器。（默认值： true 。）</p>
+<p>spring.jms.listener.concurrency 并发消费者的数量下限。</p>
+<p>spring.jms.listener.max-concurrency 并发消费者的数量上限。</p>
+<p>spring.jms.pub-sub-domain 如果是主题而非队列，指明默认的目的地类型是否支持 Pub/Sub。（默认值： false 。）</p>
+<h3 id="Jmx"><a href="#Jmx" class="headerlink" title="Jmx"></a>Jmx</h3><p>spring.jmx.default-domain JMX 域名。</p>
+<p>spring.jmx.enabled 将管理 Bean 发布到 JMX 域里。（默认值： true 。）</p>
+<p>spring.jmx.server MBeanServer 的 Bean 名称。（默认值： mbeanServer 。）</p>
+<h3 id="Jpa"><a href="#Jpa" class="headerlink" title="Jpa"></a>Jpa</h3><p>spring.jpa.database 要操作的目标数据库，默认自动检测。也可以通过 databasePlatform 属性进行设置。</p>
+<p>spring.jpa.database-platform 要操作的目标数据库，默认自动检测。也可以通过 Database 枚举来设置。</p>
+<p>spring.jpa.generate-ddl 启动时要初始化 Schema。（默认值： false 。）</p>
+<p>spring.jpa.hibernate.ddl-auto DDL 模式（ none 、 validate 、 update 、 create 和 create-drop ）。这是 hibernate. hbm2ddl.auto 属性的一个快捷方式。在使用嵌入式数据库时，默认为 create-drop , 其他情况下默认为 none 。</p>
+<p>spring.jpa.hibernate.naming-strategy Hibernate 命名策略的全限定类名。</p>
+<p>spring.jpa.open-in-view 注册 OpenEntityManagerInViewInterceptor ，在请求的整个处理过程中，将一个 JPA EntityManager 绑定到线程上。（默认值： true）</p>
+<p>spring.jpa.propertiesJPA 提供方要设置的额外原生属性。</p>
+<p>spring.jpa.show-sql 在使用 Bitronix Transaction Manager 时打开 SQL 语句日志。（默认值： false 。）</p>
+<h3 id="Jta"><a href="#Jta" class="headerlink" title="Jta"></a>Jta</h3><p>spring.jta.allow-multiple-lrc 在使用 Bitronix Transaction Manager 时，事务管理器是否应该允许一个事务涉及多个 LRC 资源。（默认值： false）</p>
+<p>spring.jta.asynchronous2-pc 在使用 Bitronix Transaction Manager 时，是否异步执行两阶段提交。（默认值： false 。）</p>
+<p>spring.jta.background-recovery-interval在使用 Bitronix Transaction Manager 时，多久运行一次恢复过程，单位为分钟。（默认值： 1 ）</p>
+<p>spring.jta.background-recovery-interval-seconds 在使用 Bitronix Transaction Manager 时，多久运行一次恢复过程，单位为秒。（默认值： 60 ）</p>
+<p>spring.jta.current-node-only-recovery 在使用 Bitronix Transaction Manager 时，恢复是否要滤除不包含本 JVM 唯一 ID 的 XID。（默认值： true ）</p>
+<p>spring.jta.debug-zero-resource-transaction 在使用 Bitronix Transaction Manager 时，对于没有涉及任何资源的事务，是否要跟踪并记 录它们的创建和提交调用栈。（默认值： false）</p>
+<p>spring.jta.default-transaction-timeout 在使用 Bitronix Transaction Manager 时，默认的事务超时时间，单位为秒。（默认值： 60 。）</p>
+<p>spring.jta.disable-jmx 在使用 Bitronix Transaction Manager 时，是否要禁止注册 JMX MBean。（默认值： false 。）</p>
+<p>spring.jta.enabled 开启 JTA 支持。（默认值： true 。）</p>
+<p>spring.jta.exception-analyzer 在使用 Bitronix Transaction Manager 时用到的异常分析器。设置为 null 时使用默认异常分析器，也可以设置自定义异常分析器的全限定类名。</p>
+<p>spring.jta.filter-log-status 在使用 Bitronix Transaction Manager 时，是否只记录必要的日志。开启该参数时能减少分 段（fragment）空间用量，但调试更复杂了。（默认值： false）</p>
+<p>spring.jta.force-batching-enabled 在使用 Bitronix Transaction Manager 时，是否批量输出至磁盘。禁用批处理会严重降低事 务管理器的吞吐量。（默认值： true 。）</p>
+<p>spring.jta.forced-write-enabled 在使用 Bitronix Transaction Manager 时，日志是否强制写到磁盘上。在生产环境里不要设 置为 false ，因为不强制写到磁盘上无法保证完整性。（默认值： true）</p>
+<p>spring.jta.graceful-shutdown-interval 在使用 Bitronix Transaction Manager 时，要关闭的话，事务管理器在放弃事务前最多等它 多少秒。（默认值： 60）</p>
+<p>spring.jta.jndi-transaction-synchronization-registry-name 在使用 Bitronix Transaction Manager 时，事务同步注册表应该绑定到哪个 JNDI 下。（默认 值： java:comp/TransactionSynchronizationRegistry）</p>
+<p>spring.jta.jndi-user-transaction-name 在使用 Bitronix Transaction Manager 时，用户事务应该绑定到哪个 JNDI 下。（默认值： java:comp/UserTransaction 。）</p>
+<p>spring.jta.journal 在使用 Bitronix Transaction Manager 时，要用的日志名。可以是 disk 、 null 或者全限定类 名。（默认值： disk 。）</p>
+<p>spring.jta.log-dir 事务日志目录。</p>
+<p>spring.jta.log-part1-filename 日志分段文件 1 的名称。（默认值： btm1.tlog 。）</p>
+<p>spring.jta.log-part2-filename 日志分段文件 2 的名称。（默认值： btm2.tlog 。）</p>
+<p>spring.jta.max-log-size-in-mb 在使用 Bitronix Transaction Manager 时，日志分段文件的最大兆数。日志越大，事务就被 允许在未终结状态停留越长时间。但是，如果文件大小限制得太小，事务管理器在分段 满了的时候就会暂停更长时间。（默认值： 2 。）</p>
+<p>spring.jta.resource-configuration-filename Bitronix Transaction Manager 的配置文件名。</p>
+<p>spring.jta.server-id 唯一标识 Bitronix Transaction Manager 实例的 ID。</p>
+<p>spring.jta.skip-corrupted-logs 是否跳过损坏的日志文件。（默认值： false 。）</p>
+<p>spring.jta.transaction-manager-id 事务管理器的唯一标识符。</p>
+<p>spring.jta.warn-about-zero-resource-transaction 在使用 Bitronix Transaction Manager 时，是否要对执行时没有涉及任何资源的事务作出告 警。（默认值： true 。）</p>
+<h3 id="Mail"><a href="#Mail" class="headerlink" title="Mail"></a>Mail</h3><p>spring.mail.default-encoding 默认的 MimeMessage 编码。（默认值： UTF-8 。）</p>
+<p>spring.mail.host SMTP 服务器主机地址。</p>
+<p>spring.mail.jndi-name会话的 JNDI 名称。设置之后，该属性的优先级要高于其他邮件设置。</p>
+<p>spring.mail.password SMTP 服务器的登录密码。</p>
+<p>spring.mail.port SMTP 服务器的端口号。</p>
+<p>spring.mail.properties 附加的 JavaMail 会话属性。</p>
+<p>spring.mail.protocol SMTP 服务器用到的协议。（默认值： smtp 。）</p>
+<p>spring.mail.test-connection 在启动时测试邮件服务器是否可用。（默认值： false 。）</p>
+<p>spring.mail.username SMTP 服务器的登录用户名。</p>
+<h3 id="Messages"><a href="#Messages" class="headerlink" title="Messages"></a>Messages</h3><p>spring.messages.basename 逗号分隔的基本名称列表，都遵循 ResourceBundle 的惯例。本质上这就是一个全限定 的 Classpath 位置，如果不包含包限定符（比如 org.mypackage ），就会从 Classpath 的根部开始解析。（默认值： messages 。）</p>
+<p>spring.messages.cache-seconds 加载的资源包文件的缓存失效时间，单位为秒。在设置为 -1 时，包会永远缓存。（默认值： -1 。）</p>
+<p>spring.messages.encoding消息包的编码。（默认值： UTF-8 。）</p>
+<h3 id="Mobile"><a href="#Mobile" class="headerlink" title="Mobile"></a>Mobile</h3><p>spring.mobile.devicedelegatingviewresolver.enable-fallback 开启降级解析支持。（默认值： false 。）</p>
+<p>spring.mobile.devicedelegatingviewresolver.enabled 开启设备视图解析器。（默认值： false 。）</p>
+<p>spring.mobile.devicedelegatingviewresolver.mobile-prefix 添加到移动设备视图名前的前缀。（默认值： mobile/ 。）</p>
+<p>spring.mobile.devicedelegatingviewresolver.mobile-suffix 添加到移动设备视图名后的后缀。</p>
+<p>spring.mobile.devicedelegatingviewresolver.normal-prefix 添加到普通设备视图名前的前缀。</p>
+<p>spring.mobile.devicedelegatingviewresolver.normal-suffix 添加到普通设备视图名后的后缀。</p>
+<p>spring.mobile.devicedelegatingviewresolver.tablet-prefix添加到平板设备视图名前的前缀。（默认值： tablet/ 。）</p>
+<p>spring.mobile.devicedelegatingviewresolver.tablet-suffix 添加到平板设备视图名后的后缀。</p>
+<p>spring.mobile.sitepreference.enabled 开启 SitePreferenceHandler 。（默认值： true 。）</p>
+<h3 id="Mongodb"><a href="#Mongodb" class="headerlink" title="Mongodb"></a>Mongodb</h3><p>spring.mongodb.embedded.features要开启的特性列表，用逗号分隔。</p>
+<p>spring.mongodb.embedded.version 要使用的 Mongo 版本。（默认值： 2.6.10 。）</p>
+<h3 id="Mustache"><a href="#Mustache" class="headerlink" title="Mustache"></a>Mustache</h3><p>spring.mustache.cache 开启模板缓存。</p>
+<p>spring.mustache.charset 模板编码。</p>
+<p>spring.mustache.check-template-location 检查模板位置是否存在。</p>
+<p>spring.mustache.content-type Content-Type 的值。</p>
+<p>spring.mustache.enabled 开启 Mustache 的 MVC 视图解析。</p>
+<p>spring.mustache.prefix添加到模板名前的前缀。（默认值： classpath:/ templates/ 。）</p>
+<p>spring.mustache.suffix 添加到模板名后的后缀。（默认值： .html 。）</p>
+<p>spring.mustache.view-names 可解析的视图名称的白名单。</p>
+<h3 id="Mvc"><a href="#Mvc" class="headerlink" title="Mvc"></a>Mvc</h3><p>spring.mvc.async.request-timeout 异步请求处理超时前的等待时间（单位为毫秒）。如果没有设置该属性，则使用底层实现 的默认超时时间，比如，Tomcat 上使用 Servlet 3 时超时时间为 10 秒。</p>
+<p>spring.mvc.date-format 要使用的日期格式（比如 dd/MM/yyyy ）。</p>
+<p>spring.mvc.favicon.enabled 开启 favicon.ico 的解析。（默认值： true 。）</p>
+<p>spring.mvc.ignore-default-model-on-redirect 在重定向的场景下，是否要忽略“默认”模型对象的内容。（默认值： true 。）</p>
+<p>spring.mvc.locale 要使用的地域配置。</p>
+<p>spring.mvc.message-codes-resolver-format 消息代码格式（ PREFIX_ERROR_CODE 、 POSTFIX_ERROR_CODE ）。</p>
+<p>spring.mvc.view.prefix Spring MVC 视图前缀。</p>
+<p>spring.mvc.view.suffix Spring MVC 视图后缀。</p>
+<h3 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h3><p>mybatis.mapper-locations mybatis 映射文件位置。<br>mybatis.type-aliases-package 别名包位置。</p>
+<h3 id="Rabbitmq"><a href="#Rabbitmq" class="headerlink" title="Rabbitmq"></a>Rabbitmq</h3><p>spring.rabbitmq.addresses 客户端应该连接的地址列表，用逗号分隔。</p>
+<p>spring.rabbitmq.dynamic 创建一个 AmqpAdmin Bean。（默认值： true 。）</p>
+<p>spring.rabbitmq.host RabbitMQ 主机地址。（默认值： localhost 。）</p>
+<p>spring.rabbitmq.listener.acknowledge-mode 容器的应答模式。</p>
+<p>spring.rabbitmq.listener.auto-startup 启动时自动开启容器。（默认值： true 。）</p>
+<p>spring.rabbitmq.listener.concurrency 消费者的数量下限。</p>
+<p>spring.rabbitmq.listener.max-concurrency 消费者的数量上限。</p>
+<p>spring.rabbitmq.listener.prefetch 单个请求里要处理的消息数。该数值不应小于事务数（如果用到的话）。</p>
+<p>spring.rabbitmq.listener.transaction-size 一个事务里要处理的消息数。为了保证效果，应该不大于预先获取的数量。</p>
+<p>spring.rabbitmq.password进行身份验证的密码。</p>
+<p>spring.rabbitmq.port RabbitMQ 端口。（默认值： 5672 。）</p>
+<p>spring.rabbitmq.requested-heartbeat 请求心跳超时，单位为秒； 0 表示不启用心跳。</p>
+<p>spring.rabbitmq.ssl.enabled 开启 SSL 支持。（默认值： false 。）</p>
+<p>spring.rabbitmq.ssl.key-store 持有 SSL 证书的 KeyStore 路径。</p>
+<p>spring.rabbitmq.ssl.key-store-password 访问 KeyStore 的密码。</p>
+<p>spring.rabbitmq.ssl.trust-store 持有 SSL 证书的 TrustStore。</p>
+<p>spring.rabbitmq.ssl.trust-store-password 访问 TrustStore 的密码。</p>
+<p>spring.rabbitmq.username 进行身份验证的用户名。</p>
+<p>spring.rabbitmq.virtual-host 在连接 RabbitMQ 时的虚拟主机。</p>
+<h3 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h3><p>spring.redis.database 连接工厂使用的数据库索引。（默认值： 0 。）</p>
+<p>spring.redis.host Redis 服务器主机地址。（默认值： localhost 。）</p>
+<p>spring.redis.passwordRedis 服务器的登录密码。</p>
+<p>spring.redis.pool.max-active连接池在指定时间里能分配的最大连接数。负数表示无限制。（默认值： 8 。）</p>
+<p>spring.redis.pool.max-idle 连接池里的最大空闲连接数。负数表示空闲连接数可以是无限大。（默认值： 8 。）</p>
+<p>spring.redis.pool.max-wait当连接池被耗尽时，分配连接的请求应该在抛出异常前被阻塞多长时间（单位为秒）。负 数表示一直阻塞。（默认值： -1 。）</p>
+<p>spring.redis.pool.min-idle 连接池里要维持的最小空闲连接数。该属性只有在设置为正数时才有效。（默认值： 0 。）</p>
+<p>spring.redis.port Redis 服务器端口。（默认值： 6379 。）</p>
+<p>spring.redis.sentinel.master Redis 服务器的名字。</p>
+<p>spring.redis.sentinel.nodes形如“主机: 端口”配对的列表，用逗号分隔。</p>
+<p>spring.redis.timeout 连接超时时间，单位为秒。（默认值： 0 。）</p>
+<h3 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h3><p>spring.resources.add-mappings 开启默认资源处理。（默认值： true 。）</p>
+<p>spring.resources.cache-period 资源处理器对资源的缓存周期，单位为秒。</p>
+<p>spring.resources.chain.cache 对资源链开启缓存。（默认值： true 。）</p>
+<p>spring.resources.chain.enabled 开启 Spring 资源处理链。（默认关闭的，除非至少开启了一个策略。）</p>
+<p>spring.resources.chain.html-application-cache 开启 HTML5 应用程序缓存证明重写。（默认值： false 。）</p>
+<p>spring.resources.chain.strategy.content.enabled 开启内容版本策略。（默认值： false 。）</p>
+<p>spring.resources.chain.strategy.content.paths 要运用于版本策略的模式列表，用逗号分隔。（默认值： [/**] 。）</p>
+<p>spring.resources.chain.strategy.fixed.enabled开启固定版本策略。（默认值： false 。）</p>
+<p>spring.resources.chain.strategy.fixed.paths要运用于固定版本策略的模式列表，用逗号分隔。</p>
+<p>spring.resources.chain.strategy.fixed.version 用于固定版本策略的版本字符串。</p>
+<p>spring.resources.static-locations 静态资源位置。默认为 classpath: [/META-INF/resources/, /resources/, /static/, /public/] 加上 context:/（Servlet 上下文的根目录）。</p>
+<h3 id="SendGrid"><a href="#SendGrid" class="headerlink" title="SendGrid"></a>SendGrid</h3><p>spring.sendgrid.password SendGrid 密码。</p>
+<p>spring.sendgrid.proxy.host SendGrid 代理主机地址。</p>
+<p>spring.sendgrid.proxy.port SendGrid 代理端口。</p>
+<p>spring.sendgrid.username SendGrid 用户名。</p>
+<h3 id="Social"><a href="#Social" class="headerlink" title="Social"></a>Social</h3><p>spring.social.auto-connection-views 针对所支持的提供方开启连接状态视图。（默认值： false 。）</p>
+<p>spring.social.facebook.app-id 应用程序 ID。</p>
+<p>spring.social.facebook.app-secret 应用程序的密钥。</p>
+<p>spring.social.linkedin.app-id 应用程序 ID。</p>
+<p>spring.social.linkedin.app-secret 应用程序的密钥。</p>
+<p>spring.social.twitter.app-id 应用程序 ID。</p>
+<p>spring.social.twitter.app-secret 应用程序的密钥。</p>
+<h3 id="Thymeleaf"><a href="#Thymeleaf" class="headerlink" title="Thymeleaf"></a>Thymeleaf</h3><p>spring.thymeleaf.cache开启模板缓存。（默认值： true 。）</p>
+<p>spring.thymeleaf.check-template-location 检查模板位置是否存在。（默认值： true 。）</p>
+<p>spring.thymeleaf.content-type Content-Type 的值。（默认值： text/html 。）</p>
+<p>spring.thymeleaf.enabled 开启 MVC Thymeleaf 视图解析。（默认值： true 。）</p>
+<p>spring.thymeleaf.encoding模板编码。（默认值： UTF-8 。）</p>
+<p>spring.thymeleaf.excluded-view-names 要被排除在解析之外的视图名称列表，用逗号分隔。</p>
+<p>spring.thymeleaf.mode 要运用于模板之上的模板模式。另见 StandardTemplate- ModeHandlers 。（默认值： HTML5 。）</p>
+<p>spring.thymeleaf.prefix 在构建 URL 时添加到视图名称前的前缀。（默认值： classpath:/templates/ 。）</p>
+<p>spring.thymeleaf.suffix 在构建 URL 时添加到视图名称后的后缀。（默认值： .html 。）</p>
+<p>spring.thymeleaf.template-resolver-order Thymeleaf 模板解析器在解析器链中的顺序。默认情况下，它排在第一位。顺序从 1 开始只有在定义了额外的 TemplateResolver Bean 时才需要设置这个属性。</p>
+<p>spring.thymeleaf.view-names 可解析的视图名称列表，用逗号分隔。</p>
+<h3 id="Velocity"><a href="#Velocity" class="headerlink" title="Velocity"></a>Velocity</h3><p>spring.velocity.allow-request-override HttpServletRequest 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.velocity.allow-session-override HttpSession` 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.velocity.cache 开启模板缓存。</p>
+<p>spring.velocity.charset 模板编码。</p>
+<p>spring.velocity.check-template-location 检查模板位置是否存在。</p>
+<p>spring.velocity.content-type Content-Type 的值。</p>
+<p>spring.velocity.date-tool-attribute DateTool 辅助对象在视图的 Velocity 上下文里呈现的名字。</p>
+<p>spring.velocity.enabled 开启 Velocity 的 MVC 视图解析。</p>
+<p>spring.velocity.expose-request-attributes 在模型合并到模板前，是否要把所有的请求属性添加到模型里。</p>
+<p>spring.velocity.expose-session-attributes 在模型合并到模板前，是否要把所有的 HttpSession 属性添加到模型里。</p>
+<p>spring.velocity.expose-spring-macro-helpers 是否发布供 Spring 宏程序库使用的 RequestContext ，并将其名命为 springMacro- RequestContext 。</p>
+<p>spring.velocity.number-tool-attribute NumberTool 辅助对象在视图的 Velocity 上下文里呈现的名字。</p>
+<p>spring.velocity.prefer-file-system-access 加载模板时优先通过文件系统访问。文件系统访问能够实时检测到模板变更。（默认值： true 。）</p>
+<p>spring.velocity.prefix在构建 URL 时添加到视图名称前的前缀。</p>
+<p>spring.velocity.properties 额外的 Velocity 属性。</p>
+<p>spring.velocity.request-context-attribute所有视图里使用的 Request- Context 属性的名称。</p>
+<p>spring.velocity.resource-loader-path 模板路径。（默认值： classpath:/ templates/ 。）</p>
+<p>spring.velocity.suffix 在构建 URL 时添加到视图名称后的后缀。</p>
+<p>spring.velocity.toolbox-config-location Velocity Toolbox 的配置位置，比如 /WEB-INF/toolbox.xml。自动加载 Velocity Tools 工具定 义文件，将所定义的全部工具发布到指定的作用域内。</p>
+<p>spring.velocity.view-names可解析的视图名称白名单。</p>
+<h3 id="View"><a href="#View" class="headerlink" title="View"></a>View</h3><p>spring.view.prefix Spring MVC 视图前缀。</p>
+<p>spring.view.suffixSpring MVC 视图后缀。</p>
+<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>spring.aop.auto 添加 @EnableAspectJAutoProxy(默认：true)</p>
+<p>spring.application.admin.enabled开启应用程序的管理功能 (默认：false)</p>
+<p>spring.artemis.embedded.cluster-password 集群密码。默认在启东市随机生成</p>
+<p>spring.artemis.embedded.persistent开启持久化存储 (默认：false)</p>
+<p>spring.autoconfigure.exclude 要排除的自动配置类</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+        <category>Springboot</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>Springboot</tag>
+        <tag>application</tag>
+      </tags>
   </entry>
 </search>

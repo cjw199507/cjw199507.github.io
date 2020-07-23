@@ -28,15 +28,18 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="好好生活，慢慢爱你！">
+  <meta name="description" content="application.properties： 12345678910111213141516171819#server.port&#x3D;8080#server.servlet.context-path&#x3D;&#x2F;index #访问路径设置spring.datasource.url &#x3D; jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ems?characterEncoding&#x3D;UTF-8&amp;use">
 <meta property="og:type" content="article">
 <meta property="og:title" content="springboot application.properties 配置及参数配置详情介绍">
 <meta property="og:url" content="http://yoursite.com/2020/07/22/springboot-application-properties-%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%83%85%E4%BB%8B%E7%BB%8D/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:description" content="好好生活，慢慢爱你！">
+<meta property="og:description" content="application.properties： 12345678910111213141516171819#server.port&#x3D;8080#server.servlet.context-path&#x3D;&#x2F;index #访问路径设置spring.datasource.url &#x3D; jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ems?characterEncoding&#x3D;UTF-8&amp;use">
 <meta property="article:published_time" content="2020-07-22T11:18:28.000Z">
-<meta property="article:modified_time" content="2020-07-22T11:18:28.942Z">
+<meta property="article:modified_time" content="2020-07-23T04:29:22.574Z">
 <meta property="article:author" content="C J W">
+<meta property="article:tag" content="JavaWeb">
+<meta property="article:tag" content="Springboot">
+<meta property="article:tag" content="application">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="CJW の Blog" type="application/atom+xml">
@@ -81,7 +84,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			</ul>
 		</nav>
 		<nav>
-             总文章数： 14
+             总文章数： 23
         </nav>
 		<nav class="header-smart-menu">
     		
@@ -214,7 +217,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">0字</span>
+        <span class="post-count">8.2k字</span>
       </span>
     </span>
 
@@ -223,7 +226,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">34分</span>
       </span>
     </span>
 </div>
@@ -242,7 +245,399 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>application.properties：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#server.port=8080</span></span><br><span class="line"><span class="comment">#server.servlet.context-path=/index #访问路径设置</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.datasource.url</span> <span class="string">=</span> <span class="string">jdbc:mysql://localhost:3306/ems?characterEncoding=UTF-8&amp;useSSL=true&amp;serverTimezone=UTC</span></span><br><span class="line"><span class="string">spring.datasource.username</span> <span class="string">=</span> <span class="string">root</span></span><br><span class="line"><span class="string">spring.datasource.password</span> <span class="string">=</span> <span class="number">123456</span></span><br><span class="line"><span class="string">spring.datasource.driverClassName</span> <span class="string">=</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="string">spring.datasource.type</span> <span class="string">=</span> <span class="string">com.alibaba.druid.pool.DruidDataSource</span></span><br><span class="line"></span><br><span class="line"><span class="string">mybatis.mapper-locations</span> <span class="string">=</span> <span class="string">classpath:mapper/*.xml</span></span><br><span class="line"><span class="string">mybatis.type-aliases-package</span> <span class="string">=</span> <span class="string">com.dvms.entity</span></span><br><span class="line"></span><br><span class="line"><span class="string">spring.resources.static-locations</span> <span class="string">=</span> <span class="string">classpath:/templates/,classpath:/static/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#pagehelper分页插件配置</span></span><br><span class="line"><span class="string">pagehelper.helperDialect=mysql</span></span><br><span class="line"><span class="string">pagehelper.reasonable=true</span></span><br><span class="line"><span class="string">pagehelper.supportMethodsArguments=true</span></span><br><span class="line"><span class="string">pagehelper.params=count=countSql</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>查看参数配置：<br><a href="https://blog.csdn.net/true_hsf/article/details/77893481" target="_blank" rel="noopener">spring boot application.properties 配置参数详情</a>：</p>
+<h3 id="multipart"><a href="#multipart" class="headerlink" title="multipart"></a>multipart</h3><p>multipart.enabled 开启上传支持（默认：true）</p>
+<p>multipart.file-size-threshold: 大于该值的文件会被写到磁盘上</p>
+<p>multipart.location 上传文件存放位置</p>
+<p>multipart.max-file-size最大文件大小</p>
+<p>multipart.max-request-size 最大请求大小</p>
+<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><p>server.address 服务器地址</p>
+<p>server.port 服务器端口</p>
+<p>server.context-parameters.[param name] 设置 servlet 上下文参数</p>
+<p>server.context-path 应用上下文路径</p>
+<h3 id="Jsp-servelt"><a href="#Jsp-servelt" class="headerlink" title="Jsp-servelt"></a>Jsp-servelt</h3><p>server.jsp-servelt.class-name 针对jsp 使用的 Servlet 类名（默认：org.apache.jasper.servlet.JspServlet）</p>
+<p>server.jsp-servlet.registered JspServelt 是否要注册到内嵌的 Servlet 容器里（默认 true）</p>
+<p>server.jsp-servlet.init-parameters[param name] 设置 Jsp Servlet 初始化参数</p>
+<p>server.servlet-path主分发器 Servlet 的路径（默认：/）</p>
+<h3 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h3><p>server.session.cookie.domain 回话 Cookie 的域</p>
+<p>server.session.cookie.comment Cookie 注释</p>
+<p>server.session.cookie.max-age Cookie 最大保存时间（单位 s）</p>
+<p>server.session.cookie.name Cookie 名称</p>
+<p>server.session.cookie.timeout 超时时间</p>
+<h3 id="tomcat"><a href="#tomcat" class="headerlink" title="tomcat"></a>tomcat</h3><p>server.tomcat.accesslog.directory 创建日志文件的目录</p>
+<p>server.tomcat.accesslog.enabled 是否开启访问日志（默认：false）</p>
+<p>server.tomcat.accesslog.pattern 访问日志的格式（默认：common）</p>
+<p>server.tomcat.accesslog.prefix日志名前缀（默认：access_log）</p>
+<p>server.tomcat.accesslog.suffix 日志名后缀（默认：.log）</p>
+<p>server.tomcat.max-http-header-sizeHttp 消息头最大字节数（默认：0）</p>
+<p>server.tomcat.uri-encoding 用来解码 URI 的字符编码</p>
+<h3 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h3><p>spring.cache.cache-names 如果底层缓存管理器支持缓存名的话，可以在这里指定要创建的缓存名列表，用逗号分 隔。通常这会禁用运行时创建其他额外缓存的能力。</p>
+<p>spring.cache.config 用来初始化 EhCache 的配置文件位置</p>
+<p>spring.cache.guava.spec 用来创建缓存 Spec</p>
+<p>spring.cache.hazelcast.config 用来初始化 Hazeleast 的配置文件位置</p>
+<p>spring.cache.infinispan.config 用来初始化 Infinispan 配置文件位置</p>
+<p>spring.cache.jcache.config用来初始化缓存管理器的配置文件的位置，配置文件依赖于底层的缓存实现</p>
+<p>spring.cache.jcache.provider CachingProvider 实现的全限定类名，用来获取 JSR-107 兼容的缓存管理器，仅在 Classpath 里有不只一个 JSR-107 实现时才需要这个属性。</p>
+<p>spring.cache.type 缓存类型，默认根据环境自动检测</p>
+<h3 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h3><p>spring.data.jpa.repositories.enabled 开启 JPA 仓库（默认：true）</p>
+<p>spring.data.mongodb.authentication-database 身份认证数据库名</p>
+<p>spring.data.mongodb.database 数据库名</p>
+<p>spring.data.mongodb.field-naming-strategy 要使用的 FieldNamingStrategy 的全限定名。</p>
+<p>spring.data.mongodb.grid.fs.database GridFS 数据库名称</p>
+<p>spring.data.mongodb.host MongoDB 服务器地址</p>
+<p>spring.data.mongodb.username MongoDB 账号</p>
+<p>spring.data.mongodb.passwordMongoDB 密码</p>
+<p>spring.data.mongodb.port 端口号</p>
+<p>spring.data.mongodb.repositories.enabled 开启 Mongo 仓库（默认值：true）</p>
+<p>spring.data.mongodb.uri Mongo 数据库 URI。设置了该属性后就主机和端口号会被忽略。（默认值： mongodb:// localhost/test）</p>
+<p>spring.data.rest.base-path 用于发布仓库资源的基本路径</p>
+<p>spring.data.rest.default-page-size 分页数据的默认页大小（默认：20）</p>
+<p>spring.data.rest.limit-param-name用于标识一次返回多少记录的 URL 查询字符串参数名。（默认值： size ）</p>
+<p>spring.data.rest.max-page-sieze: 最大分页大小（默认：1000）</p>
+<p>spring.data.rest.page-param-name URL 查询字符串参数的名称，用来标识返回哪一页。（默认值： page ）</p>
+<p>spring.data.rest.return-body-on-create 在创建实体后是否返回一个响应体（默认：false）</p>
+<p>spring.data.rest.return-body-on-update 在更新实体后是否返回一个响应体（默认：false）</p>
+<p>spring.data.rest.sort-param-name URL 查询字符串参数的名称，用来表示结果排序的方向（默认：name）</p>
+<p>spring.data.solr.host Solr 的主机地址。如果设置了 zk-host 则忽略该属性。（默认值： <a href="http://127.0.0.1" target="_blank" rel="noopener">http://127.0.0.1</a>: 8983/solr ）</p>
+<p>spring.data.solr.repositories.enabled 开启 solr 仓库（默认：true）</p>
+<p>spring.data.solr.zk-host zk 主机地址，格式为 “主机 - 端口”</p>
+<p>spring.datasource.allow-pool-suspension 是否允许池暂停（pool suspension）。在开启池暂停后会有性能会受到一定影响，除非你 真的需要这个功能（例如在冗余的系统下），否则不要开启它。该属性只在使用 Hikari 数 据库连接池时有用。（默认值： false 。）</p>
+<h3 id="DataSource"><a href="#DataSource" class="headerlink" title="DataSource"></a>DataSource</h3><p>spring.datasource.name 数据源的名称。</p>
+<p>spring.datasource.username 数据库的登录用户名。</p>
+<p>spring.datasource.password 数据库的登录密码。</p>
+<p>spring.datasource.url 数据库的 JDBC URL。</p>
+<p>spring.datasource.jdbc-url 用来创建连接的 JDBC URL。</p>
+<p>spring.datasource.driver-class-name JDBC 驱动的全限定类名。默认根据 URL 自动检测。</p>
+<p>spring.datasource.pool-name 连接池名称。</p>
+<p>spring.datasource.max-active 连接池中的最大活跃连接数。</p>
+<p>spring.datasource.connection-timeout连接超时（单位毫秒）</p>
+<p>spring.datasource.max-age 连接池中连接的最长寿命。</p>
+<p>spring.datasource.max-idle 连接池中的最大空闲连接数。</p>
+<p>spring.datasource.max-lifetime 连接池中连接的最长寿命（单位为毫秒）。</p>
+<p>spring.datasource.max-open-prepared-statements 开启状态的 PreparedStatement 的数量上限。</p>
+<p>spring.datasource.max-wait 连接池在等待返回连接时，最长等待多少毫秒再抛出异常。</p>
+<p>spring.datasource.maximum-pool-size 连接池能达到的最大规模，包含空闲连接的数量和使用中的连接数量。</p>
+<p>spring.datasource.min-evictable-idle-time-millis 一个空闲连接被空闲连接释放器（如果存在的话）优雅地释放前，最短会在连接池里停 留多少时间。</p>
+<p>spring.datasource.min-idle 连接池里始终应该保持的最小连接数。（用于 DBCP 和 Tomcat 连接池。）</p>
+<p>spring.datasource.minimum-idle: HikariCP 试图在连接池里维持的最小空闲连接数。</p>
+<p>spring.datasource.alternate-username-allowed 是否允许其它用户名</p>
+<p>spring.datasource.auto-commit 更新操作是否自动提交</p>
+<p>spring.datasource.abandon-when-percentage-full 一个百分比形势的阈值，超过该阈值则关闭并报告被弃用的连接</p>
+<p>spring.datasource.catalog 默认的 Catalog 名称</p>
+<p>spring.datasource.commit-on-return 在连接归还时，连接池是否要提交挂起的事务</p>
+<p>spring.datasource.connection-init-sql 在所有新连接创建时都会执行的 SQL 语句，该语句会在连接加入连接池前执行。</p>
+<p>spring.datasource.connection-init-sqls 在物理连接第一次创建时执行的 SQL 语句列表。（用于 DBCP 连接池。）</p>
+<p>spring.datasource.connection-properties.[key] 设置创建连接时使用的属性。（用于 DBCP 连接池。）</p>
+<p>spring.datasource.continue-on-error 初始化数据库时发生错误不要终止。（默认值： false）</p>
+<p>spring.datasource.data 指向数据（数据库操纵语言，Data Manipulation Language，DML）脚本资源的引用。</p>
+<p>spring.datasource.data-source-class-name 用于获取连接的数据源的全限定类名。</p>
+<p>spring.datasource.data-source-jndi 用于获取连接的数据源的 JNDI 位置。</p>
+<p>spring.datasource.data-source-properties.[key] 设置创建数据源时使用的属性。（用于 Hikari 连接池。）</p>
+<p>spring.datasource.db-properties 设置创建数据源时使用的属性。（用于 Tomcat 连接池。）</p>
+<p>spring.datasource.default-auto-commit 连接上的操作是否自动提交。</p>
+<p>spring.datasource.default-catalog 连接的默认 Catalog。</p>
+<p>spring.datasource.default-read-only 连接的默认只读状态。</p>
+<p>spring.datasource.default-transaction-isolation 连接的默认事务隔离级别。</p>
+<p>spring.datasource.fair-queue 是否以 FIFO 方式返回连接。</p>
+<p>spring.datasource.health-check-properties.[key] 设置要纳入健康检查的属性。（用于 Hikari 连接池。）</p>
+<p>spring.datasource.idle-timeout 连接池中的连接能保持闲置状态的最长时间，单位为毫秒。（默认值： 10 。）</p>
+<p>spring.datasource.ignore-exception-on-pre-load 初始化数据库连接池时是否要忽略连接。</p>
+<p>spring.datasource.init-sql在连接第一次创建时运行的自定义查询。</p>
+<p>spring.datasource.initial-size 在连接池启动时要建立的连接数。</p>
+<p>spring.datasource.initialization-fail-fast 在连接池创建时，如果达不到最小连接数是否要抛出异常。（默认值： true 。）</p>
+<p>spring.datasource.initialize 使用 data.sql 初始化数据库。（默认值： true 。）</p>
+<p>spring.datasource.isolate-internal-queries 是否要隔离内部请求。（默认值： false 。）</p>
+<p>spring.datasource.jdbc-interceptors 一个分号分隔的类名列表，这些类都扩展了 JdbcInterceptor 类。这些拦截器会插入 java.sql.Connection 对象的操作链里。（用于 Tomcat 连接池。）</p>
+<p>spring.datasource.jmx-enabled 开启 JMX 支持（如果底层连接池提供该功能的话）。（默认值： false 。）</p>
+<p>spring.datasource.jndi-name 数据源的 JNDI 位置。设置了该属性则忽略类、URL、用户名和密码属性。</p>
+<p>spring.datasource.leak-detection-threshold 用来检测 Hikari 连接池连接泄露的阈值，单位为毫秒。</p>
+<p>spring.datasource.log-abandoned 是否针对弃用语句或连接的应用程序代码记录下跟踪栈。用于 DBCP 连接池。（默认值： false 。）</p>
+<p>spring.datasource.log-validation-errors 在使用 Tomcat 连接池时是否要记录验证错误。</p>
+<p>spring.datasource.login-timeout 连接数据库的超时时间（单位为秒）。</p>
+<p>spring.datasource.num-tests-per-eviction-run 空闲对象释放器线程（如果存在的话）每次运行时要检查的对象数。</p>
+<p>spring.datasource.platform 在 Schema 资源（schema-${platform}.sql）里要使用的平台。（默认值： all 。）</p>
+<p>spring.datasource.pool-prepared-statements 是否要将 Statement 放在池里。</p>
+<p>spring.datasource.propagate-interrupt-state 对于等待连接的中断线程，是否要传播中断状态。</p>
+<p>spring.datasource.read-only 在使用 Hikari 连接池时将数据源设置为只读。</p>
+<p>spring.datasource.register-mbeans Hikari 连接池是否要注册 JMX MBean。</p>
+<p>spring.datasource.remove-abandoned 被弃用的连接在到达弃用超时后是否应该被移除。</p>
+<p>spring.datasource.remove-abandoned-timeout 连接在多少秒后应该考虑弃用。</p>
+<p>spring.datasource.rollback-on-return 在连接归还连接池时，是否要回滚挂起的事务。</p>
+<p>spring.datasource.schema Schema（数据定义语言，Data Definition Language，DDL）脚本资源的引用。</p>
+<p>spring.datasource.separator SQL 初始化脚本里的语句分割符。（默认值： ; 。）</p>
+<p>spring.datasource.sql-script-encoding SQL 脚本的编码。</p>
+<p>spring.datasource.suspect-timeout 在记录一个疑似弃用连接前要等待多少秒。</p>
+<p>spring.datasource.test-on-borrow 从连接池中借用连接时是否要进行测试。</p>
+<p>spring.datasource.test-on-connect 在建立连接时是否要进行测试。</p>
+<p>spring.datasource.test-on-return 在将连接归还到连接池时是否要进行测试。</p>
+<p>spring.datasource.test-while-idle 在连接空闲时是否要进行测试。</p>
+<p>spring.datasource.time-between-eviction-runs-millis 在两次空闲连接验证、弃用连接清理和空闲池大小调整之间睡眠的毫秒数。</p>
+<p>spring.datasource.transaction-isolation 在使用 Hikari 连接池时设置默认事务隔离级别。</p>
+<p>spring.datasource.use-disposable-connection-facade 连接是否要用一个门面（facade）封装起来，在调用了 Connection.close() 后就不能 再使用这个连接了。</p>
+<p>spring.datasource.use-equals 在比较方法名时是否使用 String.equals() 来代替 == 。</p>
+<p>spring.datasource.use-lock 在操作连接对象时是否要加锁。</p>
+<p>spring.datasource.validation-interval 执行连接验证的间隔时间，单位为毫秒。</p>
+<p>spring.datasource.validation-query 在连接池里的连接返回给调用者或连接池时，要执行的验证 SQL 查询。</p>
+<p>spring.datasource.validation-query-timeout 在连接验证查询执行失败前等待的超时时间，单位为秒。</p>
+<p>spring.datasource.validation-timeout 在连接验证失败前等待的超时时间，单位为秒。（用于 Hikari 连接池。）</p>
+<p>spring.datasource.validator-class-name 可选验证器类的全限定类名，用于执行测试查询。</p>
+<p>spring.datasource.xa.data-source-class-name XA 数据源的全限定类名。</p>
+<p>spring.datasource.xa.properties 要传递给 XA 数据源的属性。</p>
+<h3 id="FreeMarker"><a href="#FreeMarker" class="headerlink" title="FreeMarker"></a>FreeMarker</h3><p>spring.freemarker.allow-request-override HttpServletRequest 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.freemarker.allow-session-override HttpSession 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.freemarker.cache 开启模板缓存。</p>
+<p>spring.freemarker.charset 模板编码。</p>
+<p>spring.freemarker.check-template-location 检查模板位置是否存在。</p>
+<p>spring.freemarker.content-type Content-Type 的值。</p>
+<p>spring.freemarker.enabled 开启 FreeMarker 的 MVC 视图解析。</p>
+<p>spring.freemarker.expose-request-attributes 在模型合并到模板前，是否要把所有的请求属性添加到模型里。</p>
+<p>spring.freemarker.expose-session-attributes 在模型合并到模板前，是否要把所有的 HttpSession 属性添加到模型里。</p>
+<p>spring.freemarker.expose-spring-macro-helpers 是否发布供 Spring 宏程序库使用的 RequestContext ，并将命其名为 springMacro- RequestContext</p>
+<p>spring.freemarker.prefer-file-system-access 加载模板时优先通过文件系统访问。文件系统访问能够实时检测到模板变更。（默认值： true 。）</p>
+<p>spring.freemarker.prefix 在构建 URL 时添加到视图名称前的前缀。</p>
+<p>spring.freemarker.request-context-attribute 在所有视图里使用的 RequestContext 属性的名称。</p>
+<p>spring.freemarker.settings 要传递给 FreeMarker 配置的各种键。</p>
+<p>spring.freemarker.suffix 在构建 URL 时添加到视图名称后的后缀。</p>
+<p>spring.freemarker.template-loader-path 模板路径列表，用逗号分隔。（默认值： [“classpath:/templates/”] 。）</p>
+<p>spring.freemarker.view-names 可解析的视图名称的白名单。</p>
+<h3 id="Groovy"><a href="#Groovy" class="headerlink" title="Groovy"></a>Groovy</h3><p>spring.groovy.template.allow-request-override HttpServletRequest 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.groovy.template.allow-session-override HttpSession 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.groovy.template.cache 开启模板缓存。</p>
+<p>spring.groovy.template.charset 模板编码。</p>
+<p>spring.groovy.template.check-template-location 检查模板位置是否存在。</p>
+<p>spring.groovy.template.configuration.auto-escape 模型变量在模板里呈现时是否要做转义。（默认值： false 。）</p>
+<p>spring.groovy.template.configuration.auto-indent 模板是否要自动呈现缩进。（默认值： false 。）</p>
+<p>spring.groovy.template.configuration.auto-indent-string 开启自动缩进时用于缩进的字符串，可以是 SPACES ，也可以是 TAB 。（默认值： SPACES 。）</p>
+<p>spring.groovy.template.configuration.auto-new-line 模板里是否要呈现新的空行。（默认值： false 。）</p>
+<p>spring.groovy.template.configuration.base-template-class 模板基类。</p>
+<p>spring.groovy.template.configuration.cache-templates 模板是否应该缓存。（默认值： true 。）</p>
+<p>spring.groovy.template.configuration.declaration-encoding 用来写声明头的编码。</p>
+<p>spring.groovy.template.configuration.expand-empty-elements 没有正文的元素该用短形式（例如， ）还是扩展形式（例如， ）来书 写。（默认值： false）</p>
+<p>spring.groovy.template.configuration.locale 设置模板地域。</p>
+<p>spring.groovy.template.configuration.new-line-string 在自动空行开启后用来呈现空行的字符串。（默认为系统的 line.separator 属性值。）</p>
+<p>spring.groovy.template.configuration.resource-loader-path Groovy 模板的路径。（默认值： classpath:/templates/ 。）</p>
+<p>spring.groovy.template.configuration.use-double-quotes 属性是该用双引号还是单引号。（默认值： false 。）</p>
+<p>spring.groovy.template.content-type Content-Type 的值。</p>
+<p>spring.groovy.template.enabled 开启 Groovy 模板的 MVC 视图解析。</p>
+<p>spring.groovy.template.expose-request-attributes 在模型合并到模板前，是否要把所有的请求属性添加到模型里。</p>
+<p>spring.groovy.template.expose-session-attributes 在模型合并到模板前，是否要把所有的 HttpSession 属性添加到模型里。</p>
+<p>spring.groovy.template.expose-spring-macro-helpers 是否发布供 Spring 宏程序库使用的 RequestContext ，并将其命名为 springMacro- RequestContext</p>
+<p>spring.groovy.template.prefix 在构建 URL 时，添加到视图名称前的前缀。</p>
+<p>spring.groovy.template.request-context-attribute 所有视图里使用的 RequestContext 属性的名称。</p>
+<p>spring.groovy.template.resource-loader-path 模板路径（默认值： classpath:/ templates/ 。）</p>
+<p>spring.groovy.template.suffix 在构建 URL 时，添加到视图名称后的后缀。</p>
+<p>spring.groovy.template.view-names 可解析的视图名称白名单。</p>
+<h3 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h3><p>spring.h2.console.enabled 开启控制台。（默认值： false 。）</p>
+<p>spring.h2.console.path 可以找到控制台的路径。（默认值： /h2-console 。）</p>
+<p>Hornetq</p>
+<p>spring.hornetq.embedded.cluster-password 集群密码。默认在启动时随机生成。</p>
+<p>spring.hornetq.embedded.data-directory 日志文件目录。如果关闭了持久化功能则不需要该属性。</p>
+<p>spring.hornetq.embedded.enabled 如果有 HornetQ 服务器 API，则开启嵌入模式。（默认值： true 。）</p>
+<p>spring.hornetq.embedded.persistent 开启持久化存储。（默认值： false 。）</p>
+<p>spring.hornetq.embedded.queues 启动时要创建的队列列表，用逗号分隔。（默认值： [] 。）</p>
+<p>spring.hornetq.embedded.server-id 服务器 ID。默认使用自增长计数器。（默认值： 0 。）</p>
+<p>spring.hornetq.embedded.topics 启动时要创建的主题列表，用逗号分隔。（默认值： [] 。）</p>
+<p>spring.hornetq.host HornetQ 的主机。（默认值： localhost 。）</p>
+<p>spring.hornetq.mode HornetQ 的部署模式，默认为自动检测。可以显式地设置为 native 或 embedded 。</p>
+<p>spring.hornetq.port HornetQ 的端口。（默认值： 5445 。）</p>
+<h3 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h3><p>spring.http.converters.preferred-json-mapper HTTP 消息转换时优先使用 JSON 映射器。</p>
+<p>spring.http.encoding.charset HTTP 请求和响应的字符集。如果没有显式地指定 Content-Type 头，则将该属性值作为 这个头的值。（默认值： UTF-8 。）</p>
+<p>spring.http.encoding.enabled 开启 HTTP 编码支持。（默认值： true 。）</p>
+<p>spring.http.encoding.force 强制将 HTTP 请求和响应编码为所配置的字符集。（默认值： true 。）</p>
+<h3 id="Jackson"><a href="#Jackson" class="headerlink" title="Jackson"></a>Jackson</h3><p>spring.jackson.date-format 日期格式字符串（yyyy-MM-dd HH:mm:ss）或日期格式类的全限定类名。</p>
+<p>spring.jackson.deserialization 影响 Java 对象反序列化的 Jackson on/off 特性。</p>
+<p>spring.jackson.generator 用于生成器的 Jackson on/off 特性。</p>
+<p>spring.jackson.joda-date-time-format Joda 日期时间格式字符串（yyyy-MM-dd HH:mm:ss）。如果没有配置，而 date-format 又配置了一个格式字符串的话，会将它作为降级配置。</p>
+<p>spring.jackson.locale 用于格式化的地域值。</p>
+<p>spring.jackson.mapper Jackson 的通用 on/off 特性。</p>
+<p>spring.jackson.parser 用于解析器的 Jackson on/off 特性。</p>
+<p>spring.jackson.property-naming-strategy Jackson 的 PropertyNamingStrategy 中的一个常量（ CAMEL_CASE_TO_LOWERCASE WITH_UNDERSCORES ）。也可以设置 PropertyNamingStrategy 的子类的全限定类名。</p>
+<p>spring.jackson.serialization 影响 Java 对象序列化的 Jackson on/off 特性。</p>
+<p>spring.jackson.serialization-inclusion 控制序列化时要包含哪些属性。可选择 Jackson 的 JsonInclude.Include 枚举里的某个值。</p>
+<p>spring.jackson.time-zone 格式化日期时使用的时区。可以配置各种可识别的时区标识符，比如 America/Los_ Angeles 或者 GMT+10 。</p>
+<h3 id="Jersey"><a href="#Jersey" class="headerlink" title="Jersey"></a>Jersey</h3><p>spring.jersey.filter.order Jersey 过滤器链的顺序。（默认值： 0 。）</p>
+<p>spring.jersey.init 通过 Servlet 或过滤器传递给 Jersey 的初始化参数。</p>
+<p>spring.jersey.type Jersey 集成类型。可以是 servlet 或者 filter 。</p>
+<h3 id="Jms"><a href="#Jms" class="headerlink" title="Jms"></a>Jms</h3><p>spring.jms.jndi-name 连接工厂的 JNDI 名字。设置了该属性，则优先于其他自动配置的连接工厂。</p>
+<p>spring.jms.listener.acknowledge-mode 容器的应答模式（acknowledgment mode）。默认情况下，监听器使用自动应答。</p>
+<p>spring.jms.listener.auto-startup 启动时自动启动容器。（默认值： true 。）</p>
+<p>spring.jms.listener.concurrency 并发消费者的数量下限。</p>
+<p>spring.jms.listener.max-concurrency 并发消费者的数量上限。</p>
+<p>spring.jms.pub-sub-domain 如果是主题而非队列，指明默认的目的地类型是否支持 Pub/Sub。（默认值： false 。）</p>
+<h3 id="Jmx"><a href="#Jmx" class="headerlink" title="Jmx"></a>Jmx</h3><p>spring.jmx.default-domain JMX 域名。</p>
+<p>spring.jmx.enabled 将管理 Bean 发布到 JMX 域里。（默认值： true 。）</p>
+<p>spring.jmx.server MBeanServer 的 Bean 名称。（默认值： mbeanServer 。）</p>
+<h3 id="Jpa"><a href="#Jpa" class="headerlink" title="Jpa"></a>Jpa</h3><p>spring.jpa.database 要操作的目标数据库，默认自动检测。也可以通过 databasePlatform 属性进行设置。</p>
+<p>spring.jpa.database-platform 要操作的目标数据库，默认自动检测。也可以通过 Database 枚举来设置。</p>
+<p>spring.jpa.generate-ddl 启动时要初始化 Schema。（默认值： false 。）</p>
+<p>spring.jpa.hibernate.ddl-auto DDL 模式（ none 、 validate 、 update 、 create 和 create-drop ）。这是 hibernate. hbm2ddl.auto 属性的一个快捷方式。在使用嵌入式数据库时，默认为 create-drop , 其他情况下默认为 none 。</p>
+<p>spring.jpa.hibernate.naming-strategy Hibernate 命名策略的全限定类名。</p>
+<p>spring.jpa.open-in-view 注册 OpenEntityManagerInViewInterceptor ，在请求的整个处理过程中，将一个 JPA EntityManager 绑定到线程上。（默认值： true）</p>
+<p>spring.jpa.propertiesJPA 提供方要设置的额外原生属性。</p>
+<p>spring.jpa.show-sql 在使用 Bitronix Transaction Manager 时打开 SQL 语句日志。（默认值： false 。）</p>
+<h3 id="Jta"><a href="#Jta" class="headerlink" title="Jta"></a>Jta</h3><p>spring.jta.allow-multiple-lrc 在使用 Bitronix Transaction Manager 时，事务管理器是否应该允许一个事务涉及多个 LRC 资源。（默认值： false）</p>
+<p>spring.jta.asynchronous2-pc 在使用 Bitronix Transaction Manager 时，是否异步执行两阶段提交。（默认值： false 。）</p>
+<p>spring.jta.background-recovery-interval在使用 Bitronix Transaction Manager 时，多久运行一次恢复过程，单位为分钟。（默认值： 1 ）</p>
+<p>spring.jta.background-recovery-interval-seconds 在使用 Bitronix Transaction Manager 时，多久运行一次恢复过程，单位为秒。（默认值： 60 ）</p>
+<p>spring.jta.current-node-only-recovery 在使用 Bitronix Transaction Manager 时，恢复是否要滤除不包含本 JVM 唯一 ID 的 XID。（默认值： true ）</p>
+<p>spring.jta.debug-zero-resource-transaction 在使用 Bitronix Transaction Manager 时，对于没有涉及任何资源的事务，是否要跟踪并记 录它们的创建和提交调用栈。（默认值： false）</p>
+<p>spring.jta.default-transaction-timeout 在使用 Bitronix Transaction Manager 时，默认的事务超时时间，单位为秒。（默认值： 60 。）</p>
+<p>spring.jta.disable-jmx 在使用 Bitronix Transaction Manager 时，是否要禁止注册 JMX MBean。（默认值： false 。）</p>
+<p>spring.jta.enabled 开启 JTA 支持。（默认值： true 。）</p>
+<p>spring.jta.exception-analyzer 在使用 Bitronix Transaction Manager 时用到的异常分析器。设置为 null 时使用默认异常分析器，也可以设置自定义异常分析器的全限定类名。</p>
+<p>spring.jta.filter-log-status 在使用 Bitronix Transaction Manager 时，是否只记录必要的日志。开启该参数时能减少分 段（fragment）空间用量，但调试更复杂了。（默认值： false）</p>
+<p>spring.jta.force-batching-enabled 在使用 Bitronix Transaction Manager 时，是否批量输出至磁盘。禁用批处理会严重降低事 务管理器的吞吐量。（默认值： true 。）</p>
+<p>spring.jta.forced-write-enabled 在使用 Bitronix Transaction Manager 时，日志是否强制写到磁盘上。在生产环境里不要设 置为 false ，因为不强制写到磁盘上无法保证完整性。（默认值： true）</p>
+<p>spring.jta.graceful-shutdown-interval 在使用 Bitronix Transaction Manager 时，要关闭的话，事务管理器在放弃事务前最多等它 多少秒。（默认值： 60）</p>
+<p>spring.jta.jndi-transaction-synchronization-registry-name 在使用 Bitronix Transaction Manager 时，事务同步注册表应该绑定到哪个 JNDI 下。（默认 值： java:comp/TransactionSynchronizationRegistry）</p>
+<p>spring.jta.jndi-user-transaction-name 在使用 Bitronix Transaction Manager 时，用户事务应该绑定到哪个 JNDI 下。（默认值： java:comp/UserTransaction 。）</p>
+<p>spring.jta.journal 在使用 Bitronix Transaction Manager 时，要用的日志名。可以是 disk 、 null 或者全限定类 名。（默认值： disk 。）</p>
+<p>spring.jta.log-dir 事务日志目录。</p>
+<p>spring.jta.log-part1-filename 日志分段文件 1 的名称。（默认值： btm1.tlog 。）</p>
+<p>spring.jta.log-part2-filename 日志分段文件 2 的名称。（默认值： btm2.tlog 。）</p>
+<p>spring.jta.max-log-size-in-mb 在使用 Bitronix Transaction Manager 时，日志分段文件的最大兆数。日志越大，事务就被 允许在未终结状态停留越长时间。但是，如果文件大小限制得太小，事务管理器在分段 满了的时候就会暂停更长时间。（默认值： 2 。）</p>
+<p>spring.jta.resource-configuration-filename Bitronix Transaction Manager 的配置文件名。</p>
+<p>spring.jta.server-id 唯一标识 Bitronix Transaction Manager 实例的 ID。</p>
+<p>spring.jta.skip-corrupted-logs 是否跳过损坏的日志文件。（默认值： false 。）</p>
+<p>spring.jta.transaction-manager-id 事务管理器的唯一标识符。</p>
+<p>spring.jta.warn-about-zero-resource-transaction 在使用 Bitronix Transaction Manager 时，是否要对执行时没有涉及任何资源的事务作出告 警。（默认值： true 。）</p>
+<h3 id="Mail"><a href="#Mail" class="headerlink" title="Mail"></a>Mail</h3><p>spring.mail.default-encoding 默认的 MimeMessage 编码。（默认值： UTF-8 。）</p>
+<p>spring.mail.host SMTP 服务器主机地址。</p>
+<p>spring.mail.jndi-name会话的 JNDI 名称。设置之后，该属性的优先级要高于其他邮件设置。</p>
+<p>spring.mail.password SMTP 服务器的登录密码。</p>
+<p>spring.mail.port SMTP 服务器的端口号。</p>
+<p>spring.mail.properties 附加的 JavaMail 会话属性。</p>
+<p>spring.mail.protocol SMTP 服务器用到的协议。（默认值： smtp 。）</p>
+<p>spring.mail.test-connection 在启动时测试邮件服务器是否可用。（默认值： false 。）</p>
+<p>spring.mail.username SMTP 服务器的登录用户名。</p>
+<h3 id="Messages"><a href="#Messages" class="headerlink" title="Messages"></a>Messages</h3><p>spring.messages.basename 逗号分隔的基本名称列表，都遵循 ResourceBundle 的惯例。本质上这就是一个全限定 的 Classpath 位置，如果不包含包限定符（比如 org.mypackage ），就会从 Classpath 的根部开始解析。（默认值： messages 。）</p>
+<p>spring.messages.cache-seconds 加载的资源包文件的缓存失效时间，单位为秒。在设置为 -1 时，包会永远缓存。（默认值： -1 。）</p>
+<p>spring.messages.encoding消息包的编码。（默认值： UTF-8 。）</p>
+<h3 id="Mobile"><a href="#Mobile" class="headerlink" title="Mobile"></a>Mobile</h3><p>spring.mobile.devicedelegatingviewresolver.enable-fallback 开启降级解析支持。（默认值： false 。）</p>
+<p>spring.mobile.devicedelegatingviewresolver.enabled 开启设备视图解析器。（默认值： false 。）</p>
+<p>spring.mobile.devicedelegatingviewresolver.mobile-prefix 添加到移动设备视图名前的前缀。（默认值： mobile/ 。）</p>
+<p>spring.mobile.devicedelegatingviewresolver.mobile-suffix 添加到移动设备视图名后的后缀。</p>
+<p>spring.mobile.devicedelegatingviewresolver.normal-prefix 添加到普通设备视图名前的前缀。</p>
+<p>spring.mobile.devicedelegatingviewresolver.normal-suffix 添加到普通设备视图名后的后缀。</p>
+<p>spring.mobile.devicedelegatingviewresolver.tablet-prefix添加到平板设备视图名前的前缀。（默认值： tablet/ 。）</p>
+<p>spring.mobile.devicedelegatingviewresolver.tablet-suffix 添加到平板设备视图名后的后缀。</p>
+<p>spring.mobile.sitepreference.enabled 开启 SitePreferenceHandler 。（默认值： true 。）</p>
+<h3 id="Mongodb"><a href="#Mongodb" class="headerlink" title="Mongodb"></a>Mongodb</h3><p>spring.mongodb.embedded.features要开启的特性列表，用逗号分隔。</p>
+<p>spring.mongodb.embedded.version 要使用的 Mongo 版本。（默认值： 2.6.10 。）</p>
+<h3 id="Mustache"><a href="#Mustache" class="headerlink" title="Mustache"></a>Mustache</h3><p>spring.mustache.cache 开启模板缓存。</p>
+<p>spring.mustache.charset 模板编码。</p>
+<p>spring.mustache.check-template-location 检查模板位置是否存在。</p>
+<p>spring.mustache.content-type Content-Type 的值。</p>
+<p>spring.mustache.enabled 开启 Mustache 的 MVC 视图解析。</p>
+<p>spring.mustache.prefix添加到模板名前的前缀。（默认值： classpath:/ templates/ 。）</p>
+<p>spring.mustache.suffix 添加到模板名后的后缀。（默认值： .html 。）</p>
+<p>spring.mustache.view-names 可解析的视图名称的白名单。</p>
+<h3 id="Mvc"><a href="#Mvc" class="headerlink" title="Mvc"></a>Mvc</h3><p>spring.mvc.async.request-timeout 异步请求处理超时前的等待时间（单位为毫秒）。如果没有设置该属性，则使用底层实现 的默认超时时间，比如，Tomcat 上使用 Servlet 3 时超时时间为 10 秒。</p>
+<p>spring.mvc.date-format 要使用的日期格式（比如 dd/MM/yyyy ）。</p>
+<p>spring.mvc.favicon.enabled 开启 favicon.ico 的解析。（默认值： true 。）</p>
+<p>spring.mvc.ignore-default-model-on-redirect 在重定向的场景下，是否要忽略“默认”模型对象的内容。（默认值： true 。）</p>
+<p>spring.mvc.locale 要使用的地域配置。</p>
+<p>spring.mvc.message-codes-resolver-format 消息代码格式（ PREFIX_ERROR_CODE 、 POSTFIX_ERROR_CODE ）。</p>
+<p>spring.mvc.view.prefix Spring MVC 视图前缀。</p>
+<p>spring.mvc.view.suffix Spring MVC 视图后缀。</p>
+<h3 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h3><p>mybatis.mapper-locations mybatis 映射文件位置。<br>mybatis.type-aliases-package 别名包位置。</p>
+<h3 id="Rabbitmq"><a href="#Rabbitmq" class="headerlink" title="Rabbitmq"></a>Rabbitmq</h3><p>spring.rabbitmq.addresses 客户端应该连接的地址列表，用逗号分隔。</p>
+<p>spring.rabbitmq.dynamic 创建一个 AmqpAdmin Bean。（默认值： true 。）</p>
+<p>spring.rabbitmq.host RabbitMQ 主机地址。（默认值： localhost 。）</p>
+<p>spring.rabbitmq.listener.acknowledge-mode 容器的应答模式。</p>
+<p>spring.rabbitmq.listener.auto-startup 启动时自动开启容器。（默认值： true 。）</p>
+<p>spring.rabbitmq.listener.concurrency 消费者的数量下限。</p>
+<p>spring.rabbitmq.listener.max-concurrency 消费者的数量上限。</p>
+<p>spring.rabbitmq.listener.prefetch 单个请求里要处理的消息数。该数值不应小于事务数（如果用到的话）。</p>
+<p>spring.rabbitmq.listener.transaction-size 一个事务里要处理的消息数。为了保证效果，应该不大于预先获取的数量。</p>
+<p>spring.rabbitmq.password进行身份验证的密码。</p>
+<p>spring.rabbitmq.port RabbitMQ 端口。（默认值： 5672 。）</p>
+<p>spring.rabbitmq.requested-heartbeat 请求心跳超时，单位为秒； 0 表示不启用心跳。</p>
+<p>spring.rabbitmq.ssl.enabled 开启 SSL 支持。（默认值： false 。）</p>
+<p>spring.rabbitmq.ssl.key-store 持有 SSL 证书的 KeyStore 路径。</p>
+<p>spring.rabbitmq.ssl.key-store-password 访问 KeyStore 的密码。</p>
+<p>spring.rabbitmq.ssl.trust-store 持有 SSL 证书的 TrustStore。</p>
+<p>spring.rabbitmq.ssl.trust-store-password 访问 TrustStore 的密码。</p>
+<p>spring.rabbitmq.username 进行身份验证的用户名。</p>
+<p>spring.rabbitmq.virtual-host 在连接 RabbitMQ 时的虚拟主机。</p>
+<h3 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h3><p>spring.redis.database 连接工厂使用的数据库索引。（默认值： 0 。）</p>
+<p>spring.redis.host Redis 服务器主机地址。（默认值： localhost 。）</p>
+<p>spring.redis.passwordRedis 服务器的登录密码。</p>
+<p>spring.redis.pool.max-active连接池在指定时间里能分配的最大连接数。负数表示无限制。（默认值： 8 。）</p>
+<p>spring.redis.pool.max-idle 连接池里的最大空闲连接数。负数表示空闲连接数可以是无限大。（默认值： 8 。）</p>
+<p>spring.redis.pool.max-wait当连接池被耗尽时，分配连接的请求应该在抛出异常前被阻塞多长时间（单位为秒）。负 数表示一直阻塞。（默认值： -1 。）</p>
+<p>spring.redis.pool.min-idle 连接池里要维持的最小空闲连接数。该属性只有在设置为正数时才有效。（默认值： 0 。）</p>
+<p>spring.redis.port Redis 服务器端口。（默认值： 6379 。）</p>
+<p>spring.redis.sentinel.master Redis 服务器的名字。</p>
+<p>spring.redis.sentinel.nodes形如“主机: 端口”配对的列表，用逗号分隔。</p>
+<p>spring.redis.timeout 连接超时时间，单位为秒。（默认值： 0 。）</p>
+<h3 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h3><p>spring.resources.add-mappings 开启默认资源处理。（默认值： true 。）</p>
+<p>spring.resources.cache-period 资源处理器对资源的缓存周期，单位为秒。</p>
+<p>spring.resources.chain.cache 对资源链开启缓存。（默认值： true 。）</p>
+<p>spring.resources.chain.enabled 开启 Spring 资源处理链。（默认关闭的，除非至少开启了一个策略。）</p>
+<p>spring.resources.chain.html-application-cache 开启 HTML5 应用程序缓存证明重写。（默认值： false 。）</p>
+<p>spring.resources.chain.strategy.content.enabled 开启内容版本策略。（默认值： false 。）</p>
+<p>spring.resources.chain.strategy.content.paths 要运用于版本策略的模式列表，用逗号分隔。（默认值： [/**] 。）</p>
+<p>spring.resources.chain.strategy.fixed.enabled开启固定版本策略。（默认值： false 。）</p>
+<p>spring.resources.chain.strategy.fixed.paths要运用于固定版本策略的模式列表，用逗号分隔。</p>
+<p>spring.resources.chain.strategy.fixed.version 用于固定版本策略的版本字符串。</p>
+<p>spring.resources.static-locations 静态资源位置。默认为 classpath: [/META-INF/resources/, /resources/, /static/, /public/] 加上 context:/（Servlet 上下文的根目录）。</p>
+<h3 id="SendGrid"><a href="#SendGrid" class="headerlink" title="SendGrid"></a>SendGrid</h3><p>spring.sendgrid.password SendGrid 密码。</p>
+<p>spring.sendgrid.proxy.host SendGrid 代理主机地址。</p>
+<p>spring.sendgrid.proxy.port SendGrid 代理端口。</p>
+<p>spring.sendgrid.username SendGrid 用户名。</p>
+<h3 id="Social"><a href="#Social" class="headerlink" title="Social"></a>Social</h3><p>spring.social.auto-connection-views 针对所支持的提供方开启连接状态视图。（默认值： false 。）</p>
+<p>spring.social.facebook.app-id 应用程序 ID。</p>
+<p>spring.social.facebook.app-secret 应用程序的密钥。</p>
+<p>spring.social.linkedin.app-id 应用程序 ID。</p>
+<p>spring.social.linkedin.app-secret 应用程序的密钥。</p>
+<p>spring.social.twitter.app-id 应用程序 ID。</p>
+<p>spring.social.twitter.app-secret 应用程序的密钥。</p>
+<h3 id="Thymeleaf"><a href="#Thymeleaf" class="headerlink" title="Thymeleaf"></a>Thymeleaf</h3><p>spring.thymeleaf.cache开启模板缓存。（默认值： true 。）</p>
+<p>spring.thymeleaf.check-template-location 检查模板位置是否存在。（默认值： true 。）</p>
+<p>spring.thymeleaf.content-type Content-Type 的值。（默认值： text/html 。）</p>
+<p>spring.thymeleaf.enabled 开启 MVC Thymeleaf 视图解析。（默认值： true 。）</p>
+<p>spring.thymeleaf.encoding模板编码。（默认值： UTF-8 。）</p>
+<p>spring.thymeleaf.excluded-view-names 要被排除在解析之外的视图名称列表，用逗号分隔。</p>
+<p>spring.thymeleaf.mode 要运用于模板之上的模板模式。另见 StandardTemplate- ModeHandlers 。（默认值： HTML5 。）</p>
+<p>spring.thymeleaf.prefix 在构建 URL 时添加到视图名称前的前缀。（默认值： classpath:/templates/ 。）</p>
+<p>spring.thymeleaf.suffix 在构建 URL 时添加到视图名称后的后缀。（默认值： .html 。）</p>
+<p>spring.thymeleaf.template-resolver-order Thymeleaf 模板解析器在解析器链中的顺序。默认情况下，它排在第一位。顺序从 1 开始只有在定义了额外的 TemplateResolver Bean 时才需要设置这个属性。</p>
+<p>spring.thymeleaf.view-names 可解析的视图名称列表，用逗号分隔。</p>
+<h3 id="Velocity"><a href="#Velocity" class="headerlink" title="Velocity"></a>Velocity</h3><p>spring.velocity.allow-request-override HttpServletRequest 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.velocity.allow-session-override HttpSession` 的属性是否允许覆盖（隐藏）控制器生成的同名模型属性。</p>
+<p>spring.velocity.cache 开启模板缓存。</p>
+<p>spring.velocity.charset 模板编码。</p>
+<p>spring.velocity.check-template-location 检查模板位置是否存在。</p>
+<p>spring.velocity.content-type Content-Type 的值。</p>
+<p>spring.velocity.date-tool-attribute DateTool 辅助对象在视图的 Velocity 上下文里呈现的名字。</p>
+<p>spring.velocity.enabled 开启 Velocity 的 MVC 视图解析。</p>
+<p>spring.velocity.expose-request-attributes 在模型合并到模板前，是否要把所有的请求属性添加到模型里。</p>
+<p>spring.velocity.expose-session-attributes 在模型合并到模板前，是否要把所有的 HttpSession 属性添加到模型里。</p>
+<p>spring.velocity.expose-spring-macro-helpers 是否发布供 Spring 宏程序库使用的 RequestContext ，并将其名命为 springMacro- RequestContext 。</p>
+<p>spring.velocity.number-tool-attribute NumberTool 辅助对象在视图的 Velocity 上下文里呈现的名字。</p>
+<p>spring.velocity.prefer-file-system-access 加载模板时优先通过文件系统访问。文件系统访问能够实时检测到模板变更。（默认值： true 。）</p>
+<p>spring.velocity.prefix在构建 URL 时添加到视图名称前的前缀。</p>
+<p>spring.velocity.properties 额外的 Velocity 属性。</p>
+<p>spring.velocity.request-context-attribute所有视图里使用的 Request- Context 属性的名称。</p>
+<p>spring.velocity.resource-loader-path 模板路径。（默认值： classpath:/ templates/ 。）</p>
+<p>spring.velocity.suffix 在构建 URL 时添加到视图名称后的后缀。</p>
+<p>spring.velocity.toolbox-config-location Velocity Toolbox 的配置位置，比如 /WEB-INF/toolbox.xml。自动加载 Velocity Tools 工具定 义文件，将所定义的全部工具发布到指定的作用域内。</p>
+<p>spring.velocity.view-names可解析的视图名称白名单。</p>
+<h3 id="View"><a href="#View" class="headerlink" title="View"></a>View</h3><p>spring.view.prefix Spring MVC 视图前缀。</p>
+<p>spring.view.suffixSpring MVC 视图后缀。</p>
+<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>spring.aop.auto 添加 @EnableAspectJAutoProxy(默认：true)</p>
+<p>spring.application.admin.enabled开启应用程序的管理功能 (默认：false)</p>
+<p>spring.artemis.embedded.cluster-password 集群密码。默认在启东市随机生成</p>
+<p>spring.artemis.embedded.persistent开启持久化存储 (默认：false)</p>
+<p>spring.autoconfigure.exclude 要排除的自动配置类</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+
       
        
 		
@@ -306,7 +701,41 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JavaWeb</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Springboot</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">application</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JavaWeb//" class="article-tag-list-link color3">JavaWeb</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JavaWeb/Springboot//" class="article-tag-list-link color1">Springboot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -408,7 +837,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#multipart"><span class="toc-number">1.</span> <span class="toc-text">multipart</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#server"><span class="toc-number">2.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jsp-servelt"><span class="toc-number">3.</span> <span class="toc-text">Jsp-servelt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Session"><span class="toc-number">4.</span> <span class="toc-text">Session</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tomcat"><span class="toc-number">5.</span> <span class="toc-text">tomcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cache"><span class="toc-number">6.</span> <span class="toc-text">Cache</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Data"><span class="toc-number">7.</span> <span class="toc-text">Data</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DataSource"><span class="toc-number">8.</span> <span class="toc-text">DataSource</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FreeMarker"><span class="toc-number">9.</span> <span class="toc-text">FreeMarker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Groovy"><span class="toc-number">10.</span> <span class="toc-text">Groovy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#H2"><span class="toc-number">11.</span> <span class="toc-text">H2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Http"><span class="toc-number">12.</span> <span class="toc-text">Http</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jackson"><span class="toc-number">13.</span> <span class="toc-text">Jackson</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jersey"><span class="toc-number">14.</span> <span class="toc-text">Jersey</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jms"><span class="toc-number">15.</span> <span class="toc-text">Jms</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jmx"><span class="toc-number">16.</span> <span class="toc-text">Jmx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jpa"><span class="toc-number">17.</span> <span class="toc-text">Jpa</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jta"><span class="toc-number">18.</span> <span class="toc-text">Jta</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mail"><span class="toc-number">19.</span> <span class="toc-text">Mail</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Messages"><span class="toc-number">20.</span> <span class="toc-text">Messages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mobile"><span class="toc-number">21.</span> <span class="toc-text">Mobile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mongodb"><span class="toc-number">22.</span> <span class="toc-text">Mongodb</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mustache"><span class="toc-number">23.</span> <span class="toc-text">Mustache</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mvc"><span class="toc-number">24.</span> <span class="toc-text">Mvc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mybatis"><span class="toc-number">25.</span> <span class="toc-text">Mybatis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rabbitmq"><span class="toc-number">26.</span> <span class="toc-text">Rabbitmq</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Redis"><span class="toc-number">27.</span> <span class="toc-text">Redis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Resources"><span class="toc-number">28.</span> <span class="toc-text">Resources</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SendGrid"><span class="toc-number">29.</span> <span class="toc-text">SendGrid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Social"><span class="toc-number">30.</span> <span class="toc-text">Social</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Thymeleaf"><span class="toc-number">31.</span> <span class="toc-text">Thymeleaf</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Velocity"><span class="toc-number">32.</span> <span class="toc-text">Velocity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#View"><span class="toc-number">33.</span> <span class="toc-text">View</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其它"><span class="toc-number">34.</span> <span class="toc-text">其它</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -584,11 +1013,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PageHelper</a>
+                <a href="javascript:void(0)" class="js-tag color2">MANIFEST.MF</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -596,11 +1025,63 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Mybatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">PageHelper</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">jar包</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">热部署</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">启动图案修改</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Spring框架</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">setTimeout()</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Springboot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">application</a>
               </li>
             
             <div class="clearfix"></div>
