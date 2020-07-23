@@ -1,3 +1,16 @@
+.left-col {
+    /*background: #fff;*/
+    background-color: linear-gradient(rgba(139, 139, 122, 0.5), rgba(139, 139, 122, 0.5));
+    width: 300px;
+    position: fixed;
+    opacity: 1;
+    transition: all .2s ease-in;
+    height: 100%;
+    z-index: 999;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-bottom: 15px
+}
 .article {
     margin:30px;
     position:relative;

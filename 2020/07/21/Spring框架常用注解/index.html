@@ -28,20 +28,20 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="Spring常用注解  @Controller@Controller 用来响应页面，表示当前的类为控制器。在SpringMVC 中，控制器Controller 负责处理由DispatcherServlet 分发的请求，它把用户请求的数据经过业务处理层处理之后封装成一个Model ，然后再把该Model 返回给对应的View 进行展示。在SpringMVC 中提供了一个非常简便的定义Controll">
+  <meta name="description" content="Spring常用注解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring框架常用注解">
 <meta property="og:url" content="http://yoursite.com/2020/07/21/Spring%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:description" content="Spring常用注解  @Controller@Controller 用来响应页面，表示当前的类为控制器。在SpringMVC 中，控制器Controller 负责处理由DispatcherServlet 分发的请求，它把用户请求的数据经过业务处理层处理之后封装成一个Model ，然后再把该Model 返回给对应的View 进行展示。在SpringMVC 中提供了一个非常简便的定义Controll">
+<meta property="og:description" content="Spring常用注解">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200719133116417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2020071913490357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200719155619507.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200719161449596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2020071916203432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-07-21T10:17:34.000Z">
-<meta property="article:modified_time" content="2020-07-21T12:15:27.667Z">
-<meta property="article:author" content="Pig Chen">
+<meta property="article:modified_time" content="2020-07-23T02:53:03.271Z">
+<meta property="article:author" content="C J W">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200719133116417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
   
@@ -75,7 +75,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			<img src="/assert/touxiang.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Pig Chen</a></h1>
+		  <h1 class="header-author"><a href="/">C J W</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">只要还有明天，今天就永远是起跑线。</p>
@@ -84,14 +84,6 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">首页</a></li>
-	        
-				<li><a href="/archives">归档</a></li>
-	        
-				<li><a href="/tags">标签</a></li>
-	        
-				<li><a href="/categories">分类</a></li>
-	        
 			</ul>
 		</nav>
 		<nav>
@@ -100,15 +92,15 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">文章查询</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">链接</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">CSDN</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">每日一言</a>
     			
             
 		</nav>
@@ -148,20 +140,12 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 				<img src="/assert/touxiang.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Pig Chen</h1>
+			  <h1 class="header-author js-header-author">C J W</h1>
 			</hgroup>
 			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>只要还有明天，今天就永远是起跑线。<i class="icon icon-quo-right"></i></p>
 			
 			
-			
-				
-			
-				
-			
-				
-			
-				
 			
 			
 			
@@ -180,17 +164,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 25%"><a href="/">首页</a></li>
-		        
-					<li style="width: 25%"><a href="/archives">归档</a></li>
-		        
-					<li style="width: 25%"><a href="/tags">标签</a></li>
-		        
-					<li style="width: 25%"><a href="/categories">分类</a></li>
-		        
 				</ul>
 			</nav>
 		</header>				
@@ -209,19 +185,31 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
     
       <header class="article-header">
         
+		
+		<center><p>
   
-    <h1 class="article-title" itemprop="name">
+    <h1 class="article-title_code_ant" itemprop="name">
       Spring框架常用注解
     </h1>
   
-
+</p></center>
 		<!--显示阅读次数-->
 		
 		  <br/>
-		  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-		  <span class="icon-sort"></span>
-		  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:15px;">
-			阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp; | &nbsp; C J W
+		  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:10px;">
+		  <span>
+		  <!--显示写作日期-->
+			
+			<a href="/2020/07/21/Spring%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2020-07-21T10:17:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
+</a>
+ 
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+			
 		  </span>
 		  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:15px;">
 		  <!-- 需要添加的位置 -->
@@ -247,21 +235,12 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 </div>
 			  
 			<!-- 添加完成 -->
-			</span>
+		  </span>  
 		  </a>
+		  <hr>
+		
 		
         <!--显示阅读次数完毕-->
-        
-        <a href="/2020/07/21/Spring%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2020-07-21T10:17:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
-</a>
- 
-        <!-- 不蒜子统计 -->
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-        
       </header>
     
 	 <!-- 目录内容 -->
@@ -270,6 +249,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Spring常用注解"><a href="#Spring常用注解" class="headerlink" title="Spring常用注解"></a>Spring常用注解</h1><p><img src="https://img-blog.csdnimg.cn/20200719133116417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<a id="more"></a>
 <hr>
 <h2 id="Controller"><a href="#Controller" class="headerlink" title="@Controller"></a>@Controller</h2><p>@Controller 用来响应页面，表示当前的类为控制器。<br>在SpringMVC 中，控制器Controller 负责处理由DispatcherServlet 分发的请求，它把用户请求的数据经过业务处理层处理之后封装成一个Model ，然后再把该Model 返回给对应的View 进行展示。在SpringMVC 中提供了一个非常简便的定义Controller 的方法，你无需继承特定的类或实现特定的接口，只需使用@Controller 标记一个类是Controller ，然后使用@RequestMapping 和@RequestParam 等一些注解用以定义URL 请求和Controller 方法之间的映射，这样的Controller 就能被外界访问到。此外Controller 不会直接依赖于HttpServletRequest 和HttpServletResponse 等HttpServlet 对象，它们可以通过Controller 的方法参数灵活的获取到。<br>@Controller 用于标记在一个类上，使用它标记的类就是一个SpringMVC Controller 对象。分发处理器将会扫描使用了该注解的类的方法，并检测该方法是否使用了@RequestMapping 注解。@Controller 只是定义了一个控制器类，而使用@RequestMapping 注解的方法才是真正处理请求的处理器。单单使用@Controller 标记在一个类上还不能真正意义上的说它就是SpringMVC 的一个控制器类，因为这个时候Spring 还不认识它。那么要如何做Spring 才能认识它呢?这个时候就需要我们把这个控制器类交给Spring 来管理。</p>
 <hr>
@@ -284,7 +264,6 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 <hr>
 <h2 id="RequestMapping-（配置url映射）"><a href="#RequestMapping-（配置url映射）" class="headerlink" title="@RequestMapping （配置url映射）"></a>@RequestMapping （配置url映射）</h2><p>@RequestMapping如果没有指定请求方式，将接收Get,Post,Head,Options等所有的请求方式。<br>@RequestMapping此注解即可以作用在控制器的某个方法上，也可以作用在此控制器类上。当前台界面调用Controller处理数据时候告诉控制器怎么操作有3种情形：<br>1.当控制器在<strong>类级别</strong>上添加@RequestMapping注解时，这个注解会应用到控制器的所有处理器方法上。处理器方法上的@RequestMapping注解会对类级别上的@RequestMapping的声明进行补充。<br>2.@RequestMapping作用在<strong>处理器方法</strong>上。<br>3.@RequestMapping同时作用在<strong>类级别</strong>和<strong>处理器方法</strong>上。<br><img src="https://img-blog.csdnimg.cn/2020071913490357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>所响应的url=<strong>localhost:8080/updata_setting/updata</strong></p>
 <hr>
-<a id="more"></a>
 <h3 id="RequestMapping注解属性"><a href="#RequestMapping注解属性" class="headerlink" title="@RequestMapping注解属性"></a>@RequestMapping注解属性</h3><p>作用：简化常用的HTTP方法的映射，并更好地表达被注解方法的语义。<br>RequestMapping注解有六个属性：<br>1、 value， method;</p>
 <p>value: 指定请求的实际地址，指定的地址可以是URI Template 模式(后面将会说明);</p>
 <p>method: 指定请求的method类型， GET、POST、PUT、DELETE等;常用： GET、POST<br>组合注解：</p>
@@ -322,7 +301,28 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
        
 		
 		
-		  <div hidden="hidden"></div>
+		  <div>
+			<blockquote>
+				<strong>本文作者：</strong>
+				
+				  C J W
+				
+				<br>
+				<strong>联系作者：</strong>
+				928956087
+				<br>
+				<strong>版权声明：</strong>
+				本作品采用
+				<a rel="license" href="">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+				进行许可，转载请注明出处！
+				
+			</blockquote>
+			
+			
+			<hr>
+				<center><strong>感谢有你，伴我成长。</strong></center>
+			<hr>
+		  </div>
 		
       
         <div class="page-reward">
@@ -486,7 +486,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
                 @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
               </style>
               <div class="valine_comment"></div>
-<!--载入js，在<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>之前插入即可-->
+<!--载入js，在<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>之前插入即可-->
 <!--Leancloud 操作库:-->
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <!--Valine 的核心代码库-->
@@ -516,7 +516,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 Pig Chen
+    		&copy; 2020 C J W
 			<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 			<script>
 				var now = new Date(); 
@@ -567,7 +567,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 <script type="text/javascript" src="/assert/clicklove.js"></script>
@@ -600,15 +600,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">文章查询</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">链接</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">CSDN</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">每日一言</a></li>
       
         
     </ul>
@@ -637,27 +637,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PageHelper</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Maven</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">小工具</a>
+                <a href="javascript:void(0)" class="js-tag color1">PageHelper</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">tag</a>
+                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -714,26 +702,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           
             <li class="search-li">
               <a href="https://blog.csdn.net/cjw12581" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>CSDN</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
             </li>
           
         </ul>
@@ -843,5 +811,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 	<script type="text/javascript" src="/js/clipboard_use.js"></script>
 	<!-- 代码块复制功能结束 -->
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>

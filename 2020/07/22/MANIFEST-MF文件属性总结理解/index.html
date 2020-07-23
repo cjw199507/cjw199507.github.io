@@ -28,17 +28,17 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="MANIFEST.MF定义了与扩展和包相关的数据；打开Java的JAR文件我们经常可以看到文件中包含着一个META-INF目录， 这个目录下会有一些文件，其中必有一个MANIFEST.MF，这个文件描述了该Jar文件的很多信息。  MANIFEST.MF文件属性一. 一般属性  Manifest-Version用来定义manifest文件的版本，例如：Manifest-Version: 1.0 C">
+  <meta name="description" content="MANIFEST.MF定义了与扩展和包相关的数据；打开Java的JAR文件我们经常可以看到文件中包含着一个META-INF目录， 这个目录下会有一些文件，其中必有一个MANIFEST.MF，这个文件描述了该Jar文件的很多信息。  MANIFEST.MF文件属性">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MANIFEST.MF文件属性总结理解">
 <meta property="og:url" content="http://yoursite.com/2020/07/22/MANIFEST-MF%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E6%80%BB%E7%BB%93%E7%90%86%E8%A7%A3/index.html">
 <meta property="og:site_name" content="CJW の Blog">
-<meta property="og:description" content="MANIFEST.MF定义了与扩展和包相关的数据；打开Java的JAR文件我们经常可以看到文件中包含着一个META-INF目录， 这个目录下会有一些文件，其中必有一个MANIFEST.MF，这个文件描述了该Jar文件的很多信息。  MANIFEST.MF文件属性一. 一般属性  Manifest-Version用来定义manifest文件的版本，例如：Manifest-Version: 1.0 C">
+<meta property="og:description" content="MANIFEST.MF定义了与扩展和包相关的数据；打开Java的JAR文件我们经常可以看到文件中包含着一个META-INF目录， 这个目录下会有一些文件，其中必有一个MANIFEST.MF，这个文件描述了该Jar文件的很多信息。  MANIFEST.MF文件属性">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720161738668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200720162632799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-07-22T11:15:57.000Z">
-<meta property="article:modified_time" content="2020-07-22T11:28:09.269Z">
-<meta property="article:author" content="Pig Chen">
+<meta property="article:modified_time" content="2020-07-23T02:56:13.459Z">
+<meta property="article:author" content="C J W">
 <meta property="article:tag" content="JavaWeb">
 <meta property="article:tag" content="SpringBoot">
 <meta name="twitter:card" content="summary">
@@ -74,7 +74,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			<img src="/assert/touxiang.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Pig Chen</a></h1>
+		  <h1 class="header-author"><a href="/">C J W</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">只要还有明天，今天就永远是起跑线。</p>
@@ -83,14 +83,6 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">首页</a></li>
-	        
-				<li><a href="/archives">归档</a></li>
-	        
-				<li><a href="/tags">标签</a></li>
-	        
-				<li><a href="/categories">分类</a></li>
-	        
 			</ul>
 		</nav>
 		<nav>
@@ -99,15 +91,15 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">文章查询</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">链接</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">CSDN</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">每日一言</a>
     			
             
 		</nav>
@@ -147,20 +139,12 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 				<img src="/assert/touxiang.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Pig Chen</h1>
+			  <h1 class="header-author js-header-author">C J W</h1>
 			</hgroup>
 			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>只要还有明天，今天就永远是起跑线。<i class="icon icon-quo-right"></i></p>
 			
 			
-			
-				
-			
-				
-			
-				
-			
-				
 			
 			
 			
@@ -179,17 +163,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 25%"><a href="/">首页</a></li>
-		        
-					<li style="width: 25%"><a href="/archives">归档</a></li>
-		        
-					<li style="width: 25%"><a href="/tags">标签</a></li>
-		        
-					<li style="width: 25%"><a href="/categories">分类</a></li>
-		        
 				</ul>
 			</nav>
 		</header>				
@@ -208,19 +184,31 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
     
       <header class="article-header">
         
+		
+		<center><p>
   
-    <h1 class="article-title" itemprop="name">
+    <h1 class="article-title_code_ant" itemprop="name">
       MANIFEST.MF文件属性总结理解
     </h1>
   
-
+</p></center>
 		<!--显示阅读次数-->
 		
 		  <br/>
-		  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-		  <span class="icon-sort"></span>
-		  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:15px;">
-			阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp; | &nbsp; C J W
+		  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:10px;">
+		  <span>
+		  <!--显示写作日期-->
+			
+			<a href="/2020/07/22/MANIFEST-MF%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E6%80%BB%E7%BB%93%E7%90%86%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2020-07-22T11:15:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-22</time>
+</a>
+ 
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+			
 		  </span>
 		  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:15px;">
 		  <!-- 需要添加的位置 -->
@@ -246,21 +234,12 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 </div>
 			  
 			<!-- 添加完成 -->
-			</span>
+		  </span>  
 		  </a>
+		  <hr>
+		
 		
         <!--显示阅读次数完毕-->
-        
-        <a href="/2020/07/22/MANIFEST-MF%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E6%80%BB%E7%BB%93%E7%90%86%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2020-07-22T11:15:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-22</time>
-</a>
- 
-        <!-- 不蒜子统计 -->
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-        
       </header>
     
 	 <!-- 目录内容 -->
@@ -270,7 +249,9 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
       
         <h1 id="MANIFEST-MF"><a href="#MANIFEST-MF" class="headerlink" title="MANIFEST.MF"></a>MANIFEST.MF</h1><p>定义了与扩展和包相关的数据；<br>打开Java的JAR文件我们经常可以看到文件中包含着一个META-INF目录， 这个目录下会有一些文件，其中必有一个MANIFEST.MF，这个文件描述了该Jar文件的很多信息。<br><img src="https://img-blog.csdnimg.cn/20200720161738668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <hr>
-<h2 id="MANIFEST-MF文件属性"><a href="#MANIFEST-MF文件属性" class="headerlink" title="MANIFEST.MF文件属性"></a>MANIFEST.MF文件属性</h2><p><img src="https://img-blog.csdnimg.cn/20200720162632799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>一. 一般属性</p>
+<h2 id="MANIFEST-MF文件属性"><a href="#MANIFEST-MF文件属性" class="headerlink" title="MANIFEST.MF文件属性"></a>MANIFEST.MF文件属性</h2><p><img src="https://img-blog.csdnimg.cn/20200720162632799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<a id="more"></a>
+<p>一. 一般属性</p>
 <ol>
 <li>Manifest-Version<br>用来定义manifest文件的版本，例如：Manifest-Version: 1.0</li>
 <li>Created-By<br>声明该文件的生成者，一般该属性是由jar命令行工具生成的，例如：Created-By: Apache Ant 1.5.1</li>
@@ -320,7 +301,28 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
        
 		
 		
-		  <div hidden="hidden"></div>
+		  <div>
+			<blockquote>
+				<strong>本文作者：</strong>
+				
+				  C J W
+				
+				<br>
+				<strong>联系作者：</strong>
+				928956087
+				<br>
+				<strong>版权声明：</strong>
+				本作品采用
+				<a rel="license" href="">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+				进行许可，转载请注明出处！
+				
+			</blockquote>
+			
+			
+			<hr>
+				<center><strong>感谢有你，伴我成长。</strong></center>
+			<hr>
+		  </div>
 		
       
         <div class="page-reward">
@@ -519,7 +521,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
                 @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
               </style>
               <div class="valine_comment"></div>
-<!--载入js，在<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>之前插入即可-->
+<!--载入js，在<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>之前插入即可-->
 <!--Leancloud 操作库:-->
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <!--Valine 的核心代码库-->
@@ -549,7 +551,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 Pig Chen
+    		&copy; 2020 C J W
 			<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 			<script>
 				var now = new Date(); 
@@ -600,7 +602,7 @@ color="0,0,255" opacity='0.9' zIndex="-1" count="300" src="//cdn.bootcss.com/can
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 <script type="text/javascript" src="/assert/clicklove.js"></script>
@@ -633,15 +635,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">文章查询</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">链接</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">CSDN</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">每日一言</a></li>
       
         
     </ul>
@@ -670,27 +672,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PageHelper</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Maven</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">小工具</a>
+                <a href="javascript:void(0)" class="js-tag color1">PageHelper</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">tag</a>
+                <a href="javascript:void(0)" class="js-tag color1">SSM框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -747,26 +737,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           
             <li class="search-li">
               <a href="https://blog.csdn.net/cjw12581" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>CSDN</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
             </li>
           
         </ul>
@@ -876,5 +846,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 	<script type="text/javascript" src="/js/clipboard_use.js"></script>
 	<!-- 代码块复制功能结束 -->
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
