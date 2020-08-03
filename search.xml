@@ -55,6 +55,50 @@
       </tags>
   </entry>
   <entry>
+    <title>JSON教程</title>
+    <url>/2020/07/28/JSON%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>Hello JSON!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h1 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h1><p>JSON 指的是 JavaScript 对象表示法（JavaScript Object Notation），是轻量级的文本数据交换格式<br>，使用 Javascript语法来描述数据对象，具有自我描述性，更易理解，但是 JSON 仍然独立于语言和平台，JSON 解析器和 JSON 库支持许多不同的编程语言。 目前非常多的动态（PHP，JSP，.NET）编程语言都支持JSON。<br>在语法上与创建 JavaScript 对象的代码相同。由于这种相似性，无需解析器，JavaScript 程序能够使用内建的 eval() 函数，用 JSON 数据来生成原生的 JavaScript 对象。</p>
+<hr>
+<h2 id="JSON语法"><a href="#JSON语法" class="headerlink" title="JSON语法"></a>JSON语法</h2><p>JSON 语法是 JavaScript 对象表示语法的子集。</p>
+<ul>
+<li>数据在名称/值对中 </li>
+<li>数据由逗号分隔 </li>
+<li>大括号{}保存对象 </li>
+<li>中括号[]保存数组</li>
+</ul>
+<p>JSON 数据的书写格式是：名称/值对。名称/值对包括字段名称（在双引号中），后面写一个冒号，然后是值：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="string">"name"</span> : <span class="string">"cjw"</span> 等价于这条 JavaScript 语句：name = <span class="string">"cjw"</span></span><br></pre></td></tr></table></figure>
+<p>JSON 使用 JavaScript 语法，所以无需额外的软件就能处理 JavaScript 中的 JSON。<br>通过 JavaScript，可以创建一个对象数组，并像这样进行赋值：<br>实例:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> data = [</span><br><span class="line">    &#123; <span class="string">"name"</span>:<span class="string">"dog"</span> , <span class="string">"url"</span>:<span class="string">"www.dog.com"</span> &#125;, </span><br><span class="line">    &#123; <span class="string">"name"</span>:<span class="string">"cat"</span> , <span class="string">"url"</span>:<span class="string">"www.cat.com"</span> &#125;, </span><br><span class="line">    &#123; <span class="string">"name"</span>:<span class="string">"pig"</span> , <span class="string">"url"</span>:<span class="string">"www.pig.com"</span> &#125;</span><br><span class="line">    ,</span><br><span class="line">    .....</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+<p>data[0].name 返回： dog</p>
+<p>JSON 文件的文件类型是 “.json”<br>JSON 文本的 MIME 类型是 “application/json”</p>
+<hr>
+<h2 id="JSON-对象"><a href="#JSON-对象" class="headerlink" title="JSON 对象"></a>JSON 对象</h2><p>形如：{ “name”:”runoob”, “alexa”:10000, “site”:null }，JSON 对象使用在大括号({})中书写。<br>对象可以包含==多个 key/value（键/值）对==。<br>key 必须是字符串，value 是合法的 JSON 数据类型（字符串, 数字, 对象, 数组, 布尔值或 null），<br>key 和 value 中使用冒号(:)分割，每个 key/value 对使用逗号(,)分割。</p>
+<hr>
+<h2 id="接收-发送数据"><a href="#接收-发送数据" class="headerlink" title="接收/发送数据"></a>接收/发送数据</h2><p><strong>1. JSON.parse()</strong><br>JSON 通常用于与服务端交换数据，在接收服务器数据时一般是字符串。使用 JSON.parse() 方法将数据转换为 JavaScript 对象。<br>语法格式：<br>JSON.parse(<strong>text</strong>[, reviver])<br>参数说明：<br>text:必需， 一个有效的 JSON 字符串。<br>reviver: 可选，一个转换结果的函数， 将为对象的每个成员调用此函数。<br>JSON 解析实例：<br>如：从服务器接收了以下数据：<br>data = { “name”:”runoob”, “alexa”:10000, “site”:”<a href="http://www.runoob.com&quot;" target="_blank" rel="noopener">www.runoob.com&quot;</a> }<br>我们使用 JSON.parse() 方法处理以上数据，将其转换为 JavaScript 对象：<br>var obj = JSON.parse(‘data’);<br>解析前要==确保你的数据是标准的 JSON 格式==，否则会解析出错。<br>可以使用<a href="https://c.runoob.com/front-end/53" target="_blank" rel="noopener">json格式在线工具检测</a>，确保数据为json格式。</p>
+<p><strong>2. JSON.stringify()</strong><br>JSON 通常用于与服务端交换数据。在向服务器发送数据时一般是字符串。<br>可以使用 JSON.stringify() 方法将 JavaScript 对象转换为字符串。</p>
+<p>语法格式：<br>JSON.stringify(value[, replacer[, space]])<br>参数说明：<br>value:<br>必需， 要转换的 JavaScript 值（通常为对象或数组）。<br>replacer:<br>可选。用于转换结果的函数或数组。<br>如果 replacer 为函数，则 JSON.stringify 将调用该函数，并传入每个成员的键和值。使用返回值而不是原始值。如果此函数返回 undefined，则排除成员。根对象的键是一个空字符串：””。</p>
+<p>如果 replacer 是一个数组，则仅转换该数组中具有键值的成员。成员的转换顺序与键在数组中的顺序一样。当 value 参数也为数组时，将忽略 replacer 数组。</p>
+<p>space:<br>可选，文本添加缩进、空格和换行符，如果 space 是一个数字，则返回值文本在每个级别缩进指定数目的空格，如果 space 大于 10，则文本缩进 10 个空格。space 也可以使用非数字，如：\t。</p>
+<p>JavaScript 对象转换<br>向服务器发送以下数据：<br>var obj = { “name”:”runoob”, “alexa”:10000, “site”:”<a href="http://www.runoob.com&quot;}" target="_blank" rel="noopener">www.runoob.com&quot;}</a>;<br>我们使用 JSON.stringify() 方法处理以上数据，将其转换为字符串：<br>var myJSON = JSON.stringify(obj);myJSON 为字符串。<br>我们可以将 myJSON 发送到服务器：<br>实例：<br>var obj = { “name”:”cjw”, “alexa”:10000, “site”:”<a href="http://www.cjw.com&quot;}" target="_blank" rel="noopener">www.cjw.com&quot;}</a>;<br>var myJSON = JSON.stringify(obj);<br>document.getElementById(“demo”).innerHTML = myJSON;</p>
+<hr>
+<h2 id="Jsonp"><a href="#Jsonp" class="headerlink" title="Jsonp"></a>Jsonp</h2><p>Jsonp(JSON with Padding) 是 json 的一种”使用模式”，可以让网页从别的域名（网站）那获取资料，即跨域读取数据。</p>
+<hr>
+<p>更多内容可以参考：<a href="https://www.runoob.com/json/json-tutorial.html" target="_blank" rel="noopener">JSON教程</a></p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JSON</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Bootstrap教程</title>
     <url>/2020/07/28/Bootstrap%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>Hello Bootstrap!</p>
@@ -112,6 +156,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Java Web之环境搭建（测试用）</title>
+    <url>/2020/07/22/Java-Web%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%EF%BC%88%E6%B5%8B%E8%AF%95%E7%94%A8%EF%BC%89/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="Java-Web之环境搭建"><a href="#Java-Web之环境搭建" class="headerlink" title="Java Web之环境搭建"></a>Java Web之环境搭建</h1><h2 id="1-Java-Web介绍"><a href="#1-Java-Web介绍" class="headerlink" title="1. Java Web介绍"></a>1. Java Web介绍</h2><p>Java Web是用Java技术来解决web领域的技术，需要运行在特定的web服务器上，Java Web是跨平台的，可以在不同的平台上进行部署运行。<br>需要掌握的技术<br>1.前端方面的相关技术如：html、css、js等<br>2.服务端先关技术如：java，jsp，服务器，ssh、ssm框架，等<br>3.数据库相关：MySQL，Oracle等</p>
+<h2 id="2-开发环境准备"><a href="#2-开发环境准备" class="headerlink" title="2. 开发环境准备"></a>2. 开发环境准备</h2><p>编辑器：Eclipse或Idea等<br>java环境：JDK1.8<br>服务器：Tomcat<br>环境搭建完毕之后，就可以创建项目开始开发了。</p>
+<!-- more -->
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>参考：<br><a href="https://blog.csdn.net/yuzhiqiang_1993/article/details/81166813" target="_blank" rel="noopener">Java Web之环境搭建</a>.</p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java JDK安装及环境变量配置（windows）</title>
     <url>/2020/07/23/Java-JDK%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%EF%BC%88windows%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -136,68 +198,6 @@
       </categories>
       <tags>
         <tag>JDK安装教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java Web之环境搭建（测试用）</title>
-    <url>/2020/07/22/Java-Web%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%EF%BC%88%E6%B5%8B%E8%AF%95%E7%94%A8%EF%BC%89/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="Java-Web之环境搭建"><a href="#Java-Web之环境搭建" class="headerlink" title="Java Web之环境搭建"></a>Java Web之环境搭建</h1><h2 id="1-Java-Web介绍"><a href="#1-Java-Web介绍" class="headerlink" title="1. Java Web介绍"></a>1. Java Web介绍</h2><p>Java Web是用Java技术来解决web领域的技术，需要运行在特定的web服务器上，Java Web是跨平台的，可以在不同的平台上进行部署运行。<br>需要掌握的技术<br>1.前端方面的相关技术如：html、css、js等<br>2.服务端先关技术如：java，jsp，服务器，ssh、ssm框架，等<br>3.数据库相关：MySQL，Oracle等</p>
-<h2 id="2-开发环境准备"><a href="#2-开发环境准备" class="headerlink" title="2. 开发环境准备"></a>2. 开发环境准备</h2><p>编辑器：Eclipse或Idea等<br>java环境：JDK1.8<br>服务器：Tomcat<br>环境搭建完毕之后，就可以创建项目开始开发了。</p>
-<!-- more -->
-<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>参考：<br><a href="https://blog.csdn.net/yuzhiqiang_1993/article/details/81166813" target="_blank" rel="noopener">Java Web之环境搭建</a>.</p>
-]]></content>
-      <categories>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>JavaWeb</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JSON教程</title>
-    <url>/2020/07/28/JSON%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>Hello JSON!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<h1 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h1><p>JSON 指的是 JavaScript 对象表示法（JavaScript Object Notation），是轻量级的文本数据交换格式<br>，使用 Javascript语法来描述数据对象，具有自我描述性，更易理解，但是 JSON 仍然独立于语言和平台，JSON 解析器和 JSON 库支持许多不同的编程语言。 目前非常多的动态（PHP，JSP，.NET）编程语言都支持JSON。<br>在语法上与创建 JavaScript 对象的代码相同。由于这种相似性，无需解析器，JavaScript 程序能够使用内建的 eval() 函数，用 JSON 数据来生成原生的 JavaScript 对象。</p>
-<hr>
-<h2 id="JSON语法"><a href="#JSON语法" class="headerlink" title="JSON语法"></a>JSON语法</h2><p>JSON 语法是 JavaScript 对象表示语法的子集。</p>
-<ul>
-<li>数据在名称/值对中 </li>
-<li>数据由逗号分隔 </li>
-<li>大括号{}保存对象 </li>
-<li>中括号[]保存数组</li>
-</ul>
-<p>JSON 数据的书写格式是：名称/值对。名称/值对包括字段名称（在双引号中），后面写一个冒号，然后是值：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="string">"name"</span> : <span class="string">"cjw"</span> 等价于这条 JavaScript 语句：name = <span class="string">"cjw"</span></span><br></pre></td></tr></table></figure>
-<p>JSON 使用 JavaScript 语法，所以无需额外的软件就能处理 JavaScript 中的 JSON。<br>通过 JavaScript，可以创建一个对象数组，并像这样进行赋值：<br>实例:</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> data = [</span><br><span class="line">    &#123; <span class="string">"name"</span>:<span class="string">"dog"</span> , <span class="string">"url"</span>:<span class="string">"www.dog.com"</span> &#125;, </span><br><span class="line">    &#123; <span class="string">"name"</span>:<span class="string">"cat"</span> , <span class="string">"url"</span>:<span class="string">"www.cat.com"</span> &#125;, </span><br><span class="line">    &#123; <span class="string">"name"</span>:<span class="string">"pig"</span> , <span class="string">"url"</span>:<span class="string">"www.pig.com"</span> &#125;</span><br><span class="line">    ,</span><br><span class="line">    .....</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-<p>data[0].name 返回： dog</p>
-<p>JSON 文件的文件类型是 “.json”<br>JSON 文本的 MIME 类型是 “application/json”</p>
-<hr>
-<h2 id="JSON-对象"><a href="#JSON-对象" class="headerlink" title="JSON 对象"></a>JSON 对象</h2><p>形如：{ “name”:”runoob”, “alexa”:10000, “site”:null }，JSON 对象使用在大括号({})中书写。<br>对象可以包含==多个 key/value（键/值）对==。<br>key 必须是字符串，value 是合法的 JSON 数据类型（字符串, 数字, 对象, 数组, 布尔值或 null），<br>key 和 value 中使用冒号(:)分割，每个 key/value 对使用逗号(,)分割。</p>
-<hr>
-<h2 id="接收-发送数据"><a href="#接收-发送数据" class="headerlink" title="接收/发送数据"></a>接收/发送数据</h2><p><strong>1. JSON.parse()</strong><br>JSON 通常用于与服务端交换数据，在接收服务器数据时一般是字符串。使用 JSON.parse() 方法将数据转换为 JavaScript 对象。<br>语法格式：<br>JSON.parse(<strong>text</strong>[, reviver])<br>参数说明：<br>text:必需， 一个有效的 JSON 字符串。<br>reviver: 可选，一个转换结果的函数， 将为对象的每个成员调用此函数。<br>JSON 解析实例：<br>如：从服务器接收了以下数据：<br>data = { “name”:”runoob”, “alexa”:10000, “site”:”<a href="http://www.runoob.com&quot;" target="_blank" rel="noopener">www.runoob.com&quot;</a> }<br>我们使用 JSON.parse() 方法处理以上数据，将其转换为 JavaScript 对象：<br>var obj = JSON.parse(‘data’);<br>解析前要==确保你的数据是标准的 JSON 格式==，否则会解析出错。<br>可以使用<a href="https://c.runoob.com/front-end/53" target="_blank" rel="noopener">json格式在线工具检测</a>，确保数据为json格式。</p>
-<p><strong>2. JSON.stringify()</strong><br>JSON 通常用于与服务端交换数据。在向服务器发送数据时一般是字符串。<br>可以使用 JSON.stringify() 方法将 JavaScript 对象转换为字符串。</p>
-<p>语法格式：<br>JSON.stringify(value[, replacer[, space]])<br>参数说明：<br>value:<br>必需， 要转换的 JavaScript 值（通常为对象或数组）。<br>replacer:<br>可选。用于转换结果的函数或数组。<br>如果 replacer 为函数，则 JSON.stringify 将调用该函数，并传入每个成员的键和值。使用返回值而不是原始值。如果此函数返回 undefined，则排除成员。根对象的键是一个空字符串：””。</p>
-<p>如果 replacer 是一个数组，则仅转换该数组中具有键值的成员。成员的转换顺序与键在数组中的顺序一样。当 value 参数也为数组时，将忽略 replacer 数组。</p>
-<p>space:<br>可选，文本添加缩进、空格和换行符，如果 space 是一个数字，则返回值文本在每个级别缩进指定数目的空格，如果 space 大于 10，则文本缩进 10 个空格。space 也可以使用非数字，如：\t。</p>
-<p>JavaScript 对象转换<br>向服务器发送以下数据：<br>var obj = { “name”:”runoob”, “alexa”:10000, “site”:”<a href="http://www.runoob.com&quot;}" target="_blank" rel="noopener">www.runoob.com&quot;}</a>;<br>我们使用 JSON.stringify() 方法处理以上数据，将其转换为字符串：<br>var myJSON = JSON.stringify(obj);myJSON 为字符串。<br>我们可以将 myJSON 发送到服务器：<br>实例：<br>var obj = { “name”:”cjw”, “alexa”:10000, “site”:”<a href="http://www.cjw.com&quot;}" target="_blank" rel="noopener">www.cjw.com&quot;}</a>;<br>var myJSON = JSON.stringify(obj);<br>document.getElementById(“demo”).innerHTML = myJSON;</p>
-<hr>
-<h2 id="Jsonp"><a href="#Jsonp" class="headerlink" title="Jsonp"></a>Jsonp</h2><p>Jsonp(JSON with Padding) 是 json 的一种”使用模式”，可以让网页从别的域名（网站）那获取资料，即跨域读取数据。</p>
-<hr>
-<p>更多内容可以参考：<a href="https://www.runoob.com/json/json-tutorial.html" target="_blank" rel="noopener">JSON教程</a></p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>JSON</tag>
       </tags>
   </entry>
   <entry>
@@ -940,6 +940,39 @@
       </tags>
   </entry>
   <entry>
+    <title>PyQt5安装及Qt designer ，PyUIC工具的配置</title>
+    <url>/2020/07/23/PyQt5%E5%AE%89%E8%A3%85%E5%8F%8AQt-designer-%EF%BC%8CPyUIC%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<h2 id="PyQt5安装"><a href="#PyQt5安装" class="headerlink" title="PyQt5安装"></a><strong><em>PyQt5安装</em></strong></h2><p>==PyQt5==主要是用在==Python GUI界面开发==,可以不用纯代码编写界面(偷懒方便或技术不行),这时可以利用PyQt5来完成Python图形界面的开发。下面我们来谈谈在PyCharm下的PyQt5安装过程（Windows环境下）：</p>
+<h3 id="1-安装-sip"><a href="#1-安装-sip" class="headerlink" title="1.安装 sip"></a><strong><em>1.安装 sip</em></strong></h3><p>sip属于python依赖库（直接使用命令安装），是RiverBank（也就是PyQt的开发商）开发的用于PyQt的Python/C++混合编程解决方案。它包括一个sip工具、SDK以及Python Module。在windows的命令行窗口输入如下命令安装：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install sip</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-PyQt5"><a href="#2-PyQt5" class="headerlink" title="2.PyQt5"></a><strong><em>2.PyQt5</em></strong></h3><h4 id="2-1-安装-PyQt5"><a href="#2-1-安装-PyQt5" class="headerlink" title="2.1 安装 PyQt5"></a><strong><em>2.1 安装 PyQt5</em></strong></h4><p>PyQt5是python的一个插件库,通过这个库我们可以连接Qt和Python来进行GUI编程。<br>==注意==：安装的版本问题PyQt5只有针对==Python3.x==的安装包而没有针对python2的安装版本。在windows的命令行窗口输入如下命令安装：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Pip  install –user   d:\ PyQt5<span class="number">-5.10</span><span class="number">-5.10</span><span class="number">.0</span>-cp35.cp36.cp37-none-win_amd64.whl</span><br></pre></td></tr></table></figure>
+<p>或者：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5</span><br></pre></td></tr></table></figure>
+<h4 id="2-2-安装-PyQt5-tools"><a href="#2-2-安装-PyQt5-tools" class="headerlink" title="2.2 安装 PyQt5-tools"></a><strong><em>2.2 安装 PyQt5-tools</em></strong></h4><p>在windows的命令行窗口输入如下命令安装：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
+<p>安装完成后，我们可以在Python或者 Anaconda安装目录下看到 相应的文件。</p>
+<h3 id="3-PyCharm中的配置"><a href="#3-PyCharm中的配置" class="headerlink" title="3.PyCharm中的配置"></a><strong><em>3.PyCharm中的配置</em></strong></h3><p>==目的==：在PyCharm里面实现打开Qt designer，然后生成Qt文件，并通过PyUIC将qt文件转换成python语言的软件文件直接使用，实现代码分离。<br>配置过程如下图所示：<br>点击File—&gt;Tools—&gt;External Tools后，点击==绿色的+==，添加Tools 完成如下配置：<br><img src="https://img-blog.csdnimg.cn/20200223200530869.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="配置"><br>进行Qt designer的配置：<br>|Name  |Qt designer  |<br>|–|–|<br>|Program  | 指向安装PyQt5-tools文件夹里面的designer.exe  |<br>|Work directory  | <code>$FileDir$</code>  |<br><img src="https://img-blog.csdnimg.cn/20200223195734350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="PyQt5配置"><br>然后新建“PyUIC”，配置如下图所示：<br>| Name |PyUIC  |<br>|–|–|<br>| Program | 指向文件里面的python.exe |<br>| Arguments | <code>-m PyQt5.uic.pyuic  $FileName$ -o $FileNameWithoutExtension$.py</code>（固定代码） |<br>| Work directory| <code>$FileDir$</code> |<br><img src="https://img-blog.csdnimg.cn/20200223200302621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="PyUIC配置"><br>配置完成如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223201559960.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="配置完成"></p>
+<h3 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a><strong><em>4.测试</em></strong></h3><p>通过Extrernal Tools打开Qt designer如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223202716801.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="界面"><br>在界面中绘制如下图形测试：<br><img src="https://img-blog.csdnimg.cn/20200223202826526.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="绘制界面"><br>在左侧工程栏中会出现cjw.ui文件（前提是保存在当前工程下），之后鼠标右键点击选中Extrernal Tools中的PyUIC则会左侧工程栏自动生成一个cjw.py文件如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223203732485.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="测试代码"><br>测试的界面代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Form implementation generated from reading ui file 'cjw.ui'</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Created by: PyQt5 UI code generator 5.13.0</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># WARNING! All changes made in this file will be lost!</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtCore, QtGui, QtWidgets</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Ui_MainWindow1</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setupUi</span><span class="params">(self, MainWindow)</span>:</span></span><br><span class="line">        MainWindow.setObjectName(<span class="string">"MainWindow"</span>)</span><br><span class="line">        MainWindow.resize(<span class="number">1179</span>, <span class="number">912</span>)</span><br><span class="line">        self.centralwidget = QtWidgets.QWidget(MainWindow)</span><br><span class="line">        self.centralwidget.setObjectName(<span class="string">"centralwidget"</span>)</span><br><span class="line">        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)</span><br><span class="line">        self.textBrowser.setGeometry(QtCore.QRect(<span class="number">490</span>, <span class="number">170</span>, <span class="number">111</span>, <span class="number">51</span>))</span><br><span class="line">        self.textBrowser.setObjectName(<span class="string">"textBrowser"</span>)</span><br><span class="line">        MainWindow.setCentralWidget(self.centralwidget)</span><br><span class="line">        self.statusbar = QtWidgets.QStatusBar(MainWindow)</span><br><span class="line">        self.statusbar.setObjectName(<span class="string">"statusbar"</span>)</span><br><span class="line">        MainWindow.setStatusBar(self.statusbar)</span><br><span class="line"></span><br><span class="line">        self.retranslateUi(MainWindow)</span><br><span class="line">        QtCore.QMetaObject.connectSlotsByName(MainWindow)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">retranslateUi</span><span class="params">(self, MainWindow)</span>:</span></span><br><span class="line">        _translate = QtCore.QCoreApplication.translate</span><br><span class="line">        MainWindow.setWindowTitle(_translate(<span class="string">"MainWindow"</span>, <span class="string">"MainWindow"</span>))</span><br><span class="line">        self.textBrowser.setHtml(_translate(<span class="string">"MainWindow"</span>, <span class="string">"&lt;!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\"&gt;\n"</span></span><br><span class="line"><span class="string">"&lt;html&gt;&lt;head&gt;&lt;meta name=\"qrichtext\" content=\"1\" /&gt;&lt;style type=\"text/css\"&gt;\n"</span></span><br><span class="line"><span class="string">"p, li &#123; white-space: pre-wrap; &#125;\n"</span></span><br><span class="line"><span class="string">"&lt;/style&gt;&lt;/head&gt;&lt;body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\"&gt;\n"</span></span><br><span class="line"><span class="string">"&lt;p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"&gt;&lt;span style=\" font-size:26pt; font-weight:600; font-style:italic;\"&gt;PyQt5&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"</span>))</span><br></pre></td></tr></table></figure>
+
+<p>新建一个测试运行代码文件如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 测试PyQt5运行 CJW</span></span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QMainWindow</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> cjw <span class="keyword">import</span> Ui_MainWindow1</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    MainWindow = QMainWindow()</span><br><span class="line">    ui = Ui_MainWindow1()</span><br><span class="line">    ui.setupUi(MainWindow)</span><br><span class="line">    MainWindow.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+
+<p>配置好路径后点击运行上述文件，结果如下：<br><img src="https://img-blog.csdnimg.cn/20200223210107817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="测试结果"><br>Pyqt5安装成功！！！<br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>PyQt5</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>GUI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PyQt5开发第二界面或弹出界面（子窗口）</title>
     <url>/2020/07/23/PyQt5%E5%BC%80%E5%8F%91%E7%AC%AC%E4%BA%8C%E7%95%8C%E9%9D%A2%E6%88%96%E5%BC%B9%E5%87%BA%E7%95%8C%E9%9D%A2%EF%BC%88%E5%AD%90%E7%AA%97%E5%8F%A3%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -978,29 +1011,58 @@
       </tags>
   </entry>
   <entry>
-    <title>PyQt5安装及Qt designer ，PyUIC工具的配置</title>
-    <url>/2020/07/23/PyQt5%E5%AE%89%E8%A3%85%E5%8F%8AQt-designer-%EF%BC%8CPyUIC%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
+    <title>PyQt5界面控件自适应大小</title>
+    <url>/2020/08/03/PyQt5%E7%95%8C%E9%9D%A2%E6%8E%A7%E4%BB%B6%E8%87%AA%E9%80%82%E5%BA%94%E5%A4%A7%E5%B0%8F/</url>
+    <content><![CDATA[<p>Hello PyQt5!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h1 id="PyQt5"><a href="#PyQt5" class="headerlink" title="PyQt5"></a>PyQt5</h1><h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
+<li>PyCharm 2019.2</li>
+<li>Qt Desinger</li>
+<li>PyUIC<h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2>界面控件自适应大小，点击窗口放大后，界面控件大小随之发生变化。<h3 id="实例1"><a href="#实例1" class="headerlink" title="实例1"></a>实例1</h3><img src="https://img-blog.csdnimg.cn/20200801101313394.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击窗口放大后：<br><img src="https://img-blog.csdnimg.cn/20200801101325875.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+</ul>
+<hr>
+<h3 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a>实例2</h3><p><img src="https://img-blog.csdnimg.cn/20200801103736356.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击窗口放大后：<br><img src="https://img-blog.csdnimg.cn/2020080110374488.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h2><ol>
+<li>首先需要利用Qt Desinger设计大致的控件布局；</li>
+<li>点击窗口layout选择栅格布局（局部和全局自适应均适用，局部自适应最好把控件放到一个frame中，之后进行布局）；</li>
+<li>点击minnumsize和maxnumsize调整控件大小，有时候需要利用一些填充的lable等控件来保证放到后布局合理；</li>
+<li>通过预览Ctrl+R查看布局情况。</li>
+</ol>
+<p>所有操作均在==Qt Desinger==中进行。</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>PyQt5</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PyQt5界面设计问题</title>
+    <url>/2020/07/23/PyQt5%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
 <a id="more"></a>
-<h2 id="PyQt5安装"><a href="#PyQt5安装" class="headerlink" title="PyQt5安装"></a><strong><em>PyQt5安装</em></strong></h2><p>==PyQt5==主要是用在==Python GUI界面开发==,可以不用纯代码编写界面(偷懒方便或技术不行),这时可以利用PyQt5来完成Python图形界面的开发。下面我们来谈谈在PyCharm下的PyQt5安装过程（Windows环境下）：</p>
-<h3 id="1-安装-sip"><a href="#1-安装-sip" class="headerlink" title="1.安装 sip"></a><strong><em>1.安装 sip</em></strong></h3><p>sip属于python依赖库（直接使用命令安装），是RiverBank（也就是PyQt的开发商）开发的用于PyQt的Python/C++混合编程解决方案。它包括一个sip工具、SDK以及Python Module。在windows的命令行窗口输入如下命令安装：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install sip</span><br></pre></td></tr></table></figure>
+<h2 id="PyQt5界面设计问题及解决办法"><a href="#PyQt5界面设计问题及解决办法" class="headerlink" title="PyQt5界面设计问题及解决办法"></a>PyQt5界面设计问题及解决办法</h2><p>最近在做有关界面的项目遇到一些问题，在这里把遇到的一些问题做一个总结</p>
+<h3 id="1-窗体设计样式问题"><a href="#1-窗体设计样式问题" class="headerlink" title="1.窗体设计样式问题"></a>1.窗体设计样式问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.setStyleSheet(<span class="string">"#MainWindow&#123;background-color: white&#125;"</span>)</span><br><span class="line">self.setWindowTitle(<span class="string">'XXX软件v1.0'</span>)</span><br><span class="line">self.setWindowIcon(QIcon(<span class="string">'D:/系统v1.0/systemcode/images/icon1.png'</span>))  <span class="comment"># 设置窗体标题图标</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-文本显示问题"><a href="#2-文本显示问题" class="headerlink" title="2.文本显示问题"></a>2.文本显示问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.label_state.setText(<span class="string">"CJW"</span>)  <span class="comment"># 当前状态</span></span><br><span class="line">self.label_state.setStyleSheet(<span class="string">"font:15pt '楷体';color:red"</span>) <span class="comment"># 控件样式</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-控件传值问题"><a href="#3-控件传值问题" class="headerlink" title="3.控件传值问题"></a>3.控件传值问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">angle = self.doubleSpinBox.value()  <span class="comment"># 角度值传递</span></span><br><span class="line">self.labeljiaodu.setText(<span class="string">""</span> + str(angle))  <span class="comment"># 角度显示</span></span><br><span class="line">self.labeljiaodu.setText(<span class="string">""</span> + str((<span class="string">'%.3f'</span> %angle))) <span class="comment"># 保留3位有效数字</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-字体显示问题（在其它电脑打开会出现字样重叠）"><a href="#4-字体显示问题（在其它电脑打开会出现字样重叠）" class="headerlink" title="4.字体显示问题（在其它电脑打开会出现字样重叠）"></a>4.字体显示问题（在其它电脑打开会出现字样重叠）</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)  <span class="comment"># Qt从5.6.0开始，支持High-DPI（插入这句code，必须放在创建QApplication项目之前）</span></span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    md = MainCode()</span><br><span class="line">    md.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+<h3 id="5-提示框问题"><a href="#5-提示框问题" class="headerlink" title="5.提示框问题"></a>5.提示框问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">QMessageBox.information(self,</span><br><span class="line">                                                <span class="string">"XXXX提示框"</span>,</span><br><span class="line">                                                <span class="string">"当前XXXX异常！！！"</span>, QMessageBox.Yes | QMessageBox.No)</span><br><span class="line"><span class="keyword">if</span> QMessageBox.Yes:</span><br><span class="line">    ..........</span><br></pre></td></tr></table></figure>
+<h3 id="6-按钮图标问题"><a href="#6-按钮图标问题" class="headerlink" title="6.按钮图标问题"></a>6.按钮图标问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.button_begin.setIcon(QIcon(<span class="string">"D:/软件v1.0/systemcode/images/512.png"</span>))  <span class="comment"># 设置图标</span></span><br><span class="line">self.button_begin.setStyleSheet(<span class="string">"QPushButton&#123;color:black&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton:hover&#123;color:red&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton&#123;background-color:lightgreen&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton&#123;border:2px&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton&#123;border-radius:10px&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton&#123;padding:2px 4px&#125;"</span>)  <span class="comment"># 设置按钮样式</span></span><br></pre></td></tr></table></figure>
+<h3 id="7-语音提示问题"><a href="#7-语音提示问题" class="headerlink" title="7.语音提示问题"></a>7.语音提示问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> win32com.client</span><br><span class="line">speak = win32com.client.Dispatch(<span class="string">'SAPI.SPVOICE'</span>)</span><br><span class="line">speak.Speak(<span class="string">'CJW'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="8-蜂鸣器设置问题"><a href="#8-蜂鸣器设置问题" class="headerlink" title="8.蜂鸣器设置问题"></a>8.蜂鸣器设置问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> winsound</span><br><span class="line">duration = <span class="number">150</span>  <span class="comment"># 持续时间</span></span><br><span class="line">freq = <span class="number">1000</span>  <span class="comment"># Hz</span></span><br><span class="line">winsound.Beep(freq, duration)</span><br></pre></td></tr></table></figure>
+<h3 id="9-doubleSpinBox等控件禁止编辑"><a href="#9-doubleSpinBox等控件禁止编辑" class="headerlink" title="9.doubleSpinBox等控件禁止编辑"></a>9.doubleSpinBox等控件禁止编辑</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.doubleSpinBox.setFocusPolicy(QtCore.Qt.NoFocus)</span><br><span class="line">self.doubleSpinBox_2.setFocusPolicy(QtCore.Qt.NoFocus)</span><br><span class="line">self.doubleSpinBox.setSingleStep(<span class="number">0.0</span>)</span><br><span class="line">self.doubleSpinBox_2.setSingleStep(<span class="number">0.0</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="10-窗口居中问题"><a href="#10-窗口居中问题" class="headerlink" title="10.窗口居中问题"></a>10.窗口居中问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 窗口居中</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtWidgets</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QDesktopWidget</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CJW</span><span class="params">(QtWidgets.QWidget)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, parent=None)</span>:</span></span><br><span class="line">        QtWidgets.QWidget.__init__(self, parent)</span><br><span class="line">        self.setWindowTitle(<span class="string">'窗口居中实例'</span>)</span><br><span class="line">        <span class="comment"># 设置窗口的尺寸</span></span><br><span class="line">        self.resize(<span class="number">250</span>, <span class="number">250</span>)</span><br><span class="line">        self.center()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 窗口居中函数</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">center</span><span class="params">(self)</span>:</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 计算出显示器的分辨率(screen.width() * screen.height())</span></span><br><span class="line">        screen = QDesktopWidget().screenGeometry()</span><br><span class="line">        <span class="comment"># 获取QWidget窗口的大小(size.width()* size.heiget())</span></span><br><span class="line">        size = self.geometry()</span><br><span class="line">        <span class="comment"># 窗口移动到屏幕的中间位置</span></span><br><span class="line">        self.move((screen.width() - size.width()) / <span class="number">2</span>,</span><br><span class="line">                  (screen.height() - size.height()) / <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line"></span><br><span class="line">    app = QtWidgets.QApplication(sys.argv)</span><br><span class="line">    md = CJW()</span><br><span class="line">    md.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+<h3 id="11-禁止窗口最大化和禁止窗口拉伸"><a href="#11-禁止窗口最大化和禁止窗口拉伸" class="headerlink" title="11.禁止窗口最大化和禁止窗口拉伸"></a>11.禁止窗口最大化和禁止窗口拉伸</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainCode</span><span class="params">(QMainWindow, MainUi.Ui_MainWindow)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        QMainWindow.__init__(self)</span><br><span class="line">        MainUi.Ui_MainWindow.__init__(self)</span><br><span class="line">        self.setupUi(self)</span><br><span class="line">        self.setFixedSize(self.width(), self.height())</span><br><span class="line">        self.resize(<span class="number">1138</span>, <span class="number">678</span>)</span><br><span class="line">        ..........................</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1、方法setWindowFlags,选择哪些按钮生效，每个窗体应该都有</span></span><br><span class="line"><span class="comment"># 2、通过 | 来同时显现多个按钮</span></span><br><span class="line">Form.setWindowFlags(QtCore.Qt.WindowCloseButtonHint|QtCore.Qt.WindowMinimizeButtonHint)</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-PyQt5"><a href="#2-PyQt5" class="headerlink" title="2.PyQt5"></a><strong><em>2.PyQt5</em></strong></h3><h4 id="2-1-安装-PyQt5"><a href="#2-1-安装-PyQt5" class="headerlink" title="2.1 安装 PyQt5"></a><strong><em>2.1 安装 PyQt5</em></strong></h4><p>PyQt5是python的一个插件库,通过这个库我们可以连接Qt和Python来进行GUI编程。<br>==注意==：安装的版本问题PyQt5只有针对==Python3.x==的安装包而没有针对python2的安装版本。在windows的命令行窗口输入如下命令安装：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Pip  install –user   d:\ PyQt5<span class="number">-5.10</span><span class="number">-5.10</span><span class="number">.0</span>-cp35.cp36.cp37-none-win_amd64.whl</span><br></pre></td></tr></table></figure>
-<p>或者：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5</span><br></pre></td></tr></table></figure>
-<h4 id="2-2-安装-PyQt5-tools"><a href="#2-2-安装-PyQt5-tools" class="headerlink" title="2.2 安装 PyQt5-tools"></a><strong><em>2.2 安装 PyQt5-tools</em></strong></h4><p>在windows的命令行窗口输入如下命令安装：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
-<p>安装完成后，我们可以在Python或者 Anaconda安装目录下看到 相应的文件。</p>
-<h3 id="3-PyCharm中的配置"><a href="#3-PyCharm中的配置" class="headerlink" title="3.PyCharm中的配置"></a><strong><em>3.PyCharm中的配置</em></strong></h3><p>==目的==：在PyCharm里面实现打开Qt designer，然后生成Qt文件，并通过PyUIC将qt文件转换成python语言的软件文件直接使用，实现代码分离。<br>配置过程如下图所示：<br>点击File—&gt;Tools—&gt;External Tools后，点击==绿色的+==，添加Tools 完成如下配置：<br><img src="https://img-blog.csdnimg.cn/20200223200530869.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="配置"><br>进行Qt designer的配置：<br>|Name  |Qt designer  |<br>|–|–|<br>|Program  | 指向安装PyQt5-tools文件夹里面的designer.exe  |<br>|Work directory  | <code>$FileDir$</code>  |<br><img src="https://img-blog.csdnimg.cn/20200223195734350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="PyQt5配置"><br>然后新建“PyUIC”，配置如下图所示：<br>| Name |PyUIC  |<br>|–|–|<br>| Program | 指向文件里面的python.exe |<br>| Arguments | <code>-m PyQt5.uic.pyuic  $FileName$ -o $FileNameWithoutExtension$.py</code>（固定代码） |<br>| Work directory| <code>$FileDir$</code> |<br><img src="https://img-blog.csdnimg.cn/20200223200302621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="PyUIC配置"><br>配置完成如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223201559960.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="配置完成"></p>
-<h3 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a><strong><em>4.测试</em></strong></h3><p>通过Extrernal Tools打开Qt designer如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223202716801.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="界面"><br>在界面中绘制如下图形测试：<br><img src="https://img-blog.csdnimg.cn/20200223202826526.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="绘制界面"><br>在左侧工程栏中会出现cjw.ui文件（前提是保存在当前工程下），之后鼠标右键点击选中Extrernal Tools中的PyUIC则会左侧工程栏自动生成一个cjw.py文件如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223203732485.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="测试代码"><br>测试的界面代码如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Form implementation generated from reading ui file 'cjw.ui'</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Created by: PyQt5 UI code generator 5.13.0</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># WARNING! All changes made in this file will be lost!</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtCore, QtGui, QtWidgets</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Ui_MainWindow1</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setupUi</span><span class="params">(self, MainWindow)</span>:</span></span><br><span class="line">        MainWindow.setObjectName(<span class="string">"MainWindow"</span>)</span><br><span class="line">        MainWindow.resize(<span class="number">1179</span>, <span class="number">912</span>)</span><br><span class="line">        self.centralwidget = QtWidgets.QWidget(MainWindow)</span><br><span class="line">        self.centralwidget.setObjectName(<span class="string">"centralwidget"</span>)</span><br><span class="line">        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)</span><br><span class="line">        self.textBrowser.setGeometry(QtCore.QRect(<span class="number">490</span>, <span class="number">170</span>, <span class="number">111</span>, <span class="number">51</span>))</span><br><span class="line">        self.textBrowser.setObjectName(<span class="string">"textBrowser"</span>)</span><br><span class="line">        MainWindow.setCentralWidget(self.centralwidget)</span><br><span class="line">        self.statusbar = QtWidgets.QStatusBar(MainWindow)</span><br><span class="line">        self.statusbar.setObjectName(<span class="string">"statusbar"</span>)</span><br><span class="line">        MainWindow.setStatusBar(self.statusbar)</span><br><span class="line"></span><br><span class="line">        self.retranslateUi(MainWindow)</span><br><span class="line">        QtCore.QMetaObject.connectSlotsByName(MainWindow)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">retranslateUi</span><span class="params">(self, MainWindow)</span>:</span></span><br><span class="line">        _translate = QtCore.QCoreApplication.translate</span><br><span class="line">        MainWindow.setWindowTitle(_translate(<span class="string">"MainWindow"</span>, <span class="string">"MainWindow"</span>))</span><br><span class="line">        self.textBrowser.setHtml(_translate(<span class="string">"MainWindow"</span>, <span class="string">"&lt;!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\"&gt;\n"</span></span><br><span class="line"><span class="string">"&lt;html&gt;&lt;head&gt;&lt;meta name=\"qrichtext\" content=\"1\" /&gt;&lt;style type=\"text/css\"&gt;\n"</span></span><br><span class="line"><span class="string">"p, li &#123; white-space: pre-wrap; &#125;\n"</span></span><br><span class="line"><span class="string">"&lt;/style&gt;&lt;/head&gt;&lt;body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\"&gt;\n"</span></span><br><span class="line"><span class="string">"&lt;p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"&gt;&lt;span style=\" font-size:26pt; font-weight:600; font-style:italic;\"&gt;PyQt5&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"</span>))</span><br></pre></td></tr></table></figure>
-
-<p>新建一个测试运行代码文件如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 测试PyQt5运行 CJW</span></span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QMainWindow</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> cjw <span class="keyword">import</span> Ui_MainWindow1</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    MainWindow = QMainWindow()</span><br><span class="line">    ui = Ui_MainWindow1()</span><br><span class="line">    ui.setupUi(MainWindow)</span><br><span class="line">    MainWindow.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
-
-<p>配置好路径后点击运行上述文件，结果如下：<br><img src="https://img-blog.csdnimg.cn/20200223210107817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="测试结果"><br>Pyqt5安装成功！！！<br><strong><em>END</em></strong></p>
+<p>未完待续…….</p>
 ]]></content>
       <categories>
         <category>PyQt5</category>
@@ -1035,36 +1097,6 @@
 <h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2><p>点击窗口X后弹出提示信息，通过点击按钮选择退出与否<br><img src="https://img-blog.csdnimg.cn/20200605181139620.png" alt="在这里插入图片描述"><br>除此之外也可以在窗口中设置退出按钮来退出窗口，具体可参考链接: <a href="https://blog.csdn.net/cjw12581/article/details/106576051" target="_blank" rel="noopener">PyQt5通过绑定按钮事件实现点击后退出（含提示框）</a>.</p>
 <hr>
 <p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>PyQt5</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>GUI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyQt5界面设计问题</title>
-    <url>/2020/07/23/PyQt5%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-<h2 id="PyQt5界面设计问题及解决办法"><a href="#PyQt5界面设计问题及解决办法" class="headerlink" title="PyQt5界面设计问题及解决办法"></a>PyQt5界面设计问题及解决办法</h2><p>最近在做有关界面的项目遇到一些问题，在这里把遇到的一些问题做一个总结</p>
-<h3 id="1-窗体设计样式问题"><a href="#1-窗体设计样式问题" class="headerlink" title="1.窗体设计样式问题"></a>1.窗体设计样式问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.setStyleSheet(<span class="string">"#MainWindow&#123;background-color: white&#125;"</span>)</span><br><span class="line">self.setWindowTitle(<span class="string">'XXX软件v1.0'</span>)</span><br><span class="line">self.setWindowIcon(QIcon(<span class="string">'D:/系统v1.0/systemcode/images/icon1.png'</span>))  <span class="comment"># 设置窗体标题图标</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-文本显示问题"><a href="#2-文本显示问题" class="headerlink" title="2.文本显示问题"></a>2.文本显示问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.label_state.setText(<span class="string">"CJW"</span>)  <span class="comment"># 当前状态</span></span><br><span class="line">self.label_state.setStyleSheet(<span class="string">"font:15pt '楷体';color:red"</span>) <span class="comment"># 控件样式</span></span><br></pre></td></tr></table></figure>
-<h3 id="3-控件传值问题"><a href="#3-控件传值问题" class="headerlink" title="3.控件传值问题"></a>3.控件传值问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">angle = self.doubleSpinBox.value()  <span class="comment"># 角度值传递</span></span><br><span class="line">self.labeljiaodu.setText(<span class="string">""</span> + str(angle))  <span class="comment"># 角度显示</span></span><br><span class="line">self.labeljiaodu.setText(<span class="string">""</span> + str((<span class="string">'%.3f'</span> %angle))) <span class="comment"># 保留3位有效数字</span></span><br></pre></td></tr></table></figure>
-<h3 id="4-字体显示问题（在其它电脑打开会出现字样重叠）"><a href="#4-字体显示问题（在其它电脑打开会出现字样重叠）" class="headerlink" title="4.字体显示问题（在其它电脑打开会出现字样重叠）"></a>4.字体显示问题（在其它电脑打开会出现字样重叠）</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)  <span class="comment"># Qt从5.6.0开始，支持High-DPI（插入这句code，必须放在创建QApplication项目之前）</span></span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    md = MainCode()</span><br><span class="line">    md.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
-<h3 id="5-提示框问题"><a href="#5-提示框问题" class="headerlink" title="5.提示框问题"></a>5.提示框问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">QMessageBox.information(self,</span><br><span class="line">                                                <span class="string">"XXXX提示框"</span>,</span><br><span class="line">                                                <span class="string">"当前XXXX异常！！！"</span>, QMessageBox.Yes | QMessageBox.No)</span><br><span class="line"><span class="keyword">if</span> QMessageBox.Yes:</span><br><span class="line">    ..........</span><br></pre></td></tr></table></figure>
-<h3 id="6-按钮图标问题"><a href="#6-按钮图标问题" class="headerlink" title="6.按钮图标问题"></a>6.按钮图标问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.button_begin.setIcon(QIcon(<span class="string">"D:/软件v1.0/systemcode/images/512.png"</span>))  <span class="comment"># 设置图标</span></span><br><span class="line">self.button_begin.setStyleSheet(<span class="string">"QPushButton&#123;color:black&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton:hover&#123;color:red&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton&#123;background-color:lightgreen&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton&#123;border:2px&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton&#123;border-radius:10px&#125;"</span></span><br><span class="line">                               <span class="string">"QPushButton&#123;padding:2px 4px&#125;"</span>)  <span class="comment"># 设置按钮样式</span></span><br></pre></td></tr></table></figure>
-<h3 id="7-语音提示问题"><a href="#7-语音提示问题" class="headerlink" title="7.语音提示问题"></a>7.语音提示问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> win32com.client</span><br><span class="line">speak = win32com.client.Dispatch(<span class="string">'SAPI.SPVOICE'</span>)</span><br><span class="line">speak.Speak(<span class="string">'CJW'</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="8-蜂鸣器设置问题"><a href="#8-蜂鸣器设置问题" class="headerlink" title="8.蜂鸣器设置问题"></a>8.蜂鸣器设置问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> winsound</span><br><span class="line">duration = <span class="number">150</span>  <span class="comment"># 持续时间</span></span><br><span class="line">freq = <span class="number">1000</span>  <span class="comment"># Hz</span></span><br><span class="line">winsound.Beep(freq, duration)</span><br></pre></td></tr></table></figure>
-<h3 id="9-doubleSpinBox等控件禁止编辑"><a href="#9-doubleSpinBox等控件禁止编辑" class="headerlink" title="9.doubleSpinBox等控件禁止编辑"></a>9.doubleSpinBox等控件禁止编辑</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.doubleSpinBox.setFocusPolicy(QtCore.Qt.NoFocus)</span><br><span class="line">self.doubleSpinBox_2.setFocusPolicy(QtCore.Qt.NoFocus)</span><br><span class="line">self.doubleSpinBox.setSingleStep(<span class="number">0.0</span>)</span><br><span class="line">self.doubleSpinBox_2.setSingleStep(<span class="number">0.0</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="10-窗口居中问题"><a href="#10-窗口居中问题" class="headerlink" title="10.窗口居中问题"></a>10.窗口居中问题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 窗口居中</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtWidgets</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QDesktopWidget</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CJW</span><span class="params">(QtWidgets.QWidget)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, parent=None)</span>:</span></span><br><span class="line">        QtWidgets.QWidget.__init__(self, parent)</span><br><span class="line">        self.setWindowTitle(<span class="string">'窗口居中实例'</span>)</span><br><span class="line">        <span class="comment"># 设置窗口的尺寸</span></span><br><span class="line">        self.resize(<span class="number">250</span>, <span class="number">250</span>)</span><br><span class="line">        self.center()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 窗口居中函数</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">center</span><span class="params">(self)</span>:</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 计算出显示器的分辨率(screen.width() * screen.height())</span></span><br><span class="line">        screen = QDesktopWidget().screenGeometry()</span><br><span class="line">        <span class="comment"># 获取QWidget窗口的大小(size.width()* size.heiget())</span></span><br><span class="line">        size = self.geometry()</span><br><span class="line">        <span class="comment"># 窗口移动到屏幕的中间位置</span></span><br><span class="line">        self.move((screen.width() - size.width()) / <span class="number">2</span>,</span><br><span class="line">                  (screen.height() - size.height()) / <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line"></span><br><span class="line">    app = QtWidgets.QApplication(sys.argv)</span><br><span class="line">    md = CJW()</span><br><span class="line">    md.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
-<h3 id="11-禁止窗口最大化和禁止窗口拉伸"><a href="#11-禁止窗口最大化和禁止窗口拉伸" class="headerlink" title="11.禁止窗口最大化和禁止窗口拉伸"></a>11.禁止窗口最大化和禁止窗口拉伸</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainCode</span><span class="params">(QMainWindow, MainUi.Ui_MainWindow)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        QMainWindow.__init__(self)</span><br><span class="line">        MainUi.Ui_MainWindow.__init__(self)</span><br><span class="line">        self.setupUi(self)</span><br><span class="line">        self.setFixedSize(self.width(), self.height())</span><br><span class="line">        self.resize(<span class="number">1138</span>, <span class="number">678</span>)</span><br><span class="line">        ..........................</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1、方法setWindowFlags,选择哪些按钮生效，每个窗体应该都有</span></span><br><span class="line"><span class="comment"># 2、通过 | 来同时显现多个按钮</span></span><br><span class="line">Form.setWindowFlags(QtCore.Qt.WindowCloseButtonHint|QtCore.Qt.WindowMinimizeButtonHint)</span><br></pre></td></tr></table></figure>
-
-<p>未完待续…….</p>
 ]]></content>
       <categories>
         <category>PyQt5</category>
@@ -1628,6 +1660,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Python语言的输入输出</title>
+    <url>/2020/07/30/Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E4%B9%8BPython%E8%AF%AD%E8%A8%80%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
+    <content><![CDATA[<p>Hello Python!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"><br>Python和其他高级语言一样，程序的基本构架都会有输入和输出部分:</p>
+<h3 id="1-输出"><a href="#1-输出" class="headerlink" title="1. 输出"></a>1. 输出</h3><p> 在Python语言中，实现数据的输出方式有两种：一种是使用print函数；另一种直接使用变量名查看该变量的原始值。<br>(1) print函数<br>     print函数可以打印输出数据的输出操作，其语法结构如下：<br>     print( &lt; expressions &gt;)<br>     print语法结构里的&lt; expressions &gt;单词后边有s的复数，其含义是表达式可以是多个。<br>     如果有多个&lt; expression &gt;，则表达式之间用逗号隔开，其语法格式如下：<br>     print( &lt; expression &gt;,&lt; expression &gt;,..&lt; expression &gt;)<br>     在新建的.py文件中，输入print语句。<br>     &gt;&gt;&gt; print (‘hello world’)<br>     hello world</p>
+<pre><code>可以看到每条print语句输出后都自动换了一行，如果要实现不换行，则需要在变量末尾加上逗号。</code></pre><p>(2) 直接使用变量名查看该变量的原始值<br>     在交互式环境中，为了方便，可以直接使用变量名查看该变量的原始值，以达到输出的效果。<br>     &gt;&gt;&gt; character = “hello world”<br>     &gt;&gt;&gt; character<br>     ‘hello world‘</p>
+<pre><code>也可以直接在交互式环境中运行“hello world”，实现输出。
+&gt;&gt;&gt; &quot;hello world&quot;
+&apos;hello world‘ </code></pre><hr>
+<h3 id="2-输入"><a href="#2-输入" class="headerlink" title="2. 输入"></a>2. 输入</h3><p>在Python里可以通过input函数从键盘获得用户的数据输入，其语法结构如下。<br>input(&lt; prompt &gt;)<br>input函数的形参prompt是一个字符串，用于提示用户输入数据。input函数的返回值是字符串型的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输入实例</span></span><br><span class="line">a = input(<span class="string">'请输入a的值：a='</span>)</span><br><span class="line">print(<span class="string">'已输入的a的值为：'</span>, a)</span><br></pre></td></tr></table></figure>
+
+<p>当用户输入数据后，input函数会把输入数据传给等号左边的character变量来保存输入的数据。第2行调用print打印character变量的值，所以执行第2行后会打印字符串出“input your character:”，以此作为新的提示符，输入“hello world”，可以完整的输出“hello world”。</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>Python编程基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>PyCharm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python编程小案例练习</title>
     <url>/2020/07/30/Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%B0%8F%E6%A1%88%E4%BE%8B%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[<p>Hello Python!</p>
@@ -1708,32 +1766,6 @@
       <tags>
         <tag>工具</tag>
         <tag>GUI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python语言的输入输出</title>
-    <url>/2020/07/30/Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E4%B9%8BPython%E8%AF%AD%E8%A8%80%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
-    <content><![CDATA[<p>Hello Python!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"><br>Python和其他高级语言一样，程序的基本构架都会有输入和输出部分:</p>
-<h3 id="1-输出"><a href="#1-输出" class="headerlink" title="1. 输出"></a>1. 输出</h3><p> 在Python语言中，实现数据的输出方式有两种：一种是使用print函数；另一种直接使用变量名查看该变量的原始值。<br>(1) print函数<br>     print函数可以打印输出数据的输出操作，其语法结构如下：<br>     print( &lt; expressions &gt;)<br>     print语法结构里的&lt; expressions &gt;单词后边有s的复数，其含义是表达式可以是多个。<br>     如果有多个&lt; expression &gt;，则表达式之间用逗号隔开，其语法格式如下：<br>     print( &lt; expression &gt;,&lt; expression &gt;,..&lt; expression &gt;)<br>     在新建的.py文件中，输入print语句。<br>     &gt;&gt;&gt; print (‘hello world’)<br>     hello world</p>
-<pre><code>可以看到每条print语句输出后都自动换了一行，如果要实现不换行，则需要在变量末尾加上逗号。</code></pre><p>(2) 直接使用变量名查看该变量的原始值<br>     在交互式环境中，为了方便，可以直接使用变量名查看该变量的原始值，以达到输出的效果。<br>     &gt;&gt;&gt; character = “hello world”<br>     &gt;&gt;&gt; character<br>     ‘hello world‘</p>
-<pre><code>也可以直接在交互式环境中运行“hello world”，实现输出。
-&gt;&gt;&gt; &quot;hello world&quot;
-&apos;hello world‘ </code></pre><hr>
-<h3 id="2-输入"><a href="#2-输入" class="headerlink" title="2. 输入"></a>2. 输入</h3><p>在Python里可以通过input函数从键盘获得用户的数据输入，其语法结构如下。<br>input(&lt; prompt &gt;)<br>input函数的形参prompt是一个字符串，用于提示用户输入数据。input函数的返回值是字符串型的。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输入实例</span></span><br><span class="line">a = input(<span class="string">'请输入a的值：a='</span>)</span><br><span class="line">print(<span class="string">'已输入的a的值为：'</span>, a)</span><br></pre></td></tr></table></figure>
-
-<p>当用户输入数据后，input函数会把输入数据传给等号左边的character变量来保存输入的数据。第2行调用print打印character变量的值，所以执行第2行后会打印字符串出“input your character:”，以此作为新的提示符，输入“hello world”，可以完整的输出“hello world”。</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>Python编程基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>PyCharm</tag>
       </tags>
   </entry>
   <entry>
@@ -1853,6 +1885,21 @@
       </tags>
   </entry>
   <entry>
+    <title>SpringBoot的启动图案修改</title>
+    <url>/2020/07/22/SpringBoot%E7%9A%84%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A1%88%E4%BF%AE%E6%94%B9/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>Springboot项目启动时，会出现大大的SpringBoot的图案：<br><img src="https://img-blog.csdnimg.cn/20200718141606137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改：<br>首先创建springboot项目，首先在resources/目录下创建名为banner.txt的文件：<br>点击链接：<a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=CJW" target="_blank" rel="noopener">SpringBoot的启动图案修改</a><br><img src="https://img-blog.csdnimg.cn/20200718141955428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>启动项目：<br><img src="https://img-blog.csdnimg.cn/20200718142131464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>无聊…..<br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>启动图案修改</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SpringBoot项目打包为jar包</title>
     <url>/2020/07/22/SpringBoot%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%B8%BAjar%E5%8C%85/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -1874,21 +1921,6 @@
       </categories>
       <tags>
         <tag>jar包</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringBoot的启动图案修改</title>
-    <url>/2020/07/22/SpringBoot%E7%9A%84%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A1%88%E4%BF%AE%E6%94%B9/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>Springboot项目启动时，会出现大大的SpringBoot的图案：<br><img src="https://img-blog.csdnimg.cn/20200718141606137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改：<br>首先创建springboot项目，首先在resources/目录下创建名为banner.txt的文件：<br>点击链接：<a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=CJW" target="_blank" rel="noopener">SpringBoot的启动图案修改</a><br><img src="https://img-blog.csdnimg.cn/20200718141955428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>启动项目：<br><img src="https://img-blog.csdnimg.cn/20200718142131464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>无聊…..<br><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>启动图案修改</tag>
       </tags>
   </entry>
   <entry>
@@ -2055,6 +2087,36 @@
       </categories>
       <tags>
         <tag>Tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue.js使用实例</title>
+    <url>/2020/08/03/Vue-js%E4%BD%BF%E7%94%A8%E5%AE%9E%E4%BE%8B/</url>
+    <content><![CDATA[<p>Hello Vue!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Javaweb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue常用指令及实例</title>
+    <url>/2020/08/03/Vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%8F%8A%E5%AE%9E%E4%BE%8B/</url>
+    <content><![CDATA[<p>Hello Vue!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Javaweb</tag>
       </tags>
   </entry>
   <entry>
@@ -2338,59 +2400,6 @@
       <tags>
         <tag>JavaWeb</tag>
         <tag>setTimeout()</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用pymysql操纵MySQl数据库</title>
-    <url>/2020/07/23/%E5%88%A9%E7%94%A8pymysql%E6%93%8D%E7%BA%B5MySQl%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-<h1 id="MyEnvironment"><a href="#MyEnvironment" class="headerlink" title="MyEnvironment"></a>MyEnvironment</h1><ul>
-<li>pymysql</li>
-<li>MySQL</li>
-<li>PyCharm</li>
-<li>Python3.x</li>
-</ul>
-<hr>
-<h1 id="pymysql"><a href="#pymysql" class="headerlink" title="pymysql"></a>pymysql</h1><p>pymysql是一个使Python连接到数据库的模块，它是一个纯Python库，利用pymysql可以直接通过编写数据库的语句来操纵MySQL数据库完成一系列操作。</p>
-<hr>
-<p>安装pysql:(安装方式有多种)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pymysql</span><br></pre></td></tr></table></figure>
-<p>通过输入以下代码至电脑命令控制台可查看是否安装成功：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip3 show PyMySQL</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="实现数据库的相关操作"><a href="#实现数据库的相关操作" class="headerlink" title="实现数据库的相关操作"></a>实现数据库的相关操作</h1><p>首先要与数据库建立连接：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 打开数据库连接（IP地址/数据库用户名/登录密码/编码方式/端口号）</span></span><br><span class="line">database = pymysql.connect(host=<span class="string">'localhost'</span>, user=<span class="string">'root'</span>,</span><br><span class="line">                              passwd=<span class="string">'123456'</span>, charset=<span class="string">'utf8'</span>, port=<span class="number">3306</span>)</span><br></pre></td></tr></table></figure>
-<p>获取游标：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cur = database.cursor()</span><br></pre></td></tr></table></figure>
-
-<p>之后需要建立数据库和数据表：（存在就不创建，防止异常）</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sql = <span class="string">"CREATE DATABASE IF NOT EXISTS project"</span></span><br><span class="line"><span class="comment"># 执行创建数据库的sql</span></span><br><span class="line">cur.execute(sql)</span><br><span class="line"><span class="comment"># 使用数据库project</span></span><br><span class="line">cur.execute(<span class="string">"use project;"</span>)</span><br><span class="line"><span class="comment"># 创建数据库表data</span></span><br><span class="line">cur.execute(<span class="string">"CREATE TABLE IF NOT EXISTS data(time timestamp primary key NOT NULL,money float NOT NULL,name varchar(30))character set utf8;"</span>)</span><br></pre></td></tr></table></figure>
-<p>数据库插入数据操作：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sql_insert = <span class="string">"""INSERT INTO  OperationRecord VALUES( %s, %s, %s)"""</span></span><br><span class="line">data = (datetime.datetime.now().strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>), <span class="number">100000</span>, <span class="string">'老王'</span>)</span><br><span class="line">cur.execute(sql_insert, data)</span><br></pre></td></tr></table></figure>
-<p>提交插入的数据：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">database.commit()</span><br></pre></td></tr></table></figure>
-<p>这里我们也可以这样写：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    print(<span class="string">'--开始插入--'</span>)</span><br><span class="line">    cur.execute(sql_insert, data)</span><br><span class="line">    database.commit()</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    database.rollback()</span><br><span class="line">    print(<span class="string">'---成功插入---'</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    database.close()</span><br></pre></td></tr></table></figure>
-<hr>
-<p>数据库更新数据列操作：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sql_update = <span class="string">"update project.data set name = '%s' where money = '%s'"</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    print(<span class="string">'开始更新'</span>)</span><br><span class="line">    cur_update.execute(sql_update % (<span class="string">"update_time"</span>, <span class="string">"update_money"</span>, <span class="string">"update_name"</span>))</span><br><span class="line">    database.commit()</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    database.rollback()</span><br><span class="line">    print(<span class="string">'更新操作错误'</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    database.close()</span><br></pre></td></tr></table></figure>
-<hr>
-<p>数据库删除数据列操作：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sql_delete = <span class="string">"delete from project.data where name = '%s'"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    print(<span class="string">'开始删除操作'</span>)</span><br><span class="line">    cur_delete.execute(sql_delete % (<span class="string">"update_name"</span>))  <span class="comment"># 像sql语句传递参数</span></span><br><span class="line">    database.commit()</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    database.rollback()</span><br><span class="line">    print(<span class="string">'数据库删除操作错误'</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    database.close()</span><br></pre></td></tr></table></figure>
-<hr>
-<p>数据库查询数据操作：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># sql查询语句 表名data</span></span><br><span class="line">sql = <span class="string">"select * from data"</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    cur.execute(sql)  <span class="comment"># 执行sql语句</span></span><br><span class="line"></span><br><span class="line">    results = cur.fetchall()  <span class="comment"># 获取查询的所有记录</span></span><br><span class="line">    print(<span class="string">"time"</span>, <span class="string">"money"</span>, <span class="string">"name"</span>)</span><br><span class="line">    <span class="comment"># 遍历结果</span></span><br><span class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> results:</span><br><span class="line">        time = row[<span class="number">0</span>]</span><br><span class="line">        money = row[<span class="number">1</span>]</span><br><span class="line">        name = row[<span class="number">2</span>]</span><br><span class="line">        print(time, money, name)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    <span class="keyword">raise</span> e</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    db.close()  <span class="comment"># 关闭连接</span></span><br></pre></td></tr></table></figure>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-        <tag>pymysql</tag>
       </tags>
   </entry>
   <entry>
@@ -2799,6 +2808,123 @@
         <tag>JavaWeb</tag>
         <tag>Springboot</tag>
         <tag>application</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用pymysql操纵MySQl数据库</title>
+    <url>/2020/07/23/%E5%88%A9%E7%94%A8pymysql%E6%93%8D%E7%BA%B5MySQl%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<h1 id="MyEnvironment"><a href="#MyEnvironment" class="headerlink" title="MyEnvironment"></a>MyEnvironment</h1><ul>
+<li>pymysql</li>
+<li>MySQL</li>
+<li>PyCharm</li>
+<li>Python3.x</li>
+</ul>
+<hr>
+<h1 id="pymysql"><a href="#pymysql" class="headerlink" title="pymysql"></a>pymysql</h1><p>pymysql是一个使Python连接到数据库的模块，它是一个纯Python库，利用pymysql可以直接通过编写数据库的语句来操纵MySQL数据库完成一系列操作。</p>
+<hr>
+<p>安装pysql:(安装方式有多种)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install pymysql</span><br></pre></td></tr></table></figure>
+<p>通过输入以下代码至电脑命令控制台可查看是否安装成功：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip3 show PyMySQL</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="实现数据库的相关操作"><a href="#实现数据库的相关操作" class="headerlink" title="实现数据库的相关操作"></a>实现数据库的相关操作</h1><p>首先要与数据库建立连接：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 打开数据库连接（IP地址/数据库用户名/登录密码/编码方式/端口号）</span></span><br><span class="line">database = pymysql.connect(host=<span class="string">'localhost'</span>, user=<span class="string">'root'</span>,</span><br><span class="line">                              passwd=<span class="string">'123456'</span>, charset=<span class="string">'utf8'</span>, port=<span class="number">3306</span>)</span><br></pre></td></tr></table></figure>
+<p>获取游标：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cur = database.cursor()</span><br></pre></td></tr></table></figure>
+
+<p>之后需要建立数据库和数据表：（存在就不创建，防止异常）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sql = <span class="string">"CREATE DATABASE IF NOT EXISTS project"</span></span><br><span class="line"><span class="comment"># 执行创建数据库的sql</span></span><br><span class="line">cur.execute(sql)</span><br><span class="line"><span class="comment"># 使用数据库project</span></span><br><span class="line">cur.execute(<span class="string">"use project;"</span>)</span><br><span class="line"><span class="comment"># 创建数据库表data</span></span><br><span class="line">cur.execute(<span class="string">"CREATE TABLE IF NOT EXISTS data(time timestamp primary key NOT NULL,money float NOT NULL,name varchar(30))character set utf8;"</span>)</span><br></pre></td></tr></table></figure>
+<p>数据库插入数据操作：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sql_insert = <span class="string">"""INSERT INTO  OperationRecord VALUES( %s, %s, %s)"""</span></span><br><span class="line">data = (datetime.datetime.now().strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>), <span class="number">100000</span>, <span class="string">'老王'</span>)</span><br><span class="line">cur.execute(sql_insert, data)</span><br></pre></td></tr></table></figure>
+<p>提交插入的数据：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">database.commit()</span><br></pre></td></tr></table></figure>
+<p>这里我们也可以这样写：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    print(<span class="string">'--开始插入--'</span>)</span><br><span class="line">    cur.execute(sql_insert, data)</span><br><span class="line">    database.commit()</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    database.rollback()</span><br><span class="line">    print(<span class="string">'---成功插入---'</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    database.close()</span><br></pre></td></tr></table></figure>
+<hr>
+<p>数据库更新数据列操作：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sql_update = <span class="string">"update project.data set name = '%s' where money = '%s'"</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    print(<span class="string">'开始更新'</span>)</span><br><span class="line">    cur_update.execute(sql_update % (<span class="string">"update_time"</span>, <span class="string">"update_money"</span>, <span class="string">"update_name"</span>))</span><br><span class="line">    database.commit()</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    database.rollback()</span><br><span class="line">    print(<span class="string">'更新操作错误'</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    database.close()</span><br></pre></td></tr></table></figure>
+<hr>
+<p>数据库删除数据列操作：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sql_delete = <span class="string">"delete from project.data where name = '%s'"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    print(<span class="string">'开始删除操作'</span>)</span><br><span class="line">    cur_delete.execute(sql_delete % (<span class="string">"update_name"</span>))  <span class="comment"># 像sql语句传递参数</span></span><br><span class="line">    database.commit()</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    database.rollback()</span><br><span class="line">    print(<span class="string">'数据库删除操作错误'</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    database.close()</span><br></pre></td></tr></table></figure>
+<hr>
+<p>数据库查询数据操作：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># sql查询语句 表名data</span></span><br><span class="line">sql = <span class="string">"select * from data"</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    cur.execute(sql)  <span class="comment"># 执行sql语句</span></span><br><span class="line"></span><br><span class="line">    results = cur.fetchall()  <span class="comment"># 获取查询的所有记录</span></span><br><span class="line">    print(<span class="string">"time"</span>, <span class="string">"money"</span>, <span class="string">"name"</span>)</span><br><span class="line">    <span class="comment"># 遍历结果</span></span><br><span class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> results:</span><br><span class="line">        time = row[<span class="number">0</span>]</span><br><span class="line">        money = row[<span class="number">1</span>]</span><br><span class="line">        name = row[<span class="number">2</span>]</span><br><span class="line">        print(time, money, name)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    <span class="keyword">raise</span> e</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    db.close()  <span class="comment"># 关闭连接</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>pymysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端知识体系</title>
+    <url>/2020/08/03/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</url>
+    <content><![CDATA[<p>Hello Vue!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h1 id="前端知识体系"><a href="#前端知识体系" class="headerlink" title="前端知识体系"></a>前端知识体系</h1><p>前端主要围绕逻辑（判断、循环）、事件（浏览器事件：window document;Dom事件：增删改及遍历节点元素内容；jQurey的应用）、视图（HTML、CSS）、通信（AJAX）四个方面展开。</p>
+<h2 id="前端三要素"><a href="#前端三要素" class="headerlink" title="前端三要素"></a>前端三要素</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p><strong>HTML</strong>（结构）：超文本标记语言（Hyper Text Markup Language），决定网页的结构和内容。</p>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p><strong>CSS</strong>（表现）：层叠样式表（Cascading Style Sheets），设定网页的表现样式。<br>CSS层叠样式表是一门标记语言，并不是编程语言，因此不可以自定义变量，不可以引用等，换句话说就是不具备任何语法支持，它主要缺陷如下：</p>
+<ul>
+<li>语法不够强大，比如无法嵌套书写，导致模块化开发中需要书写很多重复的选择器；</li>
+<li>没有变量和合理的样式复用机制，使得逻辑上相关的属性值必须以字面量的形式重复输出，导致难以维护；</li>
+</ul>
+<p>导致在工作中无端增加了许多工作量。为了解决这个问题，前端开发人员会使用一种称之为【CSS预处理器】的工具,提供CSS缺失的样式层复用机制、减少冗余代码，提高样式代码的可维护性。大大的提高了前端在样式上的开发效率。<br><strong><em>什么是CSS预处理器?</em></strong><br>CSS预处理器定义了一种新的语言，其基本思想是，用一种专门的编程语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，然后开发者就只需要使用这种语言进行CSS的编码工作。转化成通俗易懂的话来说就是“用一种专门的编程语言，进行Web页面样式设计，再通过编译器转化为正常的CSS文件，以供项目使用”。<br><strong><em>常用的CSS预处理器有哪些?</em></strong></p>
+<ul>
+<li>SASS：基于Ruby ，通过服务端处理，功能强大。解析效率高。需要学习Ruby语言，上手难度高于LESS。</li>
+<li>LESS：基于NodeJS，通过客户端处理，使用简单。功能比SASS简单，解析效率也低于SASS，但在实际开发中足够了，所以如果我们后台人员如果需要的话，建议使用LESS。<br>链接: <a href="https://less.bootcss.com/#概览" target="_blank" rel="noopener">LESS文档</a><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">LESS程序实例：</span><br><span class="line">@width: <span class="number">10</span>px;</span><br><span class="line">@height: @width + <span class="number">10</span>px;</span><br><span class="line"></span><br><span class="line">#header &#123;</span><br><span class="line">  width: @width;</span><br><span class="line">  height: @height;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><p><strong>JavaScript</strong>（行为）：是一种弱类型脚本语言，其源码不需经过编译，而是由浏览器解释运行，用于控制网页的行为。</p>
+<h4 id="Native-原生JS开发"><a href="#Native-原生JS开发" class="headerlink" title="Native 原生JS开发"></a>Native 原生JS开发</h4><p><strong>原生JS开发</strong>，也就是让我们按照【ECMAScript】标准的开发方式，简称ES，特点是所有浏览器都支持。截至到当前，ES标准以发布如下版本：</p>
+<ul>
+<li>ES3</li>
+<li>ES4（内部，未正式发布）</li>
+<li>ES5（全浏览器支持）</li>
+<li>ES6（常用，当前主流版本：webpack打包成为ES5支持）</li>
+<li>ES7</li>
+<li>ES8</li>
+<li>ES9（草案阶段）</li>
+</ul>
+<p>区别就是逐步增加新特性。</p>
+<p><strong>TypeScript</strong>是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集， 而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。由安德斯·海尔斯伯格(C#、Delphi、TypeScript之父； .NET创立者) 主导。该语言的特点就是除了具备ES的特性之外还纳入了许多不在标准范围内的新特性，所以会导致很多浏览器不能直接支持TypeScript语法， 需要==编译后(编译成JS)== 才能被浏览器正确执行。</p>
+<h4 id="JavaScript框架"><a href="#JavaScript框架" class="headerlink" title="JavaScript框架"></a>JavaScript框架</h4><p><strong>JQuery</strong>：大家熟知的JavaScript库，优点就是简化了DOM操作，缺点就是DOM操作太频繁，影响前端性能；在前端眼里使用它仅仅是为了兼容IE6，7，8；<br><strong>Vue</strong>：一款渐进式 JavaScript 框架，所谓渐进式就是逐步实现新特性的意思，如实现模块化开发、路由、状态管理等新特性。其特点是综合了 Angular（<strong>模块化</strong>）和React(<strong>虚拟 DOM</strong>) 的优点；<br><strong>Axios</strong>：前端通信框架；因为 Vue 的边界很明确，就是为了处理 DOM，所以并不具备通信能力，此时就需要额外使用一个通信框架与服务器交互；当然也可以直接选择使用jQuery 提供的AJAX 通信功能；<br><strong>Angular</strong>：Google收购的前端框架，由一群Java程序员开发，其特点是将后台的MVC模式搬到了前端并增加了模块化开发的理念，与微软合作，采用了TypeScript语法开发；<br><strong>React</strong>：Facebook 出品，一款高性能的JS前端框架；特点是提出了新概念 【虚拟DOM】用于减少真实 DOM 操作，在内存中模拟 DOM操作，有效的提升了前端渲染效率；缺点是使用复杂，因为需要额外学习一门【JSX】语言；</p>
+<h4 id="UI框架"><a href="#UI框架" class="headerlink" title="UI框架"></a>UI框架</h4><p>Ant-Design：阿里巴巴出品，基于React的UI框架<br>ElementUI、iview、ice：饿了么出品，基于Vue的UI框架（必学）<br><strong>BootStrap</strong>：Teitter推出的一个用于前端开发的开源工具包（必学）<br>AmazeUI：又叫“妹子UI”，一款HTML5跨屏前端框架<br>JavaScript构建工具<br>Babel：JS编译工具，主要用于浏览器不支持的ES新特性，比如用于编译TypeScript<br>WebPack：模块打包器，主要作用就是打包、压缩、合并及按序加载</p>
+<hr>
+<h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>前端人员为了方便开发也需要掌握一定的后端技术但我们Java后台人员知道后台知识体系极其庞大复杂，所以为了方便前端人员开发后台应用，出现Node.js。<br>Node.js框架及项目管理工具如下：</p>
+<ul>
+<li>Express：Node JS框架</li>
+<li>Koa：Express简化版</li>
+<li><strong>NPM</strong>：项目综合管理工具，类似于Maven</li>
+<li>YARN：NPM的替代方案，类似于Maven和Gradle的关系</li>
+</ul>
+<hr>
+<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><p>为了降低开发的复杂度，以后端为出发点， 比如：Struts、Spring MVC等框架的使用， 就是后端的MVC时代；<br>以SpringMVC流程为例：<br><img src="https://img-blog.csdnimg.cn/20200803160656974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>发起请求到前端控制器(Dispatcher Servlet)<br>前端控制器请求HandlerMapping查找Handler，可以根据xml配置、注解进行查找<br>处理器映射器HandlerMapping向前端控制器返回Handler<br>前端控制器调用处理器适配器去执行Handler<br>处理器适配器去执行Handler<br>Handler执行完成给适配器返回ModelAndView<br>处理器适配器向前端控制器返回ModelAndView，ModelAndView是SpringMvc框架的一个底层对象，包括Model和View<br>前端控制器请求视图解析器去进行视图解析，根据逻辑视图名解析成真正的视图(JSP)<br>视图解析器向前端控制器返回View<br>前端控制器进行视图渲染，视图渲染将模型数据(在ModelAndView对象中)填充到request域<br>前端控制器向用户响应结果<br>优点:<br>MVC是一个非常好的协作模式， 能够有效降低代码的耦合度从架构上能够让开发者明白代码应该写在哪里。为了让View更纯粹， 还可以使用Thymeleaf、Frree marker等模板引擎， 使模板里无法写入Java代码， 让前后端分工更加清晰。<br>缺点:<br>前端开发重度依赖开发环境，开发效率低，这种架构下，前后端协作有两种模式：<br>第一种是前端写DEMO， 写好后， 让后端去套模板。好处是DEMO可以本地开发， 很高效。不足是还需要后端套模板，有可能套错，套完后还需要前端确定，来回沟通调整的成本比较大。</p>
+<h3 id="基于AJAX带来的SPA时代"><a href="#基于AJAX带来的SPA时代" class="headerlink" title="基于AJAX带来的SPA时代"></a>基于AJAX带来的SPA时代</h3><p>SPA模式下， <strong>前后端的分工非常清晰， 前后端的关键协作点是AJAX接口。</strong>看起来是如此美妙， 但回过头来看看的话， 这与JSP时代区别不大。复杂度从服务端的JSP里移到了浏览器的JavaScript，浏览器端变得很复杂。类似Spring MVC.</p>
+<h3 id="前端为主的MV-时代"><a href="#前端为主的MV-时代" class="headerlink" title="前端为主的MV*时代"></a>前端为主的MV*时代</h3><p>此处的MV*模式如下：</p>
+<ul>
+<li>MVC(同步通信为主) ：Model、View、Controller</li>
+<li>MVP(异步通信为主) ：Model、View、Presenter</li>
+<li>MVVM(异步通信为主)：Model、View、View Model为了降低前端开发复杂度，涌现了大量的前端框架，比如：Angular.js、React.js、Vue.js等， 这些框架总的原则是先按类型分层， 比如Templates、Controllers、Models， 然后再在层内做切分。<br>前后端分离的开发思想主要是基于Soc(关注度分离原则)，上面种种模式，都是让前后端的职责更清晰，分工更合理高效。</li>
+</ul>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Javaweb</tag>
       </tags>
   </entry>
   <entry>
@@ -3280,6 +3406,55 @@
       </tags>
   </entry>
   <entry>
+    <title>数据库学习与应用之什么是数据库</title>
+    <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%BA%94%E7%94%A8%E4%B9%8B%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>数据库，是一个长期存储在计算机内的、有组织的、有共享的、统一管理的数据集合。</p>
+<p>常用的数据库有Access、Oracle、Mysql、SQL Server、SQLite等；</p>
+<p>数据库中的数据都有一定规律结构，相同类型的数据放在一起，不同类型的数据之间相互隔离；<br>数据库由统一的规则来读写，有SQL语言专门用来读写数据库，一般都是用程序来读写数据库的内容。</p>
+<p>数据库支持的软件模式：<br>B/S：Browser/Server （浏览器/服务器）（淘宝）<br>C/S：Client/Server （客户端/服务器）（QQ、微信）</p>
+<hr>
+<h1 id="常用的数据库"><a href="#常用的数据库" class="headerlink" title="常用的数据库"></a>常用的数据库</h1><table>
+<thead>
+<tr>
+<th>数据库应用</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MySQL数据库</td>
+<td>小型数据库管理系统的数据库，由瑞典MySQLAB公司开发。MySQL被广泛地应用在Internet上的中小型网站当中</td>
+</tr>
+<tr>
+<td>SqlServer数据库</td>
+<td>中型数据库软件，真正的客户/服务器体系结构，图形化的用户界面，数据库管理方式更加直观和简单</td>
+</tr>
+<tr>
+<td>Oracle数据库</td>
+<td>大型企业级数据库，这是一款比较典型的客户/服务器(CLIENT/SERVER)或B/S体系结构的数据库之一，目前世界上使用最为广泛的数据库管理系统</td>
+</tr>
+<tr>
+<td>Access数据库</td>
+<td>小型的数据库，关联式数据序管理型系统的数据库，通常是被用来开发Web应用程序</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="数据库可视化管理工具"><a href="#数据库可视化管理工具" class="headerlink" title="数据库可视化管理工具"></a>数据库可视化管理工具</h1><p><strong><em>1. MySQL Workbench</em></strong><br>MySQL Workbench为数据库管理员、程序开发者和系统规划师提供可视化设计、模型建立、以及数据库管理功能。它包含了用于创建复杂的数据建模ER模型，正向和逆向数据库工程，也可以用于执行通常需要花费大量时间和需要的难以变更和管理的文档任务。MySQL工作台可在Windows，Linux和Mac上使用；<br><img src="https://img-blog.csdnimg.cn/20200512171804371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong><em>2. Navicat</em></strong><br>Navicat是一个桌面版MySQL数据库管理和开发工具。Navicat使用图形化的用户界面，可以让用户使用和管理更为轻松。支持中文，有免费版本提供；<br><img src="https://img-blog.csdnimg.cn/20200512171817481.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>3. MySQLDumper</strong><br>MySQLDumper使用PHP开发的MySQL数据库备份恢复程序，解决了使用PHP进行大数据库备份和恢复的问题，数百兆的数据库都可以方便的备份恢复，不用担心网速太慢导致中间中断的问题，非常方便易用；</p>
+<hr>
+<h1 id="数据库访问方式"><a href="#数据库访问方式" class="headerlink" title="数据库访问方式"></a>数据库访问方式</h1><p>利用数据库管理工具或者编写程序来访问数据库。当然，数据库和访问数据库可以跨空间进行（本地和远程）<br>连接：数据库管理工具、编程语言（Java、PyThon等）</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据库学习与应用之利用cmd命令操纵数据库(上）</title>
     <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%BA%94%E7%94%A8%E4%B9%8B%E5%88%A9%E7%94%A8cmd%E5%91%BD%E4%BB%A4%E6%93%8D%E7%BA%B5%E6%95%B0%E6%8D%AE%E5%BA%93-%E4%B8%8A%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -3341,55 +3516,6 @@
       <tags>
         <tag>工具</tag>
         <tag>cmd</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据库学习与应用之什么是数据库</title>
-    <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%BA%94%E7%94%A8%E4%B9%8B%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>数据库，是一个长期存储在计算机内的、有组织的、有共享的、统一管理的数据集合。</p>
-<p>常用的数据库有Access、Oracle、Mysql、SQL Server、SQLite等；</p>
-<p>数据库中的数据都有一定规律结构，相同类型的数据放在一起，不同类型的数据之间相互隔离；<br>数据库由统一的规则来读写，有SQL语言专门用来读写数据库，一般都是用程序来读写数据库的内容。</p>
-<p>数据库支持的软件模式：<br>B/S：Browser/Server （浏览器/服务器）（淘宝）<br>C/S：Client/Server （客户端/服务器）（QQ、微信）</p>
-<hr>
-<h1 id="常用的数据库"><a href="#常用的数据库" class="headerlink" title="常用的数据库"></a>常用的数据库</h1><table>
-<thead>
-<tr>
-<th>数据库应用</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>MySQL数据库</td>
-<td>小型数据库管理系统的数据库，由瑞典MySQLAB公司开发。MySQL被广泛地应用在Internet上的中小型网站当中</td>
-</tr>
-<tr>
-<td>SqlServer数据库</td>
-<td>中型数据库软件，真正的客户/服务器体系结构，图形化的用户界面，数据库管理方式更加直观和简单</td>
-</tr>
-<tr>
-<td>Oracle数据库</td>
-<td>大型企业级数据库，这是一款比较典型的客户/服务器(CLIENT/SERVER)或B/S体系结构的数据库之一，目前世界上使用最为广泛的数据库管理系统</td>
-</tr>
-<tr>
-<td>Access数据库</td>
-<td>小型的数据库，关联式数据序管理型系统的数据库，通常是被用来开发Web应用程序</td>
-</tr>
-</tbody></table>
-<hr>
-<h1 id="数据库可视化管理工具"><a href="#数据库可视化管理工具" class="headerlink" title="数据库可视化管理工具"></a>数据库可视化管理工具</h1><p><strong><em>1. MySQL Workbench</em></strong><br>MySQL Workbench为数据库管理员、程序开发者和系统规划师提供可视化设计、模型建立、以及数据库管理功能。它包含了用于创建复杂的数据建模ER模型，正向和逆向数据库工程，也可以用于执行通常需要花费大量时间和需要的难以变更和管理的文档任务。MySQL工作台可在Windows，Linux和Mac上使用；<br><img src="https://img-blog.csdnimg.cn/20200512171804371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong><em>2. Navicat</em></strong><br>Navicat是一个桌面版MySQL数据库管理和开发工具。Navicat使用图形化的用户界面，可以让用户使用和管理更为轻松。支持中文，有免费版本提供；<br><img src="https://img-blog.csdnimg.cn/20200512171817481.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>3. MySQLDumper</strong><br>MySQLDumper使用PHP开发的MySQL数据库备份恢复程序，解决了使用PHP进行大数据库备份和恢复的问题，数百兆的数据库都可以方便的备份恢复，不用担心网速太慢导致中间中断的问题，非常方便易用；</p>
-<hr>
-<h1 id="数据库访问方式"><a href="#数据库访问方式" class="headerlink" title="数据库访问方式"></a>数据库访问方式</h1><p>利用数据库管理工具或者编写程序来访问数据库。当然，数据库和访问数据库可以跨空间进行（本地和远程）<br>连接：数据库管理工具、编程语言（Java、PyThon等）</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
