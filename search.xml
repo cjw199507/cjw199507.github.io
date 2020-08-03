@@ -55,33 +55,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java JDK安装及环境变量配置（windows）</title>
-    <url>/2020/07/23/Java-JDK%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%EF%BC%88windows%EF%BC%89/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h2 id="1、JDK-jre-8uxxx-windows-x64-exe-下载"><a href="#1、JDK-jre-8uxxx-windows-x64-exe-下载" class="headerlink" title="1、JDK    jre-8uxxx-windows-x64.exe 下载"></a>1、JDK    jre-8uxxx-windows-x64.exe 下载</h2><p> 所有平台： <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
-<p>选择 “Accept License Agreement”</p>
-<p>根据系统选择对应的安装文件，64位系统安装64位JDK<br><img src="https://img-blog.csdnimg.cn/20200717145105546.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h2 id="2、JDK安装过程"><a href="#2、JDK安装过程" class="headerlink" title="2、JDK安装过程"></a>2、JDK安装过程</h2><p> a、双击运行安装文件 jdk-8uxxx-windows-x64.exe<br> b、指定jdk安装目录 C:\Java\jdk1.8.0_xxx   然后点击“下一步”<br> c、指定JRE安装目录 C:\Java\jre1.8.0_xxx，点击“下一步”<br> d、安装完成，点击“关闭”</p>
-<hr>
-<h2 id="3、JDK-环境变量配置"><a href="#3、JDK-环境变量配置" class="headerlink" title="3、JDK 环境变量配置"></a>3、JDK 环境变量配置</h2><p>  a、新建 JAVA_HOME 环境变量，JAVA_HOME=C:\Java\jdk1.8.0_144</p>
-<p>  b、修改 path 环境变量，在path变量尾部添加%JAVA_HOME%\bin</p>
-<p>  c、新建 classpath 环境变量 ，classpath=.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\tools.jar</p>
-<p>  说明：（jdk 需要配置三个环境变量； 1.5之后可以不再设置classpath，但建议保留classpath设置）</p>
-<p>开始菜单 -&gt; “计算机” -&gt; 右键 -&gt; 属性  打开 “系统面板”<br><img src="https://img-blog.csdnimg.cn/20200717145721301.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击 “高级系统设置” 打开 “系统属性”窗口，点击 “环境变量” 打开“系统环境变量”窗格<br><img src="https://img-blog.csdnimg.cn/2020071714574096.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200717145751767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200717145802298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>连续点击“确定”，完成环境变量配置。</p>
-<hr>
-<h2 id="4、验证-java-和-javac-命令"><a href="#4、验证-java-和-javac-命令" class="headerlink" title="4、验证 java 和 javac 命令"></a>4、验证 java 和 javac 命令</h2><p>   a、打开cmd命令行窗口，输入 java ，回车执行<br>   <img src="https://img-blog.csdnimg.cn/20200717145935892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>   b、输入javac 命令，回车执行<br>   <img src="https://img-blog.csdnimg.cn/20200717145948331.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>   弹出以上java 和javac命令输出，则表明jdk安装配置成功！<br>   <strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>JDK安装教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Bootstrap教程</title>
     <url>/2020/07/28/Bootstrap%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>Hello Bootstrap!</p>
@@ -180,6 +153,33 @@
       </categories>
       <tags>
         <tag>JSON</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java JDK安装及环境变量配置（windows）</title>
+    <url>/2020/07/23/Java-JDK%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%EF%BC%88windows%EF%BC%89/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h2 id="1、JDK-jre-8uxxx-windows-x64-exe-下载"><a href="#1、JDK-jre-8uxxx-windows-x64-exe-下载" class="headerlink" title="1、JDK    jre-8uxxx-windows-x64.exe 下载"></a>1、JDK    jre-8uxxx-windows-x64.exe 下载</h2><p> 所有平台： <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
+<p>选择 “Accept License Agreement”</p>
+<p>根据系统选择对应的安装文件，64位系统安装64位JDK<br><img src="https://img-blog.csdnimg.cn/20200717145105546.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="2、JDK安装过程"><a href="#2、JDK安装过程" class="headerlink" title="2、JDK安装过程"></a>2、JDK安装过程</h2><p> a、双击运行安装文件 jdk-8uxxx-windows-x64.exe<br> b、指定jdk安装目录 C:\Java\jdk1.8.0_xxx   然后点击“下一步”<br> c、指定JRE安装目录 C:\Java\jre1.8.0_xxx，点击“下一步”<br> d、安装完成，点击“关闭”</p>
+<hr>
+<h2 id="3、JDK-环境变量配置"><a href="#3、JDK-环境变量配置" class="headerlink" title="3、JDK 环境变量配置"></a>3、JDK 环境变量配置</h2><p>  a、新建 JAVA_HOME 环境变量，JAVA_HOME=C:\Java\jdk1.8.0_144</p>
+<p>  b、修改 path 环境变量，在path变量尾部添加%JAVA_HOME%\bin</p>
+<p>  c、新建 classpath 环境变量 ，classpath=.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\tools.jar</p>
+<p>  说明：（jdk 需要配置三个环境变量； 1.5之后可以不再设置classpath，但建议保留classpath设置）</p>
+<p>开始菜单 -&gt; “计算机” -&gt; 右键 -&gt; 属性  打开 “系统面板”<br><img src="https://img-blog.csdnimg.cn/20200717145721301.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击 “高级系统设置” 打开 “系统属性”窗口，点击 “环境变量” 打开“系统环境变量”窗格<br><img src="https://img-blog.csdnimg.cn/2020071714574096.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200717145751767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200717145802298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>连续点击“确定”，完成环境变量配置。</p>
+<hr>
+<h2 id="4、验证-java-和-javac-命令"><a href="#4、验证-java-和-javac-命令" class="headerlink" title="4、验证 java 和 javac 命令"></a>4、验证 java 和 javac 命令</h2><p>   a、打开cmd命令行窗口，输入 java ，回车执行<br>   <img src="https://img-blog.csdnimg.cn/20200717145935892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>   b、输入javac 命令，回车执行<br>   <img src="https://img-blog.csdnimg.cn/20200717145948331.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>   弹出以上java 和javac命令输出，则表明jdk安装配置成功！<br>   <strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>JDK安装教程</tag>
       </tags>
   </entry>
   <entry>
@@ -462,43 +462,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Nginx安装教程（windows）</title>
-    <url>/2020/07/23/Nginx%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%EF%BC%88windows%EF%BC%89/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<!-- more -->
-<h2 id="1-官网下载"><a href="#1-官网下载" class="headerlink" title="1.官网下载"></a>1.官网下载</h2><p> <a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">Nginx官网</a><br><img src="https://img-blog.csdnimg.cn/20200717111521554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>下载后解压到本地<br><img src="https://img-blog.csdnimg.cn/20200717111714376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h2 id="2-安装部署"><a href="#2-安装部署" class="headerlink" title="2.安装部署"></a>2.安装部署</h2><p>1、下载完成后，解压缩，运行cmd，使用命令进行操作，<strong>不要直接双击nginx.exe</strong>，一定要在dos窗口启动，不要直接双击nginx.exe，这样会导致修改配置后重启、停止nginx无效，需要手动关闭任务管理器内的所有nginx进程，再启动才可以。<br>2、使用命令行到达nginx的加压缩后的目录</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">cd D:\nginx-<span class="number">1.19</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
-<p>3、启动nginx服务，启动时会一闪而过是正常的</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">start nginx</span><br></pre></td></tr></table></figure>
-<p>4、查看任务进程是否存在，dos或打开任务管理器都行</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">tasklist /fi <span class="string">"imagename eq nginx.exe"</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200717112404316.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>通过任务管理器确认：<br><img src="https://img-blog.csdnimg.cn/20200717112422100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后就打开浏览器访问刚才的域名及端口<a href="http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！">http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！</a><br><img src="https://img-blog.csdnimg.cn/20200717112701940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>启动脚本startup.bat（新建txt后另存，放到nginx.exe同一级）或者直接点击nginx.exe<br>脚本内容：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@echo</span> off</span><br><span class="line">rem 如果启动前已经启动nginx并记录下pid文件，会kill指定进程</span><br><span class="line">nginx.exe -s stop</span><br><span class="line"></span><br><span class="line">rem 测试配置文件语法正确性</span><br><span class="line">nginx.exe -t -c conf/nginx.conf</span><br><span class="line"></span><br><span class="line">rem 显示版本信息</span><br><span class="line">nginx.exe -v</span><br><span class="line"></span><br><span class="line">rem 按照指定配置去启动nginx</span><br><span class="line">nginx.exe -c conf/nginx.conf</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="3-常见问题"><a href="#3-常见问题" class="headerlink" title="3.常见问题"></a>3.常见问题</h2><p>错误查看：<br><img src="https://img-blog.csdnimg.cn/20200717113419110.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="3-常见错误："><a href="#3-常见错误：" class="headerlink" title="3.常见错误："></a>3.常见错误：</h2><p>(1)端口号被占用<br>在conf目录下找到nginx.conf使用txt文本打开即可，找到server这个节点，修改端口号，如果有需求可以修改主页目录没有就不用修改<br><img src="https://img-blog.csdnimg.cn/20200717113636799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改完成后保存，使用以下命令检查一下配置文件是否正确，后面是nginx.conf文件的路径，successful就说明正确了</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -t -c /nginx-<span class="number">1.15</span><span class="number">.2</span>/conf/nginx.conf</span><br></pre></td></tr></table></figure>
-<p>如果程序没启动就直接start nginx启动，如果已经启动了就使用以下命令重新加载配置文件并重启</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure>
-<p>在项目中用到nginx，启动时闪退，查看错误日志，给出的错误如下：<br>nginx: [emerg] bind() to 0.0.0.0:80 failed (10013: An attempt was made to access<br> a socket in a way forbidden by its access permissions)<br>分析：<br>nginx的默认端口是80，通过错误日志可以看出是80端口被占用导致了nginx无法启动。<br>解决办法：<br>1、按键win+R打开运行界面，输入cmd进入控制台界面<br>2、输入netstat -ano | findstr “:80 “<br>通过上述命令查看80端口占用情况，查看后，pid的值为4。<br>参考：链接: <a href="https://blog.csdn.net/ytm15732625529/article/details/79058372" target="_blank" rel="noopener">link</a>.<br>(2)nginx文件夹路径含中文</p>
-<hr>
-<h2 id="4-常用命令"><a href="#4-常用命令" class="headerlink" title="4.常用命令"></a>4.常用命令</h2><p>关闭nginx服务使用以下命令，同样也是一闪而过是正常的，看一下是否进程已消失即可</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -s stop       快速关闭Nginx，可能不保存相关信息，并迅速终止web服务。</span><br><span class="line">nginx -s quit       平稳关闭Nginx，保存相关信息，有安排的结束web服务。</span><br><span class="line">nginx -s reload     因改变了Nginx相关配置，需要重新加载配置而重载。</span><br><span class="line">nginx -s reopen     重新打开日志文件。</span><br><span class="line">nginx -c filename   为 Nginx 指定一个配置文件，来代替缺省的。</span><br><span class="line">nginx -t            不运行，而仅仅测试配置文件。nginx 将检查配置文件的语法的正确性，并尝试打开配置文件中所引用到的文件。</span><br><span class="line">nginx -v            显示 nginx 的版本。</span><br><span class="line">nginx -V            显示 nginx 的版本，编译器版本和配置参数。</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Nginx</category>
-      </categories>
-      <tags>
-        <tag>Nginx安装教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MySQL数据库范围、模糊、时间范围（时间段）查询语句</title>
     <url>/2020/07/23/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%9B%B4%E3%80%81%E6%A8%A1%E7%B3%8A%E3%80%81%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4%EF%BC%88%E6%97%B6%E9%97%B4%E6%AE%B5%EF%BC%89%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -534,19 +497,40 @@
       </tags>
   </entry>
   <entry>
-    <title>PyCharm本地恢复或查看历史代码</title>
-    <url>/2020/07/23/PyCharm%E6%9C%AC%E5%9C%B0%E6%81%A2%E5%A4%8D%E6%88%96%E6%9F%A5%E7%9C%8B%E5%8E%86%E5%8F%B2%E4%BB%A3%E7%A0%81/</url>
+    <title>Nginx安装教程（windows）</title>
+    <url>/2020/07/23/Nginx%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%EF%BC%88windows%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
 <a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"><br>首先，打开PyCharm软件后选中项目文件；<br>点击pycharm的菜单中的 vcs ，选中菜单local history的选项<br><img src="https://img-blog.csdnimg.cn/20200618175201570.png" alt="在这里插入图片描述"><br>选择对应历史代码查看或者右键进行恢复。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<!-- more -->
+<h2 id="1-官网下载"><a href="#1-官网下载" class="headerlink" title="1.官网下载"></a>1.官网下载</h2><p> <a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">Nginx官网</a><br><img src="https://img-blog.csdnimg.cn/20200717111521554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>下载后解压到本地<br><img src="https://img-blog.csdnimg.cn/20200717111714376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <hr>
-<p><strong><em>END</em></strong></p>
+<h2 id="2-安装部署"><a href="#2-安装部署" class="headerlink" title="2.安装部署"></a>2.安装部署</h2><p>1、下载完成后，解压缩，运行cmd，使用命令进行操作，<strong>不要直接双击nginx.exe</strong>，一定要在dos窗口启动，不要直接双击nginx.exe，这样会导致修改配置后重启、停止nginx无效，需要手动关闭任务管理器内的所有nginx进程，再启动才可以。<br>2、使用命令行到达nginx的加压缩后的目录</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">cd D:\nginx-<span class="number">1.19</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
+<p>3、启动nginx服务，启动时会一闪而过是正常的</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">start nginx</span><br></pre></td></tr></table></figure>
+<p>4、查看任务进程是否存在，dos或打开任务管理器都行</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">tasklist /fi <span class="string">"imagename eq nginx.exe"</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200717112404316.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>通过任务管理器确认：<br><img src="https://img-blog.csdnimg.cn/20200717112422100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>之后就打开浏览器访问刚才的域名及端口<a href="http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！">http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！</a><br><img src="https://img-blog.csdnimg.cn/20200717112701940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>启动脚本startup.bat（新建txt后另存，放到nginx.exe同一级）或者直接点击nginx.exe<br>脚本内容：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@echo</span> off</span><br><span class="line">rem 如果启动前已经启动nginx并记录下pid文件，会kill指定进程</span><br><span class="line">nginx.exe -s stop</span><br><span class="line"></span><br><span class="line">rem 测试配置文件语法正确性</span><br><span class="line">nginx.exe -t -c conf/nginx.conf</span><br><span class="line"></span><br><span class="line">rem 显示版本信息</span><br><span class="line">nginx.exe -v</span><br><span class="line"></span><br><span class="line">rem 按照指定配置去启动nginx</span><br><span class="line">nginx.exe -c conf/nginx.conf</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="3-常见问题"><a href="#3-常见问题" class="headerlink" title="3.常见问题"></a>3.常见问题</h2><p>错误查看：<br><img src="https://img-blog.csdnimg.cn/20200717113419110.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="3-常见错误："><a href="#3-常见错误：" class="headerlink" title="3.常见错误："></a>3.常见错误：</h2><p>(1)端口号被占用<br>在conf目录下找到nginx.conf使用txt文本打开即可，找到server这个节点，修改端口号，如果有需求可以修改主页目录没有就不用修改<br><img src="https://img-blog.csdnimg.cn/20200717113636799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改完成后保存，使用以下命令检查一下配置文件是否正确，后面是nginx.conf文件的路径，successful就说明正确了</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -t -c /nginx-<span class="number">1.15</span><span class="number">.2</span>/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+<p>如果程序没启动就直接start nginx启动，如果已经启动了就使用以下命令重新加载配置文件并重启</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure>
+<p>在项目中用到nginx，启动时闪退，查看错误日志，给出的错误如下：<br>nginx: [emerg] bind() to 0.0.0.0:80 failed (10013: An attempt was made to access<br> a socket in a way forbidden by its access permissions)<br>分析：<br>nginx的默认端口是80，通过错误日志可以看出是80端口被占用导致了nginx无法启动。<br>解决办法：<br>1、按键win+R打开运行界面，输入cmd进入控制台界面<br>2、输入netstat -ano | findstr “:80 “<br>通过上述命令查看80端口占用情况，查看后，pid的值为4。<br>参考：链接: <a href="https://blog.csdn.net/ytm15732625529/article/details/79058372" target="_blank" rel="noopener">link</a>.<br>(2)nginx文件夹路径含中文</p>
+<hr>
+<h2 id="4-常用命令"><a href="#4-常用命令" class="headerlink" title="4.常用命令"></a>4.常用命令</h2><p>关闭nginx服务使用以下命令，同样也是一闪而过是正常的，看一下是否进程已消失即可</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">nginx -s stop       快速关闭Nginx，可能不保存相关信息，并迅速终止web服务。</span><br><span class="line">nginx -s quit       平稳关闭Nginx，保存相关信息，有安排的结束web服务。</span><br><span class="line">nginx -s reload     因改变了Nginx相关配置，需要重新加载配置而重载。</span><br><span class="line">nginx -s reopen     重新打开日志文件。</span><br><span class="line">nginx -c filename   为 Nginx 指定一个配置文件，来代替缺省的。</span><br><span class="line">nginx -t            不运行，而仅仅测试配置文件。nginx 将检查配置文件的语法的正确性，并尝试打开配置文件中所引用到的文件。</span><br><span class="line">nginx -v            显示 nginx 的版本。</span><br><span class="line">nginx -V            显示 nginx 的版本，编译器版本和配置参数。</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>Pycharm</category>
+        <category>Nginx</category>
       </categories>
       <tags>
-        <tag>工具</tag>
+        <tag>Nginx安装教程</tag>
       </tags>
   </entry>
   <entry>
@@ -600,6 +584,22 @@
       <tags>
         <tag>SpringBoot</tag>
         <tag>PageHelper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PyCharm本地恢复或查看历史代码</title>
+    <url>/2020/07/23/PyCharm%E6%9C%AC%E5%9C%B0%E6%81%A2%E5%A4%8D%E6%88%96%E6%9F%A5%E7%9C%8B%E5%8E%86%E5%8F%B2%E4%BB%A3%E7%A0%81/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"><br>首先，打开PyCharm软件后选中项目文件；<br>点击pycharm的菜单中的 vcs ，选中菜单local history的选项<br><img src="https://img-blog.csdnimg.cn/20200618175201570.png" alt="在这里插入图片描述"><br>选择对应历史代码查看或者右键进行恢复。</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>Pycharm</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -695,6 +695,102 @@
       </tags>
   </entry>
   <entry>
+    <title>PyQt5基本控件之菜单栏QMenuBar</title>
+    <url>/2020/07/30/PyQt5%E5%9F%BA%E6%9C%AC%E6%8E%A7%E4%BB%B6%E4%B9%8B%E8%8F%9C%E5%8D%95%E6%A0%8FQMenuBar/</url>
+    <content><![CDATA[<p>Hello PyQt5!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h1 id="QMenuBar"><a href="#QMenuBar" class="headerlink" title="QMenuBar"></a>QMenuBar</h1><h2 id="基本方法"><a href="#基本方法" class="headerlink" title="基本方法"></a>基本方法</h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>menuBar()</td>
+<td>返回主窗口的QMenuBar对象</td>
+</tr>
+<tr>
+<td>addMenu()</td>
+<td>在菜单栏中添加一个新的QMenu对象</td>
+</tr>
+<tr>
+<td>addAction()</td>
+<td>向QMenu小控件中添加一个操作按钮，其中包含文本或图标</td>
+</tr>
+<tr>
+<td>setEnabled()</td>
+<td>将操作按钮设置为启用/禁用</td>
+</tr>
+<tr>
+<td>addSeperator()</td>
+<td>在菜单中添加一条分割线</td>
+</tr>
+<tr>
+<td>clear()</td>
+<td>删除菜单栏的内容</td>
+</tr>
+<tr>
+<td>setShortcut()</td>
+<td>将快捷键关联到操作按钮</td>
+</tr>
+<tr>
+<td>setText()</td>
+<td>设置菜单项的文本</td>
+</tr>
+<tr>
+<td>setTitle()</td>
+<td>设置QMenu小控件的标题</td>
+</tr>
+<tr>
+<td>text()</td>
+<td>返回与QACtion对象关联的文本</td>
+</tr>
+<tr>
+<td>title()</td>
+<td>返回QMenu小控件的标题</td>
+</tr>
+<tr>
+<td>—–</td>
+<td></td>
+</tr>
+<tr>
+<td>## 应用实例</td>
+<td></td>
+</tr>
+<tr>
+<td>利用菜单栏实现添加子菜单及点击后响应：</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://img-blog.csdnimg.cn/20200730141529456.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></td>
+<td></td>
+</tr>
+<tr>
+<td>顶层窗口必须是QMainWindow对象，才可以引用QMenuBar对象。</td>
+<td></td>
+</tr>
+<tr>
+<td><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># # 菜单栏调度----------------------------------------------------------------------------------------------------</span></span><br><span class="line">        openFileaction = QAction(<span class="string">'&amp;子菜单1'</span>, self)  <span class="comment"># 在文件主菜单1下增加子菜单1</span></span><br><span class="line">        openFileaction.triggered.connect(self.menu_openFile_clicked)  <span class="comment"># 点击后打开新界面</span></span><br><span class="line">        openFileaction.setShortcut(<span class="string">'Ctrl+A'</span>)  <span class="comment"># 子菜单1界面设置打开快捷键</span></span><br><span class="line">        .....</span><br><span class="line">        openHelpWordaction = QAction(<span class="string">'&amp;子菜单2'</span>, self)</span><br><span class="line">        openHelpWordaction.triggered.connect(self.menu_openHelpWordaction_clicked)   <span class="comment"># 在文件主菜单1下增加子菜单2</span></span><br><span class="line">        openHelpWordaction.setShortcut(<span class="string">'Ctrl+B'</span>)  <span class="comment"># 子菜单2界面设置打开快捷键</span></span><br><span class="line">        </span><br><span class="line">        menubar = self.menuBar()  <span class="comment"># 声明菜单栏</span></span><br><span class="line">        </span><br><span class="line">        fileMenu_File = menubar.addMenu(<span class="string">'&amp;主菜单1'</span>)  <span class="comment"># 菜单栏增加文件主菜单1</span></span><br><span class="line">        fileMenu_File.addAction(openFileaction)  <span class="comment"># 增加打开事件1</span></span><br><span class="line">        fileMenu_File.addAction(openHelpWordaction)  <span class="comment"># 增加打开事件2</span></span><br><span class="line">        ......</span><br><span class="line">        fileMenu_Help = menubar.addMenu(<span class="string">'&amp;主菜单2'</span>)  <span class="comment"># 菜单栏增加文件主菜单2</span></span><br><span class="line">        fileMenu_Help.addAction(openxxxxxaction) <span class="comment"># 增加打开事件</span></span><br><span class="line"><span class="comment"># # 菜单栏调度----------------------------------------------------------------------------------------------------</span></span><br></pre></td></tr></table></figure></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MenuDemo</span><span class="params">(QMainWindow)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, parent=None)</span>:</span></span><br><span class="line">        super(MenuDemo, self).__init__(parent)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 水平布局</span></span><br><span class="line">        layout = QHBoxLayout()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># # 菜单栏调度----------------------------------------------------------------------------------------------------</span></span><br><span class="line">        openFileaction = QAction(<span class="string">'&amp;子菜单1'</span>, self)  <span class="comment"># 在文件主菜单1下增加子菜单1</span></span><br><span class="line">        openFileaction.triggered.connect(self.menu_openFile_clicked)  <span class="comment"># 点击后打开新界面</span></span><br><span class="line">        openFileaction.setShortcut(<span class="string">'Ctrl+A'</span>)  <span class="comment"># 子菜单1界面设置打开快捷键</span></span><br><span class="line"></span><br><span class="line">        openHelpWordaction = QAction(<span class="string">'&amp;子菜单2'</span>, self)</span><br><span class="line">        openHelpWordaction.triggered.connect(self.menu_openHelpWordaction_clicked)  <span class="comment"># 在文件主菜单1下增加子菜单2</span></span><br><span class="line">        openHelpWordaction.setShortcut(<span class="string">'Ctrl+B'</span>)  <span class="comment"># 子菜单2界面设置打开快捷键</span></span><br><span class="line"></span><br><span class="line">        menubar = self.menuBar()  <span class="comment"># 声明菜单栏</span></span><br><span class="line"></span><br><span class="line">        fileMenu_File = menubar.addMenu(<span class="string">'&amp;主菜单1'</span>)  <span class="comment"># 菜单栏增加文件主菜单1</span></span><br><span class="line">        fileMenu_File.addAction(openFileaction)  <span class="comment"># 增加打开事件1</span></span><br><span class="line">        fileMenu_File.addAction(openHelpWordaction)  <span class="comment"># 增加打开事件2</span></span><br><span class="line"></span><br><span class="line">        fileMenu_Help = menubar.addMenu(<span class="string">'&amp;主菜单2'</span>)  <span class="comment"># 菜单栏增加文件主菜单2</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># # 菜单栏调度----------------------------------------------------------------------------------------------------</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">menu_openFile_clicked</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="number">123</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">menu_openHelpWordaction_clicked</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="number">456</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    demo = MenuDemo()</span><br><span class="line">    demo.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>PyQt5</category>
+      </categories>
+      <tags>
+        <tag>pyqt5</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PyQt5中的QMessageBox的Yes和No按钮转换成中文，并进行逻辑判断</title>
     <url>/2020/07/30/PyQt5%E4%B8%AD%E7%9A%84QMessageBox%E7%9A%84Yes%E5%92%8CNo%E6%8C%89%E9%92%AE%E8%BD%AC%E6%8D%A2%E6%88%90%E4%B8%AD%E6%96%87%EF%BC%8C%E5%B9%B6%E8%BF%9B%E8%A1%8C%E9%80%BB%E8%BE%91%E5%88%A4%E6%96%AD/</url>
     <content><![CDATA[<p>Hello PyQt5!</p>
@@ -713,6 +809,109 @@
       </categories>
       <tags>
         <tag>pyqt5</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PyQt5安装及Qt designer ，PyUIC工具的配置</title>
+    <url>/2020/07/23/PyQt5%E5%AE%89%E8%A3%85%E5%8F%8AQt-designer-%EF%BC%8CPyUIC%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<h2 id="PyQt5安装"><a href="#PyQt5安装" class="headerlink" title="PyQt5安装"></a><strong><em>PyQt5安装</em></strong></h2><p>==PyQt5==主要是用在==Python GUI界面开发==,可以不用纯代码编写界面(偷懒方便或技术不行),这时可以利用PyQt5来完成Python图形界面的开发。下面我们来谈谈在PyCharm下的PyQt5安装过程（Windows环境下）：</p>
+<h3 id="1-安装-sip"><a href="#1-安装-sip" class="headerlink" title="1.安装 sip"></a><strong><em>1.安装 sip</em></strong></h3><p>sip属于python依赖库（直接使用命令安装），是RiverBank（也就是PyQt的开发商）开发的用于PyQt的Python/C++混合编程解决方案。它包括一个sip工具、SDK以及Python Module。在windows的命令行窗口输入如下命令安装：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install sip</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-PyQt5"><a href="#2-PyQt5" class="headerlink" title="2.PyQt5"></a><strong><em>2.PyQt5</em></strong></h3><h4 id="2-1-安装-PyQt5"><a href="#2-1-安装-PyQt5" class="headerlink" title="2.1 安装 PyQt5"></a><strong><em>2.1 安装 PyQt5</em></strong></h4><p>PyQt5是python的一个插件库,通过这个库我们可以连接Qt和Python来进行GUI编程。<br>==注意==：安装的版本问题PyQt5只有针对==Python3.x==的安装包而没有针对python2的安装版本。在windows的命令行窗口输入如下命令安装：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Pip  install –user   d:\ PyQt5<span class="number">-5.10</span><span class="number">-5.10</span><span class="number">.0</span>-cp35.cp36.cp37-none-win_amd64.whl</span><br></pre></td></tr></table></figure>
+<p>或者：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5</span><br></pre></td></tr></table></figure>
+<h4 id="2-2-安装-PyQt5-tools"><a href="#2-2-安装-PyQt5-tools" class="headerlink" title="2.2 安装 PyQt5-tools"></a><strong><em>2.2 安装 PyQt5-tools</em></strong></h4><p>在windows的命令行窗口输入如下命令安装：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
+<p>安装完成后，我们可以在Python或者 Anaconda安装目录下看到 相应的文件。</p>
+<h3 id="3-PyCharm中的配置"><a href="#3-PyCharm中的配置" class="headerlink" title="3.PyCharm中的配置"></a><strong><em>3.PyCharm中的配置</em></strong></h3><p>==目的==：在PyCharm里面实现打开Qt designer，然后生成Qt文件，并通过PyUIC将qt文件转换成python语言的软件文件直接使用，实现代码分离。<br>配置过程如下图所示：<br>点击File—&gt;Tools—&gt;External Tools后，点击==绿色的+==，添加Tools 完成如下配置：<br><img src="https://img-blog.csdnimg.cn/20200223200530869.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="配置"><br>进行Qt designer的配置：<br>|Name  |Qt designer  |<br>|–|–|<br>|Program  | 指向安装PyQt5-tools文件夹里面的designer.exe  |<br>|Work directory  | <code>$FileDir$</code>  |<br><img src="https://img-blog.csdnimg.cn/20200223195734350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="PyQt5配置"><br>然后新建“PyUIC”，配置如下图所示：<br>| Name |PyUIC  |<br>|–|–|<br>| Program | 指向文件里面的python.exe |<br>| Arguments | <code>-m PyQt5.uic.pyuic  $FileName$ -o $FileNameWithoutExtension$.py</code>（固定代码） |<br>| Work directory| <code>$FileDir$</code> |<br><img src="https://img-blog.csdnimg.cn/20200223200302621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="PyUIC配置"><br>配置完成如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223201559960.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="配置完成"></p>
+<h3 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a><strong><em>4.测试</em></strong></h3><p>通过Extrernal Tools打开Qt designer如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223202716801.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="界面"><br>在界面中绘制如下图形测试：<br><img src="https://img-blog.csdnimg.cn/20200223202826526.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="绘制界面"><br>在左侧工程栏中会出现cjw.ui文件（前提是保存在当前工程下），之后鼠标右键点击选中Extrernal Tools中的PyUIC则会左侧工程栏自动生成一个cjw.py文件如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223203732485.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="测试代码"><br>测试的界面代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Form implementation generated from reading ui file 'cjw.ui'</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Created by: PyQt5 UI code generator 5.13.0</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># WARNING! All changes made in this file will be lost!</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtCore, QtGui, QtWidgets</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Ui_MainWindow1</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setupUi</span><span class="params">(self, MainWindow)</span>:</span></span><br><span class="line">        MainWindow.setObjectName(<span class="string">"MainWindow"</span>)</span><br><span class="line">        MainWindow.resize(<span class="number">1179</span>, <span class="number">912</span>)</span><br><span class="line">        self.centralwidget = QtWidgets.QWidget(MainWindow)</span><br><span class="line">        self.centralwidget.setObjectName(<span class="string">"centralwidget"</span>)</span><br><span class="line">        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)</span><br><span class="line">        self.textBrowser.setGeometry(QtCore.QRect(<span class="number">490</span>, <span class="number">170</span>, <span class="number">111</span>, <span class="number">51</span>))</span><br><span class="line">        self.textBrowser.setObjectName(<span class="string">"textBrowser"</span>)</span><br><span class="line">        MainWindow.setCentralWidget(self.centralwidget)</span><br><span class="line">        self.statusbar = QtWidgets.QStatusBar(MainWindow)</span><br><span class="line">        self.statusbar.setObjectName(<span class="string">"statusbar"</span>)</span><br><span class="line">        MainWindow.setStatusBar(self.statusbar)</span><br><span class="line"></span><br><span class="line">        self.retranslateUi(MainWindow)</span><br><span class="line">        QtCore.QMetaObject.connectSlotsByName(MainWindow)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">retranslateUi</span><span class="params">(self, MainWindow)</span>:</span></span><br><span class="line">        _translate = QtCore.QCoreApplication.translate</span><br><span class="line">        MainWindow.setWindowTitle(_translate(<span class="string">"MainWindow"</span>, <span class="string">"MainWindow"</span>))</span><br><span class="line">        self.textBrowser.setHtml(_translate(<span class="string">"MainWindow"</span>, <span class="string">"&lt;!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\"&gt;\n"</span></span><br><span class="line"><span class="string">"&lt;html&gt;&lt;head&gt;&lt;meta name=\"qrichtext\" content=\"1\" /&gt;&lt;style type=\"text/css\"&gt;\n"</span></span><br><span class="line"><span class="string">"p, li &#123; white-space: pre-wrap; &#125;\n"</span></span><br><span class="line"><span class="string">"&lt;/style&gt;&lt;/head&gt;&lt;body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\"&gt;\n"</span></span><br><span class="line"><span class="string">"&lt;p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"&gt;&lt;span style=\" font-size:26pt; font-weight:600; font-style:italic;\"&gt;PyQt5&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"</span>))</span><br></pre></td></tr></table></figure>
+
+<p>新建一个测试运行代码文件如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 测试PyQt5运行 CJW</span></span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QMainWindow</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> cjw <span class="keyword">import</span> Ui_MainWindow1</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    MainWindow = QMainWindow()</span><br><span class="line">    ui = Ui_MainWindow1()</span><br><span class="line">    ui.setupUi(MainWindow)</span><br><span class="line">    MainWindow.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+
+<p>配置好路径后点击运行上述文件，结果如下：<br><img src="https://img-blog.csdnimg.cn/20200223210107817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="测试结果"><br>Pyqt5安装成功！！！<br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>PyQt5</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>GUI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PyQt5开发第二界面或弹出界面（子窗口）</title>
+    <url>/2020/07/23/PyQt5%E5%BC%80%E5%8F%91%E7%AC%AC%E4%BA%8C%E7%95%8C%E9%9D%A2%E6%88%96%E5%BC%B9%E5%87%BA%E7%95%8C%E9%9D%A2%EF%BC%88%E5%AD%90%E7%AA%97%E5%8F%A3%EF%BC%89/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
+<li>Python 3.x </li>
+<li>pyqt5 </li>
+<li>Qt designer </li>
+<li>PyUIC</li>
+<li>各种轮子</li>
+</ul>
+<hr>
+<h1 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h1><p>通过==点击父窗口（主界面）的按钮打开子窗口（二界面）==，为防止操作失误或程序自身问题造成的闪退，最好自己开发时加上异常处理机制。</p>
+<hr>
+<h1 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h1><ol>
+<li>首先设计二界面（子窗口）后生成.py文件，将设计好的二界面（子窗口）引入主界面当中<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 二界面</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SecondCode</span><span class="params">(QMainWindow, SecondUi.Ui_MainWindow)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        QMainWindow.__init__(self)</span><br><span class="line">        SecondUi.Ui_MainWindow.__init__(self)</span><br><span class="line">        self.setupUi(self)</span><br><span class="line">        self.setWindowTitle(<span class="string">'二界面'</span>)</span><br><span class="line">        self.setWindowIcon(QIcon(<span class="string">'icon.png'</span>))  <span class="comment"># 设置窗体标题图标</span></span><br><span class="line">        ...</span><br><span class="line">        ...</span><br></pre></td></tr></table></figure></li>
+<li>通过主界面按钮打开二界面（当然前提必须先在主界面中设计好这个触发按钮）：</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.button_opensecond.clicked.connect(button_opensecond_clicked)  <span class="comment"># 打开二界面按钮方法连接</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># # 打开 second 界面</span></span><br><span class="line">    windowList = []  <span class="comment"># 窗口扩展数组</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">button_opensecond_clicked</span><span class="params">(self)</span>：</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line">        the_window = SecondCode()</span><br><span class="line">        self.windowList.append(the_window)  <span class="comment"># 不可删</span></span><br><span class="line">        the_window.show()</span><br><span class="line">        <span class="comment"># ...</span></span><br><span class="line">        <span class="comment"># 二界面的属性和方法</span></span><br><span class="line">        <span class="comment"># ...</span></span><br></pre></td></tr></table></figure>
+<p><strong>优点</strong>：可以在这个基础上扩展出多个弹出界面</p>
+<p>3.点击按钮就可以从父窗口打开子窗口</p>
+<hr>
+<h1 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h1><p>点击主界面按钮后，二界面弹出，主界面此时依然在。</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>PyQt5</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>GUI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PyQt5界面控件自适应大小</title>
+    <url>/2020/08/03/PyQt5%E7%95%8C%E9%9D%A2%E6%8E%A7%E4%BB%B6%E8%87%AA%E9%80%82%E5%BA%94%E5%A4%A7%E5%B0%8F/</url>
+    <content><![CDATA[<p>Hello PyQt5!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h1 id="PyQt5"><a href="#PyQt5" class="headerlink" title="PyQt5"></a>PyQt5</h1><h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
+<li>PyCharm 2019.2</li>
+<li>Qt Desinger</li>
+<li>PyUIC<h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2>界面控件自适应大小，点击窗口放大后，界面控件大小随之发生变化。<h3 id="实例1"><a href="#实例1" class="headerlink" title="实例1"></a>实例1</h3><img src="https://img-blog.csdnimg.cn/20200801101313394.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击窗口放大后：<br><img src="https://img-blog.csdnimg.cn/20200801101325875.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+</ul>
+<hr>
+<h3 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a>实例2</h3><p><img src="https://img-blog.csdnimg.cn/20200801103736356.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击窗口放大后：<br><img src="https://img-blog.csdnimg.cn/2020080110374488.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h2><ol>
+<li>首先需要利用Qt Desinger设计大致的控件布局；</li>
+<li>点击窗口layout选择栅格布局（局部和全局自适应均适用，局部自适应最好把控件放到一个frame中，之后进行布局）；</li>
+<li>点击minnumsize和maxnumsize调整控件大小，有时候需要利用一些填充的lable等控件来保证放到后布局合理；</li>
+<li>通过预览Ctrl+R查看布局情况。</li>
+</ol>
+<p>所有操作均在==Qt Desinger==中进行。</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>PyQt5</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
         <tag>python</tag>
       </tags>
   </entry>
@@ -844,205 +1043,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PyQt5基本控件之菜单栏QMenuBar</title>
-    <url>/2020/07/30/PyQt5%E5%9F%BA%E6%9C%AC%E6%8E%A7%E4%BB%B6%E4%B9%8B%E8%8F%9C%E5%8D%95%E6%A0%8FQMenuBar/</url>
-    <content><![CDATA[<p>Hello PyQt5!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<h1 id="QMenuBar"><a href="#QMenuBar" class="headerlink" title="QMenuBar"></a>QMenuBar</h1><h2 id="基本方法"><a href="#基本方法" class="headerlink" title="基本方法"></a>基本方法</h2><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>menuBar()</td>
-<td>返回主窗口的QMenuBar对象</td>
-</tr>
-<tr>
-<td>addMenu()</td>
-<td>在菜单栏中添加一个新的QMenu对象</td>
-</tr>
-<tr>
-<td>addAction()</td>
-<td>向QMenu小控件中添加一个操作按钮，其中包含文本或图标</td>
-</tr>
-<tr>
-<td>setEnabled()</td>
-<td>将操作按钮设置为启用/禁用</td>
-</tr>
-<tr>
-<td>addSeperator()</td>
-<td>在菜单中添加一条分割线</td>
-</tr>
-<tr>
-<td>clear()</td>
-<td>删除菜单栏的内容</td>
-</tr>
-<tr>
-<td>setShortcut()</td>
-<td>将快捷键关联到操作按钮</td>
-</tr>
-<tr>
-<td>setText()</td>
-<td>设置菜单项的文本</td>
-</tr>
-<tr>
-<td>setTitle()</td>
-<td>设置QMenu小控件的标题</td>
-</tr>
-<tr>
-<td>text()</td>
-<td>返回与QACtion对象关联的文本</td>
-</tr>
-<tr>
-<td>title()</td>
-<td>返回QMenu小控件的标题</td>
-</tr>
-<tr>
-<td>—–</td>
-<td></td>
-</tr>
-<tr>
-<td>## 应用实例</td>
-<td></td>
-</tr>
-<tr>
-<td>利用菜单栏实现添加子菜单及点击后响应：</td>
-<td></td>
-</tr>
-<tr>
-<td><img src="https://img-blog.csdnimg.cn/20200730141529456.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></td>
-<td></td>
-</tr>
-<tr>
-<td>顶层窗口必须是QMainWindow对象，才可以引用QMenuBar对象。</td>
-<td></td>
-</tr>
-<tr>
-<td><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># # 菜单栏调度----------------------------------------------------------------------------------------------------</span></span><br><span class="line">        openFileaction = QAction(<span class="string">'&amp;子菜单1'</span>, self)  <span class="comment"># 在文件主菜单1下增加子菜单1</span></span><br><span class="line">        openFileaction.triggered.connect(self.menu_openFile_clicked)  <span class="comment"># 点击后打开新界面</span></span><br><span class="line">        openFileaction.setShortcut(<span class="string">'Ctrl+A'</span>)  <span class="comment"># 子菜单1界面设置打开快捷键</span></span><br><span class="line">        .....</span><br><span class="line">        openHelpWordaction = QAction(<span class="string">'&amp;子菜单2'</span>, self)</span><br><span class="line">        openHelpWordaction.triggered.connect(self.menu_openHelpWordaction_clicked)   <span class="comment"># 在文件主菜单1下增加子菜单2</span></span><br><span class="line">        openHelpWordaction.setShortcut(<span class="string">'Ctrl+B'</span>)  <span class="comment"># 子菜单2界面设置打开快捷键</span></span><br><span class="line">        </span><br><span class="line">        menubar = self.menuBar()  <span class="comment"># 声明菜单栏</span></span><br><span class="line">        </span><br><span class="line">        fileMenu_File = menubar.addMenu(<span class="string">'&amp;主菜单1'</span>)  <span class="comment"># 菜单栏增加文件主菜单1</span></span><br><span class="line">        fileMenu_File.addAction(openFileaction)  <span class="comment"># 增加打开事件1</span></span><br><span class="line">        fileMenu_File.addAction(openHelpWordaction)  <span class="comment"># 增加打开事件2</span></span><br><span class="line">        ......</span><br><span class="line">        fileMenu_Help = menubar.addMenu(<span class="string">'&amp;主菜单2'</span>)  <span class="comment"># 菜单栏增加文件主菜单2</span></span><br><span class="line">        fileMenu_Help.addAction(openxxxxxaction) <span class="comment"># 增加打开事件</span></span><br><span class="line"><span class="comment"># # 菜单栏调度----------------------------------------------------------------------------------------------------</span></span><br></pre></td></tr></table></figure></td>
-<td></td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MenuDemo</span><span class="params">(QMainWindow)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, parent=None)</span>:</span></span><br><span class="line">        super(MenuDemo, self).__init__(parent)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 水平布局</span></span><br><span class="line">        layout = QHBoxLayout()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># # 菜单栏调度----------------------------------------------------------------------------------------------------</span></span><br><span class="line">        openFileaction = QAction(<span class="string">'&amp;子菜单1'</span>, self)  <span class="comment"># 在文件主菜单1下增加子菜单1</span></span><br><span class="line">        openFileaction.triggered.connect(self.menu_openFile_clicked)  <span class="comment"># 点击后打开新界面</span></span><br><span class="line">        openFileaction.setShortcut(<span class="string">'Ctrl+A'</span>)  <span class="comment"># 子菜单1界面设置打开快捷键</span></span><br><span class="line"></span><br><span class="line">        openHelpWordaction = QAction(<span class="string">'&amp;子菜单2'</span>, self)</span><br><span class="line">        openHelpWordaction.triggered.connect(self.menu_openHelpWordaction_clicked)  <span class="comment"># 在文件主菜单1下增加子菜单2</span></span><br><span class="line">        openHelpWordaction.setShortcut(<span class="string">'Ctrl+B'</span>)  <span class="comment"># 子菜单2界面设置打开快捷键</span></span><br><span class="line"></span><br><span class="line">        menubar = self.menuBar()  <span class="comment"># 声明菜单栏</span></span><br><span class="line"></span><br><span class="line">        fileMenu_File = menubar.addMenu(<span class="string">'&amp;主菜单1'</span>)  <span class="comment"># 菜单栏增加文件主菜单1</span></span><br><span class="line">        fileMenu_File.addAction(openFileaction)  <span class="comment"># 增加打开事件1</span></span><br><span class="line">        fileMenu_File.addAction(openHelpWordaction)  <span class="comment"># 增加打开事件2</span></span><br><span class="line"></span><br><span class="line">        fileMenu_Help = menubar.addMenu(<span class="string">'&amp;主菜单2'</span>)  <span class="comment"># 菜单栏增加文件主菜单2</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># # 菜单栏调度----------------------------------------------------------------------------------------------------</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">menu_openFile_clicked</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="number">123</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">menu_openHelpWordaction_clicked</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="number">456</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    demo = MenuDemo()</span><br><span class="line">    demo.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>PyQt5</category>
-      </categories>
-      <tags>
-        <tag>pyqt5</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyQt5安装及Qt designer ，PyUIC工具的配置</title>
-    <url>/2020/07/23/PyQt5%E5%AE%89%E8%A3%85%E5%8F%8AQt-designer-%EF%BC%8CPyUIC%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-<h2 id="PyQt5安装"><a href="#PyQt5安装" class="headerlink" title="PyQt5安装"></a><strong><em>PyQt5安装</em></strong></h2><p>==PyQt5==主要是用在==Python GUI界面开发==,可以不用纯代码编写界面(偷懒方便或技术不行),这时可以利用PyQt5来完成Python图形界面的开发。下面我们来谈谈在PyCharm下的PyQt5安装过程（Windows环境下）：</p>
-<h3 id="1-安装-sip"><a href="#1-安装-sip" class="headerlink" title="1.安装 sip"></a><strong><em>1.安装 sip</em></strong></h3><p>sip属于python依赖库（直接使用命令安装），是RiverBank（也就是PyQt的开发商）开发的用于PyQt的Python/C++混合编程解决方案。它包括一个sip工具、SDK以及Python Module。在windows的命令行窗口输入如下命令安装：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install sip</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-PyQt5"><a href="#2-PyQt5" class="headerlink" title="2.PyQt5"></a><strong><em>2.PyQt5</em></strong></h3><h4 id="2-1-安装-PyQt5"><a href="#2-1-安装-PyQt5" class="headerlink" title="2.1 安装 PyQt5"></a><strong><em>2.1 安装 PyQt5</em></strong></h4><p>PyQt5是python的一个插件库,通过这个库我们可以连接Qt和Python来进行GUI编程。<br>==注意==：安装的版本问题PyQt5只有针对==Python3.x==的安装包而没有针对python2的安装版本。在windows的命令行窗口输入如下命令安装：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Pip  install –user   d:\ PyQt5<span class="number">-5.10</span><span class="number">-5.10</span><span class="number">.0</span>-cp35.cp36.cp37-none-win_amd64.whl</span><br></pre></td></tr></table></figure>
-<p>或者：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5</span><br></pre></td></tr></table></figure>
-<h4 id="2-2-安装-PyQt5-tools"><a href="#2-2-安装-PyQt5-tools" class="headerlink" title="2.2 安装 PyQt5-tools"></a><strong><em>2.2 安装 PyQt5-tools</em></strong></h4><p>在windows的命令行窗口输入如下命令安装：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
-<p>安装完成后，我们可以在Python或者 Anaconda安装目录下看到 相应的文件。</p>
-<h3 id="3-PyCharm中的配置"><a href="#3-PyCharm中的配置" class="headerlink" title="3.PyCharm中的配置"></a><strong><em>3.PyCharm中的配置</em></strong></h3><p>==目的==：在PyCharm里面实现打开Qt designer，然后生成Qt文件，并通过PyUIC将qt文件转换成python语言的软件文件直接使用，实现代码分离。<br>配置过程如下图所示：<br>点击File—&gt;Tools—&gt;External Tools后，点击==绿色的+==，添加Tools 完成如下配置：<br><img src="https://img-blog.csdnimg.cn/20200223200530869.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="配置"><br>进行Qt designer的配置：<br>|Name  |Qt designer  |<br>|–|–|<br>|Program  | 指向安装PyQt5-tools文件夹里面的designer.exe  |<br>|Work directory  | <code>$FileDir$</code>  |<br><img src="https://img-blog.csdnimg.cn/20200223195734350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="PyQt5配置"><br>然后新建“PyUIC”，配置如下图所示：<br>| Name |PyUIC  |<br>|–|–|<br>| Program | 指向文件里面的python.exe |<br>| Arguments | <code>-m PyQt5.uic.pyuic  $FileName$ -o $FileNameWithoutExtension$.py</code>（固定代码） |<br>| Work directory| <code>$FileDir$</code> |<br><img src="https://img-blog.csdnimg.cn/20200223200302621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="PyUIC配置"><br>配置完成如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223201559960.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="配置完成"></p>
-<h3 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a><strong><em>4.测试</em></strong></h3><p>通过Extrernal Tools打开Qt designer如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223202716801.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="界面"><br>在界面中绘制如下图形测试：<br><img src="https://img-blog.csdnimg.cn/20200223202826526.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="绘制界面"><br>在左侧工程栏中会出现cjw.ui文件（前提是保存在当前工程下），之后鼠标右键点击选中Extrernal Tools中的PyUIC则会左侧工程栏自动生成一个cjw.py文件如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200223203732485.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="测试代码"><br>测试的界面代码如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Form implementation generated from reading ui file 'cjw.ui'</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Created by: PyQt5 UI code generator 5.13.0</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># WARNING! All changes made in this file will be lost!</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtCore, QtGui, QtWidgets</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Ui_MainWindow1</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setupUi</span><span class="params">(self, MainWindow)</span>:</span></span><br><span class="line">        MainWindow.setObjectName(<span class="string">"MainWindow"</span>)</span><br><span class="line">        MainWindow.resize(<span class="number">1179</span>, <span class="number">912</span>)</span><br><span class="line">        self.centralwidget = QtWidgets.QWidget(MainWindow)</span><br><span class="line">        self.centralwidget.setObjectName(<span class="string">"centralwidget"</span>)</span><br><span class="line">        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)</span><br><span class="line">        self.textBrowser.setGeometry(QtCore.QRect(<span class="number">490</span>, <span class="number">170</span>, <span class="number">111</span>, <span class="number">51</span>))</span><br><span class="line">        self.textBrowser.setObjectName(<span class="string">"textBrowser"</span>)</span><br><span class="line">        MainWindow.setCentralWidget(self.centralwidget)</span><br><span class="line">        self.statusbar = QtWidgets.QStatusBar(MainWindow)</span><br><span class="line">        self.statusbar.setObjectName(<span class="string">"statusbar"</span>)</span><br><span class="line">        MainWindow.setStatusBar(self.statusbar)</span><br><span class="line"></span><br><span class="line">        self.retranslateUi(MainWindow)</span><br><span class="line">        QtCore.QMetaObject.connectSlotsByName(MainWindow)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">retranslateUi</span><span class="params">(self, MainWindow)</span>:</span></span><br><span class="line">        _translate = QtCore.QCoreApplication.translate</span><br><span class="line">        MainWindow.setWindowTitle(_translate(<span class="string">"MainWindow"</span>, <span class="string">"MainWindow"</span>))</span><br><span class="line">        self.textBrowser.setHtml(_translate(<span class="string">"MainWindow"</span>, <span class="string">"&lt;!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\"&gt;\n"</span></span><br><span class="line"><span class="string">"&lt;html&gt;&lt;head&gt;&lt;meta name=\"qrichtext\" content=\"1\" /&gt;&lt;style type=\"text/css\"&gt;\n"</span></span><br><span class="line"><span class="string">"p, li &#123; white-space: pre-wrap; &#125;\n"</span></span><br><span class="line"><span class="string">"&lt;/style&gt;&lt;/head&gt;&lt;body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\"&gt;\n"</span></span><br><span class="line"><span class="string">"&lt;p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"&gt;&lt;span style=\" font-size:26pt; font-weight:600; font-style:italic;\"&gt;PyQt5&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"</span>))</span><br></pre></td></tr></table></figure>
-
-<p>新建一个测试运行代码文件如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 测试PyQt5运行 CJW</span></span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QMainWindow</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> cjw <span class="keyword">import</span> Ui_MainWindow1</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    MainWindow = QMainWindow()</span><br><span class="line">    ui = Ui_MainWindow1()</span><br><span class="line">    ui.setupUi(MainWindow)</span><br><span class="line">    MainWindow.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
-
-<p>配置好路径后点击运行上述文件，结果如下：<br><img src="https://img-blog.csdnimg.cn/20200223210107817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="测试结果"><br>Pyqt5安装成功！！！<br><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>PyQt5</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>GUI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyQt5开发第二界面或弹出界面（子窗口）</title>
-    <url>/2020/07/23/PyQt5%E5%BC%80%E5%8F%91%E7%AC%AC%E4%BA%8C%E7%95%8C%E9%9D%A2%E6%88%96%E5%BC%B9%E5%87%BA%E7%95%8C%E9%9D%A2%EF%BC%88%E5%AD%90%E7%AA%97%E5%8F%A3%EF%BC%89/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
-<li>Python 3.x </li>
-<li>pyqt5 </li>
-<li>Qt designer </li>
-<li>PyUIC</li>
-<li>各种轮子</li>
-</ul>
-<hr>
-<h1 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h1><p>通过==点击父窗口（主界面）的按钮打开子窗口（二界面）==，为防止操作失误或程序自身问题造成的闪退，最好自己开发时加上异常处理机制。</p>
-<hr>
-<h1 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h1><ol>
-<li>首先设计二界面（子窗口）后生成.py文件，将设计好的二界面（子窗口）引入主界面当中<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 二界面</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SecondCode</span><span class="params">(QMainWindow, SecondUi.Ui_MainWindow)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        QMainWindow.__init__(self)</span><br><span class="line">        SecondUi.Ui_MainWindow.__init__(self)</span><br><span class="line">        self.setupUi(self)</span><br><span class="line">        self.setWindowTitle(<span class="string">'二界面'</span>)</span><br><span class="line">        self.setWindowIcon(QIcon(<span class="string">'icon.png'</span>))  <span class="comment"># 设置窗体标题图标</span></span><br><span class="line">        ...</span><br><span class="line">        ...</span><br></pre></td></tr></table></figure></li>
-<li>通过主界面按钮打开二界面（当然前提必须先在主界面中设计好这个触发按钮）：</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.button_opensecond.clicked.connect(button_opensecond_clicked)  <span class="comment"># 打开二界面按钮方法连接</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># # 打开 second 界面</span></span><br><span class="line">    windowList = []  <span class="comment"># 窗口扩展数组</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">button_opensecond_clicked</span><span class="params">(self)</span>：</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line">        the_window = SecondCode()</span><br><span class="line">        self.windowList.append(the_window)  <span class="comment"># 不可删</span></span><br><span class="line">        the_window.show()</span><br><span class="line">        <span class="comment"># ...</span></span><br><span class="line">        <span class="comment"># 二界面的属性和方法</span></span><br><span class="line">        <span class="comment"># ...</span></span><br></pre></td></tr></table></figure>
-<p><strong>优点</strong>：可以在这个基础上扩展出多个弹出界面</p>
-<p>3.点击按钮就可以从父窗口打开子窗口</p>
-<hr>
-<h1 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h1><p>点击主界面按钮后，二界面弹出，主界面此时依然在。</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>PyQt5</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>GUI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyQt5界面控件自适应大小</title>
-    <url>/2020/08/03/PyQt5%E7%95%8C%E9%9D%A2%E6%8E%A7%E4%BB%B6%E8%87%AA%E9%80%82%E5%BA%94%E5%A4%A7%E5%B0%8F/</url>
-    <content><![CDATA[<p>Hello PyQt5!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<h1 id="PyQt5"><a href="#PyQt5" class="headerlink" title="PyQt5"></a>PyQt5</h1><h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
-<li>PyCharm 2019.2</li>
-<li>Qt Desinger</li>
-<li>PyUIC<h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2>界面控件自适应大小，点击窗口放大后，界面控件大小随之发生变化。<h3 id="实例1"><a href="#实例1" class="headerlink" title="实例1"></a>实例1</h3><img src="https://img-blog.csdnimg.cn/20200801101313394.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击窗口放大后：<br><img src="https://img-blog.csdnimg.cn/20200801101325875.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-</ul>
-<hr>
-<h3 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a>实例2</h3><p><img src="https://img-blog.csdnimg.cn/20200801103736356.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击窗口放大后：<br><img src="https://img-blog.csdnimg.cn/2020080110374488.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h2 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h2><ol>
-<li>首先需要利用Qt Desinger设计大致的控件布局；</li>
-<li>点击窗口layout选择栅格布局（局部和全局自适应均适用，局部自适应最好把控件放到一个frame中，之后进行布局）；</li>
-<li>点击minnumsize和maxnumsize调整控件大小，有时候需要利用一些填充的lable等控件来保证放到后布局合理；</li>
-<li>通过预览Ctrl+R查看布局情况。</li>
-</ol>
-<p>所有操作均在==Qt Desinger==中进行。</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>PyQt5</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PyQt5界面设计问题</title>
     <url>/2020/07/23/PyQt5%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
@@ -1063,40 +1063,6 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1、方法setWindowFlags,选择哪些按钮生效，每个窗体应该都有</span></span><br><span class="line"><span class="comment"># 2、通过 | 来同时显现多个按钮</span></span><br><span class="line">Form.setWindowFlags(QtCore.Qt.WindowCloseButtonHint|QtCore.Qt.WindowMinimizeButtonHint)</span><br></pre></td></tr></table></figure>
 
 <p>未完待续…….</p>
-]]></content>
-      <categories>
-        <category>PyQt5</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>GUI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyQt5窗口退出X函数事件个性化设置</title>
-    <url>/2020/07/23/PyQt5%E7%AA%97%E5%8F%A3%E9%80%80%E5%87%BAX%E5%87%BD%E6%95%B0%E4%BA%8B%E4%BB%B6%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<h1 id="窗口退出X函数事件个性化"><a href="#窗口退出X函数事件个性化" class="headerlink" title="窗口退出X函数事件个性化"></a>窗口退出X函数事件个性化</h1><h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
-<li>Python 3.x </li>
-<li>Pyqt5 </li>
-<li>Qt designer </li>
-<li>PyUIC</li>
-</ul>
-<hr>
-<h2 id="实现方式："><a href="#实现方式：" class="headerlink" title="实现方式："></a>实现方式：</h2><p>通过<strong>重写Qwidget类中的closeEvent方法</strong>，实现功能效果<br><img src="https://img-blog.csdnimg.cn/20200605180742854.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
-<h2 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h2><ol>
-<li>首先设计好界面</li>
-<li>重写方法closeEvent<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># # 退出系统窗口 X 绑定函数事件</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">closeEvent</span><span class="params">(self, e)</span>:</span></span><br><span class="line">        self.box = QMessageBox(QMessageBox.Warning, <span class="string">"系统提示信息"</span>, <span class="string">"是否退出系统？"</span>)</span><br><span class="line">        qyes = self.box.addButton(self.tr(<span class="string">"是"</span>), QMessageBox.YesRole)</span><br><span class="line">        qno = self.box.addButton(self.tr(<span class="string">"否"</span>), QMessageBox.NoRole)</span><br><span class="line">        self.box.exec_()</span><br><span class="line">        <span class="keyword">if</span> self.box.clickedButton() == qyes:</span><br><span class="line">            e.accept()</span><br><span class="line">            QtWidgets.QWidget.closeEvent(self, e)</span><br><span class="line">            sys.exit().accept()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            e.ignore()</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<hr>
-<h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2><p>点击窗口X后弹出提示信息，通过点击按钮选择退出与否<br><img src="https://img-blog.csdnimg.cn/20200605181139620.png" alt="在这里插入图片描述"><br>除此之外也可以在窗口中设置退出按钮来退出窗口，具体可参考链接: <a href="https://blog.csdn.net/cjw12581/article/details/106576051" target="_blank" rel="noopener">PyQt5通过绑定按钮事件实现点击后退出（含提示框）</a>.</p>
-<hr>
-<p><strong><em>END</em></strong></p>
 ]]></content>
       <categories>
         <category>PyQt5</category>
@@ -1318,6 +1284,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Python可运行文件加密方法</title>
+    <url>/2020/07/23/Python%E5%8F%AF%E8%BF%90%E8%A1%8C%E6%96%87%E4%BB%B6%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+
+<h2 id="软件加密"><a href="#软件加密" class="headerlink" title="软件加密"></a><strong><em>软件加密</em></strong></h2><p>==软件：==<br>1.EXE ResPacker<br> 2.做好的可运行文件或安装包<br>加密方法：<br><strong>【步骤】</strong><br>1、指定要打包的软件源目录；<br>1、指定EXE主程序；<br>2、指定加密后文件输出目录。<br>3、设置加密密钥；<br>4、开始打包;<br>==备注==：不一定能保证软件绝对安全！！！<br>打包生成一个可以独立运行的exe文件，您可以将此打包后的文件分发给用户。界面如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200221203824738.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="软件界面"><br>用户打开您打包的文件时会弹出一个认证框，要求用户输入开启密码才可以打开如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200221204019934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="认证框"><br>，此认证框中显示有用户的机器码，用户将他的机器码发给你，你根据用户机器码为他创建开启密码，如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200221203711506.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="创建密码"><br>【创建开启密码】<br>1、指定加密时使用的加密密钥;<br>2、指定用户的机器码;<br>3、创建开启密码；<br>开启密码发给用户，用户只能在自己的电脑上运行你的软件。比如：<br><img src="https://img-blog.csdnimg.cn/2020022120425370.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="开始安装"><br><strong><em>END</em></strong></p>
+]]></content>
+      <tags>
+        <tag>工具</tag>
+        <tag>文件加密</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PyQt5通过绑定按钮事件实现点击后退出（含提示框）</title>
     <url>/2020/07/23/PyQt5%E9%80%9A%E8%BF%87%E7%BB%91%E5%AE%9A%E6%8C%89%E9%92%AE%E4%BA%8B%E4%BB%B6%E5%AE%9E%E7%8E%B0%E7%82%B9%E5%87%BB%E5%90%8E%E9%80%80%E5%87%BA%EF%BC%88%E5%90%AB%E6%8F%90%E7%A4%BA%E6%A1%86%EF%BC%89/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -1353,35 +1332,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python可运行文件加密方法</title>
-    <url>/2020/07/23/Python%E5%8F%AF%E8%BF%90%E8%A1%8C%E6%96%87%E4%BB%B6%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-
-<h2 id="软件加密"><a href="#软件加密" class="headerlink" title="软件加密"></a><strong><em>软件加密</em></strong></h2><p>==软件：==<br>1.EXE ResPacker<br> 2.做好的可运行文件或安装包<br>加密方法：<br><strong>【步骤】</strong><br>1、指定要打包的软件源目录；<br>1、指定EXE主程序；<br>2、指定加密后文件输出目录。<br>3、设置加密密钥；<br>4、开始打包;<br>==备注==：不一定能保证软件绝对安全！！！<br>打包生成一个可以独立运行的exe文件，您可以将此打包后的文件分发给用户。界面如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200221203824738.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="软件界面"><br>用户打开您打包的文件时会弹出一个认证框，要求用户输入开启密码才可以打开如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200221204019934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="认证框"><br>，此认证框中显示有用户的机器码，用户将他的机器码发给你，你根据用户机器码为他创建开启密码，如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200221203711506.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="创建密码"><br>【创建开启密码】<br>1、指定加密时使用的加密密钥;<br>2、指定用户的机器码;<br>3、创建开启密码；<br>开启密码发给用户，用户只能在自己的电脑上运行你的软件。比如：<br><img src="https://img-blog.csdnimg.cn/2020022120425370.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="开始安装"><br><strong><em>END</em></strong></p>
-]]></content>
-      <tags>
-        <tag>工具</tag>
-        <tag>文件加密</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python可运行文件安装包制作</title>
-    <url>/2020/07/23/Python%E5%8F%AF%E8%BF%90%E8%A1%8C%E6%96%87%E4%BB%B6%E5%AE%89%E8%A3%85%E5%8C%85%E5%88%B6%E4%BD%9C/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-<h2 id="安装包制作"><a href="#安装包制作" class="headerlink" title="安装包制作"></a>安装包制作</h2><h3 id="1-制作前准备"><a href="#1-制作前准备" class="headerlink" title="1.制作前准备"></a>1.制作前准备</h3><p>a.软件：Advanced Installer<br>b.已经做好的可执行文件（.EXE）<br>c.其他程序扩展文件</p>
-<h3 id="2-开始制作安装包"><a href="#2-开始制作安装包" class="headerlink" title="2.开始制作安装包"></a>2.开始制作安装包</h3><p>打开软件按如下步骤进行：<br>新建工程<br><img src="https://img-blog.csdnimg.cn/20200220120104369.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="新建工程"><br><img src="https://img-blog.csdnimg.cn/2020022012033966.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120404616.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120430138.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120447640.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120504449.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120523244.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020022012055496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>安装界面样式有很多种：<br><img src="https://img-blog.csdnimg.cn/20200220120622672.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="安装界面样式"><br><img src="https://img-blog.csdnimg.cn/20200220120640301.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120654828.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120729198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120748219.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120801752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120824839.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120847425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120859458.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>安装成功：<br><img src="https://img-blog.csdnimg.cn/20200220120921737.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在制作安装包其他可能需要的步骤是：<br><img src="https://img-blog.csdnimg.cn/202002201910258.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="查看安装细节"><br><img src="https://img-blog.csdnimg.cn/2020022019111584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="设置序列码"><br><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>可运行文件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python多.py文件打包为可运行.exe文件</title>
     <url>/2020/07/23/Python%E5%A4%9A-py%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85%E4%B8%BA%E5%8F%AF%E8%BF%90%E8%A1%8C-exe%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
@@ -1404,6 +1354,56 @@
       </categories>
       <tags>
         <tag>pyinstaller</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PyQt5窗口退出X函数事件个性化设置</title>
+    <url>/2020/07/23/PyQt5%E7%AA%97%E5%8F%A3%E9%80%80%E5%87%BAX%E5%87%BD%E6%95%B0%E4%BA%8B%E4%BB%B6%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h1 id="窗口退出X函数事件个性化"><a href="#窗口退出X函数事件个性化" class="headerlink" title="窗口退出X函数事件个性化"></a>窗口退出X函数事件个性化</h1><h2 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h2><ul>
+<li>Python 3.x </li>
+<li>Pyqt5 </li>
+<li>Qt designer </li>
+<li>PyUIC</li>
+</ul>
+<hr>
+<h2 id="实现方式："><a href="#实现方式：" class="headerlink" title="实现方式："></a>实现方式：</h2><p>通过<strong>重写Qwidget类中的closeEvent方法</strong>，实现功能效果<br><img src="https://img-blog.csdnimg.cn/20200605180742854.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h2><ol>
+<li>首先设计好界面</li>
+<li>重写方法closeEvent<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># # 退出系统窗口 X 绑定函数事件</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">closeEvent</span><span class="params">(self, e)</span>:</span></span><br><span class="line">        self.box = QMessageBox(QMessageBox.Warning, <span class="string">"系统提示信息"</span>, <span class="string">"是否退出系统？"</span>)</span><br><span class="line">        qyes = self.box.addButton(self.tr(<span class="string">"是"</span>), QMessageBox.YesRole)</span><br><span class="line">        qno = self.box.addButton(self.tr(<span class="string">"否"</span>), QMessageBox.NoRole)</span><br><span class="line">        self.box.exec_()</span><br><span class="line">        <span class="keyword">if</span> self.box.clickedButton() == qyes:</span><br><span class="line">            e.accept()</span><br><span class="line">            QtWidgets.QWidget.closeEvent(self, e)</span><br><span class="line">            sys.exit().accept()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            e.ignore()</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<hr>
+<h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2><p>点击窗口X后弹出提示信息，通过点击按钮选择退出与否<br><img src="https://img-blog.csdnimg.cn/20200605181139620.png" alt="在这里插入图片描述"><br>除此之外也可以在窗口中设置退出按钮来退出窗口，具体可参考链接: <a href="https://blog.csdn.net/cjw12581/article/details/106576051" target="_blank" rel="noopener">PyQt5通过绑定按钮事件实现点击后退出（含提示框）</a>.</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>PyQt5</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>GUI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python可运行文件安装包制作</title>
+    <url>/2020/07/23/Python%E5%8F%AF%E8%BF%90%E8%A1%8C%E6%96%87%E4%BB%B6%E5%AE%89%E8%A3%85%E5%8C%85%E5%88%B6%E4%BD%9C/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<a id="more"></a>
+<h2 id="安装包制作"><a href="#安装包制作" class="headerlink" title="安装包制作"></a>安装包制作</h2><h3 id="1-制作前准备"><a href="#1-制作前准备" class="headerlink" title="1.制作前准备"></a>1.制作前准备</h3><p>a.软件：Advanced Installer<br>b.已经做好的可执行文件（.EXE）<br>c.其他程序扩展文件</p>
+<h3 id="2-开始制作安装包"><a href="#2-开始制作安装包" class="headerlink" title="2.开始制作安装包"></a>2.开始制作安装包</h3><p>打开软件按如下步骤进行：<br>新建工程<br><img src="https://img-blog.csdnimg.cn/20200220120104369.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="新建工程"><br><img src="https://img-blog.csdnimg.cn/2020022012033966.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120404616.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120430138.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120447640.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120504449.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120523244.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020022012055496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>安装界面样式有很多种：<br><img src="https://img-blog.csdnimg.cn/20200220120622672.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="安装界面样式"><br><img src="https://img-blog.csdnimg.cn/20200220120640301.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120654828.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120729198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120748219.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120801752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120824839.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120847425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200220120859458.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>安装成功：<br><img src="https://img-blog.csdnimg.cn/20200220120921737.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在制作安装包其他可能需要的步骤是：<br><img src="https://img-blog.csdnimg.cn/202002201910258.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="查看安装细节"><br><img src="https://img-blog.csdnimg.cn/2020022019111584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="设置序列码"><br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>可运行文件</tag>
       </tags>
   </entry>
   <entry>
@@ -1571,6 +1571,121 @@
       </tags>
   </entry>
   <entry>
+    <title>Python编程基础之学前准备</title>
+    <url>/2020/07/30/Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%AD%A6%E5%89%8D%E5%87%86%E5%A4%87/</url>
+    <content><![CDATA[<p>Hello Python!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h2 id="1-认识Python"><a href="#1-认识Python" class="headerlink" title="1.认识Python"></a>1.认识Python</h2><p>Python官方文档：<a href="https://docs.python.org/zh-cn/3/" target="_blank" rel="noopener">https://docs.python.org/zh-cn/3/</a></p>
+<hr>
+<h3 id="1-1-什么是Python"><a href="#1-1-什么是Python" class="headerlink" title="1.1 什么是Python"></a>1.1 什么是Python</h3><p><strong>Python</strong>是一种计算机程序设计语言。是一种==面向对象的动态类型语言==，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越来越多被用于独立的、大型项目的开发。<br>|  |  |<br>|–|–|<br>|起源|1991年发行、基于C语言实现  |<br>| 设计思想 |优雅、明确、简单  |<br>|  |  |</p>
+<h3 id="1-2-Python优点和缺点"><a href="#1-2-Python优点和缺点" class="headerlink" title="1.2 Python优点和缺点"></a>1.2 Python优点和缺点</h3><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Python优点</td>
+<td>简单、易学免费、开源 可扩展性 可嵌入性 跨平台性 丰富的第三方类库</td>
+</tr>
+<tr>
+<td>Python缺点</td>
+<td>运行速度 框架选择太多</td>
+</tr>
+<tr>
+<td>### 1.3 Python的应用领域</td>
+<td></td>
+</tr>
+<tr>
+<td>Web开发 数据分析师 数据挖掘工程师 自动化运维：批量处理大量的运维任务 游戏开发者 自动化测试 机器学习等</td>
+<td></td>
+</tr>
+<tr>
+<td>***</td>
+<td></td>
+</tr>
+<tr>
+<td>## 2.搭建Python开发环境</td>
+<td></td>
+</tr>
+<tr>
+<td>### 2.1 Python实际工作（开发）环境：</td>
+<td></td>
+</tr>
+<tr>
+<td>- Python（程序运行基础(引擎)）</td>
+<td></td>
+</tr>
+<tr>
+<td>- <a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">Python</a>（如Python3.6.x）</td>
+<td></td>
+</tr>
+<tr>
+<td>如果Windows版本是32位的，则单击“Windows x86 executable installer”版本，然后下载。</td>
+<td></td>
+</tr>
+<tr>
+<td>如果Windows版本是64位的，则单击“Windows x86-64 executable installer”版本，然后下载。</td>
+<td></td>
+</tr>
+<tr>
+<td>- 第三方类库（功能拓展）</td>
+<td></td>
+</tr>
+<tr>
+<td>- Numpy</td>
+<td></td>
+</tr>
+<tr>
+<td>- pandas</td>
+<td></td>
+</tr>
+<tr>
+<td>- scikit-learn</td>
+<td></td>
+</tr>
+<tr>
+<td>- ……</td>
+<td></td>
+</tr>
+<tr>
+<td>- <a href="https://www.csdn.net/" target="_blank" rel="noopener">类库安装教程参考</a></td>
+<td></td>
+</tr>
+<tr>
+<td>-  编辑器（提高代码编辑效率）</td>
+<td></td>
+</tr>
+<tr>
+<td>- Pycharm</td>
+<td></td>
+</tr>
+<tr>
+<td>- Spyder</td>
+<td></td>
+</tr>
+<tr>
+<td>- jupyter notebook</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="2-2-搭建Python环境方案"><a href="#2-2-搭建Python环境方案" class="headerlink" title="2.2 搭建Python环境方案"></a>2.2 搭建Python环境方案</h3><p> 方案一：<br> Python + Pycharm / jupyter notebook + 第三方类库<br> 方案二：<br> Anaconda</p>
+<hr>
+<h2 id="3-其它"><a href="#3-其它" class="headerlink" title="3.其它"></a>3.其它</h2><p> 使用IDE工具：jupyter notebook、PyCharm、Spyder<br>1、jupyter notebook：pip install jupyter notebook<br>2、<a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">PyCharm</a> / <a href="http://pedrokroger.net/getting-started-pycharm-python-ide/" target="_blank" rel="noopener">PyCharm学习手册</a>包括：社区版免费，专业版付费<br>PyCharm是由JetBrains打造的一款Python IDE，带有一整套可以帮助Python开发者提高工作效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。它提供一些高级功能，以用于支持Django框架下的专业Web开发。还提供了一些很好的功能用于Django开发，同时支持Google App Engine，并且PyCharm支持IronPython。这些功能在先进代码分析程序的支持下，使PyCharm成为Python专业开发人员和刚起步人员使用的有力工具。<br>3、 <a href="https://store.continuum.io/cshop/anaconda/" target="_blank" rel="noopener">Anaconda</a>：Python科学计算包合集</p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>Python编程基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>PyCharm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python编程小案例练习</title>
     <url>/2020/07/30/Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%B0%8F%E6%A1%88%E4%BE%8B%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[<p>Hello Python!</p>
@@ -1597,25 +1712,6 @@
       <tags>
         <tag>python</tag>
         <tag>PyCharm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python获取时间间隔实现定时任务</title>
-    <url>/2020/07/23/Python%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</url>
-    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<a id="more"></a>
-<h1 id="1-datatime模块"><a href="#1-datatime模块" class="headerlink" title="1. datatime模块"></a>1. datatime模块</h1><p>datetime模块是Python自带对时间的操作，常用的四类分别是date、time、datetime、timedelta.<br>具体可参考: <a href="https://blog.csdn.net/cmzsteven/article/details/64906245" target="_blank" rel="noopener">Python datetime模块详解、示例</a>.</p>
-<hr>
-<h1 id="2-获取时间间隔"><a href="#2-获取时间间隔" class="headerlink" title="2. 获取时间间隔"></a>2. 获取时间间隔</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> datatime</span><br><span class="line"></span><br><span class="line">dt1 = datetime.datetime.now()</span><br><span class="line">dt2 = datetime.datetime(<span class="number">2020</span>, <span class="number">5</span>, <span class="number">5</span>,<span class="number">19</span>,<span class="number">30</span>,<span class="number">6</span>,<span class="number">00000</span>)  <span class="comment"># year, month, day,hour,minate,sec,us</span></span><br><span class="line">span = dt2 - dt1</span><br><span class="line">time_span = round(span.total_seconds(), <span class="number">1</span>) <span class="comment"># 保留一位小数</span></span><br><span class="line">print(<span class="string">'当前时间间隔：'</span>, time_span)</span><br></pre></td></tr></table></figure>
-<p>通过判断时间间隔来控制相关函数实现每隔固定时间执行一次，比如可以以time_span%60==0来作为判断条件等等来控制定时任务的执行，当然也有其他的定时调度函数或者模块比如timer，threading、apscheduler等。<br>这里的定时任务是隔一分钟向数据库插入一条数据，实现效果如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200505201626953.png" alt="数据库插入"></p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>datetime</tag>
       </tags>
   </entry>
   <entry>
@@ -1694,18 +1790,22 @@
       </tags>
   </entry>
   <entry>
-    <title>SpringBoot的启动图案修改</title>
-    <url>/2020/07/22/SpringBoot%E7%9A%84%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A1%88%E4%BF%AE%E6%94%B9/</url>
-    <content><![CDATA[<p>Hello World!</p>
+    <title>Python获取时间间隔实现定时任务</title>
+    <url>/2020/07/23/Python%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</url>
+    <content><![CDATA[<p>Hello World!<br><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
 <a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>Springboot项目启动时，会出现大大的SpringBoot的图案：<br><img src="https://img-blog.csdnimg.cn/20200718141606137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改：<br>首先创建springboot项目，首先在resources/目录下创建名为banner.txt的文件：<br>点击链接：<a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=CJW" target="_blank" rel="noopener">SpringBoot的启动图案修改</a><br><img src="https://img-blog.csdnimg.cn/20200718141955428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>启动项目：<br><img src="https://img-blog.csdnimg.cn/20200718142131464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>无聊…..<br><strong><em>END</em></strong></p>
+<h1 id="1-datatime模块"><a href="#1-datatime模块" class="headerlink" title="1. datatime模块"></a>1. datatime模块</h1><p>datetime模块是Python自带对时间的操作，常用的四类分别是date、time、datetime、timedelta.<br>具体可参考: <a href="https://blog.csdn.net/cmzsteven/article/details/64906245" target="_blank" rel="noopener">Python datetime模块详解、示例</a>.</p>
+<hr>
+<h1 id="2-获取时间间隔"><a href="#2-获取时间间隔" class="headerlink" title="2. 获取时间间隔"></a>2. 获取时间间隔</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> datatime</span><br><span class="line"></span><br><span class="line">dt1 = datetime.datetime.now()</span><br><span class="line">dt2 = datetime.datetime(<span class="number">2020</span>, <span class="number">5</span>, <span class="number">5</span>,<span class="number">19</span>,<span class="number">30</span>,<span class="number">6</span>,<span class="number">00000</span>)  <span class="comment"># year, month, day,hour,minate,sec,us</span></span><br><span class="line">span = dt2 - dt1</span><br><span class="line">time_span = round(span.total_seconds(), <span class="number">1</span>) <span class="comment"># 保留一位小数</span></span><br><span class="line">print(<span class="string">'当前时间间隔：'</span>, time_span)</span><br></pre></td></tr></table></figure>
+<p>通过判断时间间隔来控制相关函数实现每隔固定时间执行一次，比如可以以time_span%60==0来作为判断条件等等来控制定时任务的执行，当然也有其他的定时调度函数或者模块比如timer，threading、apscheduler等。<br>这里的定时任务是隔一分钟向数据库插入一条数据，实现效果如下图所示：<br><img src="https://img-blog.csdnimg.cn/20200505201626953.png" alt="数据库插入"></p>
+<hr>
+<p><strong><em>END</em></strong></p>
 ]]></content>
       <categories>
-        <category>SpringBoot</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>启动图案修改</tag>
+        <tag>datetime</tag>
       </tags>
   </entry>
   <entry>
@@ -1740,30 +1840,6 @@
       </categories>
       <tags>
         <tag>Mybatis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringBoot项目打包为jar包</title>
-    <url>/2020/07/22/SpringBoot%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%B8%BAjar%E5%8C%85/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
-<li>IDEA2018.3 </li>
-<li>JDK1.8 </li>
-<li>SpringBoot2.3.0 </li>
-<li>360浏览器<br>项目部署一般是两种方式：<br>一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。<br>pom.xml：<br>&lt; packaging&gt;jar&lt; /packaging&gt;  （默认）<br>&lt; packaging&gt;war&lt; /packaging&gt;<!-- more -->
-<h1 id="打jar包"><a href="#打jar包" class="headerlink" title="打jar包"></a>打jar包</h1>选择 File -&gt; Project Structure-&gt;Artifacts-&gt;Jar-&gt;Form modules with dependencies后点ok:<br>根据 下图内容创建 jar。如图所示，选择项目，入口类等。最后一项 META-INF，默认放到 src\main\java 目录里，如果使用默认值，没有进行其他配置，生成的 jar 有可能不会包含 META-INF 目录，导致运行 jar 出错。最好放在 src\main\resource目录中。点击ok保存。按下图所示配置：<br><img src="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击ok会出现如图所示信息:<br><img src="https://img-blog.csdnimg.cn/20200720101055777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="生成jar包"><a href="#生成jar包" class="headerlink" title="生成jar包"></a>生成jar包</h1>点击idea菜单栏中的build，依次选择：<br><img src="https://img-blog.csdnimg.cn/20200720103416304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点Build:<br><img src="https://img-blog.csdnimg.cn/20200720103454190.png" alt="在这里插入图片描述"><br>在保存路经中查找所打包的jar包如果存在则说明打包成功。<br><img src="https://img-blog.csdnimg.cn/20200720103554129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="运行jar包"><a href="#运行jar包" class="headerlink" title="运行jar包"></a>运行jar包</h1>开始运行jar包，打开cmd进入jar所在的路径，输入java -jar xxx.jar (jar名称) ，点击回车按键。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Microsoft Windows [版本 <span class="number">10.0</span><span class="number">.18362</span><span class="number">.959</span>]</span><br><span class="line">(c) <span class="number">2019</span> Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\<span class="number">92895</span>&gt;D:</span><br><span class="line"></span><br><span class="line">D:\&gt;cd D:\data_view\out\artifacts\data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;Java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view.jar</span><br><span class="line">_________       ____.__      __</span><br><span class="line">\_   ___ \     |    /  \    /  \</span><br><span class="line">/    \  \/     |    \   \/\/   /</span><br><span class="line">\     \____/\__|    |\        /</span><br><span class="line"> \______  /\________| \__/\  /</span><br><span class="line">        \/                 \/</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.016</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : Starting DataViewApplication on <span class="number">4</span>C501 with PID <span class="number">12564</span> (D:\data_view\out\artifacts\data_view_jar\data_view.jar started by <span class="number">92895</span> in D:\data_view\out\artifacts\data_view_jar)</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.020</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : No active profile set, falling back to <span class="keyword">default</span> profiles: <span class="keyword">default</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set <span class="string">'spring.devtools.add-properties'</span> to <span class="string">'false'</span> to disable</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the <span class="string">'logging.level.web'</span> property to <span class="string">'DEBUG'</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">28.817</span>  INFO <span class="number">12564</span> --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : <span class="function">Tomcat initialized with <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.831  INFO 12564 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.832  INFO 12564 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1827 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.631  INFO 12564 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56cf4f3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e169c9, org.springframework.security.web.header.HeaderWriterFilter@26d4eefe, org.springframework.security.web.authentication.logout.LogoutFilter@f17fdd6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f33f6b3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70ffa278, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@109a14b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54857a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423bad4c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7e8ca12a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee5e690, org.springframework.security.web.session.SessionManagementFilter@7139411a, org.springframework.security.web.access.ExceptionTranslationFilter@1ec9ee0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf4c490]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.711  INFO 12564 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.929  INFO 12564 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.967  INFO 12564 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span> with context path ''</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.976  INFO 12564 --- [  restartedMain] com.dvms.DataViewApplication             : Started DataViewApplication in 3.27 <span class="title">seconds</span> <span class="params">(JVM running <span class="keyword">for</span> <span class="number">3.828</span>)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.774  INFO 12564 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.775  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.782  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:56.052  INFO 12564 --- [nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : </span>&#123;dataSource-<span class="number">1</span>&#125; init</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200720103747636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>浏览器输入：localhost8080:/index（根据实际项目）显示网页说明打包成功！！！</p>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>jar包</tag>
       </tags>
   </entry>
   <entry>
@@ -1806,6 +1882,45 @@
       <tags>
         <tag>JavaWeb</tag>
         <tag>SSM框架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SpringBoot的启动图案修改</title>
+    <url>/2020/07/22/SpringBoot%E7%9A%84%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A1%88%E4%BF%AE%E6%94%B9/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>Springboot项目启动时，会出现大大的SpringBoot的图案：<br><img src="https://img-blog.csdnimg.cn/20200718141606137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>修改：<br>首先创建springboot项目，首先在resources/目录下创建名为banner.txt的文件：<br>点击链接：<a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=CJW" target="_blank" rel="noopener">SpringBoot的启动图案修改</a><br><img src="https://img-blog.csdnimg.cn/20200718141955428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>启动项目：<br><img src="https://img-blog.csdnimg.cn/20200718142131464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>无聊…..<br><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>启动图案修改</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SpringBoot项目打包为jar包</title>
+    <url>/2020/07/22/SpringBoot%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E4%B8%BAjar%E5%8C%85/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="My-Environment"><a href="#My-Environment" class="headerlink" title="My Environment"></a>My Environment</h1><ul>
+<li>IDEA2018.3 </li>
+<li>JDK1.8 </li>
+<li>SpringBoot2.3.0 </li>
+<li>360浏览器<br>项目部署一般是两种方式：<br>一种是打包成 jar 包直接执行，另一种是打包成 war 包放到 Tomcat 服务器下，SpringBoot一般情况下默认为jar包方式。<br>pom.xml：<br>&lt; packaging&gt;jar&lt; /packaging&gt;  （默认）<br>&lt; packaging&gt;war&lt; /packaging&gt;<!-- more -->
+<h1 id="打jar包"><a href="#打jar包" class="headerlink" title="打jar包"></a>打jar包</h1>选择 File -&gt; Project Structure-&gt;Artifacts-&gt;Jar-&gt;Form modules with dependencies后点ok:<br>根据 下图内容创建 jar。如图所示，选择项目，入口类等。最后一项 META-INF，默认放到 src\main\java 目录里，如果使用默认值，没有进行其他配置，生成的 jar 有可能不会包含 META-INF 目录，导致运行 jar 出错。最好放在 src\main\resource目录中。点击ok保存。按下图所示配置：<br><img src="https://img-blog.csdnimg.cn/20200720101408336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击ok会出现如图所示信息:<br><img src="https://img-blog.csdnimg.cn/20200720101055777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="生成jar包"><a href="#生成jar包" class="headerlink" title="生成jar包"></a>生成jar包</h1>点击idea菜单栏中的build，依次选择：<br><img src="https://img-blog.csdnimg.cn/20200720103416304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点Build:<br><img src="https://img-blog.csdnimg.cn/20200720103454190.png" alt="在这里插入图片描述"><br>在保存路经中查找所打包的jar包如果存在则说明打包成功。<br><img src="https://img-blog.csdnimg.cn/20200720103554129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><h1 id="运行jar包"><a href="#运行jar包" class="headerlink" title="运行jar包"></a>运行jar包</h1>开始运行jar包，打开cmd进入jar所在的路径，输入java -jar xxx.jar (jar名称) ，点击回车按键。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Microsoft Windows [版本 <span class="number">10.0</span><span class="number">.18362</span><span class="number">.959</span>]</span><br><span class="line">(c) <span class="number">2019</span> Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\<span class="number">92895</span>&gt;D:</span><br><span class="line"></span><br><span class="line">D:\&gt;cd D:\data_view\out\artifacts\data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;Java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view_jar</span><br><span class="line">Error: Unable to access jarfile data_view_jar</span><br><span class="line"></span><br><span class="line">D:\data_view\out\artifacts\data_view_jar&gt;java -jar data_view.jar</span><br><span class="line">_________       ____.__      __</span><br><span class="line">\_   ___ \     |    /  \    /  \</span><br><span class="line">/    \  \/     |    \   \/\/   /</span><br><span class="line">\     \____/\__|    |\        /</span><br><span class="line"> \______  /\________| \__/\  /</span><br><span class="line">        \/                 \/</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.016</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : Starting DataViewApplication on <span class="number">4</span>C501 with PID <span class="number">12564</span> (D:\data_view\out\artifacts\data_view_jar\data_view.jar started by <span class="number">92895</span> in D:\data_view\out\artifacts\data_view_jar)</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.020</span>  INFO <span class="number">12564</span> --- [  restartedMain] com.dvms.DataViewApplication             : No active profile set, falling back to <span class="keyword">default</span> profiles: <span class="keyword">default</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set <span class="string">'spring.devtools.add-properties'</span> to <span class="string">'false'</span> to disable</span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">27.068</span>  INFO <span class="number">12564</span> --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the <span class="string">'logging.level.web'</span> property to <span class="string">'DEBUG'</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">07</span>-<span class="number">20</span> <span class="number">09</span>:<span class="number">51</span>:<span class="number">28.817</span>  INFO <span class="number">12564</span> --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : <span class="function">Tomcat initialized with <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.831  INFO 12564 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.832  INFO 12564 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext</span></span><br><span class="line"><span class="function">2020-07-20 09:51:28.896  INFO 12564 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1827 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.631  INFO 12564 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56cf4f3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e169c9, org.springframework.security.web.header.HeaderWriterFilter@26d4eefe, org.springframework.security.web.authentication.logout.LogoutFilter@f17fdd6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f33f6b3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70ffa278, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@109a14b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54857a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423bad4c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7e8ca12a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee5e690, org.springframework.security.web.session.SessionManagementFilter@7139411a, org.springframework.security.web.access.ExceptionTranslationFilter@1ec9ee0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bf4c490]</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.711  INFO 12564 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.929  INFO 12564 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.967  INFO 12564 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on <span class="title">port</span><span class="params">(s)</span>: 8080 <span class="params">(http)</span> with context path ''</span></span><br><span class="line"><span class="function">2020-07-20 09:51:29.976  INFO 12564 --- [  restartedMain] com.dvms.DataViewApplication             : Started DataViewApplication in 3.27 <span class="title">seconds</span> <span class="params">(JVM running <span class="keyword">for</span> <span class="number">3.828</span>)</span></span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.774  INFO 12564 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.775  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'</span></span><br><span class="line"><span class="function">2020-07-20 09:51:44.782  INFO 12564 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms</span></span><br><span class="line"><span class="function">2020-07-20 09:51:56.052  INFO 12564 --- [nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : </span>&#123;dataSource-<span class="number">1</span>&#125; init</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20200720103747636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>浏览器输入：localhost8080:/index（根据实际项目）显示网页说明打包成功！！！</p>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>jar包</tag>
       </tags>
   </entry>
   <entry>
@@ -2099,121 +2214,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python编程基础之学前准备</title>
-    <url>/2020/07/30/Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%AD%A6%E5%89%8D%E5%87%86%E5%A4%87/</url>
-    <content><![CDATA[<p>Hello Python!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<h2 id="1-认识Python"><a href="#1-认识Python" class="headerlink" title="1.认识Python"></a>1.认识Python</h2><p>Python官方文档：<a href="https://docs.python.org/zh-cn/3/" target="_blank" rel="noopener">https://docs.python.org/zh-cn/3/</a></p>
-<hr>
-<h3 id="1-1-什么是Python"><a href="#1-1-什么是Python" class="headerlink" title="1.1 什么是Python"></a>1.1 什么是Python</h3><p><strong>Python</strong>是一种计算机程序设计语言。是一种==面向对象的动态类型语言==，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越来越多被用于独立的、大型项目的开发。<br>|  |  |<br>|–|–|<br>|起源|1991年发行、基于C语言实现  |<br>| 设计思想 |优雅、明确、简单  |<br>|  |  |</p>
-<h3 id="1-2-Python优点和缺点"><a href="#1-2-Python优点和缺点" class="headerlink" title="1.2 Python优点和缺点"></a>1.2 Python优点和缺点</h3><table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Python优点</td>
-<td>简单、易学免费、开源 可扩展性 可嵌入性 跨平台性 丰富的第三方类库</td>
-</tr>
-<tr>
-<td>Python缺点</td>
-<td>运行速度 框架选择太多</td>
-</tr>
-<tr>
-<td>### 1.3 Python的应用领域</td>
-<td></td>
-</tr>
-<tr>
-<td>Web开发 数据分析师 数据挖掘工程师 自动化运维：批量处理大量的运维任务 游戏开发者 自动化测试 机器学习等</td>
-<td></td>
-</tr>
-<tr>
-<td>***</td>
-<td></td>
-</tr>
-<tr>
-<td>## 2.搭建Python开发环境</td>
-<td></td>
-</tr>
-<tr>
-<td>### 2.1 Python实际工作（开发）环境：</td>
-<td></td>
-</tr>
-<tr>
-<td>- Python（程序运行基础(引擎)）</td>
-<td></td>
-</tr>
-<tr>
-<td>- <a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">Python</a>（如Python3.6.x）</td>
-<td></td>
-</tr>
-<tr>
-<td>如果Windows版本是32位的，则单击“Windows x86 executable installer”版本，然后下载。</td>
-<td></td>
-</tr>
-<tr>
-<td>如果Windows版本是64位的，则单击“Windows x86-64 executable installer”版本，然后下载。</td>
-<td></td>
-</tr>
-<tr>
-<td>- 第三方类库（功能拓展）</td>
-<td></td>
-</tr>
-<tr>
-<td>- Numpy</td>
-<td></td>
-</tr>
-<tr>
-<td>- pandas</td>
-<td></td>
-</tr>
-<tr>
-<td>- scikit-learn</td>
-<td></td>
-</tr>
-<tr>
-<td>- ……</td>
-<td></td>
-</tr>
-<tr>
-<td>- <a href="https://www.csdn.net/" target="_blank" rel="noopener">类库安装教程参考</a></td>
-<td></td>
-</tr>
-<tr>
-<td>-  编辑器（提高代码编辑效率）</td>
-<td></td>
-</tr>
-<tr>
-<td>- Pycharm</td>
-<td></td>
-</tr>
-<tr>
-<td>- Spyder</td>
-<td></td>
-</tr>
-<tr>
-<td>- jupyter notebook</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="2-2-搭建Python环境方案"><a href="#2-2-搭建Python环境方案" class="headerlink" title="2.2 搭建Python环境方案"></a>2.2 搭建Python环境方案</h3><p> 方案一：<br> Python + Pycharm / jupyter notebook + 第三方类库<br> 方案二：<br> Anaconda</p>
-<hr>
-<h2 id="3-其它"><a href="#3-其它" class="headerlink" title="3.其它"></a>3.其它</h2><p> 使用IDE工具：jupyter notebook、PyCharm、Spyder<br>1、jupyter notebook：pip install jupyter notebook<br>2、<a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">PyCharm</a> / <a href="http://pedrokroger.net/getting-started-pycharm-python-ide/" target="_blank" rel="noopener">PyCharm学习手册</a>包括：社区版免费，专业版付费<br>PyCharm是由JetBrains打造的一款Python IDE，带有一整套可以帮助Python开发者提高工作效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。它提供一些高级功能，以用于支持Django框架下的专业Web开发。还提供了一些很好的功能用于Django开发，同时支持Google App Engine，并且PyCharm支持IronPython。这些功能在先进代码分析程序的支持下，使PyCharm成为Python专业开发人员和刚起步人员使用的有力工具。<br>3、 <a href="https://store.continuum.io/cshop/anaconda/" target="_blank" rel="noopener">Anaconda</a>：Python科学计算包合集</p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>Python编程基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>PyCharm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>jQuery教程</title>
     <url>/2020/07/28/jQuery%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>Hello jQuery!</p>
@@ -2352,66 +2352,6 @@
       </tags>
   </entry>
   <entry>
-    <title>setInterval()方法实现周期调用函数来完成进度条等功能设计</title>
-    <url>/2020/07/23/setInterval-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%91%A8%E6%9C%9F%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%9B%E5%BA%A6%E6%9D%A1%E7%AD%89%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
-<h1 id="setInterval-方法"><a href="#setInterval-方法" class="headerlink" title="setInterval() 方法"></a>setInterval() 方法</h1><p>setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。</p>
-<p>setInterval() 方法会不停地调用函数，直到==clearInterval() 被调用或窗口被关闭==。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。<br>提示： 1000 毫秒= 1 秒；如果你只想执行一次可以使用 setTimeout() 方法。</p>
-<hr>
-<p><strong><em>语法描述：</em></strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">setInterval(code, milliseconds);</span><br><span class="line">setInterval(function, milliseconds, param1, param2, ...)</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>setInterval() 方法参数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>code/function</td>
-<td>必要部分，要调用一个代码串，也可以是一个函数</td>
-</tr>
-<tr>
-<td>milliseconds</td>
-<td>必要部分，周期性执行或调用 code/function 之间的时间间隔，以毫秒计</td>
-</tr>
-<tr>
-<td>param1, param2, …</td>
-<td>非必要部分，传给执行函数的其他参数（IE9 及其更早版本不支持该参数）</td>
-</tr>
-</tbody></table>
-<p><strong><em>return</em></strong>:返回一个 ID（数字），可以将这个ID传递给clearInterval()，clearTimeout() 来取消执行setInterval() 。</p>
-<hr>
-<h1 id="clearInterval-方法"><a href="#clearInterval-方法" class="headerlink" title="clearInterval() 方法"></a>clearInterval() 方法</h1><p>clearInterval() 方法可取消由 setInterval() 函数设定的定时执行操作。</p>
-<p>clearInterval() 方法的参数必须是由 setInterval() 返回的 ID 值。<br>注意: 要使用 clearInterval() 方法, 在创建执行定时操作时要使用==全局变量==</p>
-<p><strong><em>语法描述：</em></strong><br>|clearInterval() 方法| 描述 |<br>|–|–|<br>|id_of_setinterval  |必要部分，调用 setInterval() 函数时所获得的返回值，使用该返回标识符作为参数，可以取消该 setInterval() 所设定的定时执行操作  |<br><strong><em>return</em></strong>: return 0</p>
-<hr>
-<p><strong><em>方法应用实例</em></strong><br>1.显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能)</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># 显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能):</span><br><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>2.使用 clearInterval() 来停止 setInterval 的执行</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>3.使用 setInterval() 和 clearInterval()来创建动态进度条<br>在javaweb中通过AJAX的get()方法和windows对象的setInterval()方法不断读取当前进度值来实现页面进度值的实时显示。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">move</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(<span class="string">"myBar"</span>);   </span><br><span class="line">  <span class="keyword">var</span> width = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">var</span> myvar = setInterval(frame, <span class="number">10</span>);</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">frame</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (width == <span class="number">100</span>) &#123;</span><br><span class="line">      clearInterval(myvar);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      width++; </span><br><span class="line">      elem.style.width = width + <span class="string">'%'</span>; </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>4.每 5000 毫秒切换背景颜色</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; setColor() &#125;, <span class="number">5000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="built_in">document</span>.body;</span><br><span class="line">  x.style.backgroundColor = x.style.backgroundColor == <span class="string">"red"</span> ? <span class="string">"green"</span> : <span class="string">"red"</span>; <span class="comment">//x.style.backgroundColor = white</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>? : 是一个条件运算符,是一个整体,作用类似于if else 语句<br>5.传递参数给 Animal 函数 </p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStartFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// IE9 及其更早版本不支持</span></span><br><span class="line">    myVar = setInterval(Animal, <span class="number">2000</span>, <span class="string">"Cat"</span>, <span class="string">"Dog"</span>);</span><br><span class="line">    <span class="comment">//使用匿名函数，则所有浏览器都支持</span></span><br><span class="line">    myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; Animal(<span class="string">"Cat"</span>, <span class="string">"Dog"</span>); &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">param1, param2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML += <span class="string">"Animal "</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo2"</span>).innerHTML = <span class="string">"传递给 Animal() 的参数: &lt;br&gt;"</span> </span><br><span class="line">    + param1 + <span class="string">"&lt;br&gt;"</span> + param2 + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200507175942741.png" alt="jieguo"></p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>JavaWeb</category>
-      </categories>
-      <tags>
-        <tag>JavaWeb</tag>
-        <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>setTimeout()方法实现延时执行其他功能</title>
     <url>/2020/07/23/setTimeout-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -2494,70 +2434,6 @@
       <tags>
         <tag>JavaWeb</tag>
         <tag>setTimeout()</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端知识体系</title>
-    <url>/2020/08/03/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</url>
-    <content><![CDATA[<p>Hello Vue!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
-<h1 id="前端知识体系"><a href="#前端知识体系" class="headerlink" title="前端知识体系"></a>前端知识体系</h1><p>前端主要围绕逻辑（判断、循环）、事件（浏览器事件：window document;Dom事件：增删改及遍历节点元素内容；jQurey的应用）、视图（HTML、CSS）、通信（AJAX）四个方面展开。</p>
-<h2 id="前端三要素"><a href="#前端三要素" class="headerlink" title="前端三要素"></a>前端三要素</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p><strong>HTML</strong>（结构）：超文本标记语言（Hyper Text Markup Language），决定网页的结构和内容。</p>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p><strong>CSS</strong>（表现）：层叠样式表（Cascading Style Sheets），设定网页的表现样式。<br>CSS层叠样式表是一门标记语言，并不是编程语言，因此不可以自定义变量，不可以引用等，换句话说就是不具备任何语法支持，它主要缺陷如下：</p>
-<ul>
-<li>语法不够强大，比如无法嵌套书写，导致模块化开发中需要书写很多重复的选择器；</li>
-<li>没有变量和合理的样式复用机制，使得逻辑上相关的属性值必须以字面量的形式重复输出，导致难以维护；</li>
-</ul>
-<p>导致在工作中无端增加了许多工作量。为了解决这个问题，前端开发人员会使用一种称之为【CSS预处理器】的工具,提供CSS缺失的样式层复用机制、减少冗余代码，提高样式代码的可维护性。大大的提高了前端在样式上的开发效率。<br><strong><em>什么是CSS预处理器?</em></strong><br>CSS预处理器定义了一种新的语言，其基本思想是，用一种专门的编程语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，然后开发者就只需要使用这种语言进行CSS的编码工作。转化成通俗易懂的话来说就是“用一种专门的编程语言，进行Web页面样式设计，再通过编译器转化为正常的CSS文件，以供项目使用”。<br><strong><em>常用的CSS预处理器有哪些?</em></strong></p>
-<ul>
-<li>SASS：基于Ruby ，通过服务端处理，功能强大。解析效率高。需要学习Ruby语言，上手难度高于LESS。</li>
-<li>LESS：基于NodeJS，通过客户端处理，使用简单。功能比SASS简单，解析效率也低于SASS，但在实际开发中足够了，所以如果我们后台人员如果需要的话，建议使用LESS。<br>链接: <a href="https://less.bootcss.com/#概览" target="_blank" rel="noopener">LESS文档</a><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">LESS程序实例：</span><br><span class="line">@width: <span class="number">10</span>px;</span><br><span class="line">@height: @width + <span class="number">10</span>px;</span><br><span class="line"></span><br><span class="line">#header &#123;</span><br><span class="line">  width: @width;</span><br><span class="line">  height: @height;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<hr>
-<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><p><strong>JavaScript</strong>（行为）：是一种弱类型脚本语言，其源码不需经过编译，而是由浏览器解释运行，用于控制网页的行为。</p>
-<h4 id="Native-原生JS开发"><a href="#Native-原生JS开发" class="headerlink" title="Native 原生JS开发"></a>Native 原生JS开发</h4><p><strong>原生JS开发</strong>，也就是让我们按照【ECMAScript】标准的开发方式，简称ES，特点是所有浏览器都支持。截至到当前，ES标准以发布如下版本：</p>
-<ul>
-<li>ES3</li>
-<li>ES4（内部，未正式发布）</li>
-<li>ES5（全浏览器支持）</li>
-<li>ES6（常用，当前主流版本：webpack打包成为ES5支持）</li>
-<li>ES7</li>
-<li>ES8</li>
-<li>ES9（草案阶段）</li>
-</ul>
-<p>区别就是逐步增加新特性。</p>
-<p><strong>TypeScript</strong>是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集， 而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。由安德斯·海尔斯伯格(C#、Delphi、TypeScript之父； .NET创立者) 主导。该语言的特点就是除了具备ES的特性之外还纳入了许多不在标准范围内的新特性，所以会导致很多浏览器不能直接支持TypeScript语法， 需要==编译后(编译成JS)== 才能被浏览器正确执行。</p>
-<h4 id="JavaScript框架"><a href="#JavaScript框架" class="headerlink" title="JavaScript框架"></a>JavaScript框架</h4><p><strong>JQuery</strong>：大家熟知的JavaScript库，优点就是简化了DOM操作，缺点就是DOM操作太频繁，影响前端性能；在前端眼里使用它仅仅是为了兼容IE6，7，8；<br><strong>Vue</strong>：一款渐进式 JavaScript 框架，所谓渐进式就是逐步实现新特性的意思，如实现模块化开发、路由、状态管理等新特性。其特点是综合了 Angular（<strong>模块化</strong>）和React(<strong>虚拟 DOM</strong>) 的优点；<br><strong>Axios</strong>：前端通信框架；因为 Vue 的边界很明确，就是为了处理 DOM，所以并不具备通信能力，此时就需要额外使用一个通信框架与服务器交互；当然也可以直接选择使用jQuery 提供的AJAX 通信功能；<br><strong>Angular</strong>：Google收购的前端框架，由一群Java程序员开发，其特点是将后台的MVC模式搬到了前端并增加了模块化开发的理念，与微软合作，采用了TypeScript语法开发；<br><strong>React</strong>：Facebook 出品，一款高性能的JS前端框架；特点是提出了新概念 【虚拟DOM】用于减少真实 DOM 操作，在内存中模拟 DOM操作，有效的提升了前端渲染效率；缺点是使用复杂，因为需要额外学习一门【JSX】语言；</p>
-<h4 id="UI框架"><a href="#UI框架" class="headerlink" title="UI框架"></a>UI框架</h4><p>Ant-Design：阿里巴巴出品，基于React的UI框架<br>ElementUI、iview、ice：饿了么出品，基于Vue的UI框架（必学）<br><strong>BootStrap</strong>：Teitter推出的一个用于前端开发的开源工具包（必学）<br>AmazeUI：又叫“妹子UI”，一款HTML5跨屏前端框架<br>JavaScript构建工具<br>Babel：JS编译工具，主要用于浏览器不支持的ES新特性，比如用于编译TypeScript<br>WebPack：模块打包器，主要作用就是打包、压缩、合并及按序加载</p>
-<hr>
-<h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>前端人员为了方便开发也需要掌握一定的后端技术但我们Java后台人员知道后台知识体系极其庞大复杂，所以为了方便前端人员开发后台应用，出现Node.js。<br>Node.js框架及项目管理工具如下：</p>
-<ul>
-<li>Express：Node JS框架</li>
-<li>Koa：Express简化版</li>
-<li><strong>NPM</strong>：项目综合管理工具，类似于Maven</li>
-<li>YARN：NPM的替代方案，类似于Maven和Gradle的关系</li>
-</ul>
-<hr>
-<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><p>为了降低开发的复杂度，以后端为出发点， 比如：Struts、Spring MVC等框架的使用， 就是后端的MVC时代；<br>以SpringMVC流程为例：<br><img src="https://img-blog.csdnimg.cn/20200803160656974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>发起请求到前端控制器(Dispatcher Servlet)<br>前端控制器请求HandlerMapping查找Handler，可以根据xml配置、注解进行查找<br>处理器映射器HandlerMapping向前端控制器返回Handler<br>前端控制器调用处理器适配器去执行Handler<br>处理器适配器去执行Handler<br>Handler执行完成给适配器返回ModelAndView<br>处理器适配器向前端控制器返回ModelAndView，ModelAndView是SpringMvc框架的一个底层对象，包括Model和View<br>前端控制器请求视图解析器去进行视图解析，根据逻辑视图名解析成真正的视图(JSP)<br>视图解析器向前端控制器返回View<br>前端控制器进行视图渲染，视图渲染将模型数据(在ModelAndView对象中)填充到request域<br>前端控制器向用户响应结果<br>优点:<br>MVC是一个非常好的协作模式， 能够有效降低代码的耦合度从架构上能够让开发者明白代码应该写在哪里。为了让View更纯粹， 还可以使用Thymeleaf、Frree marker等模板引擎， 使模板里无法写入Java代码， 让前后端分工更加清晰。<br>缺点:<br>前端开发重度依赖开发环境，开发效率低，这种架构下，前后端协作有两种模式：<br>第一种是前端写DEMO， 写好后， 让后端去套模板。好处是DEMO可以本地开发， 很高效。不足是还需要后端套模板，有可能套错，套完后还需要前端确定，来回沟通调整的成本比较大。</p>
-<h3 id="基于AJAX带来的SPA时代"><a href="#基于AJAX带来的SPA时代" class="headerlink" title="基于AJAX带来的SPA时代"></a>基于AJAX带来的SPA时代</h3><p>SPA模式下， <strong>前后端的分工非常清晰， 前后端的关键协作点是AJAX接口。</strong>看起来是如此美妙， 但回过头来看看的话， 这与JSP时代区别不大。复杂度从服务端的JSP里移到了浏览器的JavaScript，浏览器端变得很复杂。类似Spring MVC.</p>
-<h3 id="前端为主的MV-时代"><a href="#前端为主的MV-时代" class="headerlink" title="前端为主的MV*时代"></a>前端为主的MV*时代</h3><p>此处的MV*模式如下：</p>
-<ul>
-<li>MVC(同步通信为主) ：Model、View、Controller</li>
-<li>MVP(异步通信为主) ：Model、View、Presenter</li>
-<li>MVVM(异步通信为主)：Model、View、View Model为了降低前端开发复杂度，涌现了大量的前端框架，比如：Angular.js、React.js、Vue.js等， 这些框架总的原则是先按类型分层， 比如Templates、Controllers、Models， 然后再在层内做切分。<br>前后端分离的开发思想主要是基于Soc(关注度分离原则)，上面种种模式，都是让前后端的职责更清晰，分工更合理高效。</li>
-</ul>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Javaweb</tag>
       </tags>
   </entry>
   <entry>
@@ -3022,6 +2898,66 @@
       </tags>
   </entry>
   <entry>
+    <title>setInterval()方法实现周期调用函数来完成进度条等功能设计</title>
+    <url>/2020/07/23/setInterval-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%91%A8%E6%9C%9F%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%9B%E5%BA%A6%E6%9D%A1%E7%AD%89%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"></p>
+<h1 id="setInterval-方法"><a href="#setInterval-方法" class="headerlink" title="setInterval() 方法"></a>setInterval() 方法</h1><p>setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。一般与clearInterval()配合使用。</p>
+<p>setInterval() 方法会不停地调用函数，直到==clearInterval() 被调用或窗口被关闭==。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。<br>提示： 1000 毫秒= 1 秒；如果你只想执行一次可以使用 setTimeout() 方法。</p>
+<hr>
+<p><strong><em>语法描述：</em></strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">setInterval(code, milliseconds);</span><br><span class="line">setInterval(function, milliseconds, param1, param2, ...)</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>setInterval() 方法参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>code/function</td>
+<td>必要部分，要调用一个代码串，也可以是一个函数</td>
+</tr>
+<tr>
+<td>milliseconds</td>
+<td>必要部分，周期性执行或调用 code/function 之间的时间间隔，以毫秒计</td>
+</tr>
+<tr>
+<td>param1, param2, …</td>
+<td>非必要部分，传给执行函数的其他参数（IE9 及其更早版本不支持该参数）</td>
+</tr>
+</tbody></table>
+<p><strong><em>return</em></strong>:返回一个 ID（数字），可以将这个ID传递给clearInterval()，clearTimeout() 来取消执行setInterval() 。</p>
+<hr>
+<h1 id="clearInterval-方法"><a href="#clearInterval-方法" class="headerlink" title="clearInterval() 方法"></a>clearInterval() 方法</h1><p>clearInterval() 方法可取消由 setInterval() 函数设定的定时执行操作。</p>
+<p>clearInterval() 方法的参数必须是由 setInterval() 返回的 ID 值。<br>注意: 要使用 clearInterval() 方法, 在创建执行定时操作时要使用==全局变量==</p>
+<p><strong><em>语法描述：</em></strong><br>|clearInterval() 方法| 描述 |<br>|–|–|<br>|id_of_setinterval  |必要部分，调用 setInterval() 函数时所获得的返回值，使用该返回标识符作为参数，可以取消该 setInterval() 所设定的定时执行操作  |<br><strong><em>return</em></strong>: return 0</p>
+<hr>
+<p><strong><em>方法应用实例</em></strong><br>1.显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># 显示当前时间( setInterval() 方法会每秒执行一次函数，类似手表功能):</span><br><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.使用 clearInterval() 来停止 setInterval 的执行</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; myTimer() &#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myTimer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">var</span> t = d.toLocaleTimeString();</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML = t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3.使用 setInterval() 和 clearInterval()来创建动态进度条<br>在javaweb中通过AJAX的get()方法和windows对象的setInterval()方法不断读取当前进度值来实现页面进度值的实时显示。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">move</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(<span class="string">"myBar"</span>);   </span><br><span class="line">  <span class="keyword">var</span> width = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">var</span> myvar = setInterval(frame, <span class="number">10</span>);</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">frame</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (width == <span class="number">100</span>) &#123;</span><br><span class="line">      clearInterval(myvar);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      width++; </span><br><span class="line">      elem.style.width = width + <span class="string">'%'</span>; </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>4.每 5000 毫秒切换背景颜色</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; setColor() &#125;, <span class="number">5000</span>);</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="built_in">document</span>.body;</span><br><span class="line">  x.style.backgroundColor = x.style.backgroundColor == <span class="string">"red"</span> ? <span class="string">"green"</span> : <span class="string">"red"</span>; <span class="comment">//x.style.backgroundColor = white</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>? : 是一个条件运算符,是一个整体,作用类似于if else 语句<br>5.传递参数给 Animal 函数 </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStartFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// IE9 及其更早版本不支持</span></span><br><span class="line">    myVar = setInterval(Animal, <span class="number">2000</span>, <span class="string">"Cat"</span>, <span class="string">"Dog"</span>);</span><br><span class="line">    <span class="comment">//使用匿名函数，则所有浏览器都支持</span></span><br><span class="line">    myVar = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; Animal(<span class="string">"Cat"</span>, <span class="string">"Dog"</span>); &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">param1, param2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML += <span class="string">"Animal "</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"demo2"</span>).innerHTML = <span class="string">"传递给 Animal() 的参数: &lt;br&gt;"</span> </span><br><span class="line">    + param1 + <span class="string">"&lt;br&gt;"</span> + param2 + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myStopFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearInterval(myVar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200507175942741.png" alt="jieguo"></p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>JavaWeb</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>打包可运行文件时图标无法显示的解决方法</title>
     <url>/2020/07/23/%E6%89%93%E5%8C%85%E5%8F%AF%E8%BF%90%E8%A1%8C%E6%96%87%E4%BB%B6%E6%97%B6%E5%9B%BE%E6%A0%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -3045,8 +2981,72 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>可运行文件</tag>
         <tag>pyinstaller</tag>
+        <tag>可运行文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端知识体系</title>
+    <url>/2020/08/03/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</url>
+    <content><![CDATA[<p>Hello Vue!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h1 id="前端知识体系"><a href="#前端知识体系" class="headerlink" title="前端知识体系"></a>前端知识体系</h1><p>前端主要围绕逻辑（判断、循环）、事件（浏览器事件：window document;Dom事件：增删改及遍历节点元素内容；jQurey的应用）、视图（HTML、CSS）、通信（AJAX）四个方面展开。</p>
+<h2 id="前端三要素"><a href="#前端三要素" class="headerlink" title="前端三要素"></a>前端三要素</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p><strong>HTML</strong>（结构）：超文本标记语言（Hyper Text Markup Language），决定网页的结构和内容。</p>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p><strong>CSS</strong>（表现）：层叠样式表（Cascading Style Sheets），设定网页的表现样式。<br>CSS层叠样式表是一门标记语言，并不是编程语言，因此不可以自定义变量，不可以引用等，换句话说就是不具备任何语法支持，它主要缺陷如下：</p>
+<ul>
+<li>语法不够强大，比如无法嵌套书写，导致模块化开发中需要书写很多重复的选择器；</li>
+<li>没有变量和合理的样式复用机制，使得逻辑上相关的属性值必须以字面量的形式重复输出，导致难以维护；</li>
+</ul>
+<p>导致在工作中无端增加了许多工作量。为了解决这个问题，前端开发人员会使用一种称之为【CSS预处理器】的工具,提供CSS缺失的样式层复用机制、减少冗余代码，提高样式代码的可维护性。大大的提高了前端在样式上的开发效率。<br><strong><em>什么是CSS预处理器?</em></strong><br>CSS预处理器定义了一种新的语言，其基本思想是，用一种专门的编程语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，然后开发者就只需要使用这种语言进行CSS的编码工作。转化成通俗易懂的话来说就是“用一种专门的编程语言，进行Web页面样式设计，再通过编译器转化为正常的CSS文件，以供项目使用”。<br><strong><em>常用的CSS预处理器有哪些?</em></strong></p>
+<ul>
+<li>SASS：基于Ruby ，通过服务端处理，功能强大。解析效率高。需要学习Ruby语言，上手难度高于LESS。</li>
+<li>LESS：基于NodeJS，通过客户端处理，使用简单。功能比SASS简单，解析效率也低于SASS，但在实际开发中足够了，所以如果我们后台人员如果需要的话，建议使用LESS。<br>链接: <a href="https://less.bootcss.com/#概览" target="_blank" rel="noopener">LESS文档</a><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">LESS程序实例：</span><br><span class="line">@width: <span class="number">10</span>px;</span><br><span class="line">@height: @width + <span class="number">10</span>px;</span><br><span class="line"></span><br><span class="line">#header &#123;</span><br><span class="line">  width: @width;</span><br><span class="line">  height: @height;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><p><strong>JavaScript</strong>（行为）：是一种弱类型脚本语言，其源码不需经过编译，而是由浏览器解释运行，用于控制网页的行为。</p>
+<h4 id="Native-原生JS开发"><a href="#Native-原生JS开发" class="headerlink" title="Native 原生JS开发"></a>Native 原生JS开发</h4><p><strong>原生JS开发</strong>，也就是让我们按照【ECMAScript】标准的开发方式，简称ES，特点是所有浏览器都支持。截至到当前，ES标准以发布如下版本：</p>
+<ul>
+<li>ES3</li>
+<li>ES4（内部，未正式发布）</li>
+<li>ES5（全浏览器支持）</li>
+<li>ES6（常用，当前主流版本：webpack打包成为ES5支持）</li>
+<li>ES7</li>
+<li>ES8</li>
+<li>ES9（草案阶段）</li>
+</ul>
+<p>区别就是逐步增加新特性。</p>
+<p><strong>TypeScript</strong>是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集， 而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。由安德斯·海尔斯伯格(C#、Delphi、TypeScript之父； .NET创立者) 主导。该语言的特点就是除了具备ES的特性之外还纳入了许多不在标准范围内的新特性，所以会导致很多浏览器不能直接支持TypeScript语法， 需要==编译后(编译成JS)== 才能被浏览器正确执行。</p>
+<h4 id="JavaScript框架"><a href="#JavaScript框架" class="headerlink" title="JavaScript框架"></a>JavaScript框架</h4><p><strong>JQuery</strong>：大家熟知的JavaScript库，优点就是简化了DOM操作，缺点就是DOM操作太频繁，影响前端性能；在前端眼里使用它仅仅是为了兼容IE6，7，8；<br><strong>Vue</strong>：一款渐进式 JavaScript 框架，所谓渐进式就是逐步实现新特性的意思，如实现模块化开发、路由、状态管理等新特性。其特点是综合了 Angular（<strong>模块化</strong>）和React(<strong>虚拟 DOM</strong>) 的优点；<br><strong>Axios</strong>：前端通信框架；因为 Vue 的边界很明确，就是为了处理 DOM，所以并不具备通信能力，此时就需要额外使用一个通信框架与服务器交互；当然也可以直接选择使用jQuery 提供的AJAX 通信功能；<br><strong>Angular</strong>：Google收购的前端框架，由一群Java程序员开发，其特点是将后台的MVC模式搬到了前端并增加了模块化开发的理念，与微软合作，采用了TypeScript语法开发；<br><strong>React</strong>：Facebook 出品，一款高性能的JS前端框架；特点是提出了新概念 【虚拟DOM】用于减少真实 DOM 操作，在内存中模拟 DOM操作，有效的提升了前端渲染效率；缺点是使用复杂，因为需要额外学习一门【JSX】语言；</p>
+<h4 id="UI框架"><a href="#UI框架" class="headerlink" title="UI框架"></a>UI框架</h4><p>Ant-Design：阿里巴巴出品，基于React的UI框架<br>ElementUI、iview、ice：饿了么出品，基于Vue的UI框架（必学）<br><strong>BootStrap</strong>：Teitter推出的一个用于前端开发的开源工具包（必学）<br>AmazeUI：又叫“妹子UI”，一款HTML5跨屏前端框架<br>JavaScript构建工具<br>Babel：JS编译工具，主要用于浏览器不支持的ES新特性，比如用于编译TypeScript<br>WebPack：模块打包器，主要作用就是打包、压缩、合并及按序加载</p>
+<hr>
+<h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>前端人员为了方便开发也需要掌握一定的后端技术但我们Java后台人员知道后台知识体系极其庞大复杂，所以为了方便前端人员开发后台应用，出现Node.js。<br>Node.js框架及项目管理工具如下：</p>
+<ul>
+<li>Express：Node JS框架</li>
+<li>Koa：Express简化版</li>
+<li><strong>NPM</strong>：项目综合管理工具，类似于Maven</li>
+<li>YARN：NPM的替代方案，类似于Maven和Gradle的关系</li>
+</ul>
+<hr>
+<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><p>为了降低开发的复杂度，以后端为出发点， 比如：Struts、Spring MVC等框架的使用， 就是后端的MVC时代；<br>以SpringMVC流程为例：<br><img src="https://img-blog.csdnimg.cn/20200803160656974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>发起请求到前端控制器(Dispatcher Servlet)<br>前端控制器请求HandlerMapping查找Handler，可以根据xml配置、注解进行查找<br>处理器映射器HandlerMapping向前端控制器返回Handler<br>前端控制器调用处理器适配器去执行Handler<br>处理器适配器去执行Handler<br>Handler执行完成给适配器返回ModelAndView<br>处理器适配器向前端控制器返回ModelAndView，ModelAndView是SpringMvc框架的一个底层对象，包括Model和View<br>前端控制器请求视图解析器去进行视图解析，根据逻辑视图名解析成真正的视图(JSP)<br>视图解析器向前端控制器返回View<br>前端控制器进行视图渲染，视图渲染将模型数据(在ModelAndView对象中)填充到request域<br>前端控制器向用户响应结果<br>优点:<br>MVC是一个非常好的协作模式， 能够有效降低代码的耦合度从架构上能够让开发者明白代码应该写在哪里。为了让View更纯粹， 还可以使用Thymeleaf、Frree marker等模板引擎， 使模板里无法写入Java代码， 让前后端分工更加清晰。<br>缺点:<br>前端开发重度依赖开发环境，开发效率低，这种架构下，前后端协作有两种模式：<br>第一种是前端写DEMO， 写好后， 让后端去套模板。好处是DEMO可以本地开发， 很高效。不足是还需要后端套模板，有可能套错，套完后还需要前端确定，来回沟通调整的成本比较大。</p>
+<h3 id="基于AJAX带来的SPA时代"><a href="#基于AJAX带来的SPA时代" class="headerlink" title="基于AJAX带来的SPA时代"></a>基于AJAX带来的SPA时代</h3><p>SPA模式下， <strong>前后端的分工非常清晰， 前后端的关键协作点是AJAX接口。</strong>看起来是如此美妙， 但回过头来看看的话， 这与JSP时代区别不大。复杂度从服务端的JSP里移到了浏览器的JavaScript，浏览器端变得很复杂。类似Spring MVC.</p>
+<h3 id="前端为主的MV-时代"><a href="#前端为主的MV-时代" class="headerlink" title="前端为主的MV*时代"></a>前端为主的MV*时代</h3><p>此处的MV*模式如下：</p>
+<ul>
+<li>MVC(同步通信为主) ：Model、View、Controller</li>
+<li>MVP(异步通信为主) ：Model、View、Presenter</li>
+<li>MVVM(异步通信为主)：Model、View、View Model为了降低前端开发复杂度，涌现了大量的前端框架，比如：Angular.js、React.js、Vue.js等， 这些框架总的原则是先按类型分层， 比如Templates、Controllers、Models， 然后再在层内做切分。<br>前后端分离的开发思想主要是基于Soc(关注度分离原则)，上面种种模式，都是让前后端的职责更清晰，分工更合理高效。</li>
+</ul>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Javaweb</tag>
       </tags>
   </entry>
   <entry>
@@ -3654,6 +3654,30 @@
       </tags>
   </entry>
   <entry>
+    <title>界面开发工具之HTML色彩表格工具</title>
+    <url>/2020/07/23/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B9%8BHTML%E8%89%B2%E5%BD%A9%E8%A1%A8%E6%A0%BC%E5%B7%A5%E5%85%B7-1/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br><img src="https://img-blog.csdnimg.cn/20200604211717578.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>网址链接： <a href="https://html-color-codes.info/chinese/" target="_blank" rel="noopener">HTML色彩表格工具</a></p>
+<hr>
+<h1 id="HTML色彩代码理论"><a href="#HTML色彩代码理论" class="headerlink" title="HTML色彩代码理论"></a>HTML色彩代码理论</h1><p>HTML代码格式：<br>每一个HTML代码包含有“#”符号以及6个字幕和数字。这些数字都是十六进制的。比如“FF”在十六进制中代表十进制的数字255。</p>
+<!-- more -->
+<p>符号意义：<br>HTML色彩代码中前两个符号表示红色的浓度。00指的是颜色最淡而FF则指的是颜色最浓。第三个和第四个符号表示绿色的浓度，第五个和第六个符号表示蓝色的浓度。由此，将各种浓度的红、绿、蓝三种颜色进行组合，我们可以调配出任何所需色彩</p>
+<p>示例：<br>#FF0000 - 利用这个HTML代码，我们让浏览器显示不掺杂任何绿色和蓝色成分的最鲜艳的红色。其结果当然就是纯红:     </p>
+<p>#00FF00 - 这个HTML代码表示只有绿色且不掺杂任何红色和蓝色。其结果是:     </p>
+<p>#0000FF - 这个HTML代码表示只有蓝色且不掺杂任何红色和绿色。其结果是:     </p>
+<p>#FFFF00 - 红绿组合生成黄色:     </p>
+<p>#CCEEFF - 一些红色、一点绿色以及最高浓度的蓝色，组合成天蓝色:     </p>
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>工具</tag>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据库日常之修改MySQL数据库密码的方法</title>
     <url>/2020/07/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%A5%E5%B8%B8%E4%B9%8B%E4%BF%AE%E6%94%B9MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E7%9A%84%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -3684,48 +3708,6 @@
       </tags>
   </entry>
   <entry>
-    <title>聚光灯效果（css+html）</title>
-    <url>/2020/07/23/%E8%81%9A%E5%85%89%E7%81%AF%E6%95%88%E6%9E%9C%EF%BC%88css-html%EF%BC%89/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>最终效果：<br><img src="https://img-blog.csdnimg.cn/20200516111122629.gif" alt="在这里插入图片描述"></p>
-<!-- more -->
-<p>实现code:</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">		&lt;title&gt;聚光灯效果&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">			*&#123;</span><br><span class="line">				margin:<span class="number">0</span>;</span><br><span class="line">				padding:<span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			body&#123;</span><br><span class="line">				background: #222;</span><br><span class="line">				display: flex;</span><br><span class="line">				justify-content: center;</span><br><span class="line">				align-items: center;</span><br><span class="line">				min-height: <span class="number">100</span>vh;</span><br><span class="line">			&#125;</span><br><span class="line">			h1&#123;</span><br><span class="line">				color: #333;</span><br><span class="line">				font-size: <span class="number">8</span>rem;</span><br><span class="line">				position: relative;</span><br><span class="line">			&#125;</span><br><span class="line">			h1:after&#123;</span><br><span class="line">				content: <span class="string">"Hello JavaScript"</span>;</span><br><span class="line">				color: transparent;</span><br><span class="line">				position: absolute;</span><br><span class="line">				left: <span class="number">0</span>;</span><br><span class="line">				top: <span class="number">0</span>;</span><br><span class="line">				background: -webkit-linear-gradient(left,#c23616,#192a56,#00d2d3,yellow,#6D214F,#2e86de,#4cd137,#e84118);</span><br><span class="line">				background-clip: text;</span><br><span class="line">				-webkit-background-clip:text;</span><br><span class="line">				clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				animation: light <span class="number">5</span>s infinite;</span><br><span class="line">			&#125;</span><br><span class="line">				</span><br><span class="line">			<span class="meta">@keyframes</span> light&#123;</span><br><span class="line">				<span class="number">0</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">50</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">100</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;h1&gt;Hello JavaScript&lt;/h1&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <tags>
-        <tag>JavaWeb</tag>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>界面开发工具之HTML色彩表格工具</title>
-    <url>/2020/07/23/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B9%8BHTML%E8%89%B2%E5%BD%A9%E8%A1%A8%E6%A0%BC%E5%B7%A5%E5%85%B7-1/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<a id="more"></a>
-<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br><img src="https://img-blog.csdnimg.cn/20200604211717578.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>网址链接： <a href="https://html-color-codes.info/chinese/" target="_blank" rel="noopener">HTML色彩表格工具</a></p>
-<hr>
-<h1 id="HTML色彩代码理论"><a href="#HTML色彩代码理论" class="headerlink" title="HTML色彩代码理论"></a>HTML色彩代码理论</h1><p>HTML代码格式：<br>每一个HTML代码包含有“#”符号以及6个字幕和数字。这些数字都是十六进制的。比如“FF”在十六进制中代表十进制的数字255。</p>
-<!-- more -->
-<p>符号意义：<br>HTML色彩代码中前两个符号表示红色的浓度。00指的是颜色最淡而FF则指的是颜色最浓。第三个和第四个符号表示绿色的浓度，第五个和第六个符号表示蓝色的浓度。由此，将各种浓度的红、绿、蓝三种颜色进行组合，我们可以调配出任何所需色彩</p>
-<p>示例：<br>#FF0000 - 利用这个HTML代码，我们让浏览器显示不掺杂任何绿色和蓝色成分的最鲜艳的红色。其结果当然就是纯红:     </p>
-<p>#00FF00 - 这个HTML代码表示只有绿色且不掺杂任何红色和蓝色。其结果是:     </p>
-<p>#0000FF - 这个HTML代码表示只有蓝色且不掺杂任何红色和绿色。其结果是:     </p>
-<p>#FFFF00 - 红绿组合生成黄色:     </p>
-<p>#CCEEFF - 一些红色、一点绿色以及最高浓度的蓝色，组合成天蓝色:     </p>
-<hr>
-<p><strong><em>END</em></strong></p>
-]]></content>
-      <tags>
-        <tag>JavaWeb</tag>
-        <tag>工具</tag>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>界面开发工具之HTML色彩表格工具</title>
     <url>/2020/07/23/%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B9%8BHTML%E8%89%B2%E5%BD%A9%E8%A1%A8%E6%A0%BC%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -3742,6 +3724,24 @@
 <hr>
 <p><strong><em>END</em></strong></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>聚光灯效果（css+html）</title>
+    <url>/2020/07/23/%E8%81%9A%E5%85%89%E7%81%AF%E6%95%88%E6%9E%9C%EF%BC%88css-html%EF%BC%89/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200723150354693.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NqdzEyNTgx,size_16,color_FFFFFF,t_70" alt="背景"><br>最终效果：<br><img src="https://img-blog.csdnimg.cn/20200516111122629.gif" alt="在这里插入图片描述"></p>
+<!-- more -->
+<p>实现code:</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">		&lt;title&gt;聚光灯效果&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">			*&#123;</span><br><span class="line">				margin:<span class="number">0</span>;</span><br><span class="line">				padding:<span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			body&#123;</span><br><span class="line">				background: #222;</span><br><span class="line">				display: flex;</span><br><span class="line">				justify-content: center;</span><br><span class="line">				align-items: center;</span><br><span class="line">				min-height: <span class="number">100</span>vh;</span><br><span class="line">			&#125;</span><br><span class="line">			h1&#123;</span><br><span class="line">				color: #333;</span><br><span class="line">				font-size: <span class="number">8</span>rem;</span><br><span class="line">				position: relative;</span><br><span class="line">			&#125;</span><br><span class="line">			h1:after&#123;</span><br><span class="line">				content: <span class="string">"Hello JavaScript"</span>;</span><br><span class="line">				color: transparent;</span><br><span class="line">				position: absolute;</span><br><span class="line">				left: <span class="number">0</span>;</span><br><span class="line">				top: <span class="number">0</span>;</span><br><span class="line">				background: -webkit-linear-gradient(left,#c23616,#192a56,#00d2d3,yellow,#6D214F,#2e86de,#4cd137,#e84118);</span><br><span class="line">				background-clip: text;</span><br><span class="line">				-webkit-background-clip:text;</span><br><span class="line">				clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				animation: light <span class="number">5</span>s infinite;</span><br><span class="line">			&#125;</span><br><span class="line">				</span><br><span class="line">			<span class="meta">@keyframes</span> light&#123;</span><br><span class="line">				<span class="number">0</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">50</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">100</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="number">100</span>%&#123;</span><br><span class="line">					clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">					-webkit-clip-path: circle(<span class="number">100</span>px at <span class="number">0</span>% <span class="number">50</span>%);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div&gt;&lt;h1&gt;Hello JavaScript&lt;/h1&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong><em>END</em></strong></p>
+]]></content>
+      <tags>
+        <tag>JavaWeb</tag>
+        <tag>HTML</tag>
+      </tags>
   </entry>
   <entry>
     <title>自动生成注释作者名字和日期等信息（IDEA Java类）</title>
